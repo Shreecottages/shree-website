@@ -115,24 +115,6 @@ const CSlider = () =>{
                         sx={{
                             background: 'none',
                             justifyContent: 'center',
-                            // mt: '1.5vw',
-                            "& .MuiMobileStepper-dot": {
-                                // width: "3rem",
-                                // hight: "0.5vw",
-                                // borderRadius: "1vw",
-                                // backgroundColor: "secondary.main",
-                                // transform: 'scale(0.5)',
-                                // mr: '-0.5rem',
-                            },
-                            "& .MuiMobileStepper-dotActive ~ .MuiMobileStepper-dot": {
-                                // backgroundColor: 'action.disabled',
-                                // width: "2rem",
-                                // hight: "0.5vw",
-                                // borderRadius: "1vw",
-                                // mr: '-0.25rem',
-                                // ml: '-0.25rem',
-                                // transform: 'scale(0.5)',
-                            }
                         }}      
                     />
                 </Box>
