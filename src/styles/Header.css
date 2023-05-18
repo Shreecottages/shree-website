@@ -1,0 +1,104 @@
+.logo{
+    /* width: 10vw; */
+    margin-right: auto;
+}
+.logo img{
+    width: 10vw; 
+}
+.list{
+    color: '#3D2521';
+    font-family: 'Bona Nova';
+    font-size: 1.4rem;
+    text-align: center;
+}
+.list::after{
+    bottom: 15px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    left: 0.8em;
+    position: absolute;
+    background: var(--text);
+    opacity: 0.6;
+    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 0rem;
+}
+.list:hover::after{
+    opacity: 0.9;
+    width: 1.5rem;
+}
+.Hmenu{
+    position: absolute;
+    top: 1vw;
+    right: 0;
+}
+.MuiMenu-root ul{
+    background: linear-gradient(180deg, rgba(255, 226, 216, 0) 0%, #FFE2D8 18.21%, #FFE2D8 100%);
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+}
+.MuiMenu-root ul li{
+    background: none;
+    justify-content: center;
+}
+.MuiButtonBase-root .MuiTab-root{
+    color: #3D2521;
+    text-transform: none;
+    font-size: 1rem;
+    opacity: 1;
+}
+@media (max-width: 1050px) {
+    .logo img{
+        width: 10rem;
+    }
+    .list{
+        font-size: 1rem;
+    }
+    .list::after{
+        bottom: 15px;
+        content: "";
+        display: block;
+        height: 1.2px;
+        left: 1em;
+        position: absolute;
+        background: var(--text);
+        opacity: 0.6;
+        transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+        width: 0rem;
+    }
+    .list:hover::after{
+        opacity: 0.9;
+        width: 1rem;
+    }
+}
+@media (max-width: 900px) {
+    .list{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .list::after{
+        bottom: 12px;
+        content: "";
+        display: block;
+        height: 1.2px;
+        left: 1em;
+        position: absolute;
+        background: var(--text);
+        opacity: 0.6;
+        transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+        width: 0rem;
+    }
+    .list:hover::after{
+        bottom: 12px;
+        content: "";
+        display: block;
+        height: 1.2px;
+        left: 1em;
+        position: absolute;
+        background: var(--text);
+        opacity: 0.6;
+        opacity: 0.9;
+        width: 1.2rem;
+    }
+}
