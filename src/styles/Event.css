@@ -1,0 +1,70 @@
+.homepage {
+  font-family: "Bona Nova", serif;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.slick-slider .slick-dots {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  left: 50%;
+  bottom: 0;
+}
+.slick-slider .slick-dots ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slick-slider .slick-dots li {
+  width: 3rem;
+  height: 0.5vw;
+  border-radius: 1vw;
+}
+.slick-slider .slick-dots li button {
+  display: flex;
+  background: #646464;
+  width: 3rem;
+  height: 0.5vw;
+  overflow-y: clip;
+  color: #646464;
+  border: none;
+  border-radius: 4px;
+
+  padding: 0;
+}
+.slick-slider .slick-dots li .slick-active button {
+  background: #3d2521;
+  color: #3d2521;
+}
+.slick-slider {
+  width: 100%;
+}
+.slick-slider .slick-track {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.slick-slider .slick-slide {
+  margin-right: 2vw;
+  opacity: 0.8;
+}
+.slick-slider .card {
+  box-shadow: none;
+}
+.slick-slider .slick-center .card {
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.slick-slider .slick-center {
+  opacity: 1;
+}
+.center {
+  display: flex;
+}
+@media (max-width: 900px) {
+  .room-img img {
+    border-radius: 20px 20px 0px 0px;
+  }
+}

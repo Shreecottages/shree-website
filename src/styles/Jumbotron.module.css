@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    font-family: "Bona Nova", serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+
+  letter-spacing: 0.07em;
+
+  /* highlight */
+
+  color: #ffbb70;
+}
