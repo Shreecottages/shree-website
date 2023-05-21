@@ -7,6 +7,8 @@ import Review from './components/Review';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import Ecard from './components/Ecard';
+import AboutUs from './components/AboutUs 2';
+import Event from './components/Event';
 
 
 const theme = createTheme({
@@ -259,7 +261,9 @@ function App() {
     <div className="App">
       <Header />
       <div className="body">
-      <Homepage />
+      {/* <Homepage /> */}
+      {/* <AboutUs/> */}
+      <Event />
       </div>
       <Footer />
     </div>
