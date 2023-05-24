@@ -45,7 +45,7 @@ export default function Header(props) {
             </Stack>
         </Stack>
 
-      <Container maxWidth="xl">
+      <Container maxWidth="1920px" sx={{p:{md:"0vw 1vw",lg:"0vw 10vw"}, m:"0", width:"100vw"}}>
         <Toolbar disableGutters>
           <Box className="logo"><img src='../images/logo.png' alt="" /></Box>
           <Box sx={{display:"flex", flexDirection:"row"}}>
@@ -73,7 +73,7 @@ export default function Header(props) {
                 '@media (max-width: 900px)':{
                   fontSize: '1.2rem'
                 },
-                '@media (max-width: 1050px)':{
+                '@media (max-width: 1100px)':{
                   fontSize: '1rem'
                 },
               }}>Book now</Button></ListItemButton>

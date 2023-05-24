@@ -9,6 +9,7 @@ import { CssBaseline } from '@mui/material';
 import Ecard from './components/Ecard';
 import AboutUs from './components/AboutUs 2';
 import Event from './components/Event';
+import Experience from './components/Experience';
 
 
 const theme = createTheme({
@@ -263,7 +264,8 @@ function App() {
       <div className="body">
       {/* <Homepage /> */}
       {/* <AboutUs/> */}
-      <Event />
+      {/* <Event /> */}
+      <Experience />
       </div>
       <Footer />
     </div>
