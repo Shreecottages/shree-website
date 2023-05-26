@@ -8,6 +8,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import '../styles/Header.css';
+const logo  = require('../images/logo.png');
 
 export default function Header(props) {
   const [open, setOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Header(props) {
 
       <Container maxWidth="1920px" sx={{p:{md:"0vw 1vw",lg:"0vw 10vw"}, m:"0", width:"100vw"}}>
         <Toolbar disableGutters>
-          <Box className="logo"><img src='../images/logo.png' alt="" /></Box>
+          <Box className="logo"><img src={logo} alt="" /></Box>
           <Box sx={{display:"flex", flexDirection:"row"}}>
           <Hidden mdDown>
             {/* {navigationLinks.map((item) => (

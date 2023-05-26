@@ -44,6 +44,9 @@ const theme = createTheme({
     subtitle2:{
       fontFamily: 'Inter',
       fontSize: "0.8vw",
+      '@media (max-width:900px)':{
+        fontSize:"1.2vw"
+      }
     },
     h2:{
       fontSize: '2.25rem',
@@ -262,10 +265,10 @@ function App() {
     <div className="App">
       <Header />
       <div className="body">
-      {/* <Homepage /> */}
+      <Homepage />
       {/* <AboutUs/> */}
       {/* <Event /> */}
-      <Experience />
+      {/* <Experience /> */}
       </div>
       <Footer />
     </div>

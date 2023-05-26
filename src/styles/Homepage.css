@@ -5,7 +5,7 @@
     color: var(--text);
 }
 .hero{
-    background: url('../../public/images/Hero.png');
+    background: url('../images/Hero.png');
     width: 100vw;
     min-height: 55vw;
     background-repeat: no-repeat;
@@ -61,6 +61,13 @@
     justify-self: center;
     /* text-decoration: underline;
     text-underline-offset: -33%; */
+}
+.label:hover{
+    color: #3D2521;
+    transition: 0.5s;
+}
+.label.active{
+    color: rgba(61, 37, 33);
 }
 .room-img img{
     /* display: flex; */

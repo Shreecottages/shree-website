@@ -10,24 +10,24 @@ export default function Ecard({ itineraries, activities }){
     const [expandedId, setExpandedId] = React.useState(0);
 
     const itinerariesPerCard = [{ _id: "1",
-                                    Eimg:"wed.png",
+                                    Eimg:require("../images/events/wed.png"),
                                     event:"Wedding",
                                     desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination." 
                                 }, 
                                 { _id: "2",
-                                    Eimg:"bday.png",
+                                    Eimg:require("../images/events/bday.png"),
                                     event:"Birthday Party",
                                     desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination."
                                 }, 
                                 { _id: "3",
-                                    Eimg:"corp.png",
+                                    Eimg:require("../images/events/corp.png"),
                                     event:"Corperate Event",
                                     desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination." 
                             
                                 },
                                 {
                                     _id:"4",
-                                    Eimg:"manag.png",
+                                    Eimg:require("../images/events/manag.png"),
                                     event:"Event Planning",
                                     desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination."
                                 }
@@ -70,7 +70,7 @@ export default function Ecard({ itineraries, activities }){
               aria-expanded={expandedId === i} 
             sx={{display:"flex",height:{xs:"100%",sm:"100%",md:"30vw",lg:"25vw"},width:{xs:"80vw",sm:"80vw",md:"100%"}, flexDirection:{xs:isSame(i) ? "column" : "row", sm:isSame(i) ? "column" : "row",md: isSame(i) ? "row" : "column-reverse"}}}>
               <Box sx={{width:{xs:isSame(i) ? "100%": "20%",sm:isSame(i) ? "100%": "20%",md:isSame(i) ? "60%" : "100%",lg:isSame(i) ? "55%" : "100%",xl:isSame(i) ? "60%" : "100%"}}}>
-                <CardMedia component="img" src={`../images/events/${itinerary.Eimg}`} alt="img" sx={{clipPath:isSame(i) ? "": "circle(50%)", width:{xs:isSame(i) ? "100%" : "101%",sm:isSame(i) ? "100%" : "101%",md:isSame(i) ? "100%" : "60%"}, height:"100%",m: {xs:isSame(i)?"":"0vw",sm:isSame(i)?"":"0vw",md:isSame(i) ? "" : "0vw 2vw" }}}/>
+                <CardMedia component="img" src={itinerary.Eimg} alt="img" sx={{clipPath:isSame(i) ? "": "circle(50%)", width:{xs:isSame(i) ? "100%" : "101%",sm:isSame(i) ? "100%" : "101%",md:isSame(i) ? "100%" : "60%"}, height:"100%",m: {xs:isSame(i)?"":"0vw",sm:isSame(i)?"":"0vw",md:isSame(i) ? "" : "0vw 2vw" }}}/>
               </Box>
               {/* <CardHeader> */}
               <Box sx={{
@@ -89,7 +89,7 @@ export default function Ecard({ itineraries, activities }){
                                             m:{xs:isSame(i) ? "0vw" : "",sm:isSame(i) ? "0vw" : "",md:isSame(i) ? "" : "5vw 0vw 6vw -2.5vw"}, 
                                             width:isSame(i) ? "100%" : "150%"
                                           }}>{itinerary.event}</Typography>
-                  <Box sx={{mt:isSame(i)?"-1rem":""}}><img src={`../images/events/circle-arrow-${isSmallScreen?'r':isSame(i)? 'r' : 'u'}.png`} style={{width:isSmallScreen?isSame(i)?"15%":"20%":isSame(i)?"35%":"",height:isSmallScreen?isSame(i)?"30%":"20%":isSame(i)?"":"75%"}} /></Box>
+                  <Box sx={{mt:isSame(i)?"-1rem":""}}><img src={require(`../images/events/circle-arrow-${isSmallScreen?'r':isSame(i)? 'r' : 'u'}.png`)} style={{width:isSmallScreen?isSame(i)?"15%":"20%":isSame(i)?"35%":"",height:isSmallScreen?isSame(i)?"30%":"20%":isSame(i)?"":"75%"}} /></Box>
                   <Collapse in={expandedId === i} timeout="auto" unmountOnExit>
                       <CardContent sx={{p:'0',fontSize:{xs:"1rem",sm:"1rem",md:"1.1vw",lg:"1.1vw",xl:"1.2rem"}}}>
                           <div>{itinerary.desc}</div>

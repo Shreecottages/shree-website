@@ -60,9 +60,9 @@
 .slick-slider .slick-center {
   opacity: 1;
 }
-.center {
+/* .center {
   display: flex;
-}
+} */
 @media (max-width: 900px) {
   .room-img img {
     border-radius: 20px 20px 0px 0px;
