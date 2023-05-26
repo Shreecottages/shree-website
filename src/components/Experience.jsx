@@ -1,9 +1,19 @@
 import { Box, Stack, Typography, Divider, Button } from "@mui/material";
 import React from "react";
-import AboutUsTop from "../assets/AboutTopImg.png";
-import AboutFLowerRight from "../assets/AboutFlowersRight.png";
-import AboutFlowerLeft from "../assets/AboutFlowerLeft.png";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
+const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
+const AboutUsTop = require("../assets/AboutTopImg.png");
+const AboutFlowerLeft = require("../assets/AboutFlowerLeft.png");
+const header1 = require('../images/exp/header1.png');
+const gir_jungle = require('../images/exp/gir_jungle.png');
+const devaliya = require('../images/exp/devaliya.png');
+const header2 = require('../images/exp/header2.png');
+const jamjir = require('../images/exp/jamjir.png');
+const k_b = require('../images/exp/k&b.png');
+const somnath = require('../images/exp/somnath.png');
+const tulsiShyam = require('../images/exp/tulsiShyam.png');
+const map_spot = require('../images/map-spot.png');
 
 export default function Experience(){
     return(
@@ -58,7 +68,7 @@ export default function Experience(){
                     width:"100%",
                     justifyContent:"center",
                 }}>
-                    <Box><img src="../images/exp/header1.png" style={{width:"100%"}}/></Box>
+                    <Box><img src={header1} style={{width:"100%"}}/></Box>
                     <Box sx={{padding:"0vw 10vw", position:"relative", top:{xs:"-2rem",md:"-3.55rem"}}}>
                         <Typography variant="h2" sx={{
                                                     alignSelf:"center", 
@@ -80,7 +90,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src="../images/exp/gir_jungle.png" style={{width:"100%"}}/></Box>
+                        <Box><img src={gir_jungle} style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:'0vw 2vw', 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -97,7 +107,7 @@ export default function Experience(){
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box>
                                     <Button variant="contained" sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                             </Box>
                     </Box>
@@ -105,7 +115,7 @@ export default function Experience(){
                         width:"100%",
                         justifyContent:"center",
                     }}>
-                        <Box><img src="../images/exp/devaliya.png" style={{width:"100%"}}/></Box>
+                        <Box><img src={devaliya} style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:'0vw 2vw', 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -122,7 +132,7 @@ export default function Experience(){
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>26 km far</Typography>
                                 <Box>
                                     <Button variant="contained" sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -133,7 +143,7 @@ export default function Experience(){
                     width:"100%",
                     justifyContent:"center",
                 }}>
-                    <Box><img src="../images/exp/header2.png" style={{width:"100%"}}/></Box>
+                    <Box><img src={header2} style={{width:"100%"}}/></Box>
                     <Box sx={{padding:"0vw 10vw", position:"relative", top:{xs:"-2rem",md:"-3.55rem"}}}>
                         <Typography variant="h2" sx={{
                                                     alignSelf:"center", 
@@ -154,7 +164,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src="../images/exp/jamjir.png" style={{width:"100%"}}/></Box>
+                        <Box><img src={jamjir} style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:'0vw 2vw', 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -171,7 +181,7 @@ export default function Experience(){
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box>
                                     <Button variant="contained" sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -180,7 +190,7 @@ export default function Experience(){
                         justifyContent:"center",
                         // margin:{xs:"0vw",md:"0vw 2vw"}
                     }}>
-                        <Box><img src="../images/exp/k&b.png" style={{width:"100%"}}/></Box>
+                        <Box><img src={k_b} style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:'0vw 2vw', 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -197,7 +207,7 @@ export default function Experience(){
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box>
                                     <Button variant="contained" sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -208,7 +218,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src="../images/exp/somnath.png" style={{width:"100%"}}/></Box>
+                        <Box><img src={somnath} style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:'0vw 2vw', 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -225,7 +235,7 @@ export default function Experience(){
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box>
                                     <Button variant="contained" sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -234,7 +244,7 @@ export default function Experience(){
                         justifyContent:"center",
                         // margin:{xs:"0vw",md:"0vw 2vw"}
                     }}>
-                        <Box><img src="../images/exp/tulsiShyam.png" style={{width:"100%"}}/></Box>
+                        <Box><img src={tulsiShyam} style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:'0vw 2vw', 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -251,7 +261,7 @@ export default function Experience(){
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box>
                                     <Button variant="contained" sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>

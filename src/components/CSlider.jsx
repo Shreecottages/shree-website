@@ -7,31 +7,37 @@ const steps = [
     {
       label: 'Room T1',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
-      image: 'room1.png'
+      image: ['room1.png','room1.png','room1.png']
     },
     {
         label: 'Room T2',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
-        image: 'room1.png'
+        image: ['room1.png','room1.png']
     },
     {
         label: 'Room T3',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
-        image: 'room1.png'
+        image: ['room1.png','room1.png','room1.png','room1.png']
     },
   ];
 
 const CSlider = () =>{
     const [activeStep, setActiveStep] = React.useState(0);
-    const maxSteps = steps.length;
+    const maxSteps = steps[activeStep].image.length;
     
+    const [activeImg, setActiveImg] = React.useState(0);
     const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        setActiveImg((prevActiveImg) => prevActiveImg + 1);
     };
 
     const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
+        setActiveImg((prevActiveImg) => prevActiveImg - 1);
     };
+
+    const checkActive = (no) => {
+        return activeStep === no;
+    }
+
 
     return(
         <>
@@ -40,9 +46,9 @@ const CSlider = () =>{
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column" sx={{alignItems: 'center'}}>
                     <Box display="flex">
-                    <Button variant="text" sx={{color:'secondary.main', textTransform: 'none', padding:'0', mr: '3vw'}} disabled={activeStep!=0}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'default'}}>{steps[0].label}</Typography></Button>
-                    <Button variant="text" sx={{color:'secondary.main', textTransform: 'none', padding:'0', mr: '3vw'}} disabled={activeStep!=1}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'default'}}>{steps[1].label}</Typography></Button>
-                    <Button variant="text" sx={{color:'secondary.main', textTransform: 'none', padding:'0'}} disabled={activeStep!=2}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'default'}}>{steps[2].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===0 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(0); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'pointer'}}>{steps[0].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===1 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(1); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'pointer'}}>{steps[1].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===2 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0'}} onClick={()=>{setActiveStep(2); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'pointer'}}>{steps[2].label}</Typography></Button>
                     </Box>
                     <Paper
                         square
@@ -69,7 +75,7 @@ const CSlider = () =>{
                             
                             }}>
                             <Box className="room-img" display="flex">
-                                <img  src={`../images/Rooms/${steps[activeStep].image}`} />
+                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg]}`)} />
                             </Box>
                             <Box sx={{
                                 position: 'absolute',
@@ -80,7 +86,7 @@ const CSlider = () =>{
                                 padding: '0 2.5vw',
                                 width: "100%"
                             }}>
-                                <Button variant="text" onClick={handleBack} disabled={activeStep === 0} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
+                                <Button variant="text" onClick={handleBack} disabled={activeImg === 0} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
                                 <ExpandCircleDownIcon 
                                     sx={{
                                         transform: 'rotate(90deg)',
@@ -90,7 +96,7 @@ const CSlider = () =>{
                                     }}
                                     
                                 /></Button>
-                                <Button variant="text" onClick={handleNext} disabled={activeStep === maxSteps - 1} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
+                                <Button variant="text" onClick={handleNext} disabled={activeImg === maxSteps - 1} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
                                 <ExpandCircleDownIcon
                                     sx={{
                                         transform: 'rotate(-90deg)',
@@ -111,7 +117,7 @@ const CSlider = () =>{
                         variant="dots"
                         steps={maxSteps}
                         position="static"
-                        activeStep={activeStep}
+                        activeStep={activeImg}
                         sx={{
                             background: 'none',
                             justifyContent: 'center',

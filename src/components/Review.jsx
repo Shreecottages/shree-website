@@ -100,7 +100,7 @@ export default function Review(){
                         </CardContent>
                         <CardHeader
                             avatar={
-                                <Avatar src={`../images/Prof/${card.prof.img}`} sx={{width:"4rem",height:"100%"}}/>
+                                <Avatar src={require(`../images/Prof/${card.prof.img}`)} sx={{width:"4rem",height:"100%"}}/>
                             }
                             title={card.prof.name}
                             titleTypographyProps={{variant:'h6', fontSize:"1rem", fontWeight:"bold" }}

@@ -2,6 +2,9 @@ import React from "react";
 import { Box, Divider, Stack, Typography, Card, Button, useMediaQuery } from "@mui/material";
 import '../styles/Homepage.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+const gir = require('../images/gir.png');
+const diu = require('../images/diu.png');
+const map_spot = require('../images/map-spot.png');
 
 export default function Attractions(){
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
@@ -17,7 +20,7 @@ export default function Attractions(){
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column">
                     <Box display="flex" justifyContent={"space-between"} sx={{ flexDirection: { xs: "column", md: "row"}, mb:'4vw' }}>
-                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src="../images/gir.png" style={{width:"100%", height:"100%"}}/></Box>
+                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src={gir} style={{width:"100%", height:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                             m:'2vw 3vw', 
                                                                             display: {xs:"block", md:"flex"}, 
@@ -32,12 +35,12 @@ export default function Attractions(){
                             <Typography variant="h4" sx={{m:"1vw 0vw",'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.5rem"}}}>15 km far</Typography>
                             <Box>
                                 <Button {...buttonProps} sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                <Button {...buttonProps} sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                <Button {...buttonProps} sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                             </Box>
                         </Box>
                     </Box>
                     <Box display="flex" justifyContent={"space-between"} sx={{ flexDirection: { xs: "column", md: "row-reverse"} }}>
-                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src="../images/diu.png" style={{width:"100%", height:"100%"}}/></Box>
+                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src={diu} style={{width:"100%", height:"100%"}}/></Box>
                         <Box display="flex" flexDirection="column" textAlign="left" sx={{
                                                                                             m:'2vw 3vw', 
                                                                                             display: {xs:"block", md:"flex"},
@@ -52,7 +55,7 @@ export default function Attractions(){
                             <Typography variant="h4" sx={{m:"1vw 0vw",'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.5rem"}}}>83 km far</Typography>
                             <Box display="flex" sx={{ flexDirection: { xs: "row", md: "row-reverse"}, justifyContent:"left"}}>
                                 <Button {...buttonProps} sx={{mr:'1vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                <Button {...buttonProps} sx={{mr:'1vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src="../images/map-spot.png" alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                <Button {...buttonProps} sx={{mr:'1vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                             </Box>
                         </Box>
                     </Box>
