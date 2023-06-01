@@ -46,7 +46,7 @@ export default function Header(props) {
             </Stack>
         </Stack>
 
-      <Container maxWidth="1920px" sx={{p:{md:"0vw 1vw",lg:"0vw 10vw"}, m:"0", width:"100vw"}}>
+      <Container maxWidth="100vw" sx={{p:{md:"0vw 1vw",lg:"0vw 10vw"}, m:"0", width:"100vw"}}>
         <Toolbar disableGutters>
           <Box className="logo"><img src={logo} alt="" /></Box>
           <Box sx={{display:"flex", flexDirection:"row"}}>
@@ -98,28 +98,33 @@ export default function Header(props) {
           //  onKeyPress={() => setOpen(false)}
            role="button"
            tabIndex={0}
-           style={{backgroundColor:"primary.main"}}
+           style={{backgroundColor:"primary.main",display:"flex",justifyContent:"space-between",padding:"10px"}}
          >
            <IconButton>
              <CloseIcon onClick={() => setOpen(false)} />
            </IconButton>
-         </div>
-         <List sx={{pl:"0.5rem"}}>
-              <ListItemButton href="/" ><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">About</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton>
-              <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton>
-              <ListItemButton href="/"><Button variant="contained" sx={{
+
+           <Button variant="contained" sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)':{
                   fontSize: '1.2rem'
                 },
                 '@media (max-width: 1050px)':{
                   fontSize: '1rem'
-                },
-                }}>Book now</Button></ListItemButton>
+                }
+                }}>Book now</Button>
+         </div>
+         <div style={{display:"flex",justifyContent:"center", textAlign:"center", alignItems:"center"}}>
+         <List sx={{justifyContent:"center", textAlign:"center", alignSelf:"center"}} className="main-list">
+              <ListItemButton href="/" ><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton>
+              <ListItemButton href="/"><ListItemText disableTypography className="list">About</ListItemText></ListItemButton>
+              <ListItemButton href="/"><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton>
+              <ListItemButton href="/"><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton>
+              <ListItemButton href="/"><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton>
+              <ListItemButton href="/"><ListItemText disableTypography className="list">Experience</ListItemText></ListItemButton>
+              <ListItemButton href="/"><ListItemText disableTypography className="list">Contact us</ListItemText></ListItemButton>
+              {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}
+              <ListItemButton href="/"></ListItemButton>
               
               
            {/* {navigationLinks.map((item) => (
@@ -137,9 +142,10 @@ export default function Header(props) {
             </ListItem>
           ))} */}
         </List>
+        </div>
       </SwipeableDrawer>
       <Menu
-                sx={{ mt: '65px' , background: 'none'}}
+                sx={{ mt: '72px' , background: 'none'}}
                 id="menu-appbar"
                 anchorEl={anchorElUser}
                 anchorOrigin={{
@@ -154,8 +160,8 @@ export default function Header(props) {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
                 >
-                    <MenuItem>Experience</MenuItem>
-                    <MenuItem>Contact us</MenuItem>
+                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}>Experience</MenuItem>
+                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}>Contact us</MenuItem>
             </Menu>
     </AppBar>
 

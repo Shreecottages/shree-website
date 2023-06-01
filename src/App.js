@@ -163,11 +163,8 @@ const theme = createTheme({
       styleOverrides: {
         paper: {
           backgroundColor: "#FFF6F3",
-          height:"60%",
-          borderRadius:"0px 0px 0px 20px",
-          '@media(max-height:500px)':{
-            height:"90%"
-          },
+          width:"100%",
+          height:"100%",
         }
       }
     },
@@ -197,7 +194,7 @@ const theme = createTheme({
     },
     MuiMenu: {
       styleOverrides: {
-        color: '#3D2521'
+        color: '#3D2521',
       }
     },
     MuiPopover:{
@@ -228,8 +225,16 @@ const theme = createTheme({
       }
       }
     },
+    MuiMenuItem:{
+      styleOverrides:{
+        typography:{
+        fontFamily:"Bona Nova"
+        }
+      }
+    },
     MuiButtonBase:{
       styleOverrides:{
+        fontFamily:"Bona Nova",
         tab:{
           textTransform: 'none',
           opacity: '1',

@@ -23,7 +23,8 @@ const steps = [
 
 const CSlider = () =>{
     const [activeStep, setActiveStep] = React.useState(0);
-    const maxSteps = steps[activeStep].image.length;
+    const maxSteps = steps.length;
+    const maxImg = steps[activeStep].image.length;
     
     const [activeImg, setActiveImg] = React.useState(0);
     const handleNext = () => {
@@ -96,7 +97,7 @@ const CSlider = () =>{
                                     }}
                                     
                                 /></Button>
-                                <Button variant="text" onClick={handleNext} disabled={activeImg === maxSteps - 1} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
+                                <Button variant="text" onClick={handleNext} disabled={activeImg === maxImg - 1} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
                                 <ExpandCircleDownIcon
                                     sx={{
                                         transform: 'rotate(-90deg)',
@@ -117,7 +118,7 @@ const CSlider = () =>{
                         variant="dots"
                         steps={maxSteps}
                         position="static"
-                        activeStep={activeImg}
+                        activeStep={activeStep}
                         sx={{
                             background: 'none',
                             justifyContent: 'center',

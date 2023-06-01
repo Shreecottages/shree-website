@@ -93,10 +93,10 @@ export default function Review(){
             <Slider {...settings}>
                 {Creview.map((card) => {
                    return(
-                    <Card className="card" raised={0}  sx={{backgroundColor:"rgba(255, 187, 112, 0.1);",borderRadius:"20px", textAlign:"left", p:"2vw", height:{xs:"15rem",md:"20rem"}, display: "flex", flexDirection:"column", justifyContent:"space-between"}} >
+                    <Card className="card" raised={0}  sx={{backgroundColor:"rgba(255, 187, 112, 0.1);",borderRadius:"20px", textAlign:"left", p:"2vw", height:{xs:"20rem",md:"20rem"}, display: "flex", flexDirection:"column", justifyContent:"space-between"}} >
                         <CardContent>
                             <Rating name="read-only" value={card.value} readOnly sx={{cursor:"default"}} />
-                            <Typography variant="body2" sx={{fontSize:"1rem",display:"flex" ,overflowY:"scroll",height:{xs:"7rem",md:"15rem"}}}>{card.description}</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1rem",display:"flex", height:{xs:"10rem",md:"15rem"}}}>{card.description}</Typography>
                         </CardContent>
                         <CardHeader
                             avatar={
@@ -123,7 +123,7 @@ export default function Review(){
                             m:"1vw 0vw 2vw 0vw"
                         }}      
                     />
-                    <Button variant="outlined">Write a Review <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button>
+                <Button variant="outlined">Write a Review <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button>
         </Box>
         
         </Box>
