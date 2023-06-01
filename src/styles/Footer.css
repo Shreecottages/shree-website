@@ -73,11 +73,29 @@ a{
 }
 @media (max-width:900px) {
     .logo-white{
-        width: 25%;
+        width: 20vw;
     }
     .sns{
-        width: 2.7vw;
-        height: 2.7vw;
-        margin-right: 1vw;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+    }
+    .ft::after{
+        bottom: -0.15rem;
+        content: "";
+        display: block;
+        height: 0.05vw;
+        position: relative;
+        background: var(--highlight);
+        opacity: 0.8;
+        width: 1.5rem;
+    }
+}
+@media (max-width:600px) {
+    .logo-white{
+        width: 30vw;
+    }
+    .sns{
+        margin-top: 0.5rem;
     }
 }

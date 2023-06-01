@@ -144,6 +144,9 @@
     display: flex;
 }
 @media (max-width: 900px){
+    .hero-info img{
+        width: 10%;
+    }
     .room-img img{
         border-radius:  20px 20px 0px 0px;
     }
