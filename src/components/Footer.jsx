@@ -13,7 +13,7 @@ const yt = require('../images/yt.png');
 export default function Footer(){
     
     return(
-        <Box flexDirection="column" className="footer" sx={{position:"absolute", bottom:'0',right:'0',left:'0', p:"5vw 10vw 0vw 10vw", display:"flex" }}>
+        <Box flexDirection="column" className="footer" sx={{ bottom:'0',right:'0',left:'0', p:"5vw 10vw 0vw 10vw", display:"flex" }}>
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
                 <img src={logo_white} alt="" className="logo-white"/>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 // import { makeStyles } from "@material-ui/core";
-import {AppBar,Box, Toolbar,Stack, Container,Hidden,Typography,Menu,MenuItem, IconButton, SwipeableDrawer, Divider, List, ListItem, Avatar, Link, ListItemButton, ListItemText, Button} from "@mui/material";
+import {AppBar,Box, Toolbar,Stack, Container,Hidden,Typography,Menu,MenuItem, IconButton, SwipeableDrawer, Divider, List, ListItem, Avatar, ListItemButton, ListItemText, Button} from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import CallIcon from '@mui/icons-material/Call';
@@ -63,13 +64,13 @@ export default function Header(props) {
                  {item.name}
                </Link>
              ))} */}
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">About</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
               <ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="list">More <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}}/></ListItemText></ListItemButton>
-              <ListItemButton href="/"><Button variant="contained" sx={{
+              <ListItemButton><Button variant="contained" sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)':{
                   fontSize: '1.2rem'
@@ -116,15 +117,15 @@ export default function Header(props) {
          </div>
          <div style={{display:"flex",justifyContent:"center", textAlign:"center", alignItems:"center"}}>
          <List sx={{justifyContent:"center", textAlign:"center", alignSelf:"center"}} className="main-list">
-              <ListItemButton href="/" ><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">About</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Experience</ListItemText></ListItemButton>
-              <ListItemButton href="/"><ListItemText disableTypography className="list">Contact us</ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Homepage" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="list"><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></ListItemText></ListItemButton>
               {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}
-              <ListItemButton href="/"></ListItemButton>
+              <ListItemButton></ListItemButton>
               
               
            {/* {navigationLinks.map((item) => (
@@ -160,8 +161,8 @@ export default function Header(props) {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
                 >
-                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}>Experience</MenuItem>
-                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}>Contact us</MenuItem>
+                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></MenuItem>
+                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></MenuItem>
             </Menu>
     </AppBar>
 

@@ -17,10 +17,10 @@
 }
 body{
   position: relative;
-  padding-bottom: 30vw;
+  /* padding-bottom: 30vw; */
   margin-bottom: 0;
 }
-@media (max-width:900px) {
+/* @media (max-width:900px) {
   body{
     padding-bottom: 100vw;
   }
@@ -39,4 +39,4 @@ body{
   body{
     padding-bottom: 200vw;
   }
-}
+} */
