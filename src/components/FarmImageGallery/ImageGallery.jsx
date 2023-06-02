@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography, Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 // IMPORTING STYLES
 import "./ImageGallery.css";
@@ -18,6 +18,7 @@ const ImageGallery = () => {
           "&::-webkit-scrollbar": {
             display: "none",
           },
+          mt:{xs:"5.7rem",md:"5.7rem",lg:"5.6rem",xl:"6.5rem"}
         }}
       >
         <Box
@@ -214,7 +215,7 @@ const ImageGallery = () => {
           </Link>
         </Box>
       </Box>
-
+      <Outlet />
       {/* {data.all.map((item, index) => (
         <img className={index} src={item} key={index} alt="First slide" />
       ))} */}

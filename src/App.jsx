@@ -15,7 +15,6 @@ import AboutUsMain from "./components/AboutUsMain";
 import ImageGallery from "./components/FarmImageGallery/ImageGallery";
 import ImageGalleryView from "./components/FarmImageGallery/ImageGalleryView";
 import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const theme = createTheme({
@@ -272,6 +271,58 @@ function App() {
       <div className="App">
         <Header />
         <div className="body">
+        {/* <Router> */}
+            <Routes>
+              <Route
+                exact
+                path="/"
+                element={<Homepage />}
+              />
+
+              <Route
+                exact
+                path="/AboutUsMain"
+                element={<AboutUsMain />}
+              />
+
+              <Route
+                exact
+                path="/gallery"
+                element={<ImageGallery />}
+              >
+                  <Route index element={<ImageGalleryView />} />
+                  <Route
+                    exact
+                    path="images/all"
+                    element={<ImageGalleryView />}
+                  />
+
+                  <Route
+                    exact
+                    path="videos"
+                    element={<VideoGalleryView />}
+                  />
+              </Route>
+
+              <Route
+                exact
+                path="/Event"
+                element={<Event />}
+              />
+
+              <Route
+                exact
+                path="/Experience"
+                element={<Experience />}
+              />
+
+              <Route
+                exact
+                path="/contactPage/Contact"
+                element={<Contact />}
+              />
+            </Routes>
+        {/* </Router> */}
           {/* <Homepage /> */}
           {/* <AboutUs/> */}
           {/* <Event /> */}
@@ -279,7 +330,7 @@ function App() {
           {/* <AboutUsMain /> */}
           {/* <Experience /> */}
 
-          <Router>
+          {/* <Router>
             <ImageGallery />
 
             <Routes>
@@ -295,7 +346,8 @@ function App() {
                 element={<VideoGalleryView />}
               />
             </Routes>
-          </Router>
+          </Router> */}
+          {/* <Gallery /> */}
         </div>
         <Footer />
       </div>
