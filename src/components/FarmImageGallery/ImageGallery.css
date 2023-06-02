@@ -1,0 +1,49 @@
+.ResortPartsLink {
+    text-decoration: none;
+    font-family: 'Bona Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #3D2521;
+    flex: none;
+    display: inline-block;
+    position: relative;
+}
+
+.ResortPartsLink:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFBB70;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.ResortPartsLink:hover {
+    color: #FFBB70;
+}
+
+.ResortPartsLink:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media (max-width: 600px) {
+    .ResortPartsLink {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .ResortPartsLink {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

@@ -12,8 +12,8 @@ const ReviewCard = () => {
           flexDirection: "column",
           justifyContent: "center",
           // margin: { xs: "auto", lg: "0px" },
-          width: { xs: "250px", lg: "300px", xl: "500px" },
-          height: { xs: "350px", lg: "200px", xl: "300px" },
+          width: { xs: "320px", lg: "300px", xl: "600px" },
+          height: { xs: "350px", lg: "200px", xl: "380px" },
           background: "#FFFFFF",
           padding: "40px",
           boxShadow:
