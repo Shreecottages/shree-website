@@ -18,7 +18,7 @@ export default function Footer(){
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
                 <img src={logo_white} alt="" className="logo-white"/>
-                <Typography variant="body2" sx={{fontSize:{xs:"1rem",md:'0.8vw'}, mb:'1vw', mt:'1.5vw'}}>
+                <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{xs:"1rem",md:'0.8vw'}, mb:'1vw', mt:'1.5vw'}}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
@@ -45,8 +45,8 @@ export default function Footer(){
                     <Box display="flex" flexDirection={"column"}>
                         <Link to="/gallery"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Gallery</Typography></Link>
                         <Link to="/Experience"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Experience</Typography></Link>
-                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Resrvation Policy</Typography></Link>
                         <Link to="/contactPage/Contact"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Contact Us</Typography></Link>
+                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Resrvation Policy</Typography></Link>
                     </Box>
                 </Box>
             </Grid>
@@ -101,13 +101,16 @@ export default function Footer(){
                 </Box>
             </Grid>
         </Stack>
-        <Box display="flex" justifyContent="space-between" flexDirection="row" className="footnote">
-            <Typography variant="subtitle2">Copyrights@ 2023 • www.shreecottages.com</Typography>
-            <Box display="flex" flexDirection="row">
+        <Box display="flex" justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}} className="footnote">
+            <Box sx={{mb:{xs:"1rem",md:"0rem"}}}>
+            <Typography variant="subtitle2">© Copyrights️ 2023 , All rights reserved Shree Cottages</Typography>
+            </Box>
+            <Box display="flex" sx={{flexDirection:{xs:"row-reverse",md:"row"}, alignItems:{xs:"center",md:"normal"}}}>
             <Typography variant="subtitle2">Privacy Policy</Typography>
-            <Divider orientation="vertical" sx={{height:{xs:"1.5vw",md:"1.2vw"}, backgroundColor: "warning.main", m:"0 0.5vw 1vw 0.5vw"}}/>
-            <Typography variant="subtitle2">Terms & Condition</Typography>
-            <Divider orientation="vertical" sx={{height:{xs:"1.5vw",md:"1.2vw"}, backgroundColor: "warning.main", m:"0 0.5vw 1vw 0.5vw"}}/>
+            <Divider orientation="vertical" sx={{height:{xs:"1.2rem",md:"1.2rem"}, backgroundColor: "warning.main", m:{xs:"0 0.5rem",md:"0 0.5vw 1vw 0.5vw"}}}/>
+            <Typography variant="subtitle2" sx={{display:{xs:"none",md:"inline-block"}}}>Terms & Condition</Typography>
+            <Typography variant="subtitle2" sx={{display:{md:"none",xs:"inline-block"}}}>T&C</Typography>
+            <Divider orientation="vertical" sx={{height:{xs:"1.2rem",md:"1.2rem"}, backgroundColor: "warning.main", m:{xs:"0 0.5rem",md:"0 0.5vw 1vw 0.5vw"}}}/>
             <Typography variant="subtitle2">Site map</Typography>
             </Box>
         </Box>
