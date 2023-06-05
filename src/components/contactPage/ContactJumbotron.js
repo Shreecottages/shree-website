@@ -52,7 +52,7 @@ const ContactJumbotron = () => {
     };
 
     return (
-        <Box style={styles.root} sx={{ backgroundImage: logo, mt: '5.9rem', height: '38vh', background: 'rgba(61, 37, 33, 0.5);', boxShadow: 'inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9);', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: '"Bona Nova", serif' }}>
+        <Box style={styles.root} sx={{ backgroundImage: logo, height: '38vh', background: 'rgba(61, 37, 33, 0.5);', boxShadow: 'inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9);', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: '"Bona Nova", serif' }}>
             <Box sx={styles.container}>
                 <Typography component='h3' variant='h4' className={style.heading}>
                     Contact us

@@ -24,7 +24,6 @@ export default function Experience(){
                 justifyContent: "space-between",
                 background:`rgba(61, 37, 33, 0.5) url(${AboutUsTop})`,
                 boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
-                mt:{xs:"5.7rem",md:"5.7rem",lg:"5.6rem",xl:"6.5rem"},
                 textAlign:"center",
                 padding:{xs:"0vw",md:"0vw 10vw"},
                 backgroundSize:"100%",

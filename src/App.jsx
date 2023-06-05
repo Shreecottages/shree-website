@@ -5,7 +5,7 @@ import Homepage from "./components/Hompage";
 import CSlider from "./components/CSlider";
 import Review from "./components/Review";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { CssBaseline } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
 import Ecard from "./components/Ecard";
 import Event from "./components/Event";
 import Experience from "./components/Experience";
@@ -270,7 +270,7 @@ function App() {
       <CssBaseline />
       <div className="App">
         <Header />
-        <div className="body">
+        <Box className="body">
         {/* <Router> */}
             <Routes>
               <Route
@@ -348,7 +348,7 @@ function App() {
             </Routes>
           </Router> */}
           {/* <Gallery /> */}
-        </div>
+        </Box>
         <Footer />
       </div>
     </ThemeProvider>

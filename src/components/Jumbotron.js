@@ -57,7 +57,7 @@ const Jumbotron = () => {
     };
 
     return (
-        <Box style={styles.root} sx={{ backgroundImage: logo, mt: '5.9rem', height: '38vh', background: 'rgba(61, 37, 33, 0.5);', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: '"Bona Nova", serif' }}>
+        <Box style={styles.root} sx={{ backgroundImage: logo, height: '38vh', background: 'rgba(61, 37, 33, 0.5);', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: '"Bona Nova", serif' }}>
             <Box sx={styles.container}>
                 <Typography component='h3' variant='h4' className={style.heading}>
                     Events & Meetings

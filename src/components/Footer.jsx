@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Avatar, Container, Grid, Typography, Box, Stack, Divider } from "@mui/material";
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
@@ -13,7 +14,7 @@ const yt = require('../images/yt.png');
 export default function Footer(){
     
     return(
-        <Box flexDirection="column" className="footer" sx={{ bottom:'0',right:'0',left:'0', p:"5vw 10vw 0vw 10vw", display:"flex" }}>
+        <Box flexDirection="column" className="footer" sx={{bottom:'0',right:'0',left:'0', p:"5vw 10vw 0vw 10vw", display:"flex" }}>
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
                 <img src={logo_white} alt="" className="logo-white"/>
@@ -34,18 +35,18 @@ export default function Footer(){
                         '@media(max-width: 500px)':{
                             marginTop:"4vw"
                         }}}>Quick Links</Typography>
-                <Box display="flex" flexDirection={"row"}>
+                <Box display="flex" flexDirection={{xs:"column",md:"row"}}>
                     <Box display="flex" flexDirection={"column"} sx={{mr:'5vw'}}>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Home</Typography>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>About</Typography>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Rooms</Typography>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Events</Typography>
+                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Home</Typography></Link>
+                        <Link to="/AboutUsMain"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>About</Typography></Link>
+                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Rooms</Typography></Link>
+                        <Link to="/Event"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Events</Typography></Link>
                     </Box>
                     <Box display="flex" flexDirection={"column"}>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Gallery</Typography>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Experience</Typography>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Resrvation Policy</Typography>
-                        <Typography variant="h6" component={'a'} href="/" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Contac Us</Typography>
+                        <Link to="/gallery"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Gallery</Typography></Link>
+                        <Link to="/Experience"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Experience</Typography></Link>
+                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Resrvation Policy</Typography></Link>
+                        <Link to="/contactPage/Contact"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Contact Us</Typography></Link>
                     </Box>
                 </Box>
             </Grid>
@@ -58,7 +59,7 @@ export default function Footer(){
                 <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
                     <CallOutlinedIcon sx={{
                         width:{xs:"1rem",md:"6%"}, 
-                        mt:{xs:'-2vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'},
+                        mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'},
                         mr:'5px',
                         '@media(max-width: 350px)':{
                             marginTop:"-3vw"
@@ -68,12 +69,12 @@ export default function Footer(){
                         }
                     
                     }}/>
-                    <Typography variant="h6" sx={{lineHeight:"1.5vw",fontSize:{xs:"1rem",md:"1.3vw"}}}>+91 9427424157</Typography>
+                    <Typography variant="h6" sx={{lineHeight:{xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>+91 9427424157</Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
                     <MailOutlineOutlinedIcon sx={{
                         width:{xs:"1rem",md:"6%"}, 
-                        mt:{xs:'-2vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
+                        mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
                         mr:'5px',
                         '@media(max-width: 350px)':{
                             marginTop:"-3vw"
@@ -82,12 +83,12 @@ export default function Footer(){
                             marginTop:"-4vw"
                         }   
                     }} />
-                    <Typography variant="h6" sx={{lineHeight:"1.5vw",fontSize:{xs:"1rem",md:"1.3vw"}}}>shreecottages57@gmail.com</Typography>
+                    <Typography variant="h6" sx={{lineHeight:{xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>shreecottages57@gmail.com</Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
                     <PlaceOutlinedIcon sx={{
                         width:{xs:"1rem",md:"6%"}, 
-                        mt:{xs:'-2vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
+                        mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
                         mr:'5px',
                         '@media(max-width: 350px)':{
                             marginTop:"-1vw"
