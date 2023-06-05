@@ -44,9 +44,9 @@ const theme = createTheme({
     },
     subtitle2: {
       fontFamily: "Inter",
-      fontSize: "0.8vw",
+      fontSize: "0.75rem",
       "@media (max-width:900px)": {
-        fontSize: "1.2vw",
+        fontSize: "0.9rem",
       },
     },
     h2: {
