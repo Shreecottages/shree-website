@@ -97,7 +97,7 @@ export default function Footer(){
                             marginTop:"-2vw"
                         }    
                     }} />
-                    <Typography variant="h6" sx={{lineHeight: {xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>Veraval Road ,Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India Pincode : 362150</Typography>
+                    <Typography variant="h6" sx={{lineHeight: {xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>Veraval Road ,Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India <br />Pincode : 362150</Typography>
                 </Box>
             </Grid>
         </Stack>
