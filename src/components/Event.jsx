@@ -10,7 +10,7 @@ const Event = () => {
 
     return (
         <Stack>
-            <Box sx={{ paddingTop: { xs: "25vh", sm: "20vh", md: "15vh", lg: "0" } }}>
+            <Box>
                 <Jumbotron />
                 <Content />
                 <Review />

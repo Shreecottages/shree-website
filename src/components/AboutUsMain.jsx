@@ -47,7 +47,6 @@ const AboutUs = () => {
           "&::-webkit-scrollbar": {
             display: "none",
           },
-          mt:{xs:"5.7rem",md:"5.7rem",lg:"5.6rem",xl:"6.5rem"}
         }}
       >
         <Box

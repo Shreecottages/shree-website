@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import { makeStyles } from "@material-ui/core";
-import {AppBar,Box, Toolbar,Stack, Container,Hidden,Typography,Menu,MenuItem, IconButton, SwipeableDrawer, Divider, List, ListItem, Avatar, ListItemButton, ListItemText, Button} from "@mui/material";
+import {AppBar,Box, Grid, Toolbar,Stack, Container,Hidden,Typography,Menu,MenuItem, IconButton, SwipeableDrawer, Divider, List, ListItem, Avatar, ListItemButton, ListItemText, Button} from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import CallIcon from '@mui/icons-material/Call';
@@ -9,6 +9,9 @@ import MailIcon from '@mui/icons-material/Mail';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import '../styles/Header.css';
+const fbContact = require("../assets/fb-Contact.png");
+const ytContact = require("../assets/yt-Contact.png");
+const instaContact = require("../assets/insta-Contact.png");
 const logo  = require('../images/logo.png');
 
 export default function Header(props) {
@@ -29,7 +32,7 @@ export default function Header(props) {
   };
 
   return (
-    <AppBar color="default" position="fixed" sx={{background: trigger ? "#fff6f3" : "transparent", color: '#3D2521'}}>
+    <AppBar color="default" position="sticky" sx={{top:"0",background: trigger ? "#fff6f3" : "transparent", color: '#3D2521'}}>
       <Stack direction={'row'} sx={{
                 textAlign:'center',
                 justifyContent: 'flex-end',
@@ -64,12 +67,12 @@ export default function Header(props) {
                  {item.name}
                </Link>
              ))} */}
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
-              <ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="list">More <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}}/></ListItemText></ListItemButton>
+              <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/AboutUsMain" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">About</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/gallery" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/Event" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton></NavLink>
+              <NavLink to="" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
+              <Link style={{textDecoration:"none", color: '#3D2521',justifyContent:"center"}}><ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="more">More <KeyboardArrowDownIcon sx={{fontSize:{md:"1rem",lg:"1.2rem"}}}/></ListItemText></ListItemButton></Link>
               <ListItemButton><Button variant="contained" sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)':{
@@ -101,11 +104,9 @@ export default function Header(props) {
            tabIndex={0}
            style={{backgroundColor:"primary.main",display:"flex",justifyContent:"space-between",padding:"10px"}}
          >
-           <IconButton>
-             <CloseIcon onClick={() => setOpen(false)} />
-           </IconButton>
-
-           <Button variant="contained" sx={{
+         <Box className="logo"><img src={logo} alt=""/></Box>
+         <Box sx={{alignSelf:"center"}}>
+          <Button variant="contained" sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)':{
                   fontSize: '1.2rem'
@@ -114,18 +115,21 @@ export default function Header(props) {
                   fontSize: '1rem'
                 }
                 }}>Book now</Button>
+           <IconButton>
+             <CloseIcon onClick={() => setOpen(false)} />
+           </IconButton>
+           </Box>
          </div>
-         <div style={{display:"flex",justifyContent:"center", textAlign:"center", alignItems:"center"}}>
+         <div style={{display:"flex",flexDirection:"column",justifyContent:"center", textAlign:"center", alignItems:"center"}}>
          <List sx={{justifyContent:"center", textAlign:"center", alignSelf:"center"}} className="main-list">
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Homepage" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="list"><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></ListItemText></ListItemButton>
               {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}
-              <ListItemButton></ListItemButton>
               
               
            {/* {navigationLinks.map((item) => (
@@ -142,6 +146,11 @@ export default function Header(props) {
               </Link>
             </ListItem>
           ))} */}
+          <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
+                    <img src={fbContact} href="/" alt="Facebook" className="sns-h"/>
+                    <img src={instaContact} href="/" alt="Instagram" className="sns-h"/>
+                    <img src={ytContact} href="/" alt="Youtube" className="sns-h"/>
+        </Grid>
         </List>
         </div>
       </SwipeableDrawer>

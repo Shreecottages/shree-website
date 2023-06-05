@@ -19,7 +19,7 @@ const Homepage =()=>{
     };
 
     return(
-        <Stack sx={{width:"100vw",overflowX:"hidden"}}>
+        <Stack sx={{marginTop:"-100px",position:"relative",top:"0",width:"100vw",overflowX:"hidden"}}>
             <Box className="hero">
             {/* instead of height put marginTop to solve the click issue in Ecard */}
                 <svg width="100vw" viewBox="0 0 1920 447" fill="none" xmlns="http://www.w3.org/2000/svg" style={{position:"absolute",top:"32vw"}}> 

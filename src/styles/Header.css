@@ -5,15 +5,39 @@
 .logo img{
     width: 10vw; 
 }
-.list{
+.link-active .list{
     color: '#3D2521';
     font-family: 'Bona Nova';
     font-size: 1.4rem;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     text-decoration: none;
+    justify-self: center;
+    justify-content: center;
 }
-.list::after{
+.link-active .list::after{
+    bottom: 15px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    left: 0.8em;
+    position: absolute;
+    background: var(--text);
+    opacity: 0.9;
+    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 1.5rem;
+}
+.link .list, .more{
+    color: '#3D2521';
+    font-family: 'Bona Nova';
+    font-size: 1.4rem;
+    text-align: center;
+    /* margin: auto; */
+    text-decoration: none;
+    justify-self: center;
+    justify-content: center;
+}
+.link .list::after{
     bottom: 15px;
     content: "";
     display: block;
@@ -25,7 +49,7 @@
     transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
     width: 0rem;
 }
-.list:hover::after{
+.link .list:hover::after{
     opacity: 0.9;
     width: 1.5rem;
 }
@@ -35,7 +59,7 @@
     right: 0;
 }
 .MuiMenu-root ul{
-    background: linear-gradient(180deg, rgba(255, 226, 216, 0) 0%, #FFE2D8 18.21%, #FFE2D8 100%);
+    background: linear-gradient(180deg, rgba(255, 226, 216, 0) 0%, #FFF6F3 18.21%, #FFF6F3 100%);
     box-shadow: none;
     border: none;
     border-radius: 0px;
@@ -54,10 +78,20 @@
     .logo img{
         width: 10rem;
     }
-    .list{
+    .link .list,.link-active .list, .more{
         font-size: 1rem;
     }
-    .list::after{
+    .link-active .list::after{
+        bottom: 15px;
+        content: "";
+        display: block;
+        height: 1.2px;
+        left: 1em;
+        position: absolute;
+        width: 1rem;
+        opacity: 0.9;
+    }
+    .link .list::after{
         bottom: 15px;
         content: "";
         display: block;
@@ -69,17 +103,26 @@
         transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
         width: 0rem;
     }
-    .list:hover::after{
+    .link .list:hover::after{
         opacity: 0.9;
         width: 1rem;
     }
 }
 @media (max-width: 1100px) {
-    .list{
+    .link .list, .link-active .list,.more{
         font-size: 1.1rem;
         text-align: left;
     }
-    .list::after{
+    .link-active .list::after{
+        bottom: 12px;
+        content: "";
+        display: block;
+        height: 1.2px;
+        left: 1em;
+        opacity: 0.9;
+        width: 1.2rem;
+    }
+    .link .list::after{
         bottom: 12px;
         content: "";
         display: block;
@@ -91,21 +134,13 @@
         transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
         width: 0rem;
     }
-    .list:hover::after{
-        bottom: 12px;
-        content: "";
-        display: block;
-        height: 1.2px;
-        left: 1em;
-        position: absolute;
-        background: var(--text);
-        opacity: 0.6;
+    .link .list:hover::after{
         opacity: 0.9;
         width: 1.2rem;
     }
 }
 @media (max-width: 970px) {
-    .list{
+    .link .list, .link-active .list, .more{
         font-size: 0.9rem;
         text-align: left;
     }
@@ -116,18 +151,27 @@
         text-align: center;
         justify-items: center;
         align-items: center;
-        top: 20vh;
+        top: 10vh;
     }
-    .list{
+    .ham-list{
+        font-family: 'Bona Nova';
+        text-decoration: none;
         font-size: 1.2rem;
         text-align: center;
     }
-    .list:hover::after{
-        width: 0px;
+    .sns-h{
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0.5rem;
     }
 }
 @media (max-width: 900px) and (max-height: 800px){
     .main-list{
-        top: 10vh;
+        top: 5vh;
+    }
+}
+@media (max-width:300px) {
+    .logo img{
+        width: 7rem;
     }
 }
