@@ -84,7 +84,7 @@ export default function Review(){
 
       
     return(
-        <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:"5vw 0vw", backgroundColor: "common.white"}}>
+        <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:{xs:"10vw 5vw",md:"5vw 0vw"}, backgroundColor: "common.white"}}>
         <Typography variant="h2" sx={{p:"0vw 10vw"}}>What our Customers Say</Typography>
         <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
         <Box display='flex' flexDirection="column" sx={{alignItems: 'center'}}>

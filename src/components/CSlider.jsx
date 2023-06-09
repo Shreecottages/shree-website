@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Typography, Divider, Paper, Button, MobileStepper } from "@mui/material";
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
+import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import '../styles/Homepage.css';
 
 const steps = [
@@ -35,21 +37,33 @@ const CSlider = () =>{
         setActiveImg((prevActiveImg) => prevActiveImg - 1);
     };
 
-    const checkActive = (no) => {
-        return activeStep === no;
-    }
+    const handleNextStep = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    };
+    const handleBackStep = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    };
 
 
     return(
         <>
-            <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:"5vw 10vw", backgroundColor: "primary.main"}}>
+            <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:{xs:"10vw 5vw",md:"5vw 10vw"}, backgroundColor: "primary.main"}}>
                 <Typography variant="h2">The Stay</Typography>
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column" sx={{alignItems: 'center'}}>
-                    <Box display="flex">
-                    <Button variant="text" className={`label ${activeStep===0 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(0); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'pointer'}}>{steps[0].label}</Typography></Button>
-                    <Button variant="text" className={`label ${activeStep===1 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(1); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'pointer'}}>{steps[1].label}</Typography></Button>
-                    <Button variant="text" className={`label ${activeStep===2 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0'}} onClick={()=>{setActiveStep(2); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7vw'}, cursor:'pointer'}}>{steps[2].label}</Typography></Button>
+                    <Box sx={{display:{xs:"none",md:"flex"}}}>
+                    <Button variant="text" className={`label ${activeStep===0 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(0); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[0].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===1 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(1); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[1].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===2 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0'}} onClick={()=>{setActiveStep(2); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[2].label}</Typography></Button>
+                    </Box>
+                    <Box sx={{display:{md:"none",xs:"flex"},alignItems:"center",mb:"1vw"}}>
+                        <Button variant="text" onClick={handleBackStep} disabled={activeStep === 0} sx={{ "&.Mui-disabled": { opacity: 0.5 }}}>
+                            <ArrowBackIosRoundedIcon sx={{color:"#3D2521"}} />
+                        </Button>
+                        <Typography variant="h4" sx={{}}>{steps[activeStep].label}</Typography>
+                        <Button variant="text" onClick={handleNextStep} disabled={activeStep === maxSteps - 1} sx={{ "&.Mui-disabled": { opacity: 0.5 }}}>
+                            <ArrowForwardIosRoundedIcon sx={{color:"#3D2521"}} />
+                        </Button>
                     </Box>
                     <Paper
                         square
@@ -108,10 +122,10 @@ const CSlider = () =>{
                                 /></Button>
                             </Box>
                         </Box>
-                        <Box display="flex" flexDirection="column" textAlign="left" sx={{width: {xs: '100%',md:'40%'}, p:{xs:'5vw 10vw', md:'2vw 3vw'}}}>
-                            <Typography variant="h4" sx={{fontSize:{md:'1.7vw'}}}>{steps[activeStep].label}</Typography>
+                        <Box display="flex" flexDirection="column" sx={{width: {xs: '100%',md:'40%'}, p:{xs:'5vw 1rem', md:'2vw 3vw'},textAlign:{xs:"center",md:"left"},alignItems:{xs:"center",md:"normal"}}}>
+                            <Typography variant="h4" sx={{fontSize:{md:'2vw',lg:"1.7rem"}}}>{steps[activeStep].label}</Typography>
                             <Typography variant="body1" sx={{m:'2.5vw 0vw',fontSize:{md:'1.2vw'}}}>{steps[activeStep].description}</Typography>
-                            <Button variant="contained" sx={{fontSize:{md:'1.05vw'}, width: {xs:'6rem',sm:'7.5rem',md:'8.15vw'}}}>Book now</Button>
+                            <Button variant="contained" sx={{fontSize:{md:'1.1vw'}, width: {xs:'6rem',sm:'7.5rem',md:'8.15vw'}}}>Book now</Button>
                         </Box>
                     </Paper>
                     <MobileStepper
