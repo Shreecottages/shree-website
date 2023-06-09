@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Divider, Typography, Button} from "@mui/material";
+import { Link } from "react-router-dom";
 import '../styles/Homepage.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const AboutImg = require('../images/abt-us.png');
@@ -21,7 +22,7 @@ export default function Aboutus(){
                     m:"5vw 0vw"
                 }}>
                 <Typography variant="body1" sx={{m:"5vw 0vw"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</Typography>    
-                <Button variant="contained">Read more <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button>
+                <Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}><Button variant="contained">Read more <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button></Link>
                 </Box>
             </Box>
         </Box>
