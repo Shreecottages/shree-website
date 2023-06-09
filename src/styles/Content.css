@@ -1,0 +1,160 @@
+.heading {
+  font-family: "Bona Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px !important;
+  line-height: 36px;
+  letter-spacing: 0.07em;
+
+  color: #3d2521;
+}
+
+.mobileStack {
+  display: none !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .image1 {
+    width: 50vw !important;
+    height: 25vw !important;
+  }
+  .desc1 {
+    width: 50vw;
+    font-size: "10px" !important;
+    height: 25vw !important;
+  }
+
+  .desc1-head {
+    margin: 10px !important;
+  }
+
+  .desc1-desc {
+    margin: 10px !important;
+    font-size: "17px";
+    margin-top: 1px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .box {
+    margin-bottom: 4rem !important;
+  }
+  .image1 {
+    width: 50vw !important;
+    height: 33vw !important;
+  }
+  .desc1 {
+    width: 50vw;
+    font-size: "10px" !important;
+    height: 33vw !important;
+  }
+
+  .desc1-head {
+    margin: 10px !important;
+  }
+
+  .desc1-desc {
+    margin: 10px !important;
+    font-size: "17px";
+    margin-top: 1px !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    margin: 0 !important;
+    width: 100vw !important;
+  }
+
+  .box {
+    margin-bottom: 4rem !important;
+  }
+  .image1 {
+    width: 45vw !important;
+    height: 35vw !important;
+  }
+  .desc1 {
+    width: 50vw;
+    font-size: "10px" !important;
+    height: 35vw !important;
+  }
+
+  .desc1-head {
+    margin: 2px !important;
+    font-size: 1.2em !important;
+  }
+
+  .desc1-desc {
+    margin: 10px !important;
+    font-size: 0.9em !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    margin: 0 !important;
+    width: 100vw !important;
+  }
+
+  .box {
+    margin-bottom: 4rem !important;
+  }
+  .image1 {
+    width: 45vw !important;
+    height: 35vw !important;
+  }
+  .desc1 {
+    width: 50vw;
+    font-size: "10px" !important;
+    height: 35vw !important;
+  }
+
+  .desc1-head {
+    margin: 2px !important;
+    font-size: 1.2em !important;
+  }
+
+  .desc1-desc {
+    margin: 10px !important;
+    font-size: 0.8em !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    margin: 0 !important;
+    width: 100vw !important;
+  }
+
+  .stack {
+    display: none !important;
+  }
+
+  .mobileStack {
+    display: block !important;
+  }
+
+  .box {
+    margin-bottom: 4rem !important;
+  }
+  .image1 {
+    width: 100vw !important;
+    height: 35vw !important;
+  }
+  .desc1 {
+    width: 100vw;
+    /* font-size: "20px" !important; */
+    height: 35vw !important;
+  }
+
+  .desc1-head {
+    text-align: center;
+    margin: 2px !important;
+    font-size: 1em !important;
+  }
+
+  .desc1-desc {
+    margin: 10px !important;
+    /* font-size: 0.8em !important; */
+  }
+}
