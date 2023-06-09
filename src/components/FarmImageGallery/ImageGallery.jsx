@@ -156,7 +156,7 @@ const ImageGallery = () => {
             sx={{
               width: { xs: "100%", sm: "auto" },
               marginBottom: "10px",
-              // fontSize: { xs: "14px", sm: "24px", md: "30px" },
+              fontSize: { xs: "16px", sm: "24px", md: "30px" },
             }}
           >
             All

@@ -83,7 +83,7 @@ const AboutUs = () => {
           >
             <Typography
               sx={{
-                padding: { xs: "60px 0 0px 0", md: "100px 0 10px 0" },
+                padding: { xs: "4s0px 0 0px 0", md: "100px 0 10px 0" },
                 fontFamily: "Bona Nova",
                 fontSize: { xs: "1.5em", md: "2.5em" },
                 fontWeight: "400",
@@ -107,7 +107,7 @@ const AboutUs = () => {
               sx={{
                 magrin: "14px auto",
                 fontFamily: "Bona Nova",
-                fontSize: { xs: "14px", md: "18px" },
+                fontSize: { xs: "18px", md: "18px" },
                 fontWeight: "400",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",
@@ -148,25 +148,37 @@ const AboutUs = () => {
         >
           <Box
             sx={{
-              width: "80%",
+              width: { xs: "90%", sm: "80%" },
               display: "flex",
               flexDirection: { xs: "column", md: "row" },
-              margin: "50px auto",
+              margin: { xs: "0px", sm: "50px auto" },
               textAlign: "center",
               paddingTop: { xs: "50px", sm: "0" },
             }}
           >
             <Box
               sx={{
-                margin: { xs: "auto", sm: "auto", lg: "auto 0px auto 0px" },
-                width: { xs: "300px", md: "400px", lg: "400px" },
-                height: { xs: "300px", md: "400px", lg: "400px" },
+                margin: {
+                  xs: "40px auto",
+                  sm: "auto",
+                  lg: "auto 0px auto 0px",
+                },
+                width: { xs: "327px", md: "400px", lg: "400px" },
+                height: { xs: "327px", md: "400px", lg: "400px" },
+                // minHeight: "250px",
+                // minWidth: "250px",
+                maxWidth: "400px",
+                maxHeight: "400px",
                 // boxShadow: "-5px -5px 10px rgba(0, 0, 0, 0.1)",
                 // borderRadius: "20px",
-                alignItems: "center",
+                // alignItems: "center",
                 backgroundImage: `url(${WhoWeAre})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                "@media (min-width:200px) and (max-width:300px)": {
+                  width: "250px",
+                  height: "250px",
+                },
               }}
             ></Box>
 
@@ -179,9 +191,9 @@ const AboutUs = () => {
                   md: "auto 40px",
                   lg: "auto ",
                 },
-                fontSize: { xs: "15px", lg: "20px" },
-                lineHeight: "30px",
-                textAlign: "start",
+                fontSize: { xs: "14px", lg: "20px" },
+                lineHeight: { xs: "21px", sm: "30px" },
+                textAlign: { xs: "center", md: "start" },
                 letterSpacing: "0.07em",
                 fontFamily: "Poppins",
                 fontWeight: "400",
@@ -216,7 +228,7 @@ const AboutUs = () => {
           <Typography
             sx={{
               marginTop: "100px",
-              fontSize: "40px",
+              fontSize: { xs: "24px", md: "40px" },
               fontWeight: "400",
               fontStyle: "normal",
               fontFamily: "Bona Nova",
@@ -286,7 +298,7 @@ const AboutUs = () => {
                     marginTop: { xs: "60px", md: "100px" },
                     fontWeight: "400",
                     fontSize: {
-                      xs: "30px",
+                      xs: "24px",
                       lg: "25px",
                       xl: "40px",
                     },
@@ -311,6 +323,8 @@ const AboutUs = () => {
             >
               <Box
                 sx={{
+                  margin: "auto",
+                  maxWidth: "327px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
@@ -322,11 +336,13 @@ const AboutUs = () => {
                     display: "flex",
                     flexDirection: "column",
                     width: {
-                      xs: "280px",
+                      xs: "100%",
                       sm: "300px",
                       lg: "230px",
                       xl: "336px",
                     },
+                    height: "280px",
+                    // maxWidth: "380px",
                   }}
                 >
                   <img
@@ -337,14 +353,18 @@ const AboutUs = () => {
                 </Box>
                 <Box
                   sx={{
-                    margin: "0px",
                     width: {
-                      xs: "280px",
+                      xs: "100%",
                       sm: "300px",
                       lg: "230px",
                       xl: "336px",
                     },
-                    height: { xs: "156px", lg: "130px", xl: "156px" },
+                    // maxWidth: "380px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItem: "center",
+                    height: { xs: "126px", lg: "130px", xl: "156px" },
                     background: "#3D2521",
                     borderRadius: "0px 0px 20px 20px",
                     textAlign: "center",
@@ -353,7 +373,7 @@ const AboutUs = () => {
                   <Typography
                     sx={{
                       fontWeight: "700",
-                      fontSize: { sm: "50px", lg: "40px", xl: "50px" },
+                      fontSize: { xs: "32px", lg: "40px", xl: "50px" },
                       letterSpacing: "0.07em",
                       fontFamily: "Bona Nova",
                       lineHeight: "160%",
@@ -365,7 +385,7 @@ const AboutUs = () => {
                   <Typography
                     sx={{
                       fontWeight: "700",
-                      fontSize: "20px",
+                      fontSize: { xs: "16px", sm: "20px" },
                       letterSpacing: "0.07em",
                       fontFamily: "Bona Nova",
                       lineHeight: "250%",
@@ -421,6 +441,8 @@ const AboutUs = () => {
               </Box>
               <Box
                 sx={{
+                  margin: "auto",
+                  maxWidth: "327px",
                   marginTop: { xs: "50px", sm: "0px" },
                   display: "flex",
                   flexDirection: "column",
@@ -433,11 +455,12 @@ const AboutUs = () => {
                     display: "flex",
                     flexDirection: "column",
                     width: {
-                      xs: "280px",
+                      xs: "100%",
                       sm: "300px",
                       lg: "230px",
                       xl: "336px",
                     },
+                    height: "280px",
                   }}
                 >
                   <img
@@ -450,12 +473,16 @@ const AboutUs = () => {
                   sx={{
                     margin: "0px",
                     width: {
-                      xs: "280px",
+                      xs: "100%",
                       sm: "300px",
                       lg: "230px",
                       xl: "336px",
                     },
-                    height: { xs: "156px", lg: "130px", xl: "156px" },
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItem: "center",
+                    height: { xs: "126px", lg: "130px", xl: "156px" },
                     background: "#3D2521",
                     borderRadius: "0px 0px 20px 20px",
                     textAlign: "center",
@@ -464,7 +491,7 @@ const AboutUs = () => {
                   <Typography
                     sx={{
                       fontWeight: "700",
-                      fontSize: "50px",
+                      fontSize: { xs: "32px", lg: "40px", xl: "50px" },
                       letterSpacing: "0.07em",
                       fontFamily: "Bona Nova",
                       lineHeight: "160%",
@@ -476,7 +503,7 @@ const AboutUs = () => {
                   <Typography
                     sx={{
                       fontWeight: "700",
-                      fontSize: "20px",
+                      fontSize: { xs: "16px", sm: "20px" },
                       letterSpacing: "0.07em",
                       fontFamily: "Bona Nova",
                       lineHeight: "250%",
@@ -510,17 +537,21 @@ const AboutUs = () => {
         {/* THIRD PART  */}
         <Box
           sx={{
-            paddingTop: "100px",
-            height: { xs: "1000px", sm: "700px", md: "662px" },
+            // paddingTop: "100px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            height: { xs: "566px", sm: "700px", md: "662px" },
             background: "#FFE2D8",
           }}
         >
           <Typography
             sx={{
-              marginBottom: { xs: "20px", sm: "0px" },
+              marginBottom: { xs: "00px", sm: "0px" },
               fontFamily: "Bona Nova",
               fontWeight: "400",
-              fontSize: { xs: "30px", md: "40px" },
+              fontSize: { xs: "24px", md: "40px" },
               textAlign: "center",
               letterSpacing: "0.07em",
             }}
@@ -541,7 +572,7 @@ const AboutUs = () => {
           <Box
             sx={{
               display: { xs: "block", md: "flex" },
-              margin: "auto",
+              // margin: "auto",
               width: "95%",
             }}
           >
@@ -556,11 +587,14 @@ const AboutUs = () => {
             >
               <Box
                 sx={{
-                  margin: "20px 0 40px 0",
+                  margin: "20px 0 20px 0",
                   paddingTop: { xs: "60px", sm: "0px" },
-                  display: { xs: "block", sm: "flex" },
-                  height: { xs: "550px", sm: "300px", md: "250px" },
-                  background: "#FFFFFF",
+                  display: "flex",
+                  flexDirection: { xs: "column", sm: "row" },
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: { xs: "324px", sm: "300px", md: "250px" },
+                  background: "#FFF",
                   boxShadow:
                     "0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)",
                   borderRadius: "20px",
@@ -571,23 +605,31 @@ const AboutUs = () => {
                     width: { xs: "80%", sm: "60%", md: "68.55%" },
                     margin: "auto 20px",
                     display: { xs: "flex", md: "flex" },
-                    justifyContent: "space-between",
+                    alignItems: { xs: "space-between", sm: "center" },
+                    // justifyContent: "center",
                   }}
                 >
-                  <img
-                    src={DoubleCommaOpeningVector}
-                    style={{ height: "100%" }}
-                    alt=""
-                  />
+                  <Box
+                    sx={{
+                      width: { xs: "40%", sm: "20%" },
+                      marginTop: { xs: "-20px", sm: "-80px" },
+                    }}
+                  >
+                    <img
+                      src={DoubleCommaOpeningVector}
+                      style={{ width: "100%" }}
+                      alt=""
+                    />
+                  </Box>
                   <Typography
                     sx={{
-                      width: { xs: "90%", lg: "80.5%" },
+                      // width: { xs: "100%", lg: "80.5%" },
                       fontFamily: "Poppins",
                       fontWeight: "400",
-                      fontSize: { xs: "16px", lg: "15px", xl: "20px" },
+                      fontSize: { xs: "14px", lg: "15px", xl: "20px" },
                       textAlign: "center",
                       letterSpacing: "0.07em",
-                      lineHeight: "30px",
+                      lineHeight: { xs: "21px", sm: "30px" },
                     }}
                   >
                     Lorem Ipsum is simply dummy text of the printing and
@@ -604,14 +646,14 @@ const AboutUs = () => {
                 ></Box> */}
                   <Box
                     sx={{
-                      width: "10%",
-                      marginTop: { xs: "210px", sm: "110px", md: "80px" },
+                      width: { xs: "40%", sm: "20%" },
+                      marginTop: { xs: "110px", sm: "110px", md: "80px" },
                     }}
                   >
                     <img
                       src={DoubleCommaClosingVector}
                       style={{
-                        height: "inherit",
+                        width: "100%",
                       }}
                       alt=""
                     />
@@ -621,84 +663,99 @@ const AboutUs = () => {
                 <Box
                   sx={{
                     display: "flex",
-                    flexDirection: "column",
+                    flexDirection: { xs: "row", sm: "column" },
                     alignItems: "center",
                     justifyContent: "center",
-                    marginTop: { xs: "40px", sm: "80px", md: "30px" },
-                    width: { xs: "70%", sm: "30%", md: "15.3%" },
+                    marginTop: { xs: "10px", sm: "80px", md: "30px" },
+                    width: { xs: "100%", sm: "30%", md: "15.3%" },
                     margin: "auto",
                   }}
                 >
                   <Box
                     sx={{
-                      margin: "auto",
+                      // margin: "auto",
                       borderRadius: "50%",
+                      width: { xs: "20%", sm: "100px" },
                     }}
                   >
                     <img
                       src={ResortOwnerProfilePhoto}
                       style={{
                         margin: "auto",
-                        width: "100px",
-                        height: "100px",
+                        width: "100%",
+                        height: "100%",
                       }}
                       alt=""
                     />
                   </Box>
 
-                  <Typography
+                  <Box
                     sx={{
-                      // width: "auto",
-                      // width: { xs: "100%" },
-                      margin: "10px auto 0px auto",
-                      fontFamily: "Bona Nova",
-                      fontWeight: "700",
-                      fontSize: "20px",
-                      lineHeight: "24px",
-                      letterSpacing: "0.07em",
-                      color: "#3D2521",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginLeft: { xs: "20px", sm: "0px" },
                     }}
                   >
-                    Haresh Patel
-                    <Box
+                    {" "}
+                    <Typography
                       sx={{
-                        margin: "6px auto 0px auto",
-                        width: { xs: "60px", sm: "122px" },
-                        border: "1px solid #FFBB70",
-                        borderRadius: "2px",
+                        // width: "auto",
+                        width: { xs: "100%" },
+                        margin: "10px 0px 0px 20px",
+                        fontFamily: "Bona Nova",
+                        fontWeight: "700",
+                        fontSize: { xs: "16px", sm: "20px" },
+                        lineHeight: "24px",
+                        letterSpacing: "0.07em",
+                        color: "#3D2521",
                       }}
-                    ></Box>
-                  </Typography>
-
-                  <Typography
-                    sx={{
-                      fontFamily: "Bona Nova",
-                      fontWeight: "400",
-                      fontSize: "15px",
-                      lineHeight: "24px",
-                      letterSpacing: "0.07em",
-                      color: "#3D2521",
-                    }}
-                  >
-                    Resort Owner
-                  </Typography>
+                    >
+                      Haresh Patel
+                      <Box
+                        sx={{
+                          margin: "6px 0px",
+                          width: { xs: "100px", sm: "122px" },
+                          border: "1px solid #FFBB70",
+                          borderRadius: "2px",
+                        }}
+                      ></Box>
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Bona Nova",
+                        fontWeight: "400",
+                        fontSize: { xs: "14px", sm: "16px" },
+                        lineHeight: "24px",
+                        letterSpacing: "0.07em",
+                        color: "#3D2521",
+                      }}
+                    >
+                      Resort Owner
+                    </Typography>
+                  </Box>
                 </Box>
               </Box>
               <Button
                 sx={{
-                  margin: { xs: "20px auto", md: "0px" },
-                  width: "200px",
-                  height: "54px",
+                  margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
+                  width: { xs: "146px", sm: "200px" },
+                  height: { xs: "38px", sm: "54px" },
                   gap: "10px",
-                  fontSize: "20px",
+                  fontSize: { xs: "16px", sm: "20px" },
                   fontWeight: "400",
                   fontStyle: "normal",
                   fontFamily: "Bona Nova",
                   textTransform: "capitalize",
                   color: "#000000",
-                  border: "2px solid rgb(0, 0, 0)",
+                  border: "1px solid rgb(0, 0, 0)",
+                  background: "#FFE2D8",
+                  "&hover": {
+                    background: "#FFF",
+                  },
                 }}
-                variant="outlined"
+                // variant="outlined"
               >
                 Contact Us <ArrowForwardIcon />
               </Button>
