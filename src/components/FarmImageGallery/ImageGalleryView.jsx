@@ -18,14 +18,11 @@ const ImageGalleryView = () => {
   const image4 =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrBissl4uSSQNpsPF8fpynZA2z-pNn2x2n9JW5mMFlq3Tu5doUCXHxnOMeZfZKeUOZpo&usqp=CAU";
 
-  const image5 =
-    "https://i.pinimg.com/236x/de/f1/9d/def19de19ac7fc4bbb11b7bc35b89d32--beautiful-sunset-beautiful-places.jpg";
-
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
   const [imageToShow, setImageToShow] = useState("");
 
   //IMAGE ARRAY TO TEST
-  const images = [image1, image2, image3, image4, image5];
+  const images = [image1, image2, image3, image4];
 
   const showImage = (image) => {
     setImageToShow(image);
@@ -65,7 +62,7 @@ const ImageGalleryView = () => {
     <div>
       <Box
         sx={{
-          width: "80%",
+          width: { xs: "90%", sm: "80%" },
           margin: "80px auto",
         }}
       >
@@ -73,25 +70,27 @@ const ImageGalleryView = () => {
           container
           spacing={{ xs: 1, sm: 1, md: 6 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
-          rowSpacing={{ xs: 4, sm: 2, md: 6 }}
+          rowSpacing={{ xs: 2, sm: 2, md: 2 }}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
 
           // columnSpacing={{ xs: 1, sm: 4, md: 6 }}
         >
           {images.map((image, index) => (
-            <Grid item xs={3} sm={4} md={4}>
+            <Grid item xs={16} sm={4} md={4}>
               <Box
-                sx={{
-                  width: { xs: "300px", sm: "300px", md: "480px" },
-                  height: { xs: "180px", sm: "200px", md: "270px" },
-                }}
+                sx={
+                  {
+                    // width: { xs: "300px", sm: "300px", md: "480px" },
+                    // height: { xs: "180px", sm: "200px", md: "270px" },
+                  }
+                }
               >
                 <img
                   src={image}
                   style={{
                     width: "100%",
                     height: "100%",
-                    borderRadius: "20px",
+                    borderRadius: "10px",
                   }}
                   alt="Slow Network"
                   onClick={() => showImage(image)}

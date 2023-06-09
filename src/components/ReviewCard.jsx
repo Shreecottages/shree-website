@@ -19,6 +19,10 @@ const ReviewCard = () => {
           boxShadow:
             "0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)",
           borderRadius: "20px",
+          "@media (min-width:200px) and (max-width:300px)": {
+            width: "250px",
+            height: "auto",
+          },
         }}
       >
         <Box>Rating</Box>

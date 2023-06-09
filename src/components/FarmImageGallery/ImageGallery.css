@@ -15,7 +15,7 @@
 .ResortPartsLink:after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 30px;
     transform: scaleX(0);
     height: 2px;
     bottom: 0;
