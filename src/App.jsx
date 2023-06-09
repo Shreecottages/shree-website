@@ -5,17 +5,18 @@ import Homepage from "./components/Hompage";
 import CSlider from "./components/CSlider";
 import Review from "./components/Review";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Box, CssBaseline } from "@mui/material";
+import { Box, CssBaseline, Paper } from "@mui/material";
 import Ecard from "./components/Ecard";
 import Event from "./components/Event";
 import Experience from "./components/Experience";
 import Contact from "./components/contactPage/Contact";
 import AboutUsMain from "./components/AboutUsMain";
-
+import Room from "./components/Room";
 import ImageGallery from "./components/FarmImageGallery/ImageGallery";
 import ImageGalleryView from "./components/FarmImageGallery/ImageGalleryView";
 import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const theme = createTheme({
   palette: {
@@ -52,7 +53,7 @@ const theme = createTheme({
     h2: {
       fontSize: "2.25rem",
       "@media (max-width:600px)": {
-        fontSize: "2rem",
+        fontSize: "1.5rem",
       },
       color: "#3D2521",
       fontWeight: "400",
@@ -64,7 +65,7 @@ const theme = createTheme({
     h4: {
       fontSize: "1.75rem",
       "@media (max-width:600px)": {
-        fontSize: "1.5rem",
+        fontSize: "1.2rem",
       },
       fontWeight: "400",
       // wordWrap: 'normal',
@@ -99,7 +100,7 @@ const theme = createTheme({
           border: "none",
           boxShadow: "none",
           fontFamily: "Bona Nova",
-          fontSize: "0.8rem",
+          fontSize: "0.9rem",
           "@media (min-width:600px)": {
             fontSize: "1rem",
           },
@@ -132,11 +133,11 @@ const theme = createTheme({
         },
         outlined: {
           background: "none",
-          border: "2px solid #3D2521",
+          border: "1.5px solid #3D2521",
           boxShadow: "none",
           fontFamily: "Bona Nova",
           color: "#3D2521",
-          fontSize: "0.8rem",
+          fontSize: "1rem",
           "@media (min-width:600px)": {
             fontSize: "1rem",
           },
@@ -269,8 +270,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
+      <Paper sx={{backgroundColor: "#FFF6F3"}}>
         <Header />
-        <Box className="body">
+        <Box className="body" style={{backgroundColor:"#FFFFFF"}}>
         {/* <Router> */}
             <Routes>
               <Route
@@ -308,6 +310,12 @@ function App() {
                 exact
                 path="/Event"
                 element={<Event />}
+              />
+
+              <Route
+                exact
+                path="/Room"
+                element={<Room />}
               />
 
               <Route
@@ -350,6 +358,7 @@ function App() {
           {/* <Gallery /> */}
         </Box>
         <Footer />
+        </Paper>
       </div>
     </ThemeProvider>
   );

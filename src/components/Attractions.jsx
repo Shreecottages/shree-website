@@ -15,7 +15,7 @@ export default function Attractions(){
     };
 
     return(
-        <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:"5vw 10vw"}}>
+        <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:{xs:"10vw 5vw",md:"5vw 10vw"}}}>
                 <Typography variant="h2">Nearby Attraction</Typography>
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column">
@@ -32,9 +32,9 @@ export default function Attractions(){
                                                                             }}>
                             <Typography variant="h2" sx={{mb:"1.5vw",'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.8rem"}}}>Gir Jungle Safari</Typography>
                             <Typography variant="body1" sx={{textAlign: {xs:"left", md:"justify"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"0.9rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</Typography>
-                            <Typography variant="h4" sx={{m:"1vw 0vw",'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.5rem"}}}>15 km far</Typography>
+                            <Typography variant="h4" sx={{m:{xs:"2vw 0vw 4vw 0vw",md:"1vw 0vw"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.5rem"}}}>15 km far</Typography>
                             <Box>
-                                <Button {...buttonProps} sx={{mr:'1.5vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                <Button {...buttonProps} sx={{mr:{xs:"2vw",md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                 <Button {...buttonProps} sx={{'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                             </Box>
                         </Box>
@@ -52,15 +52,15 @@ export default function Attractions(){
                                                                                         }}>
                             <Typography variant="h2" sx={{mb:"1.5vw",'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.8rem"}}}>Diu</Typography>
                             <Typography variant="body1" sx={{ textAlign: {xs:"left", md:"justify"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"0.9rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</Typography>
-                            <Typography variant="h4" sx={{m:"1vw 0vw",'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.5rem"}}}>83 km far</Typography>
+                            <Typography variant="h4" sx={{m:{xs:"2vw 0vw 4vw 0vw",md:"1vw 0vw"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1.5rem"}}}>83 km far</Typography>
                             <Box display="flex" sx={{ flexDirection: { xs: "row", md: "row-reverse"}, justifyContent:"left"}}>
-                                <Button {...buttonProps} sx={{mr:'1vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                <Button {...buttonProps} sx={{mr:'1vw','@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                <Button {...buttonProps} sx={{mr:{xs:"2vw",md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                <Button {...buttonProps} sx={{mr:{xs:"2vw",md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                             </Box>
                         </Box>
                     </Box>
                 </Box>
-                <Box sx={{mt:{xs:"0vw",md:"4vw"}}}>
+                <Box sx={{mt:{xs:"4vw",md:"4vw"}}}>
                     <Button variant="outlined" sx={{alignSelf:"center"}}>Read more  <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                 </Box>
         </Box>
