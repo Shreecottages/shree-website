@@ -1,0 +1,28 @@
+.room::after{
+    bottom: 2px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    left: 0.1em;
+    position: absolute;
+    background: var(--highlight);
+    opacity: 0.6;
+    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 0rem;
+    transition: 0.5s;
+}
+.room:hover::after{
+    opacity: 0.9;
+    width: 1.5rem;
+}
+.room.active::after{
+    bottom: 2px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    left: 0.1em;
+    position: absolute;
+    background: var(--highlight);
+    opacity: 0.9;
+    width: 1.5rem;
+}

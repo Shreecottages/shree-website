@@ -55,12 +55,12 @@ export default function Ecard({ itineraries, activities }){
     }
 
     return(
-        <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:"5vw 10vw", backgroundColor: "common.white"}}>
+        <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:{xs:"10vw 5vw",md:"5vw 10vw"}, backgroundColor: "common.white"}}>
         <Typography variant="h2">Want to Organize</Typography>
         <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
-        <Box display='flex' sx={{alignItems: 'center', flexDirection:{xs:"column",sm:"column",md:"row"}}}>
+        <Box display='flex' sx={{alignItems: 'center', flexDirection:{xs:"column",md:"row"}}}>
         {itinerariesPerCard.map((itinerary, i) => (
-        <Card key={itinerary._id} display="flex" style={{padding:isSmallScreen? isSame(i)?"":"1vw" :isSame(i)?"":"0vw 0vw 1vw 0vw", borderRadius:"20px", margin:"1vw",boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'}} >
+        <Card key={itinerary._id} display="flex" style={{padding:isSmallScreen? isSame(i)?"":"2vw 1vw" :isSame(i)?"":"0vw 0vw 1vw 0vw", borderRadius:isSmallScreen?"10px":"20px", margin:"1vw",boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'}} >
             <ExpandMore
                 expand={expandedId}
                 aria-expanded={expandedId}
@@ -70,12 +70,12 @@ export default function Ecard({ itineraries, activities }){
               aria-expanded={expandedId === i} 
             sx={{display:"flex",height:{xs:"100%",sm:"100%",md:"30vw",lg:"25vw"},width:{xs:"80vw",sm:"80vw",md:"100%"}, flexDirection:{xs:isSame(i) ? "column" : "row", sm:isSame(i) ? "column" : "row",md: isSame(i) ? "row" : "column-reverse"}}}>
               <Box sx={{width:{xs:isSame(i) ? "100%": "20%",sm:isSame(i) ? "100%": "20%",md:isSame(i) ? "60%" : "100%",lg:isSame(i) ? "55%" : "100%",xl:isSame(i) ? "60%" : "100%"}}}>
-                <CardMedia component="img" src={itinerary.Eimg} alt="img" sx={{clipPath:isSame(i) ? "": "circle(50%)", width:{xs:isSame(i) ? "100%" : "101%",sm:isSame(i) ? "100%" : "101%",md:isSame(i) ? "100%" : "60%"}, height:"100%",m: {xs:isSame(i)?"":"0vw",sm:isSame(i)?"":"0vw",md:isSame(i) ? "" : "0vw 2vw" }}}/>
+                <CardMedia component="img" src={itinerary.Eimg} alt="img" sx={{alignSelf:"center",clipPath:isSame(i) ? "": "circle(50%)", width:{xs:isSame(i) ? "100%" : "80%",sm:isSame(i) ? "100%" : "80%",md:isSame(i) ? "100%" : "60%"}, height:"100%",m: {xs:isSame(i)?"":"0vw",md:isSame(i) ? "" : "0vw 2vw" }}}/>
               </Box>
               {/* <CardHeader> */}
               <Box sx={{
                     display:"flex", 
-                    flexDirection:{xs:"column",sm:"column",md:isSame(i) ? "column" : "column-reverse"},
+                    flexDirection:{xs:isSame(i)?"column" :"row",md:isSame(i) ? "column" : "column-reverse"},
                     justifyContent:{xs:"center",sm:"center",md:isSame(i) ? "left" : "space-between"}, 
                     textAlign:{xs:"left",sm:"left",md:isSame(i) ? "left" : "center"}, 
                     width:{xs:isSame(i)? "100%" : "80%",sm:isSame(i)? "100%" : "80%",md:isSame(i) ? "40%" : "100%",lg:isSame(i) ? "45%" : "100%",xl:isSame(i) ? "40%" : "100%"},
@@ -84,14 +84,18 @@ export default function Ecard({ itineraries, activities }){
                     // overflowY:isSame(i)?"scroll":"clip",
                   }} >
                   <Typography variant="h4" sx={{
-                                            fontSize:{xs:"1.5rem",sm:"1.5rem",md:"1.7vw",lg:"1.7vw",xl:"1.7rem"},
+                                            textAlign:"left",
+                                            alignSelf:"center",
+                                            fontSize:{xs:"1.2rem",sm:"1.5rem",md:"1.75vw",lg:"1.7vw",xl:"1.7rem"},
                                             transform:{xs:"",sm:"",md:isSame(i) ? "" : "rotate(-90deg)"}, 
-                                            m:{xs:isSame(i) ? "0vw" : "",sm:isSame(i) ? "0vw" : "",md:isSame(i) ? "" : "5vw 0vw 6vw -2.5vw"}, 
+                                            m:{xs:isSame(i) ? "1vw 0vw 0vw 0vw" : "",md:isSame(i) ? "" : "5vw 0vw 8vw 0vw",lg:isSame(i) ? "" : "5vw 0vw 7vw 0vw"}, 
                                             width:isSame(i) ? "100%" : "150%"
                                           }}>{itinerary.event}</Typography>
-                  <Box sx={{mt:isSame(i)?"-1rem":""}}><img src={require(`../images/events/circle-arrow-${isSmallScreen?'r':isSame(i)? 'r' : 'u'}.png`)} style={{width:isSmallScreen?isSame(i)?"15%":"20%":isSame(i)?"35%":"",height:isSmallScreen?isSame(i)?"30%":"20%":isSame(i)?"":"75%"}} /></Box>
+                  {isSame(i) ?
+                  <Box sx={{width:{xs:"10vw",sm:"7vw",md:"5vw"},alignSelf:"left",height:"2vw",backgroundImage:`url(${require(`../images/events/circle-arrow-${isSmallScreen?'r-small':'r'}.png`)})`, backgroundRepeat:"no-repeat",backgroundSize:"contain"}}></Box>
+                  :<Box sx={{mb:{xs:"0vw",md:"1vw"},width:{xs:"25vw",sm:"20vw",md:"10vw"},alignSelf:"center",height:{xs:"4vw",sm:"3vw",md:"4vw",lg:"3vw"},backgroundImage:`url(${require(`../images/events/circle-arrow-${isSmallScreen?'r-small':'u'}.png`)})`, backgroundRepeat:"no-repeat",backgroundPosition:{xs:"center",md:"center top"},backgroundSize:"contain"}}></Box>}
                   <Collapse in={expandedId === i} timeout="auto" unmountOnExit>
-                      <CardContent sx={{p:'0',fontSize:{xs:"1rem",sm:"1rem",md:"1.1vw",lg:"1.1vw",xl:"1.2rem"}}}>
+                      <CardContent sx={{p:'0',fontSize:{xs:"0.9rem",sm:"1rem",md:"1.1vw",lg:"1.1vw",xl:"1.2rem"}}}>
                           <div>{itinerary.desc}</div>
                       </CardContent>
                   </Collapse>

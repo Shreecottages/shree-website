@@ -38,7 +38,7 @@ export default function Header(props) {
                 justifyContent: 'flex-end',
                 pr: '10vw',
                 backgroundColor: 'secondary.main',
-                
+                display:{xs:"none",md:"flex"}
             }}>
             <Stack direction={'row'} sx={{alignItems:'center'}}>
                 <CallIcon sx={{display:'inline', color:"common.white",width:'2vw' ,padding: '0.1vw 0.1vw 0px', marginRight: '5px'}}/>
@@ -71,7 +71,7 @@ export default function Header(props) {
               <NavLink to="/AboutUsMain" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">About</ListItemText></ListItemButton></NavLink>
               <NavLink to="/gallery" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton></NavLink>
               <NavLink to="/Event" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton></NavLink>
-              <NavLink to="" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/Room" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
               <Link style={{textDecoration:"none", color: '#3D2521',justifyContent:"center"}}><ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="more">More <KeyboardArrowDownIcon sx={{fontSize:{md:"1rem",lg:"1.2rem"}}}/></ListItemText></ListItemButton></Link>
               <ListItemButton><Button variant="contained" sx={{
                 fontSize: '1.4rem',
@@ -126,7 +126,7 @@ export default function Header(props) {
               <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
               <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
               <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Room" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
               <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></ListItemText></ListItemButton>
               <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></ListItemText></ListItemButton>
               {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}

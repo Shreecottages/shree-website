@@ -14,7 +14,7 @@ const yt = require('../images/yt.png');
 export default function Footer(){
     
     return(
-        <Box flexDirection="column" className="footer" sx={{bottom:'0',right:'0',left:'0', p:"5vw 10vw 0vw 10vw", display:"flex" }}>
+        <Box flexDirection="column" className="footer" sx={{bottom:'0',right:'0',left:'0', p:{xs:"10vw 5vw",md:"5vw 10vw 0vw 10vw"}, display:"flex" }}>
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
                 <img src={logo_white} alt="" className="logo-white"/>
@@ -39,7 +39,7 @@ export default function Footer(){
                     <Box display="flex" flexDirection={"column"} sx={{mr:'5vw'}}>
                         <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Home</Typography></Link>
                         <Link to="/AboutUsMain"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>About</Typography></Link>
-                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Rooms</Typography></Link>
+                        <Link to="/Room"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Rooms</Typography></Link>
                         <Link to="/Event"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Events</Typography></Link>
                     </Box>
                     <Box display="flex" flexDirection={"column"}>
@@ -58,7 +58,7 @@ export default function Footer(){
                         }}}>Reach Us</Typography>
                 <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
                     <CallOutlinedIcon sx={{
-                        width:{xs:"1rem",md:"6%"}, 
+                        width:{xs:"1.5rem",md:"6%"}, 
                         mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'},
                         mr:'5px',
                         '@media(max-width: 350px)':{
@@ -73,7 +73,7 @@ export default function Footer(){
                 </Box>
                 <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
                     <MailOutlineOutlinedIcon sx={{
-                        width:{xs:"1rem",md:"6%"}, 
+                        width:{xs:"1.5rem",md:"6%"}, 
                         mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
                         mr:'5px',
                         '@media(max-width: 350px)':{
@@ -87,7 +87,7 @@ export default function Footer(){
                 </Box>
                 <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
                     <PlaceOutlinedIcon sx={{
-                        width:{xs:"1rem",md:"6%"}, 
+                        width:{xs:"1.5rem",md:"6%"}, 
                         mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
                         mr:'5px',
                         '@media(max-width: 350px)':{

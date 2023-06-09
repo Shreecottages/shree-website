@@ -59,7 +59,7 @@
     right: 0;
 }
 .MuiMenu-root ul{
-    background: linear-gradient(180deg, rgba(255, 226, 216, 0) 0%, #FFF6F3 18.21%, #FFF6F3 100%);
+    background:  #FFF6F3;
     box-shadow: none;
     border: none;
     border-radius: 0px;
