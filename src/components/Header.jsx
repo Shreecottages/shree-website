@@ -73,7 +73,8 @@ export default function Header(props) {
               <NavLink to="/Event" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton></NavLink>
               <NavLink to="/Room" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
               <Link style={{textDecoration:"none", color: '#3D2521',justifyContent:"center"}}><ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="more">More <KeyboardArrowDownIcon sx={{fontSize:{md:"1rem",lg:"1.2rem"}}}/></ListItemText></ListItemButton></Link>
-              <ListItemButton><Button variant="contained" sx={{
+              <ListItemButton><Button variant="contained" onClick={()=> window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")} 
+              sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)':{
                   fontSize: '1.2rem'
@@ -106,7 +107,8 @@ export default function Header(props) {
          >
          <Box className="logo"><img src={logo} alt=""/></Box>
          <Box sx={{alignSelf:"center"}}>
-          <Button variant="contained" sx={{
+          <Button variant="contained" onClick={()=> window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")} 
+          sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)':{
                   fontSize: '1.2rem'

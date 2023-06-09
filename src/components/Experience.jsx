@@ -109,8 +109,8 @@ export default function Experience(){
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://girlion.gujarat.gov.in/Index.aspx", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/NSe7nZAwPA7V7Keo9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                             </Box>
                     </Box>
@@ -134,8 +134,8 @@ export default function Experience(){
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>26 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://girlionsafari.com/", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/YvZXTVX1YJMRQNaV9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -183,8 +183,8 @@ export default function Experience(){
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://www.google.com/maps/place/Jamzir+Waterfall/@20.9666822,70.7663831,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPtzBd_HCQIkye_2Vpci_0Xdir-T3N2SVgwyvPf!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPtzBd_HCQIkye_2Vpci_0Xdir-T3N2SVgwyvPf%3Dw397-h298-k-no!7i12032!8i9024!4m9!3m8!1s0x3be2c3d24294e4b3:0xb3d7deb5b1732aa0!8m2!3d20.9666822!4d70.7663831!10e5!14m1!1BCgIgAQ!16s%2Fg%2F1tvw3d8z?entry=ttu", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/NN4NnkX38q83MQpw7", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -209,8 +209,8 @@ export default function Experience(){
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://en.wikipedia.org/wiki/Kankai", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/ztMSavatz4sctPWe7", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -237,8 +237,8 @@ export default function Experience(){
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://somnath.org/", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/yBWpUtSZex5BvLUX9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
@@ -263,8 +263,8 @@ export default function Experience(){
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
-                                    <Button variant="contained" sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://en.wikipedia.org/wiki/Tulsishyam", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/zjyNibvhrPLyqLJJ9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>
