@@ -9,7 +9,7 @@ import { Divider } from "@mui/material";
 
 // import LeftSvg from '../assets/AboutFlowerLeft.png';
 // import RightSvg from '../assets/AboutFlowersRight.png';
- 
+
 const AboutUsTop = require("../../assets/AboutTopImg.png");
 const AboutFlowerLeft = require("../../assets/AboutFlowerLeft.png");
 const AboutFLowerRight = require("../../assets/AboutFlowersRight.png");
@@ -28,7 +28,7 @@ const Jumbotron = () => {
         container: {
             display: 'flex',
         },
-        container: { 
+        container: {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',

@@ -141,7 +141,7 @@ function MyComponent() {
                             alt="green iguana"
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
+                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}> 
                             <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
                                 Wedding
                             </Typography>
