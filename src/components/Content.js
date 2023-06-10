@@ -56,7 +56,7 @@ function MyComponent() {
                             height: '23vw',
                         }}
                     >
-                        <Typography className="desc1" sx={{ background: '#FFFFFF', borderRadius: '20px 0px 0px 20px' }}>
+                        <Typography className="desc1" sx={{ background: '#FFFFFF' }}>
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '1.5rem', ml: '4rem', borderRadius: '0px 20px 20px 0px' }}>
                                 Conferences
                             </Typography>
@@ -72,7 +72,7 @@ function MyComponent() {
                                 src={logo2}
                                 className="image1"
                                 alt="Logo"
-                                style={{ borderRadius: '20px 0px 0px 20px', width: '40vw', height: '23vw' }}
+                                style={{ borderRadius: '0px 20px 20px 0px', width: '40vw', height: '23vw' }}
                             />
                         </Typography>
                     </Box>
@@ -122,23 +122,26 @@ function MyComponent() {
                         mt: '4.6rem',
                     }}
                 >
-                    Call us
+                    Call us <svg style={{ marginLeft: "5px" }} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.333008 7.76666L0.333008 6.09999L10.333 6.09999L5.74967 1.51666L6.93301 0.333325L13.533 6.93333L6.93301 13.5333L5.74967 12.35L10.333 7.76666L0.333008 7.76666Z" fill="#3D2521" />
+                    </svg>
+
                 </Button>
             </Container>
 
             <Container className='mobileStack' sx={{ paddingTop: '4rem' }} mt={2}>
 
-                <Card mt={2} className="box" >
-                    <CardActionArea>
+                <Card mt={2} className="box" sx={{ borderRadius: '10px 10px 0px 0px' }} >
+                    <CardActionArea sx={{ borderRadius: '10px 10px 0px 0px' }}>
                         <CardMedia
                             mt={5}
                             component="img"
                             width='100vw'
                             image={logo1}
                             alt="green iguana"
-                            style={{ borderRadius: '20px 0px 0px 20px' }}
+                            sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px' }}>
+                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
                             <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px' }} >
                                 Wedding
                             </Typography>
@@ -152,17 +155,17 @@ function MyComponent() {
                     </CardActionArea>
                 </Card>
 
-                <Card mt={2} className="box" >
-                    <CardActionArea>
+                <Card mt={2} className="box" sx={{ borderRadius: '10px 10px 0px 0px' }} >
+                    <CardActionArea sx={{ borderRadius: '10px 10px 0px 0px' }}>
                         <CardMedia
                             mt={5}
                             component="img"
                             width='100vw'
                             image={logo2}
                             alt="green iguana"
-                            style={{ borderRadius: '20px 0px 0px 20px' }}
+                            sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px' }}>
+                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
                             <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px' }} >
                                 Conferences
                             </Typography>
@@ -175,17 +178,17 @@ function MyComponent() {
                         </CardContent>
                     </CardActionArea>
                 </Card>
-                <Card mt={2} className="box" >
-                    <CardActionArea>
+                <Card mt={2} className="box" sx={{ borderRadius: '10px 10px 0px 0px' }} >
+                    <CardActionArea sx={{ borderRadius: '10px 10px 0px 0px' }}>
                         <CardMedia
                             mt={5}
                             component="img"
                             width='100vw'
                             image={logo3}
                             alt="green iguana"
-                            style={{ borderRadius: '20px 0px 0px 20px' }}
+                            sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px' }}>
+                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
                             <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px' }} >
                                 Event Planning
                             </Typography>
@@ -214,7 +217,10 @@ function MyComponent() {
                         mt: '4.6rem',
                     }}
                 >
-                    Call us
+                    Call us <svg style={{ marginLeft: "5px" }} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.333008 7.76666L0.333008 6.09999L10.333 6.09999L5.74967 1.51666L6.93301 0.333325L13.533 6.93333L6.93301 13.5333L5.74967 12.35L10.333 7.76666L0.333008 7.76666Z" fill="#3D2521" />
+                    </svg>
+
                 </Button>
             </Container>
 
