@@ -123,7 +123,7 @@ export default function Review(){
                             m:"1vw 0vw 2vw 0vw"
                         }}      
                     />
-                <Button variant="outlined">Write a Review <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button>
+                <Button variant="outlined" onClick={()=> window.open("https://search.google.com/local/writereview?placeid=ChIJ0fEovSfK4jsRxrcm9yXgCeY&source=g.page.m.rc._&laa=merchant-web-dashboard-card", "_blank")}>Write a Review <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button>
         </Box>
         
         </Box>

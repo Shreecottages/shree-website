@@ -94,6 +94,7 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
+        textTransform:"none",
         contained: {
           background: "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%);",
           color: "#3D2521",

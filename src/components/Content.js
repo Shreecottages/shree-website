@@ -109,7 +109,7 @@ function MyComponent() {
 
 
 
-                <Button
+                <Button variant="contained"
                     sx={{
                         background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)',
                         borderRadius: '5px',
@@ -204,16 +204,16 @@ function MyComponent() {
 
 
 
-                <Button
+                <Button variant="contained"
                     sx={{
-                        background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)',
-                        borderRadius: '5px',
-                        color: '#3D2521',
-                        padding: '10px 30px',
-                        textAlign: 'center',
-                        margin: 'auto',
-                        display: 'flex',
-                        justifyContent: 'center',
+                        // background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)',
+                        // borderRadius: '5px',
+                        // color: '#3D2521',
+                        // padding: '10px 30px',
+                        // textAlign: 'center',
+                        // margin: 'auto',
+                        // display: 'flex',
+                        // justifyContent: 'center',
                         mt: '4.6rem',
                     }}
                 >
