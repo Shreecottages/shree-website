@@ -142,10 +142,10 @@ function MyComponent() {
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
                         <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px' }} >
+                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
                                 Wedding
                             </Typography>
-                            <Typography >
+                            <Typography sx={{ fontFamily: 'Poppins' }}>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                                 type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
@@ -166,10 +166,10 @@ function MyComponent() {
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
                         <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px' }} >
+                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
                                 Conferences
                             </Typography>
-                            <Typography >
+                            <Typography sx={{ fontFamily: 'Poppins' }}>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                                 type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
@@ -189,10 +189,10 @@ function MyComponent() {
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
                         <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px' }} >
+                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
                                 Event Planning
                             </Typography>
-                            <Typography >
+                            <Typography sx={{ fontFamily: 'Poppins' }}>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                                 type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
