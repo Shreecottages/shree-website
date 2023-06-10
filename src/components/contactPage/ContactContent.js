@@ -27,7 +27,7 @@ const ContactContent = () => {
                             <Typography variant="h4" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', fontWeight: '400', mt: '2rem' }}>Get In Touch</Typography>
 
                             <Box mt={4}>
-                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', fontSize: '20px', border: '1px solid #000000', boxShadow: 'inset 0px -4px 10px rgba(61, 37, 33, 0.2)', borderRadius: '5px' }} placeholder="  Enter text" />
+                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', fontSize: '20px', border: '1px solid #000000', boxShadow: 'inset 0px -4px 10px rgba(61, 37, 33, 0.2)', borderRadius: '5px', padding: '16px 0px 16px 16px'}} placeholder="  Enter text" />
                             </Box>
 
                             <Box mt={4}>
