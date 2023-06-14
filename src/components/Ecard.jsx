@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardMedia, Collapse, Box, IconButton, Divider,CardContent, CardActions, Typography, Button, useMediaQuery } from "@mui/material";
 import { styled } from '@mui/system';
-import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 
 
 
@@ -12,24 +11,23 @@ export default function Ecard({ itineraries, activities }){
     const itinerariesPerCard = [{ _id: "1",
                                     Eimg:require("../images/events/wed.png"),
                                     event:"Wedding",
-                                    desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination." 
+                                    desc:"Create cherished memories with a picture-perfect wedding at Shree Cottages. Our experienced team will ensure every detail is flawlessly executed, making your special day truly magical." 
                                 }, 
                                 { _id: "2",
                                     Eimg:require("../images/events/bday.png"),
                                     event:"Birthday Party",
-                                    desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination."
+                                    desc:"Celebrate your special day in style at Shree Cottages. From themed decorations to delectable treats, we'll create an unforgettable birthday experience tailored to your desires."
                                 }, 
                                 { _id: "3",
                                     Eimg:require("../images/events/corp.png"),
                                     event:"Corperate Event",
-                                    desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination." 
-                            
+                                    desc:"Host a successful and productive corporate event amidst the serene surroundings of Shree Cottages. Our state-of-the-art facilities and professional services guarantee a seamless and memorable experience." 
                                 },
                                 {
                                     _id:"4",
                                     Eimg:require("../images/events/manag.png"),
                                     event:"Event Planning",
-                                    desc:"Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly heavenly for you and your loved ones. It's certainly the perfect wedding destination."
+                                    desc:"Trust our expert event planners to bring your vision to life. Whether it's a grand gala or an intimate gathering, we will handle every aspect with precision and creativity, ensuring a remarkable event."
                                 }
                             ];
 
@@ -86,16 +84,16 @@ export default function Ecard({ itineraries, activities }){
                   <Typography variant="h4" sx={{
                                             textAlign:"left",
                                             alignSelf:"center",
-                                            fontSize:{xs:"1.2rem",sm:"1.5rem",md:"1.75vw",lg:"1.7vw",xl:"1.7rem"},
+                                            fontSize:{xs:"1.2rem",sm:"1.5rem",md:"1.75vw",lg:"1.7vw",xl:"1.7vw"},
                                             transform:{xs:"",sm:"",md:isSame(i) ? "" : "rotate(-90deg)"}, 
-                                            m:{xs:isSame(i) ? "1vw 0vw 0vw 0vw" : "",md:isSame(i) ? "" : "5vw 0vw 8vw 0vw",lg:isSame(i) ? "" : "5vw 0vw 7vw 0vw"}, 
+                                            m:{xs:isSame(i) ? "1vw 0vw 0vw 0vw" : "0px",md:isSame(i) ? "0px" : "5vw 0vw 8vw 0vw",lg:isSame(i) ? "0px" : "5vw 0vw 7vw 0vw"}, 
                                             width:isSame(i) ? "100%" : "150%"
                                           }}>{itinerary.event}</Typography>
                   {isSame(i) ?
                   <Box sx={{width:{xs:"10vw",sm:"7vw",md:"5vw"},alignSelf:"left",height:"2vw",backgroundImage:`url(${require(`../images/events/circle-arrow-${isSmallScreen?'r-small':'r'}.png`)})`, backgroundRepeat:"no-repeat",backgroundSize:"contain"}}></Box>
                   :<Box sx={{mb:{xs:"0vw",md:"1vw"},width:{xs:"25vw",sm:"20vw",md:"10vw"},alignSelf:"center",height:{xs:"4vw",sm:"3vw",md:"4vw",lg:"3vw"},backgroundImage:`url(${require(`../images/events/circle-arrow-${isSmallScreen?'r-small':'u'}.png`)})`, backgroundRepeat:"no-repeat",backgroundPosition:{xs:"center",md:"center top"},backgroundSize:"contain"}}></Box>}
                   <Collapse in={expandedId === i} timeout="auto" unmountOnExit>
-                      <CardContent sx={{p:'0',fontSize:{xs:"0.9rem",sm:"1rem",md:"1.1vw",lg:"1.1vw",xl:"1.2rem"}}}>
+                      <CardContent sx={{p:'0',fontSize:{xs:"0.9rem",sm:"1rem",md:"1.1vw",lg:"1.1vw",xl:"1.1vw"}}}>
                           <div>{itinerary.desc}</div>
                       </CardContent>
                   </Collapse>

@@ -8,46 +8,50 @@ import '../styles/Homepage.css';
 const steps = [
     {
       label: 'Room T1',
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
+      description: 'Located on the ground floor of our charming cottages, Room T1 offers comfortable accommodation with all necessary amenities. Enjoy a convenient and delightful stay surrounded by the natural beauty of our resort.',
       image: ['room1.png','room1.png','room1.png']
     },
     {
         label: 'Room T2',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
+        description: 'Situated on the first floor of our cottages, Room T2 provides a gallery with a picturesque garden view. Immerse yourself in tranquility while enjoying top-notch amenities, creating a perfect retreat for relaxation and rejuvenation.',
         image: ['room1.png','room1.png']
     },
     {
         label: 'Room T3',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
+        description: 'Nestled near our serene garden, Room T3 offers a peaceful and idyllic setting for your stay. Experience ultimate comfort and convenience with all amenities provided, ensuring a delightful and memorable stay at Shree Cottages.',
         image: ['room1.png','room1.png','room1.png','room1.png']
     },
   ];
 
 const CSlider = () =>{
     const [activeStep, setActiveStep] = React.useState(0);
+    const [activeImg, setActiveImg] = React.useState(0);
     const maxSteps = steps.length;
     const maxImg = steps[activeStep].image.length;
     
-    const [activeImg, setActiveImg] = React.useState(0);
     const handleNext = () => {
         setActiveImg((prevActiveImg) => prevActiveImg + 1);
+        console.log("Img = ${}",activeImg);
     };
 
     const handleBack = () => {
         setActiveImg((prevActiveImg) => prevActiveImg - 1);
+        console.log(activeImg);
     };
 
     const handleNextStep = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        console.log(activeStep);
     };
     const handleBackStep = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
+        console.log(activeStep);
     };
 
 
     return(
         <>
-            <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:{xs:"10vw 5vw",md:"5vw 10vw"}, backgroundColor: "primary.main"}}>
+            <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" sx={{padding:{xs:"10vw 5vw",md:"5vw 10vw"}, backgroundColor: "primary.main",maxWidth:"100vw",overflowX:"clip"}}>
                 <Typography variant="h2">The Stay</Typography>
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column" sx={{alignItems: 'center'}}>
@@ -125,7 +129,7 @@ const CSlider = () =>{
                         <Box display="flex" flexDirection="column" sx={{width: {xs: '100%',md:'40%'}, p:{xs:'5vw 1rem', md:'2vw 3vw'},textAlign:{xs:"center",md:"left"},alignItems:{xs:"center",md:"normal"}}}>
                             <Typography variant="h4" sx={{fontSize:{md:'2vw',lg:"1.7rem"}}}>{steps[activeStep].label}</Typography>
                             <Typography variant="body1" sx={{m:'2.5vw 0vw',fontSize:{md:'1.2vw'}}}>{steps[activeStep].description}</Typography>
-                            <Button variant="contained" sx={{fontSize:{md:'1.1vw'}, width: {xs:'6rem',sm:'7.5rem',md:'8.15vw'}}} onClick={()=> window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")}>Book now</Button>
+                            <Button variant="contained" sx={{fontSize:{md:'1.1vw'}, width: {xs:'6rem',sm:'7.5rem',md:'8.5vw',lg:'8.15vw'}}} onClick={()=> window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")}>Book now</Button>
                         </Box>
                     </Paper>
                     <MobileStepper
