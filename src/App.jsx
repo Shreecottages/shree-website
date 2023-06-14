@@ -16,6 +16,8 @@ import ImageGallery from "./components/FarmImageGallery/ImageGallery";
 import ImageGalleryView from "./components/FarmImageGallery/ImageGalleryView";
 import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./SmoothScroll";
+import SmoothScroll from "./SmoothScroll";
 
 
 const theme = createTheme({
@@ -275,6 +277,7 @@ function App() {
         <Header />
         <Box className="body" style={{backgroundColor:"#FFFFFF"}}>
         {/* <Router> */}
+            <SmoothScroll>
             <Routes>
               <Route
                 exact
@@ -331,6 +334,7 @@ function App() {
                 element={<Contact />}
               />
             </Routes>
+            </SmoothScroll>
         {/* </Router> */}
           {/* <Homepage /> */}
           {/* <AboutUs/> */}

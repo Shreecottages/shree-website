@@ -13,35 +13,35 @@ const AboutFlowerLeft = require("../assets/AboutFlowerLeft.png");
 const steps = [
     {
         label: 'Room T1',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
+        description: `Indulge in the comfort and convenience of Room T1 at Shree Cottages. Located on the ground floor of our cottages, this room offers a perfect blend of relaxation and necessary amenities. Immerse yourself in the serene ambiance and enjoy a restful stay. Whether it's the cozy interiors or the well-appointed facilities, Room T1 ensures a delightful experience. Unwind and make the most of your time in this inviting space, designed to provide utmost comfort during your stay at Shree Cottages.`,
         image: ['room1.png', 'room1.png', 'room1.png'],
         amenities: ['24/7 Generator Power-Backup', 'Mineral Water', 'Makeup / Shaving Mirror',
             'Complimentary Wi-Fi', 'Housekeeping', 'Curtains/Shades',
-            'Television', 'Wardrobe', 'Complete Bedding',
-            'Complimentary Breakfast', 'Independent Cottage', 'Daily Room Cleaning',
-            'Complimentary Bottled Water', '24/7 Hot Water', 'Dustbins',
+            'Wardrobe', 'Complete Bedding',
+            'Independent Cottage', 'Daily Room Cleaning',
+            '24/7 Hot Water', 'Dustbins',
             '24/7 Room Service', 'Ceiling Fan', 'Western Toilet Seat']
     },
     {
         label: 'Room T2',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
+        description: `Experience luxury and elegance in Room T2 at Shree Cottages. Situated on the first floor of our cottages, this room offers a gallery with a breathtaking garden view, providing a tranquil and picturesque atmosphere. Indulge in the spaciousness and enjoy the comfort of well-appointed amenities.  Whether it's admiring the scenic beauty or relaxing in the cozy interiors, Room T2 promises a memorable stay. Immerse yourself in the charm of this room and create lasting memories at Shree Cottages.`,
         image: ['room1.png', 'room1.png'],
         amenities: ['24/7 Generator Power-Backup', 'Mineral Water', 'Makeup / Shaving Mirror',
             'Complimentary Wi-Fi', 'Housekeeping', 'Curtains/Shades',
-            'Television', 'Wardrobe', 'Complete Bedding',
-            'Complimentary Breakfast', 'Independent Cottage', 'Daily Room Cleaning',
-            'Complimentary Bottled Water', '24/7 Hot Water', 'Dustbins',
+            'Wardrobe', 'Complete Bedding',
+            'Independent Cottage', 'Daily Room Cleaning',
+            '24/7 Hot Water', 'Dustbins',
             '24/7 Room Service', 'Ceiling Fan', 'Western Toilet Seat']
     },
     {
         label: 'Room T3',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.dummy text ever since the 1500.`,
+        description: `Discover the serenity and convenience of Room T3 at Shree Cottages. Located near the garden, this room offers a peaceful retreat amidst lush surroundings. Unwind and relax in the comfortable ambiance while enjoying the amenities provided. Whether it's enjoying the scenic views, immersing in nature, or simply rejuvenating in the well-appointed space, Room T3 ensures a memorable stay. Experience tranquility and comfort in this delightful room, designed to enhance your stay at Shree Cottages.`,
         image: ['room1.png', 'room1.png', 'room1.png', 'room1.png'],
         amenities: ['24/7 Generator Power-Backup', 'Mineral Water', 'Makeup / Shaving Mirror',
             'Complimentary Wi-Fi', 'Housekeeping', 'Curtains/Shades',
-            'Television', 'Wardrobe', 'Complete Bedding',
-            'Complimentary Breakfast', 'Independent Cottage', 'Daily Room Cleaning',
-            'Complimentary Bottled Water', '24/7 Hot Water', 'Dustbins',
+            'Wardrobe', 'Complete Bedding',
+            'Independent Cottage', 'Daily Room Cleaning',
+            '24/7 Hot Water', 'Dustbins',
             '24/7 Room Service', 'Ceiling Fan', 'Western Toilet Seat']
     },
 ];
@@ -124,7 +124,7 @@ export default function Room() {
 
             {/* ---------------------Slider for different room -Content --------------------------------------------------------------------------------------------------------------------*/}
             <Box sx={{ backgroundColor: "primary.main", padding: { xs: "10vw 5vw", md: "5vw 10vw" } }}>
-                <Paper square elevation={0} sx={{ display: "flex", flexDirection: "column", bgcolor: 'common.white', borderRadius: { xs: "10px", md: "0px" } }}>
+                <Paper square elevation={0} sx={{ display: "flex", flexDirection: "column", bgcolor: 'common.white', borderRadius: { xs: "10px", md: "20px" },overflow:"clip" }}>
                     <Box sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
                         <Box sx={{
                             position: 'relative',

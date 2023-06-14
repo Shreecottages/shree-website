@@ -124,13 +124,13 @@ export default function Header(props) {
          </div>
          <div style={{display:"flex",flexDirection:"column",justifyContent:"center", textAlign:"center", alignItems:"center"}}>
          <List sx={{justifyContent:"center", textAlign:"center", alignSelf:"center"}} className="main-list">
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Room" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></ListItemText></ListItemButton>
-              <ListItemButton><ListItemText disableTypography className="ham-list"><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/" style={{textDecoration:"none", color: '#3D2521'}}>Home</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}>About</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/gallery" style={{textDecoration:"none", color: '#3D2521'}}>Gallery</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/Event" style={{textDecoration:"none", color: '#3D2521'}}>Events & Meetings</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/Room" style={{textDecoration:"none", color: '#3D2521'}}>Rooms</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></ListItemText></ListItemButton>
+              <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></ListItemText></ListItemButton>
               {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}
               
               
@@ -172,8 +172,8 @@ export default function Header(props) {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
                 >
-                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}>Experience</Link></MenuItem>
-                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}}>Contact us</Link></MenuItem>
+                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}><Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}} onClick={handleCloseUserMenu}>Experience</Link></MenuItem>
+                    <MenuItem sx={{fontFamily:"Bona Nova", fontSize:"1.4rem", '@media (max-width: 1100px)':{fontSize:"1rem"}}}><Link to="/contactPage/Contact" style={{textDecoration:"none", color: '#3D2521'}} onClick={handleCloseUserMenu}>Contact us</Link></MenuItem>
             </Menu>
     </AppBar>
 
