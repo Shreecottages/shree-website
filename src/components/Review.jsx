@@ -37,6 +37,54 @@ export default function Review(){
                 name: 'mitali vyas',
             }
         },
+        {
+            value: 5,
+            description: `Clean and spacious Rooms and surrounding(maintained lawn) and alot of parking place, sweeming pool is clean and maintain, but few lights are not working around sweeming pool. Somnath temple and Sasan...`,
+            prof: {
+                img: 'C4.png',
+                name: 'Nilesh Shirke',
+            }
+        },
+        {
+            value: 5,
+            description: `Great experience wedding function at this place.... Great atmosphere`,
+            prof: {
+                img: 'C5.png',
+                name: 'hirpara amit',
+            }
+        },
+        {
+            value: 5,
+            description: `Place is very cool. Very specious, a big parking area, children play area, swimming pool, big garden area.Also they arrange cultural activities in night at complimentary.I suggest to stay here as somnath is 25km from this place & Sasan...`,
+            prof: {
+                img: 'C6.png',
+                name: 'Varun Joshi',
+            }
+        },
+        {
+            value: 5,
+            description: `It's very reasonable to stay near somnath temple. Almost 15 km only from somnath temple. It's not a resort but kind of party plot for functions. But stay is good as per price.`,
+            prof: {
+                img: 'C7.png',
+                name: 'Dr Monica Patel',
+            }
+        },
+        {
+            value: 5,
+            description: `Excellent place to arrange your function…humble staff….nice service….overall great experience….:)`,
+            prof: {
+                img: 'C8.png',
+                name: 'Fenil Kaneriya',
+            }
+        },
+        {
+            value: 5,
+            description: `Very good party plot. Nice lawn, very good rooms and ample space. It is very clean and well maintained place. An ideal place for engagement, marriage and these kind of ceremonies.`,
+            prof: {
+                img: 'C9.png',
+                name: 'Nilesh Rathod',
+            }
+        },
       ];
 
     const [activeIndex, setActiveIndex] = React.useState(0);
@@ -68,11 +116,11 @@ export default function Review(){
         speed: 500,
         useCSS: true,
         useTransform: true,
-        afterChange: index => this.setCslide({cslide: index}),
-        // dots: true,
+        // afterChange: index => this.setCslide({cslide: index}),
+        dots: true,
         autoPlay: true,
         autoplaySpeed: 1000,
-        initialSlide: 1,
+        initialSlide: 0,
         // appendDots: dots => (
         //     <div className="slick-dots">
         //         <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -112,7 +160,7 @@ export default function Review(){
             </Slider> 
                 {/* </Carousel> */}
             </Box>
-            <MobileStepper
+            {/* <MobileStepper
                         variant="dots"
                         steps={maxIndex}
                         position="static"
@@ -122,7 +170,7 @@ export default function Review(){
                             justifyContent: 'center',
                             m:"1vw 0vw 2vw 0vw"
                         }}      
-                    />
+                    /> */}
                 <Button variant="outlined" onClick={()=> window.open("https://search.google.com/local/writereview?placeid=ChIJ0fEovSfK4jsRxrcm9yXgCeY&source=g.page.m.rc._&laa=merchant-web-dashboard-card", "_blank")}>Write a Review <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button>
         </Box>
         

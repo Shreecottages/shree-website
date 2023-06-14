@@ -16,6 +16,8 @@ const jamjir = require('../images/exp/jamjir.png');
 const k_b = require('../images/exp/k&b.png');
 const somnath = require('../images/exp/somnath.png');
 const tulsiShyam = require('../images/exp/tulsiShyam.png');
+const diu = require('../images/exp/diu.png');
+const junagadh = require('../images/exp/junagadh.png');
 const map_spot = require('../images/map-spot.png');
 
 export default function Experience(){
@@ -71,7 +73,7 @@ export default function Experience(){
                     width:"100%",
                     justifyContent:"center",
                 }}>
-                    <Box><img src={isSmallScreen?header1M:header1} style={{width:"100%"}}/></Box>
+                    <Box><img src={isSmallScreen?header1M:header1} style={{width:"100%",borderRadius:"10px"}}/></Box>
                     <Box sx={{padding:{xs:"0vw 4vw",md:"0vw 10vw"}, position:"relative", top:{xs:"-3rem",md:"-3.55rem"},marginBottom:{xs:"-1rem",md:"0rem"}}}>
                         <Typography variant="h2" sx={{
                                                     alignSelf:"center", 
@@ -106,8 +108,11 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Gir Jungle Safari</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Gir Jungle Safari is a fenced-off area within Gir
+                                    National Park where visitors can see Asiatic lions in their natural habitat.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>17 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
                                     <Button variant="contained" onClick={()=> window.open("https://girlion.gujarat.gov.in/Index.aspx", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                     <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/NSe7nZAwPA7V7Keo9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
@@ -131,8 +136,10 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Devaliya Safari Park</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>26 km far</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Devalia Safari Park is a small protected area of Gir Jungle Trail where visitors can see a variety of wildlife in their natural habitat.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>27 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
                                     <Button variant="contained" onClick={()=> window.open("https://girlionsafari.com/", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                     <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/YvZXTVX1YJMRQNaV9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
@@ -146,8 +153,8 @@ export default function Experience(){
                     width:"100%",
                     justifyContent:"center",
                 }}>
-                    <Box><img src={isSmallScreen?header2M:header2} style={{width:"100%"}}/></Box>
-                    <Box sx={{padding:{xs:"0vw 4vw",md:"0vw 10vw"}, position:"relative", top:{xs:"-2rem",md:"-3.55rem"}}}>
+                    <Box><img src={isSmallScreen?header2M:header2} style={{width:"100%",borderRadius:"10px"}}/></Box>
+                    <Box sx={{padding:{xs:"0vw 4vw",md:"0vw 10vw"}, position:"relative", top:{xs:"-2rem",sm:"-6vw",md:"-3.55rem"}}}>
                         <Typography variant="h2" sx={{
                                                     alignSelf:"center", 
                                                     textAlign:"center", 
@@ -180,8 +187,10 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Jamjir Waterfall</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Jamjir Waterfall is a 2-tiered waterfall in the Gir National Park, Gujarat, India. It is a popular tourist destination, especially during the monsoon season.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>34 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
                                     <Button variant="contained" onClick={()=> window.open("https://www.google.com/maps/place/Jamzir+Waterfall/@20.9666822,70.7663831,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPtzBd_HCQIkye_2Vpci_0Xdir-T3N2SVgwyvPf!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPtzBd_HCQIkye_2Vpci_0Xdir-T3N2SVgwyvPf%3Dw397-h298-k-no!7i12032!8i9024!4m9!3m8!1s0x3be2c3d24294e4b3:0xb3d7deb5b1732aa0!8m2!3d20.9666822!4d70.7663831!10e5!14m1!1BCgIgAQ!16s%2Fg%2F1tvw3d8z?entry=ttu", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                     <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/NN4NnkX38q83MQpw7", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
@@ -206,8 +215,10 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Kankai & Banej</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Kankai and Banej are two villages in the Gir National Park, Gujarat, India. They are popular tourist destinations for their temples, wildlife, and scenic beauty.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>39 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
                                     <Button variant="contained" onClick={()=> window.open("https://en.wikipedia.org/wiki/Kankai", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                     <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/ztMSavatz4sctPWe7", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
@@ -234,8 +245,10 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Somnath Temple</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Somnath Temple is a Hindu temple dedicated to Lord Shiva, located in Prabhas Patan, Gujarat, India. It is one of the 12 Jyotirlingas, the most sacred pilgrimage sites for Hindus.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>27 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
                                     <Button variant="contained" onClick={()=> window.open("https://somnath.org/", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                     <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/yBWpUtSZex5BvLUX9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
@@ -260,11 +273,71 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>TulsiShyam</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>15 km far</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Tulsishyam is a Hindu temple dedicated to Lord Vishnu, located in the Gir National Park, Gujarat, India. It is a popular tourist destination for its scenic beauty and hot water springs.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>85 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
                                     <Button variant="contained" onClick={()=> window.open("https://en.wikipedia.org/wiki/Tulsishyam", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
                                     <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/zjyNibvhrPLyqLJJ9", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                </Box>
+                        </Box>
+                    </Box>
+                </Box>
+                <Box sx={{display:"flex", flexDirection:{xs:"column",md:"row"}}}>
+                    <Box sx={{
+                        width:"100%",
+                        justifyContent:"center",
+                        margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
+                    }}>
+                        <Box><img src={diu} style={{width:"100%"}}/></Box>
+                        <Box flexDirection="column" textAlign="left" sx={{
+                                                                                m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
+                                                                                // display: {xs:"block", md:"flex"}, 
+                                                                                background:"linear-gradient(120.89deg, #FFE2D8 31.34%, #F2D0CD 100.05%, #E6C2C2 100.05%)",
+                                                                                padding: {xs:"3vw 4vw",md:"2vw 3vw"},
+                                                                                position: 'relative',
+                                                                                top:{xs:"-4.5rem",sm:"-6rem",md:"-6rem",xl:"-8.55rem"},
+                                                                                marginBottom:{xs:"-2.5rem",sm:"-4rem",md:"-4rem",xl:"-5.55rem"},
+                                                                                borderRadius:{xs:"10px",md:"20px"},
+                                                                                boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
+                                                                                }}>
+                                <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Diu</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    Diu is a small island in the Gulf of Khambhat, Gujarat, India. It is a popular tourist destination for its beaches, forts, and Portuguese architecture.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>83 km far</Typography>
+                                <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
+                                    <Button variant="contained" onClick={()=> window.open("https://diutourismgov.in", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/gzcRw5uYLoP43z1K6", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
+                                </Box>
+                        </Box>
+                    </Box>
+                    <Box sx={{
+                        width:"100%",
+                        justifyContent:"center",
+                        // margin:{xs:"0vw",md:"0vw 2vw"}
+                    }}>
+                        <Box><img src={junagadh} style={{width:"100%"}}/></Box>
+                        <Box flexDirection="column" textAlign="left" sx={{
+                                                                                m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
+                                                                                // display: {xs:"block", md:"flex"}, 
+                                                                                background:"linear-gradient(120.89deg, #FFE2D8 31.34%, #F2D0CD 100.05%, #E6C2C2 100.05%)",
+                                                                                padding: {xs:"3vw 4vw",md:"2vw 3vw"},
+                                                                                position: 'relative',
+                                                                                top:{xs:"-4.5rem",sm:"-6rem",md:"-6rem",xl:"-8.55rem"},
+                                                                                marginBottom:{xs:"-2.5rem",sm:"-4rem",md:"-4rem",xl:"-5.55rem"},
+                                                                                borderRadius: {xs:"10px",md:"20px"},
+                                                                                boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
+                                                                                }}>
+                                <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Memoirs of Junagadh</Typography>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                    This 3000-year-old fort is home to a number of historical sites, including the Adi Kadi Vav & Navghan Kuwo stepwells, the Buddhist caves, the Mahabat Maqbara.
+                                </Typography>
+                                <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>67 km far</Typography>
+                                <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
+                                    <Button variant="contained" onClick={()=> window.open("https://en.wikipedia.org/wiki/Junagadh", "_blank")} sx={{width:{xs:"100%",sm:"35%"},mr:{xs:'4vw',md:'1.5vw'},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Explore <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button>
+                                    <Button variant="contained" onClick={()=> window.open("https://goo.gl/maps/NDLEvc39zte6bT9G7", "_blank")} sx={{width:{xs:"100%",sm:"35%"},'@media(max-width:1150px) and (min-width:900px)':{fontSize:"1rem",padding:"2px 8px"}}}>Direction <img src={map_spot} alt="" style={{width:"1rem", marginLeft:'0.5vw'}} /></Button>
                                 </Box>
                         </Box>
                     </Box>

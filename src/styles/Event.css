@@ -4,7 +4,7 @@
   color: var(--text);
 }
 
-.slick-slider .slick-dots {
+/* .slick-slider .slick-dots {
   display: flex;
   position: absolute;
   flex-direction: row;
@@ -59,7 +59,7 @@
 }
 .slick-slider .slick-center {
   opacity: 1;
-}
+} */
 /* .center {
   display: flex;
 } */
