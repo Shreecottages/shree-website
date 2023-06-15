@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Stack, Typography, Button } from "@mui/material";
-import { Link, Outlet } from "react-router-dom";
+import { Box, Stack, Typography, Button, ListItemButton, ListItemText,useMediaQuery } from "@mui/material";
+import { Link, Outlet,NavLink } from "react-router-dom";
 
 // IMPORTING STYLES
 import "./ImageGallery.css";
@@ -9,8 +9,11 @@ import "./ImageGallery.css";
 import AboutUsTop from "../../assets/AboutTopImg.png";
 import AboutFLowerRight from "../../assets/AboutFlowersRight.png";
 import AboutFlowerLeft from "../../assets/AboutFlowerLeft.png";
+import  AboutUsTopM from "../../images/TopImage.png"
 
 const ImageGallery = () => {
+
+  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
   return (
     <div>
       <Box
@@ -22,25 +25,27 @@ const ImageGallery = () => {
       >
         <Box
           sx={{
+            width: "100vw",
             display: "flex",
+            height:{xs:"210px", sm:"20 0px", md:"330px"},
             justifyContent: "space-between",
-            width: { sm: "100%" },
-            height: { xs: "300px", lg: "300px", xl: "326px" },
-            backgroundImage: `url(${AboutUsTop})`,
+            background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
+            boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            textAlign: "center",
+            padding: { xs: "0vw", md: "0vw 10vw" },
+            position:"relative",
+            backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundColor: "rgba(61, 37, 33, 0.5)",
-            boxShadow:
-              "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            backgroundPosition: "center"
           }}
         >
           <Box
             sx={{
-              marginLeft: { sx: "-30px", lg: "200px" },
               backgroundImage: `url(${AboutFlowerLeft})`,
-              backgroundRepeat: "no-repeat",
-              width: { xs: "250px", md: "250px" },
-              marginTop: "160px",
+                backgroundRepeat: "no-repeat",
+                width: { xs: "30vw", md: "200px", lg: "250px" },
+                backgroundSize: "contain",
+                backgroundPosition: "bottom",
             }}
           ></Box>
           <Box
@@ -81,45 +86,21 @@ const ImageGallery = () => {
                 gap: { xs: "40px", md: "200px" },
               }}
             >
-              <Link className="ResortPartsLink" to="/gallery/images/all">
-                <Typography
-                  sx={{
-                    fontFamily: "Bona Nova",
-                    color: "#FFFFFF",
-                    fontSize: "30px",
-                    "&:hover": {
-                      color: "#FFBB70",
-                    },
-                  }}
-                >
-                  Images
-                </Typography>
-              </Link>
+              <NavLink to="/gallery/images/all" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: 'white', fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" >Image</ListItemText></ListItemButton></NavLink>
+              
 
-              <Link className="ResortPartsLink" to="/gallery/videos">
-                <Typography
-                  sx={{
-                    fontFamily: "Bona Nova",
-                    color: "#FFFFFF",
-                    fontSize: "30px",
-                    "&:hover": {
-                      color: "#FFBB70",
-                    },
-                  }}
-                >
-                  Videos
-                </Typography>
-              </Link>
+              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: 'white', fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
             </Box>
           </Box>
 
           <Box
-            sx={{
-              marginRight: { sx: "50px", lg: "200px" },
-              backgroundImage: `url(${AboutFLowerRight})`,
-              backgroundRepeat: "no-repeat",
-              width: { xs: "250px", md: "250px" },
-            }}
+          sx={{
+            // marginRight: { sx: "50px", lg: "200px" },
+            backgroundImage: `url(${AboutFLowerRight})`,
+            backgroundRepeat: "no-repeat",
+            width: { xs: "25vw", md: "200px", lg: "250px" },
+            backgroundSize: "contain",
+          }}
           ></Box>
 
           {/* <Box sx={{ marginRight: { sx: "50px", lg: "200px" } }}>
@@ -132,7 +113,7 @@ const ImageGallery = () => {
         </Box>
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           width: "100%",
           marginTop: "100px",
@@ -213,7 +194,7 @@ const ImageGallery = () => {
             Swimming Pool
           </Link>
         </Box>
-      </Box>
+      </Box> */}
       <Outlet />  
       {/* {data.all.map((item, index) => (
         <img className={index} src={item} key={index} alt="First slide" />

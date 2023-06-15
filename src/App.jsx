@@ -333,6 +333,18 @@ function App() {
                 path="/contactPage/Contact"
                 element={<Contact />}
               />
+
+              <Route
+                exact
+                path="/gallery/images/resort"
+                element={<ImageGalleryView />}
+              />
+
+              <Route
+                exact
+                path="/gallery/images/decoration"
+                element={<ImageGalleryView />}
+              />
             </Routes>
             </SmoothScroll>
         {/* </Router> */}

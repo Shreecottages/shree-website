@@ -1,3 +1,51 @@
+.resortLink-active .list{
+    color: #FFBB70;
+    font-family: 'Bona Nova';
+    font-size: 30px;
+    text-align: center;
+    /* margin: auto; */
+    text-decoration: none;
+    justify-self: center;
+    justify-content: center;
+}
+.resortLink-active .list::after{
+    bottom: 15px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    left: 0.6em;
+    position: absolute;
+    background: #FFBB70;
+    opacity: 0.9;
+    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 1.5rem;
+}
+
+.resortLink .list{
+    font-family: 'Bona Nova';
+    font-size: 30px;
+}
+.resortLink .list:hover{
+    color:#FFBB70
+}
+.resortLink .list::after{
+    bottom: 15px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    left: 0.8em;
+    position: absolute;
+    background: #FFBB70;
+    opacity: 0.6;
+    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 0rem;
+}
+.resortLink .list:hover::after{
+    opacity: 0.9;
+    width: 1.5rem;
+    color: #FFBB70;
+}
+
 .ResortPartsLink {
     text-decoration: none;
     font-family: 'Bona Nova';
@@ -29,12 +77,18 @@
     color: #FFBB70;
 }
 
+.ResortPartsLink {
+}
+
 .ResortPartsLink:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
 @media (max-width: 600px) {
+
+    .resortLink .list{font-size: 24px;}
+    .resortLink-active .list{font-size: 24px;}
     .ResortPartsLink {
         font-size: 14px;
         line-height: 24px;

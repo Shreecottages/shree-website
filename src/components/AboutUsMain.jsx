@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import { Box, Stack, Typography, Button } from "@mui/material";
+import { Box, Stack, Typography, Button,useMediaQuery } from "@mui/material";
 // IMPORTING IMAGE
-import AboutUsTop from "../assets/AboutTopImg.png";
 import AboutFLowerRight from "../assets/AboutFlowersRight.png";
 import AboutFlowerLeft from "../assets/AboutFlowerLeft.png";
 import Card1 from "../assets/Card.png";
@@ -13,7 +12,8 @@ import WhoWeAre from "../assets/WhoWeAre.png";
 import DoubleCommaOpeningVector from "../assets/DoubleCommaOpeningVector.png";
 import DoubleCommaClosingVector from "../assets/DoubleCommaClosingVector.png";
 import ShreeOpacityLogo from "../assets/ShreeOpacityLogo.png";
-
+import  AboutUsTopM from "../images/TopImage.png"
+import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
 import ReviewCards from "./ReviewCard";
 
@@ -40,10 +40,11 @@ const AboutUs = () => {
   //   console.log(reviews);
   // };
 
-  return (
+  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
+  return (   
     <div>
       <Box
-        sx={{
+        sx={{ 
           "&::-webkit-scrollbar": {
             display: "none",
           },
@@ -51,27 +52,27 @@ const AboutUs = () => {
       >
         <Box
           sx={{
+            width: "100vw",
             display: "flex",
+            height:{xs:"210px", sm:"200px", md:"330px"},
             justifyContent: "space-between",
-            width: { sm: "100%" },
-            // minWidth: "100%",
-            height: { xs: "300px", lg: "300px", xl: "326px" },
-            backgroundImage: `url(${AboutUsTop})`,
-            backgroundSize:"contain",
-            backgroundPosition: "center",
-            backgroundColor: "rgba(61, 37, 33, 0.5)",
-            boxShadow:
-              "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
+            boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            textAlign: "center",
+            padding: { xs: "0vw", md: "0vw 10vw" },
+            position:"relative",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
           }}
         >
           <Box
-            sx={{
-              marginLeft: { sx: "-30px", lg: "200px" },
-              backgroundImage: `url(${AboutFlowerLeft})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize:"contain",
-              width: { xs: "250px", md: "250px" },
-              marginTop: {xs:"240px", md:"160px"},
+            sx={{ 
+                backgroundImage: `url(${AboutFlowerLeft})`,
+                backgroundRepeat: "no-repeat",
+                width: { xs: "30vw", md: "200px", lg: "250px" },
+                backgroundSize: "contain",
+                backgroundPosition: "bottom",
             }}
           ></Box>
           <Box
@@ -118,15 +119,23 @@ const AboutUs = () => {
               #weddingmemory
             </Typography>
           </Box>
-
           <Box
+            sx={{
+              // marginRight: { sx: "50px", lg: "200px" },
+              backgroundImage: `url(${AboutFLowerRight})`,
+              backgroundRepeat: "no-repeat",
+              width: { xs: "25vw", md: "200px", lg: "250px" },
+              backgroundSize: "contain",
+            }}
+          ></Box>
+          {/* <Box
             sx={{
               marginRight: { sx: "50px", lg: "200px" },
               backgroundImage: `url(${AboutFLowerRight})`,
               backgroundRepeat: "no-repeat",
               width: { xs: "250px", md: "250px" },
             }}
-          ></Box>
+          ></Box> */}
 
           {/* <Box sx={{ marginRight: { sx: "50px", lg: "200px" } }}>
           <img
@@ -141,6 +150,7 @@ const AboutUs = () => {
         <Box
           sx={{
             minHeight: "600px",
+            width:"100%",
             background: "#FFE2D8",
             display: "flex",
             alignItems: "center",
@@ -160,12 +170,14 @@ const AboutUs = () => {
           >
 
             <Box sx={{ margin: {
-                  xs: "0px auto",
+                  xs: "0px 0px",
                   sm: "auto",
                   lg: "auto 0px auto 0px",
                 },
-                width: { xs: "327px", md: "400px", lg: "400px" },
+                width: { xs: "100%", md: "400px", lg: "400px" },
                 height: { xs: "327px", md: "400px", lg: "400px" },
+                display:"flex",
+                justifyContent:"center",
                 "@media (min-width:200px) and (max-width:300px)": {
                   width: "250px",
                   height: "250px",
@@ -178,13 +190,12 @@ const AboutUs = () => {
                 //   sm: "auto",
                 //   lg: "auto 0px auto 0px",
                 // },
-                // width: { xs: "327px", md: "400px", lg: "400px" },
-                // height: { xs: "327px", md: "400px", lg: "400px" },
-                width:"100%",
-                height:"100%",
+                width: { xs: "327px", md: "400px", lg: "400px" },
+                height: { xs: "327px", md: "400px", lg: "400px" },
+
                 backgroundImage: `url(${WhoWeAre})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                // backgroundPosition: "center",
                 // "@media (min-width:200px) and (max-width:300px)": {
                 //   width: "250px",
                 //   height: "250px",
@@ -763,8 +774,9 @@ const AboutUs = () => {
         {/*-----------------------------------  FOURTH PART -------------------------------------- */}
         <Box
           sx={{
-            height: { md: "864px" },
+            height: {sm:"480px", md: "864px" },
             paddingTop: "20px",
+            // marginBottom:"40px"
           }}
         >
           <Box
