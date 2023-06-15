@@ -214,7 +214,7 @@ const ImageGallery = () => {
           </Link>
         </Box>
       </Box>
-      <Outlet />
+      <Outlet />  
       {/* {data.all.map((item, index) => (
         <img className={index} src={item} key={index} alt="First slide" />
       ))} */}
