@@ -108,7 +108,7 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Gir Jungle Safari</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",lg:"1rem",xl:"1.1rem"}}}>
                                     Gir Jungle Safari is a fenced-off area within Gir
                                     National Park where visitors can see Asiatic lions in their natural habitat.
                                 </Typography>
@@ -136,7 +136,7 @@ export default function Experience(){
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Devaliya Safari Park</Typography>
-                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
+                                <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",lg:"1rem",xl:"1.1rem"}}}>
                                     Devalia Safari Park is a small protected area of Gir Jungle Trail where visitors can see a variety of wildlife in their natural habitat.
                                 </Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>27 km far</Typography>
@@ -330,7 +330,7 @@ export default function Experience(){
                                                                                 borderRadius: {xs:"10px",md:"20px"},
                                                                                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1)'
                                                                                 }}>
-                                <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Memoirs of Junagadh</Typography>
+                                <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Heritage of Junagadh</Typography>
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",xl:"1.1rem"}}}>
                                     This 3000-year-old fort is home to a number of historical sites, including the Adi Kadi Vav & Navghan Kuwo stepwells, the Buddhist caves, the Mahabat Maqbara.
                                 </Typography>

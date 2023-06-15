@@ -55,7 +55,7 @@ export default function Review(){
         },
         {
             value: 5,
-            description: `Place is very cool. Very specious, a big parking area, children play area, swimming pool, big garden area.Also they arrange cultural activities in night at complimentary.I suggest to stay here as somnath is 25km from this place & Sasan...`,
+            description: `Place is very cool. Very specious, a big parking area, children play area, swimming pool, big garden area.Also they arrange cultural activities in night at complimentary.`,
             prof: {
                 img: 'C6.png',
                 name: 'Varun Joshi',

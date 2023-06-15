@@ -55,9 +55,11 @@ export default function Room() {
     const [activeImg, setActiveImg] = React.useState(0);
     const handleNext = () => {
         setActiveImg((prevActiveImg) => prevActiveImg + 1);
+        console.log(`next=${activeImg}`);
     };
     const handleBack = () => {
         setActiveImg((prevActiveImg) => prevActiveImg - 1);
+        console.log(`back=${activeImg}`);
     };
     const handleNextStep = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -66,6 +68,7 @@ export default function Room() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
+    
     return (
         <Stack>
             <Box sx={{
@@ -145,7 +148,7 @@ export default function Room() {
                                 padding: '0 2.5vw',
                                 width: "100%"
                             }}>
-                                <IconButton onClick={handleBack} disabled={activeImg === 0}
+                                <IconButton onTouchStart={handleBack} onClick={isSmallScreen?null:handleBack} disabled={activeImg === 0}
                                     sx={{
                                         backgroundColor: "common.black",
                                         border: "1px solid",
@@ -170,7 +173,7 @@ export default function Room() {
                                         }}
                                     />
                                 </IconButton>
-                                <IconButton onClick={handleNext} disabled={activeImg === maxImg - 1}
+                                <IconButton onTouchStart={handleNext} onClick={isSmallScreen?null:handleNext} disabled={activeImg === maxImg - 1}
                                     sx={{
                                         backgroundColor: "common.black",
                                         border: "1px solid",
