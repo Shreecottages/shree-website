@@ -19,6 +19,7 @@ body{
   position: relative;
   /* padding-bottom: 30vw; */
   margin-bottom: 0;
+  overflow-x: hidden;
 }
 /* @media (max-width:900px) {
   body{
