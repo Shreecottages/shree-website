@@ -71,7 +71,7 @@ const AboutUs = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize:"contain",
               width: { xs: "250px", md: "250px" },
-              marginTop: "160px",
+              marginTop: {xs:"240px", md:"160px"},
             }}
           ></Box>
           <Box
@@ -108,7 +108,7 @@ const AboutUs = () => {
               sx={{
                 magrin: "14px auto",
                 fontFamily: "Bona Nova",
-                fontSize: { xs: "18px", md: "18px" },
+                fontSize: { xs: "16px", md: "18px" },
                 fontWeight: "400",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",
