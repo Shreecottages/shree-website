@@ -57,7 +57,7 @@ const AboutUs = () => {
             // minWidth: "100%",
             height: { xs: "300px", lg: "300px", xl: "326px" },
             backgroundImage: `url(${AboutUsTop})`,
-            backgroundSize: "cover",
+            backgroundSize:"contain",
             backgroundPosition: "center",
             backgroundColor: "rgba(61, 37, 33, 0.5)",
             boxShadow:
@@ -69,6 +69,7 @@ const AboutUs = () => {
               marginLeft: { sx: "-30px", lg: "200px" },
               backgroundImage: `url(${AboutFlowerLeft})`,
               backgroundRepeat: "no-repeat",
+              backgroundSize:"contain",
               width: { xs: "250px", md: "250px" },
               marginTop: "160px",
             }}
@@ -154,40 +155,50 @@ const AboutUs = () => {
               margin: { xs: "0px", sm: "50px auto" },
               textAlign: "center",
               paddingTop: { xs: "50px", sm: "0" },
+              paddingBottom: { xs: "30px", sm: "0" },
             }}
           >
-            <Box
-              sx={{
-                margin: {
-                  xs: "40px auto",
+
+            <Box sx={{ margin: {
+                  xs: "0px auto",
                   sm: "auto",
                   lg: "auto 0px auto 0px",
                 },
                 width: { xs: "327px", md: "400px", lg: "400px" },
                 height: { xs: "327px", md: "400px", lg: "400px" },
-                // minHeight: "250px",
-                // minWidth: "250px",
-                maxWidth: "400px",
-                maxHeight: "400px",
-                // boxShadow: "-5px -5px 10px rgba(0, 0, 0, 0.1)",
-                // borderRadius: "20px",
-                // alignItems: "center",
-                backgroundImage: `url(${WhoWeAre})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
                 "@media (min-width:200px) and (max-width:300px)": {
                   width: "250px",
                   height: "250px",
-                },
+                },}}>
+
+            <Box
+              sx={{
+                // margin: {
+                //   xs: "0px auto",
+                //   sm: "auto",
+                //   lg: "auto 0px auto 0px",
+                // },
+                // width: { xs: "327px", md: "400px", lg: "400px" },
+                // height: { xs: "327px", md: "400px", lg: "400px" },
+                width:"100%",
+                height:"100%",
+                backgroundImage: `url(${WhoWeAre})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                // "@media (min-width:200px) and (max-width:300px)": {
+                //   width: "250px",
+                //   height: "250px",
+                // },
               }}
             ></Box>
+            </Box>
 
             <Typography
               sx={{
                 width: { xs: "100%", lg: "69%" },
                 margin: {
                   xs: "20px auto",
-                  sm: "auto 40px",
+                  sm: "auto 0px",
                   md: "auto 40px",
                   lg: "auto ",
                 },
@@ -221,13 +232,13 @@ const AboutUs = () => {
               lg: "100%",
               xl: "100%",
             },
-            height: { xs: "1700px", sm: "1100px", lg: "806px" },
+            height: { xs: "", sm: "1100px", lg: "806px" },
             background: "#FFFFFF",
           }}
         >
           <Typography
             sx={{
-              marginTop: "100px",
+              marginTop: {xs:"50px", sm:"100px"},
               fontSize: { xs: "24px", md: "40px" },
               fontWeight: "400",
               fontStyle: "normal",
@@ -265,7 +276,7 @@ const AboutUs = () => {
                 backgroundImage: `url(${ShreeOpacityLogo})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                backgroundSize: { xs: "180px", sm: "130px", md: "280px" },
+                backgroundSize: { xs: "contain", sm: "130px", md: "280px" },
                 display: "flex",
                 textAlign: "center",
               }}
@@ -295,7 +306,7 @@ const AboutUs = () => {
 
                 <Typography
                   sx={{
-                    marginTop: { xs: "60px", md: "100px" },
+                    marginTop: { xs: "40px", md: "100px" },
                     fontWeight: "400",
                     fontSize: {
                       xs: "24px",
@@ -348,6 +359,8 @@ const AboutUs = () => {
                   <img
                     src={Card1}
                     alt=""
+                    width="100%"
+                    height="100%"
                     style={{ borderRadius: "20px 20px 0px 0px" }}
                   />
                 </Box>
@@ -399,41 +412,15 @@ const AboutUs = () => {
                   variant="contained"
                   sx={{
                     margin: "50px auto",
-                    width: { xs: "170px", lg: "150px", xl: "170px" },
-                    height: "50px",
-                    alignItems: "center",
+                    width: { xs: "121px", lg: "150px", xl: "170px" },
+                    height: {xs:"35px", sm:"50px"},
                     color: "#3D2521",
                     background:
                       "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)",
                     fontFamily: "Bona Nova",
-                    fontSize: "20px",
+                    fontSize: "16px",
                     textTransform: "capitalize",
                     border: "none",
-                    zIndex: "1",
-                    "&after": {
-                      position: "absolute",
-                      content: "''",
-                      width: "0",
-                      height: "100%",
-                      top: "0",
-                      right: "0",
-                      zIndex: "-1",
-                      backgroundColor: "#663dff",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "inset 2px 2px 2px 0px rgba(255,255,255,.5) 7px 7px 20px 0px rgba(0,0,0,.1) 4px 4px 5px 0px rgba(0,0,0,.1)",
-                      transition: "all 0.3s ease",
-                    },
-                    "&hover": {
-                      color: "#fff",
-                    },
-                    "&hover&after": {
-                      left: "0",
-                      width: "100%",
-                    },
-                    "&active": {
-                      top: "2px",
-                    },
                   }}
                 >
                   Book Event
@@ -443,7 +430,7 @@ const AboutUs = () => {
                 sx={{
                   margin: "auto",
                   maxWidth: "327px",
-                  marginTop: { xs: "50px", sm: "0px" },
+                  marginTop: { xs: "10px", sm: "0px" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center", // Center the content vertically
@@ -466,6 +453,8 @@ const AboutUs = () => {
                   <img
                     src={Card2}
                     alt=""
+                    width="100%"
+                    height="100%"
                     style={{ borderRadius: "20px 20px 0px 0px" }}
                   />
                 </Box>
@@ -517,14 +506,14 @@ const AboutUs = () => {
                   variant="contained"
                   sx={{
                     margin: "50px auto",
-                    width: { xs: "170px", lg: "150px", xl: "170px" },
-                    height: "50px",
+                    width: { xs: "121px", lg: "150px", xl: "170px" },
+                    height: {xs:"35px", sm:"50px"},
                     alignItems: "center",
                     color: "#3D2521",
                     background:
                       "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)",
                     fontFamily: "Bona Nova",
-                    fontSize: "20px",
+                    fontSize: "16px",
                     textTransform: "capitalize",
                   }}
                 >
@@ -775,18 +764,16 @@ const AboutUs = () => {
         <Box
           sx={{
             height: { md: "864px" },
-            background: "#FFFFFF",
             paddingTop: "20px",
           }}
         >
           <Box
             sx={{
               margin: {
-                xs: "100px auto 100px auto",
+                xs: "40px auto",
                 lg: "100px",
               },
               textAlign: "center",
-              marginTop: "100px",
             }}
           >
             <Typography
@@ -816,7 +803,7 @@ const AboutUs = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                margin: { xs: "100px auto 100px 0px", lg: "100px 0" },
+                margin: { xs: "40px auto", lg: "100px 0" },
                 height: "100%",
               }}
             >
@@ -845,16 +832,16 @@ const AboutUs = () => {
             <Button
               sx={{
                 margin: { xs: "auto", sm: "0px" },
-                width: "220px",
-                height: "54px",
+                width: {xs:"18  0px", sm:"220px"},
+                height: {xs:"35px", sm:"54px"},
                 gap: "10px",
-                fontSize: "20px",
+                fontSize: "16px",
                 fontWeight: "400",
                 fontStyle: "normal",
                 fontFamily: "Bona Nova",
                 textTransform: "capitalize",
                 color: "#000000",
-                border: "2px solid rgb(0, 0, 0)",
+                border: "1px solid rgb(0, 0, 0)",
               }}
               variant="outlined"
             >

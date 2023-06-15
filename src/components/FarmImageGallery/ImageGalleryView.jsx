@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Grid, Button } from "@mui/material";
+import { Box, Grid, Button, Typography } from "@mui/material";
 
 // IMPORTING ICONS
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { CurrencyBitcoin } from "@mui/icons-material";
 
 const ImageGalleryView = () => {
   const image1 =
@@ -35,9 +36,11 @@ const ImageGalleryView = () => {
   };
 
   //show next image in lightbox
+  var currentIndex
   const showNext = (e) => {
     e.stopPropagation();
-    let currentIndex = images.indexOf(imageToShow);
+     currentIndex = images.indexOf(imageToShow);
+     console.log(currentIndex)
     if (currentIndex >= images.length - 1) {
       setLightBoxDisplay(false);
     } else {
@@ -47,9 +50,11 @@ const ImageGalleryView = () => {
   };
 
   //show previous image in lightbox
+  
   const showPrev = (e) => {
     e.stopPropagation();
-    let currentIndex = images.indexOf(imageToShow);
+    currentIndex = images.indexOf(imageToShow);
+    console.log(currentIndex)
     if (currentIndex <= 0) {
       setLightBoxDisplay(false);
     } else {
@@ -61,7 +66,7 @@ const ImageGalleryView = () => {
   return (
     <div>
       <Box
-        sx={{
+        sx={{ 
           width: { xs: "90%", sm: "80%" },
           margin: "80px auto",
         }}
@@ -131,7 +136,12 @@ const ImageGalleryView = () => {
               <Box
                 sx={{
                   width: { xs: "80%", sm: "80%", md: "60%" },
-                  height: { xs: "25%", sm: "40%", md: "70%" },
+                  height: { xs: "30%", sm: "40%", md: "70%" },
+                  alignItems:"center",
+                  display:"flex",
+                  flexDirection:"column",
+                  justifyContent:"center"
+
                 }}
               >
                 <img
@@ -139,16 +149,21 @@ const ImageGalleryView = () => {
                   src={imageToShow}
                   style={{
                     width: "100%",
-                    height: "100%",
+                    height: "90%",
                   }}
                   alt="Slow Network"
                 />
+
+                <Box sx={{width:"100px", height:"50px", backgroundColor:"#FFF"}}><Typography sx={{fontSize:"20px", color:"black"}}>{currentIndex}</Typography></Box>
               </Box>
               <Button
                 sx={{
                   width: "20px",
                   height: "60px",
                   backgroundColor: "rgba(0,0,0,0.7)",
+                  "&hover":{
+                    background:"rgba(0,0,0,0.7)"
+                  }
                 }}
                 onClick={showNext}
               >

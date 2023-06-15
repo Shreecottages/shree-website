@@ -26,23 +26,23 @@ const ContactContent = () => {
                         <Box ml={{ xs: 0, md: '2rem' }}>
                             <Typography variant="h4" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', fontWeight: '400', mt: '2rem' }}>Get In Touch</Typography>
 
-                            <Box mt={4}>
-                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', fontSize: '20px', border: '1px solid #000000', boxShadow: 'inset 0px -4px 10px rgba(61, 37, 33, 0.2)', borderRadius: '5px', padding: '16px 0px 16px 16px'}} placeholder="  Enter text" />
+                            <Box mt={2}>
+                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', border: '1px solid #3D2521', borderRadius: '10px', padding: '16px 0px 16px 16px', gap: '8px', height: '52px', width: '410px', fontSize: '20px' }} placeholder="  Enter text" />
                             </Box>
 
-                            <Box mt={4}>
-                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', fontSize: '20px', border: '1px solid #000000', boxShadow: 'inset 0px -4px 10px rgba(61, 37, 33, 0.2)', borderRadius: '5px' }} placeholder="  Email Address" />
+                            <Box mt={3}>
+                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', border: '1px solid #3D2521', borderRadius: '10px', padding: '16px 0px 16px 16px', gap: '8px', height: '52px', width: '410px', fontSize: '20px' }} placeholder="  Email ID" />
                             </Box>
 
-                            <Box mt={4}>
-                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', fontSize: '20px', border: '1px solid #000000', boxShadow: 'inset 0px -4px 10px rgba(61, 37, 33, 0.2)', borderRadius: '5px' }} placeholder="  Phone Number" />
+                            <Box mt={3}>
+                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', border: '1px solid #3D2521', borderRadius: '10px', padding: '16px 0px 16px 16px', gap: '8px', height: '52px', width: '410px', fontSize: '20px' }} placeholder="  Mobile Number" />
                             </Box>
 
-                            <Box mt={4}>
-                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', fontSize: '20px', border: '1px solid #000000', boxShadow: 'inset 0px -4px 10px rgba(61, 37, 33, 0.2)', borderRadius: '5px' }} placeholder="  Message" />
+                            <Box mt={3}>
+                                <input type="text" style={{ background: '#FFE2D8', width: '100%', height: '2rem', fontFamily: 'Poppins', border: '1px solid #3D2521', borderRadius: '10px', padding: '16px 0px 16px 16px', gap: '8px', height: '52px', width: '410px', fontSize: '20px' }} placeholder="  Message" />
                             </Box>
 
-                            <Box mt={4}>
+                            <Box mt={3}>
                                 <Typography className="g-recaptcha" data-sitekey="6LeAtTomAAAAACPSXbPVCcRf1ubHk-5KLjMLo5N7"></Typography>
                             </Box>
 
@@ -56,38 +56,38 @@ const ContactContent = () => {
 
                 </Grid>
 
-                <Box sx={{ border: '1px solid #000000', marginTop: '5rem' }}></Box>
+                <Box sx={{ border: '1px solid #000000', marginTop: '1rem' }}></Box>
 
-                <Grid container justifyContent="space-between">
+                <Grid container sx={{ marginTop: '2rem', justifyContent: 'space-between' }}>
                     {/* First Box */}
                     <Grid item xs={12} md={4}>
-                        <Box display="flex" flexDirection="row" alignItems="center" mt={{ xs: '0.5vw', md: '1.2vw' }}>
+                        <Typography variant="h6" sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Come over for coffee</Typography>
+                        <Box display="flex" flexDirection="row" mt={{ xs: '0.5vw', md: '1.2vw' }}>
                             <PlaceOutlinedIcon sx={{ width: '6%', mt: { xs: '-2vw', sm: '-0.75vw', md: '0vw', lg: '0.3vw' }, mr: '5px', '@media(max-width: 350px)': { marginTop: '-3vw' }, '@media(max-width: 250px)': { marginTop: '-4vw' } }} />
-                            <Typography variant="h6" sx={{ lineHeight: '1.5vw' }}>Veraval Road, Near Essar Petrol Pump Talala (Gir), Gir Somnath, Gujarat, India Pincode: 362150</Typography>
+                            <Typography variant="h6" sx={{ lineHeight: '1.5vw', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal' }}>Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India 362150</Typography>
                         </Box>
                     </Grid>
 
                     {/* Second Box */}
                     <Grid item xs={12} md={4}>
                         <Box>
-                            <Box display="flex" flexDirection="row" alignItems="center" mt={{ xs: '0.5vw', md: '1.2vw' }}>
+                            <Typography variant="h6" sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Contact us</Typography>
+                            <Box display="flex" flexDirection="row" mt={{ xs: '0.5vw', md: '1.2vw' }}>
                                 <CallOutlinedIcon sx={{ width: '6%', mt: { xs: '-2vw', sm: '-0.75vw', md: '0vw', lg: '0.3vw' }, mr: '5px', '@media(max-width: 350px)': { marginTop: '-3vw' }, '@media(max-width: 250px)': { marginTop: '-4vw' } }} />
-                                <Typography variant="h6" sx={{ lineHeight: '1.5vw' }}>+91 9427424157</Typography>
+                                <Typography variant="h6" sx={{ color: '#3D2521', letterSpacing: '0.07em', fontStyle: 'normal', fontFamily: 'Poppins' }}>+91 9427424157</Typography>
                             </Box>
-                            <Box display="flex" flexDirection="row" alignItems="center" mt={{ xs: '0.5vw', md: '1.2vw' }}>
+                            <Box display="flex" flexDirection="row" mt={{ xs: '0.5vw', md: '1.2vw' }}>
                                 <MailOutlineOutlinedIcon sx={{ width: '6%', mt: { xs: '-2vw', sm: '-0.75vw', md: '0vw', lg: '0.3vw' }, mr: '5px', '@media(max-width: 350px)': { marginTop: '-3vw' }, '@media(max-width: 250px)': { marginTop: '-4vw' } }} />
-                                <Typography variant="h6" sx={{ lineHeight: '1.5vw' }}>shreecottages57@gmail.com</Typography>
+                                <Typography variant="h6" sx={{ color: '#3D2521', letterSpacing: '0.07em', fontStyle: 'normal', fontFamily: 'Poppins' }}>shreecottages57@gmail.com</Typography>
                             </Box>
                         </Box>
                     </Grid>
 
                     {/* Third Box */}
                     <Grid item xs={12} md={4}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: { xs: '0.5vw', md: '1.2vw' } }}>
-                            <Typography sx={{ fontSize: '1.2em', color: '#3D2521', fontFamily: 'Bona Nova', fontWeight: '400' }}>Follow us</Typography>
-
-                            <Box component="span" >
-
+                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                            <Typography variant="h6" sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Follow us</Typography>
+                            <Box component="span">
                                 <Box component="span" sx={{ ml: '1rem' }}>
                                     <a href="/"><img src={fbContact} alt="Facebook" className="sns" sx={{ border: '2px solid #3D2521' }} /></a>
                                 </Box>
@@ -98,7 +98,6 @@ const ContactContent = () => {
                                     <img src={ytContact} alt="Youtube" className="sns" />
                                 </Box>
                             </Box>
-
                         </Box>
                     </Grid>
                 </Grid>

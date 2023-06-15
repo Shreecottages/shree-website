@@ -7,9 +7,9 @@ const VideoGalleryCard = () => {
       <Card
         sx={{
           margin: "auto",
-          width: { xs: "300px", sm: "85%", md: "730px" },
+          width: { xs: "370px", sm: "85%", md: "730px" },
           maxWidth: { xs: "100%", sm: "100%", md: "100%" },
-          height: { xs: "170px", sm: "320px", md: "410px" },
+          height: { xs: "190px", sm: "320px", md: "410px" },
           maxHeight: { xs: "100%", sm: "100%", md: "100%" },
           boxShadow: "none",
           borderRadius: "20px",
