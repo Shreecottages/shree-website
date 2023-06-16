@@ -25,27 +25,49 @@ const steps = [
 
 const CSlider = () =>{
     const [activeStep, setActiveStep] = React.useState(0);
-    const [activeImg, setActiveImg] = React.useState(0);
+    const [activeImg1, setActiveImg1] = React.useState(0);
+    const [activeImg2, setActiveImg2] = React.useState(0);
+    const [activeImg3, setActiveImg3] = React.useState(0);
     const maxSteps = steps.length;
     const maxImg = steps[activeStep].image.length;
     
-    const handleNext = () => {
-        setActiveImg((prevActiveImg) => prevActiveImg + 1);
-        console.log("Img = ${}",activeImg);
+    const handleNext1 = () => {
+        setActiveImg1((prevActiveImg1) => prevActiveImg1 + 1);
+        console.log(`Img = ${activeImg1}`);
     };
 
-    const handleBack = () => {
-        setActiveImg((prevActiveImg) => prevActiveImg - 1);
-        console.log(activeImg);
+    const handleBack1 = () => {
+        setActiveImg1((prevActiveImg1) => prevActiveImg1 - 1);
+        console.log(`Img = ${activeImg1}`);
+    };
+
+    const handleNext2 = () => {
+        setActiveImg2((prevActiveImg2) => prevActiveImg2 + 1);
+        console.log(`Img = ${activeImg2}`);
+    };
+
+    const handleBack2 = () => {
+        setActiveImg2((prevActiveImg2) => prevActiveImg2 - 1);
+        console.log(`Img = ${activeImg2}`);
+    };
+
+    const handleNext3 = () => {
+        setActiveImg3((prevActiveImg3) => prevActiveImg3 + 1);
+        console.log(`Img = ${activeImg3}`);
+    };
+
+    const handleBack3 = () => {
+        setActiveImg3((prevActiveImg3) => prevActiveImg3 - 1);
+        console.log(`Img = ${activeImg3}`);
     };
 
     const handleNextStep = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
-        console.log(activeStep);
+        console.log(`Step = ${activeStep}`);
     };
     const handleBackStep = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
-        console.log(activeStep);
+        console.log(`Step = ${activeStep}`);
     };
 
 
@@ -56,9 +78,9 @@ const CSlider = () =>{
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column" sx={{alignItems: 'center'}}>
                     <Box sx={{display:{xs:"none",md:"flex"}}}>
-                    <Button variant="text" className={`label ${activeStep===0 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(0); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[0].label}</Typography></Button>
-                    <Button variant="text" className={`label ${activeStep===1 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(1); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[1].label}</Typography></Button>
-                    <Button variant="text" className={`label ${activeStep===2 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0'}} onClick={()=>{setActiveStep(2); setActiveImg(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[2].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===0 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(0); setActiveImg1(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[0].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===1 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0', mr: '3vw'}} onClick={()=>{setActiveStep(1); setActiveImg2(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[1].label}</Typography></Button>
+                    <Button variant="text" className={`label ${activeStep===2 && "active"}`} sx={{color:'rgba(61, 37, 33, 0.6)', textTransform: 'none', padding:'0'}} onClick={()=>{setActiveStep(2); setActiveImg3(0);}}><Typography variant="h4" sx={{fontSize:{md:'1.7rem'}, cursor:'pointer'}}>{steps[2].label}</Typography></Button>
                     </Box>
                     <Box sx={{display:{md:"none",xs:"flex"},alignItems:"center",mb:"1vw"}}>
                         <Button variant="text" onClick={handleBackStep} disabled={activeStep === 0} sx={{ "&.Mui-disabled": { opacity: 0.5 }}}>
@@ -94,7 +116,12 @@ const CSlider = () =>{
                             
                             }}>
                             <Box className="room-img" display="flex">
-                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg]}`)} />
+                                {activeStep===0?
+                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg1]}`)} />
+                                : activeStep===1?
+                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg2]}`)} />:
+                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg3]}`)} />
+                                }
                             </Box>
                             <Box sx={{
                                 position: 'absolute',
@@ -105,7 +132,7 @@ const CSlider = () =>{
                                 padding: '0 2.5vw',
                                 width: "100%"
                             }}>
-                                <Button variant="text" onClick={handleBack} disabled={activeImg === 0} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
+                                <Button variant="text" onClick={activeStep===0?handleBack1:activeStep===1?handleBack2:handleBack3} disabled={activeStep===0?activeImg1 === 0:activeStep===1?activeImg2 === 0:activeImg3 === 0} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
                                 <ExpandCircleDownIcon 
                                     sx={{
                                         transform: 'rotate(90deg)',
@@ -115,7 +142,7 @@ const CSlider = () =>{
                                     }}
                                     
                                 /></Button>
-                                <Button variant="text" onClick={handleNext} disabled={activeImg === maxImg - 1} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
+                                <Button variant="text" onClick={activeStep===0?handleNext1:activeStep===1?handleNext2:handleNext3} disabled={activeStep===0?activeImg1 === maxImg - 1:activeStep===1?activeImg2 === maxImg - 1:activeImg3 === maxImg - 1} sx={{ "&.Mui-disabled": { opacity: 0.4 } }}>
                                 <ExpandCircleDownIcon
                                     sx={{
                                         transform: 'rotate(-90deg)',
