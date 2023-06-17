@@ -45,7 +45,7 @@ export default function Footer(){
                     <Box display="flex" flexDirection={"column"}>
                         <Link to="/gallery"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Gallery</Typography></Link>
                         <Link to="/Experience"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Experience</Typography></Link>
-                        <Link to="/contactPage/Contact"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Contact Us</Typography></Link>
+                        <Link to="/contactPage"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Contact Us</Typography></Link>
                         <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Resrvation Policy</Typography></Link>
                     </Box>
                 </Box>

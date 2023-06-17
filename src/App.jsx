@@ -363,7 +363,7 @@ function App() {
 
               <Route
                 exact
-                path="/contactPage/Contact"
+                path="/contactPage"
                 element={<Contact />}
               />
 
