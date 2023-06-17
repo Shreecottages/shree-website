@@ -120,12 +120,12 @@ const ContactContent = () => {
                         </Box>
                     </Grid>
 
-                     {/* Second Box */}
+                    {/* Second Box */}
                     <Grid item xs={12} md={4} sx={{ display: 'flex', marginTop: '2rem', justifyContent: 'start', alignSelf: 'start', flexDirection: 'column' }}>
                         <Typography variant="h6" sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Come over for coffee</Typography>
                         <Box display="flex" flexDirection="row" mt='3vw'>
-                            <PlaceOutlinedIcon  />
-                            <Typography variant="h6" sx={{  fontFamily: 'Poppins', fontSize: '16px', fontStyle: 'normal' }}>Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India 362150</Typography>
+                            <PlaceOutlinedIcon />
+                            <Typography variant="h6" sx={{ fontFamily: 'Poppins', fontSize: '16px', fontStyle: 'normal' }}>Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India 362150</Typography>
                         </Box>
                     </Grid>
 

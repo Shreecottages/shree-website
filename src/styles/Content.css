@@ -71,12 +71,12 @@
   }
   .image1 {
     width: 45vw !important;
-    height: 35vw !important;
+    height: 37vw !important;
   }
   .desc1 {
     width: 50vw;
-    font-size: "10px" !important;
-    height: 35vw !important;
+    font-size: "8px" !important;
+    height: 37vw !important;
   }
 
   .desc1-head {
@@ -101,12 +101,12 @@
   }
   .image1 {
     width: 45vw !important;
-    height: 35vw !important;
+    height: 39vw !important;
   }
   .desc1 {
     width: 50vw;
     font-size: "10px" !important;
-    height: 35vw !important;
+    height: 39vw !important;
   }
 
   .desc1-head {
@@ -143,7 +143,7 @@
   }
   .desc1 {
     width: 100vw;
-    /* font-size: "20px" !important; */
+    font-size: "20px" !important;
     height: 35vw !important;
   }
 
