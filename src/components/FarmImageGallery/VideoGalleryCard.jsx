@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@mui/material";
 
-const VideoGalleryCard = () => {
+const VideoGalleryCard = (videoURL) => {
   return (
     <div>
       <Card
@@ -19,7 +19,7 @@ const VideoGalleryCard = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/-d-se-tNcmc"
+          src={videoURL}
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

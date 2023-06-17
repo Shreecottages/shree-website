@@ -221,17 +221,18 @@ const AboutUs = () => {
                 fontWeight: "400",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.but also the
-              leap into electronic typesetting, remaining essentially unchanged.{" "}
-              <br /> <br /> It has survived not only five centuries, but also
-              the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              Welcome to Shree Cottages, a premier destination wedding resort nestled in
+              Gir National Park. Our resort is dedicated to providing exceptional experiences
+              and unforgettable memories. With lush gardens and breathtaking
+              surroundings, we offer a picturesque setting for your special occasions. At
+              Shree Cottages, we pride ourselves on our unwavering commitment to
+              customer satisfaction.
+
+              <br /> <br /> Since our inception, not a single customer has left unsatisfied. With luxurious
+              accommodations, state-of-the-art amenities, and impeccable service, we
+              ensure that your stay is truly memorable. Join us at Shree Cottages and
+              immerse yourself in the enchantment of Gir National Park, where tranquility
+              meets elegance, and create timeless memories that will last a lifetime
             </Typography>
           </Box>
         </Box>
@@ -632,9 +633,8 @@ const AboutUs = () => {
                       lineHeight: { xs: "21px", sm: "30px" },
                     }}
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy
+                    Always go above and beyond, providing people with more than they expect and
+                    creating an extraordinary experience for everyone.
                   </Typography>
                   {/* <Box
                   sx={{

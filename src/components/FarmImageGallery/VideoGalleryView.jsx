@@ -4,6 +4,8 @@ import { Grid } from "@mui/material";
 import VideoGalleryCard from "./VideoGalleryCard";
 
 const VideoGalleryView = () => {
+
+  const videos = [ "https://www.youtube.com/embed/elDjJ8Qapz8", "https://www.youtube.com/embed/xhv9gT1LCO0", "https://www.youtube.com/embed/0hz4ZJ1mkYw", "https://www.youtube.com/embed/ExAjt31hEwg"]
   return (
     <div>
       <Box
@@ -21,9 +23,9 @@ const VideoGalleryView = () => {
 
           // columnSpacing={{ xs: 1, sm: 4, md: 6 }}
         >
-          {Array.from(Array(4)).map((_, index) => (
+          {videos.map((video, index) => (
             <Grid item xs={12} sm={8} md={6}>
-              <VideoGalleryCard />
+              <VideoGalleryCard videoURL={video}/>
             </Grid>
           ))}
         </Grid>
