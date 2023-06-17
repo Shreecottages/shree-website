@@ -64,7 +64,7 @@
     content: "";
     display: block;
     height: 1.2px;
-    left: 0.6em;
+    left: 1rem;
     position: absolute;
     background: #FFBB70;
     opacity: 0.9;
@@ -113,7 +113,9 @@
     .resortLink-active .resortPartList{
         font-size: 16px;
     }
-
+    .resortLink .resortPartList::after{
+        left: 0.6rem;
+    } 
     
 }
 
