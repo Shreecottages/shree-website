@@ -16,6 +16,7 @@ import  AboutUsTopM from "../images/TopImage.png"
 import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
 import ReviewCards from "./ReviewCard";
+import Review from "./Review";
 
 // IMPORTING ICONS
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -772,7 +773,8 @@ const AboutUs = () => {
           </Box>
         </Box>
         {/*-----------------------------------  FOURTH PART -------------------------------------- */}
-        <Box
+        <Review />
+        {/* <Box
           sx={{
             height: {sm:"480px", md: "864px" },
             paddingTop: "20px",
@@ -828,16 +830,7 @@ const AboutUs = () => {
               >
                 <ReviewCards />
 
-                {/* <ReviewCards /> */}
-                {/* <ReviewCards /> */}
-                {/* {reviews.map((review) => (
-              <div key={review.author_name}>
-                <ReviewCards author={review.author_name} text={review.text} />
-                <h3>{review.author_name}</h3>
-                <p>{review.text}</p>
-                <hr />
-              </div>
-            ))} */}
+               
               </Box>
             </Box>
 
@@ -860,7 +853,7 @@ const AboutUs = () => {
               Write a Review <ArrowForwardIcon />
             </Button>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </div>
   );

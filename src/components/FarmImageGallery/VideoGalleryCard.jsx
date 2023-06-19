@@ -1,7 +1,8 @@
 import React from "react";
 import { Card } from "@mui/material";
 
-const VideoGalleryCard = (videoURL) => {
+const VideoGalleryCard = ({videoURL}) => {
+  console.log(videoURL)
   return (
     <div>
       <Card

@@ -23,9 +23,9 @@ const VideoGalleryView = () => {
 
           // columnSpacing={{ xs: 1, sm: 4, md: 6 }}
         >
-          {videos.map((video, index) => (
+          {videos.map((item, index) => (
             <Grid item xs={12} sm={8} md={6}>
-              <VideoGalleryCard videoURL={video}/>
+              <VideoGalleryCard videoURL={item} key={index}/>
             </Grid>
           ))}
         </Grid>

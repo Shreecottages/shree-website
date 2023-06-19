@@ -94,10 +94,10 @@ const ImageGallery = () => {
                 gap: { xs: "40px", md: "200px" },
               }}
             >
-              <NavLink to={currentUrl} className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: 'white', fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" >Image</ListItemText></ListItemButton></NavLink>
+              <NavLink to={currentUrl} className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" >Image</ListItemText></ListItemButton></NavLink>
               
 
-              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: 'white', fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
             </Box>
           </Box>
 

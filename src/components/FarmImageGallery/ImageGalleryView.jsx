@@ -7,20 +7,36 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { CurrencyBitcoin } from "@mui/icons-material";
 
+
+//IMPORTING IMAGES 
+import Resort1 from "../../assets/Resort1.png"
+import Resort2 from "../../assets/Resort2.png"
+import Resort3 from "../../assets/Resort3.png"
+import Resort4 from "../../assets/Resort4.png"
+import Resort5 from "../../assets/Resort5.png"
+import Resort6 from "../../assets/Resort6.png"
+
+import Decoration1 from "../../assets/Decoration1.png"
+import Decoration2 from "../../assets/Decoration2.png"
+
+import SwimmingPool from "../../assets/SwimmingPool1.png"
+
 const ImageGalleryView = () => {
 
   //IMAGE ARRAY TO TEST
   
   const resort=[
-    "https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?cs=srgb&dl=pexels-pixabay-261169.jpg&fm=jpg",
-    "https://img.freepik.com/free-photo/swimming-pool_74190-2109.jpg",
-    "https://img.freepik.com/free-photo/swimming-pool_74190-2108.jpg",
-    "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338504.jpg&fm=jpg"
+    Resort1,
+    Resort2,
+    Resort3,
+    Resort4,
+    Resort5,
+    Resort6,
   ]
 
   const  decoration=[
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5wgOrtsJGiJmJWItgd8lGWYGEdhQsaK-zCCmmFMQ3cg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDQOXIMaiWdNsln3SbEJ8a5jslcZ6bUw4-J3ChG1P&s"
+    Decoration1,
+    Decoration2
   ]
 
   const banquestHall = [
@@ -29,22 +45,19 @@ const ImageGalleryView = () => {
 
   const conferenceRoom = [
     "https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9YRMoeZTZwqGMSAFMbZ_7yEXWqCuUod2v78AOLNIFUza0KyozNVlgpcI5Nr3IaDpDLI&usqp=CAU"
   ]
   const swimmingPool = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBL95IXg6A3zawib7L7zg3V5MdIexN2zIG7Q&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXfAmGZQNJnTjzCcfJvYu1_WE-WRTU4ty9A&usqp=CAU"
+    SwimmingPool
   ]
 
-  const all = ["https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?cs=srgb&dl=pexels-pixabay-261169.jpg&fm=jpg",
-  "https://img.freepik.com/free-photo/swimming-pool_74190-2109.jpg",
-  "https://img.freepik.com/free-photo/swimming-pool_74190-2108.jpg",
-  "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338504.jpg&fm=jpg", 
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5wgOrtsJGiJmJWItgd8lGWYGEdhQsaK-zCCmmFMQ3cg&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDQOXIMaiWdNsln3SbEJ8a5jslcZ6bUw4-J3ChG1P&s",
+  const all = [Resort1,
+    Resort2,
+    Resort3,
+    Resort4,
+    Resort5,
+    Resort6,Decoration1, Decoration2,
   "https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU", 
   "https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9YRMoeZTZwqGMSAFMbZ_7yEXWqCuUod2v78AOLNIFUza0KyozNVlgpcI5Nr3IaDpDLI&usqp=CAU", 
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBL95IXg6A3zawib7L7zg3V5MdIexN2zIG7Q&usqp=CAU",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXfAmGZQNJnTjzCcfJvYu1_WE-WRTU4ty9A&usqp=CAU"]
   const newImages = [all, resort, decoration, banquestHall, conferenceRoom, swimmingPool]
