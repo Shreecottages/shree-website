@@ -22,9 +22,9 @@ export default function Footer(){
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
-                    <img src={fb} href="/" alt="Facebook" className="sns"/>
-                    <img src={insta} href="/" alt="Instagram" className="sns"/>
-                    <img src={yt} href="/" alt="Youtube" className="sns"/>
+                    <img src={fb} alt="Facebook" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
+                    <img src={insta} alt="Instagram" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.instagram.com/shreecottages","_blank")}/>
+                    <img src={yt} alt="Youtube" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.youtube.com/@shreecottages","_blank")}/>
                     {/* <Avatar variant="circular" src="../images/fb.png" href="/" alt="Facebook" sx={{mr:'1vw'}}/>
                     <Avatar src="../images/insta.png" href="/" alt="Instagram" sx={{mr:'1vw'}}/>
                     <Avatar src="../images/yt.png" href="/" alt="Youtube" sx={{mr:'1vw'}}/> */}
