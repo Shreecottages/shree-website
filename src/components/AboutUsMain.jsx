@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import { Box, Stack, Typography, Button,useMediaQuery } from "@mui/material";
+
+import { Box, Stack, Typography, Button, useMediaQuery, Divider } from "@mui/material";
 // IMPORTING IMAGE
-import AboutFLowerRight from "../assets/AboutFlowersRight.png";
-import AboutFlowerLeft from "../assets/AboutFlowerLeft.png";
+// import AboutUsTop from "../assets/AboutTopImg.png";
+// import AboutFLowerRight from "../assets/AboutFlowersRight.png";
+// import AboutFlowerLeft from "../assets/AboutFlowerLeft.png";
 import Card1 from "../assets/Card.png";
 import Card2 from "../assets/Farms.png";
 import SatisficationLogo from "../assets/Satisfaction.png";
@@ -23,6 +25,10 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 // import { GooglePlacesAutocomplete } from "react-google-places-autocomplete";/
+const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
+const AboutUsTop = require("../assets/AboutTopImg.png");
+const AboutUsTopM = require("../images/TopImage.png");
+const AboutFlowerLeft = require("../assets/AboutFlowerLeft.png");
 
 const AboutUs = () => {
   // const [reviews, setReviews] = useState([]);
@@ -40,6 +46,7 @@ const AboutUs = () => {
   //   setReviews(fetchedReviews);
   //   console.log(reviews);
   // };
+  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
 
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
   return (   
@@ -53,28 +60,32 @@ const AboutUs = () => {
       >
         <Box
           sx={{
-            width: "100vw",
-            display: "flex",
-            height:{xs:"210px", sm:"200px", md:"330px"},
-            justifyContent: "space-between",
-            background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
-            boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
-            textAlign: "center",
+            width: { sm: "100%" },
             padding: { xs: "0vw", md: "0vw 10vw" },
-            position:"relative",
+            // minWidth: "100%",
+            // height: { xs: "300px", lg: "300px", xl: "326px" },
+            background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
+            height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
+            boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            '@media(max-width:300px)':{
+                height:"100vw"
+            }
           }}
         >
           <Box
-            sx={{ 
-                backgroundImage: `url(${AboutFlowerLeft})`,
-                backgroundRepeat: "no-repeat",
-                width: { xs: "30vw", md: "200px", lg: "250px" },
-                backgroundSize: "contain",
-                backgroundPosition: "bottom",
-            }}
+            sx={{
+                        // marginLeft: { xs: "-30px", lg: "200px" },
+                  backgroundImage: `url(${AboutFlowerLeft})`,
+                  backgroundRepeat: "no-repeat",
+                  width: { xs: "25vw", md: "200px", lg: "250px" },
+                  backgroundSize: "contain",
+                  // marginTop: "160px",
+                  backgroundPosition: "bottom",
+                  // backgroundPositionX:"left",
+              }}
           ></Box>
           <Box
             sx={{
@@ -82,6 +93,7 @@ const AboutUs = () => {
               flexDirection: "column",
               justifyContent: "center",
               textAlign: "center",
+              width:{xs:"30vw",sm:"100%"}
             }}
           >
             <Typography
@@ -93,18 +105,20 @@ const AboutUs = () => {
                 lineHeight: "48px",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",
+                m: { xs: " 0vw -10vw", sm: "0vw" } 
               }}
             >
               About Us
             </Typography>
-            <Box
+            {/* <Box
               sx={{
                 margin: "0px auto",
                 height: "30px",
                 width: "0px",
                 border: "1px solid #FFBB70",
               }}
-            ></Box>
+            ></Box> */}
+            <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
 
             <Typography
               sx={{
@@ -114,6 +128,7 @@ const AboutUs = () => {
                 fontWeight: "400",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",
+                m: { xs: " 0vw -30vw", sm: "0vw" } 
               }}
             >
               We create those special memories✨ for your family💞 <br />
@@ -125,16 +140,8 @@ const AboutUs = () => {
               // marginRight: { sx: "50px", lg: "200px" },
               backgroundImage: `url(${AboutFLowerRight})`,
               backgroundRepeat: "no-repeat",
-              width: { xs: "25vw", md: "200px", lg: "250px" },
               backgroundSize: "contain",
-            }}
-          ></Box>
-          {/* <Box
-            sx={{
-              marginRight: { sx: "50px", lg: "200px" },
-              backgroundImage: `url(${AboutFLowerRight})`,
-              backgroundRepeat: "no-repeat",
-              width: { xs: "250px", md: "250px" },
+              width: { xs: "30vw",sm:"25vw", md: "200px", lg: "250px" },
             }}
           ></Box> */}
 
