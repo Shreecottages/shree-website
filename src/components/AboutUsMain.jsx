@@ -14,8 +14,8 @@ import WhoWeAre from "../assets/WhoWeAre.png";
 import DoubleCommaOpeningVector from "../assets/DoubleCommaOpeningVector.png";
 import DoubleCommaClosingVector from "../assets/DoubleCommaClosingVector.png";
 import ShreeOpacityLogo from "../assets/ShreeOpacityLogo.png";
-import  AboutUsTopM from "../images/TopImage.png"
-import AboutUsTop from "../assets/AboutTopImg.png"
+// import  AboutUsTopM from "../images/TopImage.png"
+// import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
 import ReviewCards from "./ReviewCard";
 import Review from "./Review";
@@ -48,7 +48,6 @@ const AboutUs = () => {
   // };
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
 
-  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
   return (   
     <div>
       <Box
@@ -60,18 +59,20 @@ const AboutUs = () => {
       >
         <Box
           sx={{
-            width: { sm: "100%" },
-            padding: { xs: "0vw", md: "0vw 10vw" },
-            // minWidth: "100%",
-            // height: { xs: "300px", lg: "300px", xl: "326px" },
-            background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
+            width:"100vw",
+            display: "flex",
+            justifyContent: "space-between",
+            background:`rgba(61, 37, 33, 0.5) url(${isSmallScreen? AboutUsTopM :AboutUsTop})`,
             boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            textAlign:"center",
+            padding:{xs:"0vw",md:"0vw 10vw"},
+            backgroundSize:"100%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize:"cover",
+            backgroundPosition:"center",
+            height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
             '@media(max-width:300px)':{
-                height:"100vw"
+              height:"100vw"
             }
           }}
         >
@@ -98,7 +99,7 @@ const AboutUs = () => {
           >
             <Typography
               sx={{
-                padding: { xs: "4s0px 0 0px 0", md: "100px 0 10px 0" },
+                // padding: { xs: "4s0px 0 0px 0", md: "100px 0 10px 0" },
                 fontFamily: "Bona Nova",
                 fontSize: { xs: "1.5em", md: "2.5em" },
                 fontWeight: "400",
@@ -143,7 +144,7 @@ const AboutUs = () => {
               backgroundSize: "contain",
               width: { xs: "30vw",sm:"25vw", md: "200px", lg: "250px" },
             }}
-          ></Box> */}
+          ></Box> 
 
           {/* <Box sx={{ marginRight: { sx: "50px", lg: "200px" } }}>
           <img
