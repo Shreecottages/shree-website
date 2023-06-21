@@ -16,6 +16,7 @@ import  AboutUsTopM from "../images/TopImage.png"
 import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
 import ReviewCards from "./ReviewCard";
+import Review from "./Review";
 
 // IMPORTING ICONS
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -221,17 +222,18 @@ const AboutUs = () => {
                 fontWeight: "400",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.but also the
-              leap into electronic typesetting, remaining essentially unchanged.{" "}
-              <br /> <br /> It has survived not only five centuries, but also
-              the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              Welcome to Shree Cottages, a premier destination wedding resort nestled in
+              Gir National Park. Our resort is dedicated to providing exceptional experiences
+              and unforgettable memories. With lush gardens and breathtaking
+              surroundings, we offer a picturesque setting for your special occasions. At
+              Shree Cottages, we pride ourselves on our unwavering commitment to
+              customer satisfaction.
+
+              <br /> <br /> Since our inception, not a single customer has left unsatisfied. With luxurious
+              accommodations, state-of-the-art amenities, and impeccable service, we
+              ensure that your stay is truly memorable. Join us at Shree Cottages and
+              immerse yourself in the enchantment of Gir National Park, where tranquility
+              meets elegance, and create timeless memories that will last a lifetime
             </Typography>
           </Box>
         </Box>
@@ -632,9 +634,8 @@ const AboutUs = () => {
                       lineHeight: { xs: "21px", sm: "30px" },
                     }}
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy
+                    Always go above and beyond, providing people with more than they expect and
+                    creating an extraordinary experience for everyone.
                   </Typography>
                   {/* <Box
                   sx={{
@@ -772,7 +773,8 @@ const AboutUs = () => {
           </Box>
         </Box>
         {/*-----------------------------------  FOURTH PART -------------------------------------- */}
-        <Box
+        <Review />
+        {/* <Box
           sx={{
             height: {sm:"480px", md: "864px" },
             paddingTop: "20px",
@@ -828,16 +830,7 @@ const AboutUs = () => {
               >
                 <ReviewCards />
 
-                {/* <ReviewCards /> */}
-                {/* <ReviewCards /> */}
-                {/* {reviews.map((review) => (
-              <div key={review.author_name}>
-                <ReviewCards author={review.author_name} text={review.text} />
-                <h3>{review.author_name}</h3>
-                <p>{review.text}</p>
-                <hr />
-              </div>
-            ))} */}
+               
               </Box>
             </Box>
 
@@ -860,7 +853,7 @@ const AboutUs = () => {
               Write a Review <ArrowForwardIcon />
             </Button>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </div>
   );

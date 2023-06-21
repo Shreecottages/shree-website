@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography, Button, ListItemButton, ListItemText,useMediaQuery } from "@mui/material";
-import { Link, Outlet,NavLink } from "react-router-dom";
+import { Link, Outlet,NavLink, useLocation } from "react-router-dom";
 
 // IMPORTING STYLES
 import "./ImageGallery.css";
@@ -13,6 +13,14 @@ import  AboutUsTopM from "../../images/TopImage.png"
 
 const ImageGallery = () => {
 
+  var currentUrl = useLocation().pathname;
+
+  if(currentUrl == "/gallery/videos")
+  {
+    currentUrl = "/gallery/images/all"
+  }
+  
+  
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
   return (
     <div>
@@ -86,10 +94,10 @@ const ImageGallery = () => {
                 gap: { xs: "40px", md: "200px" },
               }}
             >
-              <NavLink to="/gallery/images/all" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: 'white', fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" >Image</ListItemText></ListItemButton></NavLink>
+              <NavLink to={currentUrl} className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" >Image</ListItemText></ListItemButton></NavLink>
               
 
-              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: 'white', fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
             </Box>
           </Box>
 

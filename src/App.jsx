@@ -15,7 +15,7 @@ import Room from "./components/Room";
 import ImageGallery from "./components/FarmImageGallery/ImageGallery";
 import ImageGalleryView from "./components/FarmImageGallery/ImageGalleryView";
 import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, redirect} from "react-router-dom";
 import ScrollToTop from "./SmoothScroll";
 import SmoothScroll from "./SmoothScroll";
 
@@ -296,7 +296,10 @@ function App() {
                 path="/gallery"
                 element={<ImageGallery />}
               >
+
+                
                   <Route index element={<ImageGalleryView />} />
+                  
                   <Route
                     exact
                     path="images/all"
@@ -308,7 +311,37 @@ function App() {
                     path="videos"
                     element={<VideoGalleryView />}
                   />
-              </Route>
+
+                  <Route
+                    exact
+                    path="images/resort"
+                    element={<ImageGalleryView />}
+                  />
+
+                  <Route
+                    exact
+                    path="images/decoration"
+                    element={<ImageGalleryView />}
+                  />
+
+                  <Route
+                    exact
+                    path="images/banquest-hall"
+                    element={<ImageGalleryView />}
+                  />
+
+                  <Route
+                    exact
+                    path="images/conference-room"
+                    element={<ImageGalleryView />}
+                  />
+
+                  <Route
+                    exact
+                    path="images/swimming-pool"
+                    element={<ImageGalleryView />}
+                  />
+                  </Route>
 
               <Route
                 exact
@@ -334,17 +367,7 @@ function App() {
                 element={<Contact />}
               />
 
-              <Route
-                exact
-                path="/gallery/images/resort"
-                element={<ImageGalleryView />}
-              />
-
-              <Route
-                exact
-                path="/gallery/images/decoration"
-                element={<ImageGalleryView />}
-              />
+              
             </Routes>
             </SmoothScroll>
         {/* </Router> */}
