@@ -28,92 +28,96 @@ export default function Footer(){
                     {/* <Avatar variant="circular" src="../images/fb.png" href="/" alt="Facebook" sx={{mr:'1vw'}}/>
                     <Avatar src="../images/insta.png" href="/" alt="Instagram" sx={{mr:'1vw'}}/>
                     <Avatar src="../images/yt.png" href="/" alt="Youtube" sx={{mr:'1vw'}}/> */}
+                    </Grid>
                 </Grid>
-            </Grid>
-            <Grid container direction={"column"} sx={{p:{md:'2vw 0 0 3vw'}}}>
-                <Typography variant="h4" className="ft" sx={{fontSize:{xs:"1.5rem",md:"1.5rem"},
-                        '@media(max-width: 500px)':{
-                            marginTop:"4vw"
-                        }}}>Quick Links</Typography>
-                <Box display="flex" flexDirection={{xs:"column",md:"row"}}>
-                    <Box display="flex" flexDirection={"column"} sx={{mr:'5vw'}}>
-                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Home</Typography></Link>
-                        <Link to="/AboutUsMain"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>About</Typography></Link>
-                        <Link to="/Room"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Rooms</Typography></Link>
-                        <Link to="/Event"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Events</Typography></Link>
-                    </Box>
-                    <Box display="flex" flexDirection={"column"}>
-                        <Link to="/gallery"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Gallery</Typography></Link>
-                        <Link to="/Experience"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Experience</Typography></Link>
-                        <Link to="/contactPage/Contact"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Contact Us</Typography></Link>
-                        <Link to="/"><Typography variant="h6" sx={{color:'warning.main',mt:'1.2vw',fontSize:{xs:"1rem",md:"1.3vw"}}}>Resrvation Policy</Typography></Link>
-                    </Box>
-                </Box>
-            </Grid>
-            <Grid container direction={"column"} sx={{pt:'2vw',pb:'3vw'}}>
-                <Typography variant="h4" className="ft" sx={{fontSize:{xs:"1.5rem",md:"1.5rem"},                        
-                        '@media(max-width: 500px)':{
-                            marginTop:"4vw",
-                            marginBottom:"2vw"
-                        }}}>Reach Us</Typography>
-                <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
-                    <CallOutlinedIcon sx={{
-                        width:{xs:"1.5rem",md:"6%"}, 
-                        mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'},
-                        mr:'5px',
-                        '@media(max-width: 350px)':{
-                            marginTop:"-3vw"
-                        },
-                        '@media(max-width: 250px)':{
-                            marginTop:"-4vw"
+                <Grid container direction={"column"} sx={{ p: { md: '2vw 0 0 3vw' } }}>
+                    <Typography variant="h4" className="ft" sx={{
+                        fontSize: { xs: "1.5rem", md: "1.5rem" },
+                        '@media(max-width: 500px)': {
+                            marginTop: "4vw"
                         }
-                    
-                    }}/>
-                    <Typography variant="h6" sx={{lineHeight:{xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>+91 9427424157</Typography>
+                    }}>Quick Links</Typography>
+                    <Box display="flex" flexDirection={{ xs: "column", md: "row" }}>
+                        <Box display="flex" flexDirection={"column"} sx={{ mr: '5vw' }}>
+                            <Link to="/"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Home</Typography></Link>
+                            <Link to="/AboutUsMain"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>About</Typography></Link>
+                            <Link to="/Room"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Rooms</Typography></Link>
+                            <Link to="/Event"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Events</Typography></Link>
+                        </Box>
+                        <Box display="flex" flexDirection={"column"}>
+                            <Link to="/gallery"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Gallery</Typography></Link>
+                            <Link to="/Experience"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Experience</Typography></Link>
+                            <Link to="/contactPage"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Contact Us</Typography></Link>
+                            <Link to="/"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Resrvation Policy</Typography></Link>
+                        </Box>
+                    </Box>
+                </Grid>
+                <Grid container direction={"column"} sx={{ pt: '2vw', pb: '3vw' }}>
+                    <Typography variant="h4" className="ft" sx={{
+                        fontSize: { xs: "1.5rem", md: "1.5rem" },
+                        '@media(max-width: 500px)': {
+                            marginTop: "4vw",
+                            marginBottom: "2vw"
+                        }
+                    }}>Reach Us</Typography>
+                    <Box display="flex" flexDirection="row" sx={{ mt: { xs: '2.5vw', sm: '2vw', md: '1.2vw' } }}>
+                        <CallOutlinedIcon sx={{
+                            width: { xs: "1.5rem", md: "6%" },
+                            mt: { xs: '-1vw', sm: "-0.75vw", md: '0vw', lg: '0.3vw' },
+                            mr: '5px',
+                            '@media(max-width: 350px)': {
+                                marginTop: "-3vw"
+                            },
+                            '@media(max-width: 250px)': {
+                                marginTop: "-4vw"
+                            }
+
+                        }} />
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}>+91 9427424157</Typography>
+                    </Box>
+                    <Box display="flex" flexDirection="row" sx={{ mt: { xs: '2.5vw', sm: '2vw', md: '1.2vw' } }}>
+                        <MailOutlineOutlinedIcon sx={{
+                            width: { xs: "1.5rem", md: "6%" },
+                            mt: { xs: '-1vw', sm: "-0.75vw", md: '0vw', lg: '0.3vw' },
+                            mr: '5px',
+                            '@media(max-width: 350px)': {
+                                marginTop: "-3vw"
+                            },
+                            '@media(max-width: 250px)': {
+                                marginTop: "-4vw"
+                            }
+                        }} />
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}>shreecottages57@gmail.com</Typography>
+                    </Box>
+                    <Box display="flex" flexDirection="row" sx={{ mt: { xs: '2.5vw', sm: '2vw', md: '1.2vw' } }}>
+                        <PlaceOutlinedIcon sx={{
+                            width: { xs: "1.5rem", md: "6%" },
+                            mt: { xs: '-1vw', sm: "-0.75vw", md: '0vw', lg: '0.3vw' },
+                            mr: '5px',
+                            '@media(max-width: 350px)': {
+                                marginTop: "-1vw"
+                            },
+                            '@media(max-width: 250px)': {
+                                marginTop: "-2vw"
+                            }
+                        }} />
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}>Veraval Road ,Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India <br />Pincode : 362150</Typography>
+                    </Box>
+                </Grid>
+            </Stack>
+            <Box display="flex" justifyContent="space-between" sx={{ flexDirection: { xs: "column", md: "row" } }} className="footnote">
+                <Box sx={{ mb: { xs: "1rem", md: "0rem" } }}>
+                    <Typography variant="subtitle2">© Copyrights️ 2023 , All rights reserved Shree Cottages</Typography>
                 </Box>
-                <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
-                    <MailOutlineOutlinedIcon sx={{
-                        width:{xs:"1.5rem",md:"6%"}, 
-                        mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
-                        mr:'5px',
-                        '@media(max-width: 350px)':{
-                            marginTop:"-3vw"
-                        },
-                        '@media(max-width: 250px)':{
-                            marginTop:"-4vw"
-                        }   
-                    }} />
-                    <Typography variant="h6" sx={{lineHeight:{xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>shreecottages57@gmail.com</Typography>
+                <Box display="flex" sx={{ flexDirection: { xs: "row-reverse", md: "row" }, alignItems: { xs: "center", md: "normal" } }}>
+                    <Typography variant="subtitle2">Privacy Policy</Typography>
+                    <Divider orientation="vertical" sx={{ height: { xs: "1.2rem", md: "1.2rem" }, backgroundColor: "warning.main", m: { xs: "0 0.5rem", md: "0 0.5vw 1vw 0.5vw" } }} />
+                    <Typography variant="subtitle2" sx={{ display: { xs: "none", md: "inline-block" } }}>Terms & Condition</Typography>
+                    <Typography variant="subtitle2" sx={{ display: { md: "none", xs: "inline-block" } }}>T&C</Typography>
+                    <Divider orientation="vertical" sx={{ height: { xs: "1.2rem", md: "1.2rem" }, backgroundColor: "warning.main", m: { xs: "0 0.5rem", md: "0 0.5vw 1vw 0.5vw" } }} />
+                    <Typography variant="subtitle2">Site map</Typography>
                 </Box>
-                <Box display="flex" flexDirection="row" sx={{mt:{xs:'2.5vw',sm:'2vw',md:'1.2vw'}}}>
-                    <PlaceOutlinedIcon sx={{
-                        width:{xs:"1.5rem",md:"6%"}, 
-                        mt:{xs:'-1vw',sm:"-0.75vw",md:'0vw',lg:'0.3vw'}, 
-                        mr:'5px',
-                        '@media(max-width: 350px)':{
-                            marginTop:"-1vw"
-                        },
-                        '@media(max-width: 250px)':{
-                            marginTop:"-2vw"
-                        }    
-                    }} />
-                    <Typography variant="h6" sx={{lineHeight: {xs:'1.2rem',md:'1.5vw'},fontSize:{xs:"1rem",md:"1.3vw"}}}>Veraval Road ,Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India <br />Pincode : 362150</Typography>
-                </Box>
-            </Grid>
-        </Stack>
-        <Box display="flex" justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}} className="footnote">
-            <Box sx={{mb:{xs:"1rem",md:"0rem"}}}>
-            <Typography variant="subtitle2">© Copyrights️ 2023 , All rights reserved Shree Cottages</Typography>
             </Box>
-            <Box display="flex" sx={{flexDirection:{xs:"row-reverse",md:"row"}, alignItems:{xs:"center",md:"normal"}}}>
-            <Typography variant="subtitle2">Privacy Policy</Typography>
-            <Divider orientation="vertical" sx={{height:{xs:"1.2rem",md:"1.2rem"}, backgroundColor: "warning.main", m:{xs:"0 0.5rem",md:"0 0.5vw 1vw 0.5vw"}}}/>
-            <Typography variant="subtitle2" sx={{display:{xs:"none",md:"inline-block"}}}>Terms & Condition</Typography>
-            <Typography variant="subtitle2" sx={{display:{md:"none",xs:"inline-block"}}}>T&C</Typography>
-            <Divider orientation="vertical" sx={{height:{xs:"1.2rem",md:"1.2rem"}, backgroundColor: "warning.main", m:{xs:"0 0.5rem",md:"0 0.5vw 1vw 0.5vw"}}}/>
-            <Typography variant="subtitle2">Site map</Typography>
-            </Box>
-        </Box>
         </Box>
     );
 }

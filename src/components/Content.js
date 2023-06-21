@@ -36,14 +36,17 @@ function MyComponent() {
                             />
                         </Typography>
                         <Typography className="desc1" sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px' }}>
-                            <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '1.5rem', ml: '4rem' }}>
+                            <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '1rem', ml: '4rem' }}>
                                 Wedding
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '2rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially.
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1.5rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
+                                we offer a spacious 6000 sq. ft. banquet hall and a stunning 20,000
+                                sq. ft. garden lawn, perfect for any occasion. Located in a serene natural
+                                setting, it is an ideal getaway. With 29 comfortable rooms, we provide excellent
+                                accommodation for wedding guests. Shree Cottages is known as the top choice
+                                for destination weddings in Gir, offering unmatched beauty and outstanding
+                                service.
+
                             </Typography>
                         </Typography>
                     </Box>
@@ -56,15 +59,18 @@ function MyComponent() {
                             height: '23vw',
                         }}
                     >
-                        <Typography className="desc1" sx={{ background: '#FFFFFF' }}>
-                            <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '1.5rem', ml: '4rem', borderRadius: '0px 20px 20px 0px' }}>
+                        <Typography className="desc1" sx={{ background: '#FFFFFF', height: '26vw' }}>
+                            <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '1rem', ml: '4rem', borderRadius: '0px 20px 20px 0px' }}>
                                 Conferences
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '2rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially unchanged.
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
+                                Experience the finest conference facilities at Shree Cottages. Our
+                                resort offers the best hall in the region, perfect for conferences, meetings, and
+                                corporate events. Immerse yourself in the tranquility of the surrounding jungle
+                                while conducting your next team-building or corporate gathering. With a
+                                proven track record of organizing successful events for groups of all sizes, Shree
+                                Cottages is becoming the preferred corporate offsite destination in and around
+                                Gujarat.
                             </Typography>
                         </Typography>
                         <Typography>
@@ -72,7 +78,7 @@ function MyComponent() {
                                 src={logo2}
                                 className="image1"
                                 alt="Logo"
-                                style={{ borderRadius: '0px 20px 20px 0px', width: '40vw', height: '23vw' }}
+                                style={{ borderRadius: '0px 20px 20px 0px', width: '40vw', height: '26vw' }}
                             />
                         </Typography>
                     </Box>
@@ -90,18 +96,21 @@ function MyComponent() {
                                 src={logo3}
                                 className="image1"
                                 alt="Logo"
-                                style={{ borderRadius: '20px 0px 0px 20px', width: '40vw', height: '23vw' }}
+                                style={{ borderRadius: '20px 0px 0px 20px', width: '40vw', height: '26vw' }}
                             />
                         </Typography>
-                        <Typography className="desc1" sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px' }}>
-                            <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '1.5rem', ml: '4rem' }}>
+                        <Typography className="desc1" sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px', height: '26vw' }}>
+                            <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.8rem', ml: '4rem' }}>
                                 Event Planning
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '2rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially unchanged.
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '0.8rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
+                                Let us handle every detail of your special event at Shree
+                                Cottages. Our dedicated team excels in event planning, ensuring a seamless
+                                and unforgettable experience. From weddings to birthdays, corporate
+                                gatherings to social celebrations, we have you covered. With our expertise and
+                                attention to detail, we will bring your vision to life and create a truly
+                                memorable occasion. Trust Shree Cottages for exceptional event planning
+                                services that will exceed your expectations.
                             </Typography>
                         </Typography>
                     </Box>
@@ -141,15 +150,17 @@ function MyComponent() {
                             alt="green iguana"
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}> 
-                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
+                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
+                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
                                 Wedding
                             </Typography>
                             <Typography sx={{ fontFamily: 'Poppins' }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially.
+                                we offer a spacious 6000 sq. ft. banquet hall and a stunning 20,000
+                                sq. ft. garden lawn, perfect for any occasion. Located in a serene natural
+                                setting, it is an ideal getaway. With 29 comfortable rooms, we provide excellent
+                                accommodation for wedding guests. Shree Cottages is known as the top choice
+                                for destination weddings in Gir, offering unmatched beauty and outstanding
+                                service.
                             </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -165,15 +176,19 @@ function MyComponent() {
                             alt="green iguana"
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
-                                Conferences
+                       <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
+                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
+                            Conferences
                             </Typography>
                             <Typography sx={{ fontFamily: 'Poppins' }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially unchanged.
+                            Experience the finest conference facilities at Shree Cottages. Our
+                                resort offers the best hall in the region, perfect for conferences, meetings, and
+
+                                corporate events. Immerse yourself in the tranquility of the surrounding jungle
+                                while conducting your next team-building or corporate gathering. With a
+                                proven track record of organizing successful events for groups of all sizes, Shree
+                                Cottages is becoming the preferred corporate offsite destination in and around
+                                Gujarat.
                             </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -188,15 +203,18 @@ function MyComponent() {
                             alt="green iguana"
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
-                        <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom component="div" sx={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
-                                Event Planning
+                      <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
+                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
+                            Event Planning
                             </Typography>
                             <Typography sx={{ fontFamily: 'Poppins' }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially unchanged.
+                            Let us handle every detail of your special event at Shree
+                                Cottages. Our dedicated team excels in event planning, ensuring a seamless
+                                and unforgettable experience. From weddings to birthdays, corporate
+                                gatherings to social celebrations, we have you covered. With our expertise and
+                                attention to detail, we will bring your vision to life and create a truly
+                                memorable occasion. Trust Shree Cottages for exceptional event planning
+                                services that will exceed your expectations.
                             </Typography>
                         </CardContent>
                     </CardActionArea>

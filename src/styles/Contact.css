@@ -1,0 +1,17 @@
+@media screen and (max-width: 1200px) {
+  .inp {
+    width: 20rem !important;
+  }
+  .map {
+    width: 50vw !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inp {
+    width: 20rem !important;
+  }
+  .map {
+    width: 80vw !important;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 import { Box, Stack, Typography, Button, useMediaQuery, Divider } from "@mui/material";
 // IMPORTING IMAGE
 // import AboutUsTop from "../assets/AboutTopImg.png";
@@ -13,9 +14,11 @@ import WhoWeAre from "../assets/WhoWeAre.png";
 import DoubleCommaOpeningVector from "../assets/DoubleCommaOpeningVector.png";
 import DoubleCommaClosingVector from "../assets/DoubleCommaClosingVector.png";
 import ShreeOpacityLogo from "../assets/ShreeOpacityLogo.png";
-
+import  AboutUsTopM from "../images/TopImage.png"
+import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
 import ReviewCards from "./ReviewCard";
+import Review from "./Review";
 
 // IMPORTING ICONS
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -45,10 +48,11 @@ const AboutUs = () => {
   // };
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
 
-  return (
+  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
+  return (   
     <div>
       <Box
-        sx={{
+        sx={{ 
           "&::-webkit-scrollbar": {
             display: "none",
           },
@@ -56,8 +60,6 @@ const AboutUs = () => {
       >
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "space-between",
             width: { sm: "100%" },
             padding: { xs: "0vw", md: "0vw 10vw" },
             // minWidth: "100%",
@@ -133,7 +135,6 @@ const AboutUs = () => {
               #weddingmemory
             </Typography>
           </Box>
-
           <Box
             sx={{
               // marginRight: { sx: "50px", lg: "200px" },
@@ -142,7 +143,7 @@ const AboutUs = () => {
               backgroundSize: "contain",
               width: { xs: "30vw",sm:"25vw", md: "200px", lg: "250px" },
             }}
-          ></Box>
+          ></Box> */}
 
           {/* <Box sx={{ marginRight: { sx: "50px", lg: "200px" } }}>
           <img
@@ -157,6 +158,7 @@ const AboutUs = () => {
         <Box
           sx={{
             minHeight: "600px",
+            width:"100%",
             background: "#FFE2D8",
             display: "flex",
             alignItems: "center",
@@ -176,12 +178,14 @@ const AboutUs = () => {
           >
 
             <Box sx={{ margin: {
-                  xs: "0px auto",
+                  xs: "0px 0px",
                   sm: "auto",
                   lg: "auto 0px auto 0px",
                 },
-                width: { xs: "327px", md: "400px", lg: "400px" },
+                width: { xs: "100%", md: "400px", lg: "400px" },
                 height: { xs: "327px", md: "400px", lg: "400px" },
+                display:"flex",
+                justifyContent:"center",
                 "@media (min-width:200px) and (max-width:300px)": {
                   width: "250px",
                   height: "250px",
@@ -194,13 +198,12 @@ const AboutUs = () => {
                 //   sm: "auto",
                 //   lg: "auto 0px auto 0px",
                 // },
-                // width: { xs: "327px", md: "400px", lg: "400px" },
-                // height: { xs: "327px", md: "400px", lg: "400px" },
-                width:"100%",
-                height:"100%",
+                width: { xs: "327px", md: "400px", lg: "400px" },
+                height: { xs: "327px", md: "400px", lg: "400px" },
+
                 backgroundImage: `url(${WhoWeAre})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                // backgroundPosition: "center",
                 // "@media (min-width:200px) and (max-width:300px)": {
                 //   width: "250px",
                 //   height: "250px",
@@ -226,17 +229,18 @@ const AboutUs = () => {
                 fontWeight: "400",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.but also the
-              leap into electronic typesetting, remaining essentially unchanged.{" "}
-              <br /> <br /> It has survived not only five centuries, but also
-              the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              Welcome to Shree Cottages, a premier destination wedding resort nestled in
+              Gir National Park. Our resort is dedicated to providing exceptional experiences
+              and unforgettable memories. With lush gardens and breathtaking
+              surroundings, we offer a picturesque setting for your special occasions. At
+              Shree Cottages, we pride ourselves on our unwavering commitment to
+              customer satisfaction.
+
+              <br /> <br /> Since our inception, not a single customer has left unsatisfied. With luxurious
+              accommodations, state-of-the-art amenities, and impeccable service, we
+              ensure that your stay is truly memorable. Join us at Shree Cottages and
+              immerse yourself in the enchantment of Gir National Park, where tranquility
+              meets elegance, and create timeless memories that will last a lifetime
             </Typography>
           </Box>
         </Box>
@@ -637,9 +641,8 @@ const AboutUs = () => {
                       lineHeight: { xs: "21px", sm: "30px" },
                     }}
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy
+                    Always go above and beyond, providing people with more than they expect and
+                    creating an extraordinary experience for everyone.
                   </Typography>
                   {/* <Box
                   sx={{
@@ -777,10 +780,12 @@ const AboutUs = () => {
           </Box>
         </Box>
         {/*-----------------------------------  FOURTH PART -------------------------------------- */}
-        <Box
+        <Review />
+        {/* <Box
           sx={{
-            height: { md: "864px" },
+            height: {sm:"480px", md: "864px" },
             paddingTop: "20px",
+            // marginBottom:"40px"
           }}
         >
           <Box
@@ -832,16 +837,7 @@ const AboutUs = () => {
               >
                 <ReviewCards />
 
-                {/* <ReviewCards /> */}
-                {/* <ReviewCards /> */}
-                {/* {reviews.map((review) => (
-              <div key={review.author_name}>
-                <ReviewCards author={review.author_name} text={review.text} />
-                <h3>{review.author_name}</h3>
-                <p>{review.text}</p>
-                <hr />
-              </div>
-            ))} */}
+               
               </Box>
             </Box>
 
@@ -864,7 +860,7 @@ const AboutUs = () => {
               Write a Review <ArrowForwardIcon />
             </Button>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </div>
   );
