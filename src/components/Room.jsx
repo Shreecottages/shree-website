@@ -77,12 +77,16 @@ export default function Room() {
                 justifyContent: "space-between",
                 background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
                 boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+                height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
                 textAlign: "center",
                 padding: { xs: "0vw", md: "0vw 10vw" },
                 // backgroundSize:"100%",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                '@media(max-width:300px)':{
+                    height:"100vw"
+                }
             }}>
                 <Box
                     sx={{
@@ -100,9 +104,9 @@ export default function Room() {
                     <Typography variant="h2" sx={{ color: "warning.main" }}>Rooms</Typography>
                     <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
                     <Box sx={{ display: "flex", m: { xs: " 0vw -10vw", sm: "0vw" } }}>
-                        <Button variant="text" className={`room ${activeStep === 0 && "active"}`} sx={{ color: "warning.main", textTransform: 'none', padding: '0', mr: { xs: "2vw", sm: "2vw", lg: '4vw' } }} onClick={() => { setActiveStep(0); setActiveImg(0); }}><Typography variant="h4" sx={{ fontSize: { xs: "1.1rem", sm: "1.5rem", lg: '1.7rem' }, cursor: 'pointer' }}>{steps[0].label}</Typography></Button>
-                        <Button variant="text" className={`room ${activeStep === 1 && "active"}`} sx={{ color: "warning.main", textTransform: 'none', padding: '0', mr: { xs: "2vw", sm: "2vw", lg: '4vw' } }} onClick={() => { setActiveStep(1); setActiveImg(0); }}><Typography variant="h4" sx={{ fontSize: { xs: "1.1rem", sm: "1.5rem", lg: '1.7rem' }, cursor: 'pointer' }}>{steps[1].label}</Typography></Button>
-                        <Button variant="text" className={`room ${activeStep === 2 && "active"}`} sx={{ color: "warning.main", textTransform: 'none', padding: '0' }} onClick={() => { setActiveStep(2); setActiveImg(0); }}><Typography variant="h4" sx={{ fontSize: { xs: "1.1rem", sm: "1.5rem", lg: '1.7rem' }, cursor: 'pointer' }}>{steps[2].label}</Typography></Button>
+                        <Button variant="text" className={`room ${activeStep === 0 && "active"}`} sx={{ color: "warning.main", textTransform: 'none', padding: '0', mr: { xs: "2.5vw", sm: "2vw", lg: '4vw' }}} onClick={() => { setActiveStep(0); setActiveImg(0); }}><Typography variant="h4" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", lg: '1.7rem' }, cursor: 'pointer','@media(max-width:300px)':{fontSize:"1rem"}}}>{steps[0].label}</Typography></Button>
+                        <Button variant="text" className={`room ${activeStep === 1 && "active"}`} sx={{ color: "warning.main", textTransform: 'none', padding: '0', mr: { xs: "2.5vw", sm: "2vw", lg: '4vw' } }} onClick={() => { setActiveStep(1); setActiveImg(0); }}><Typography variant="h4" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", lg: '1.7rem' }, cursor: 'pointer','@media(max-width:300px)':{fontSize:"1rem"} }}>{steps[1].label}</Typography></Button>
+                        <Button variant="text" className={`room ${activeStep === 2 && "active"}`} sx={{ color: "warning.main", textTransform: 'none', padding: '0' }} onClick={() => { setActiveStep(2); setActiveImg(0); }}><Typography variant="h4" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", lg: '1.7rem' }, cursor: 'pointer','@media(max-width:300px)':{fontSize:"1rem"} }}>{steps[2].label}</Typography></Button>
                     </Box>
                     {/* <Box sx={{display:{md:"none",xs:"flex"}}}>
                         <IconButton onClick={handleBackStep} disabled={activeStep === 0} sx={{ padding:"0","&.Mui-disabled": { opacity: 0.5 }}}>

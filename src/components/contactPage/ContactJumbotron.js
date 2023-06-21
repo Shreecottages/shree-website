@@ -73,31 +73,35 @@ const Jumbotron = () => {
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
+            height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
+            '@media(max-width:300px)':{
+                height:"100vw"
+            }
         }}>
             <Box
                 sx={{
                     // marginLeft: { xs: "-30px", lg: "200px" },
                     backgroundImage: `url(${AboutFlowerLeft})`,
                     backgroundRepeat: "no-repeat",
-                    width: { xs: "25vw", md: "250px" },
+                    width: { xs: "25vw", md: "200px", lg: "250px" },
                     backgroundSize: "contain",
                     // marginTop: "160px",
                     backgroundPosition: "bottom",
                     // backgroundPositionX:"left",
                 }}
             ></Box>
-            <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", p: "5vw 0vw" }}>
-                <Typography variant="h2" sx={{ color: "warning.main" }}> Contact us </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", p: "5vw 0vw",width:{xs:"30vw",sm:"100%"} }}>
+                <Typography variant="h2" sx={{ color: "warning.main",alignSelf:"center",m: { xs: " 0vw -10vw", sm: "0vw" } }}> Contact us </Typography>
                 <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
-                <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "left" }}> Connect with us, we're here to help! </Typography>
+                <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "center",alignSelf:"center",m: { xs: " 0vw -30vw", sm: "0vw" } }}> Connect with us, we're here to help! </Typography>
             </Box>
             <Box
                 sx={{
                     // marginRight: { sx: "50px", lg: "200px" },
                     backgroundImage: `url(${AboutFLowerRight})`,
                     backgroundRepeat: "no-repeat",
-                    width: { xs: "25vw", md: "250px" },
+                    width: { xs: "25vw", md: "200px", lg: "250px" },
                     backgroundSize: "contain",
                 }}
             ></Box>
