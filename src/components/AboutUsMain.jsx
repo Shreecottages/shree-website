@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-
 import { Box, Stack, Typography, Button, useMediaQuery, Divider } from "@mui/material";
 // IMPORTING IMAGE
 // import AboutUsTop from "../assets/AboutTopImg.png";
@@ -87,7 +85,7 @@ const AboutUs = () => {
                   backgroundPosition: "bottom",
                   // backgroundPositionX:"left",
               }}
-          ></Box>
+           ></Box>
           <Box
             sx={{
               display: "flex",
@@ -152,7 +150,7 @@ const AboutUs = () => {
             style={{ width: "250px", height: "164px" }}
             alt=""
           />
-        </Box> */}
+        </Box> */} 
         </Box>
         {/* FIRST PART BEGINS */}
 
