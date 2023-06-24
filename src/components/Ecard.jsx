@@ -84,7 +84,7 @@ export default function Ecard({ itineraries, activities }){
                   <Typography variant="h4" sx={{
                                             textAlign:"left",
                                             alignSelf:"center",
-                                            fontSize:{xs:"1.2rem",sm:"1.5rem",md:"1.75vw",lg:"1.7vw",xl:"1.7vw"},
+                                            fontSize:{xs:"1.2rem",sm:"1.5rem",md:"1.75vw",lg:"1.7vw",xl:"1.6vw"},
                                             transform:{xs:"",sm:"",md:isSame(i) ? "" : "rotate(-90deg)"}, 
                                             m:{xs:isSame(i) ? "1vw 0vw 0vw 0vw" : "0px",md:isSame(i) ? "0px" : "5vw 0vw 8vw 0vw",lg:isSame(i) ? "0px" : "5vw 0vw 7vw 0vw"}, 
                                             width:isSame(i) ? "100%" : "150%"

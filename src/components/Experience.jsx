@@ -35,31 +35,35 @@ export default function Experience(){
                 backgroundSize:"100%",
                 backgroundRepeat: "no-repeat",
                 backgroundSize:"cover",
-                backgroundPosition:"center"
+                backgroundPosition:"center",
+                height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
+                '@media(max-width:300px)':{
+                height:"100vw"
+                }
             }}>
                 <Box
                     sx={{
                         // marginLeft: { xs: "-30px", lg: "200px" },
                         backgroundImage: `url(${AboutFlowerLeft})`,
                         backgroundRepeat: "no-repeat",
-                        width: { xs: "25vw", md: "250px" },
+                        width: { xs: "25vw", md: "200px", lg: "250px" },
                         backgroundSize:"contain",
                         // marginTop: "160px",
                         backgroundPosition:"bottom",
                         // backgroundPositionX:"left",
                     }}
                 ></Box>
-                <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center", textAlign:"center",p:"5vw 0vw" }}>
-                    <Typography variant="h2" sx={{color:"warning.main"}}>Experience</Typography>
+                <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center", textAlign:"center",p:"5vw 0vw",width:{xs:"30vw",sm:"100%"} }}>
+                    <Typography variant="h2" sx={{color:"warning.main",alignSelf:"center",m: { xs: " 0vw -10vw", sm: "0vw" }}}>Experience</Typography>
                     <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"warning.main", alignSelf:"center", m:'1.1rem'}}/>
-                    <Typography variant="body1" sx={{fontFamily:"Bona Nova", color:"warning.main", textAlign:"left",lineHeight: "19px",letterSpacing:"0.01rem"}}>ગાજે મેહુલિયો ને સાવજની દહાડ🦁 <br />જાણજો એજ વનરાવન ગીર🏕️....</Typography>
+                    <Typography variant="body1" sx={{fontFamily:"Bona Nova", color:"warning.main", textAlign:"left",alignSelf:"center",lineHeight: "19px",letterSpacing:"0.01rem",m: { xs: " 0vw -30vw", sm: "0vw" } }}>ગાજે મેહુલિયો ને સાવજની દહાડ🦁 <br />જાણજો એજ વનરાવન ગીર🏕️....</Typography>
                 </Box>
                 <Box
                     sx={{
                         // marginRight: { sx: "50px", lg: "200px" },
                         backgroundImage: `url(${AboutFLowerRight})`,
                         backgroundRepeat: "no-repeat",
-                        width: { xs: "25vw", md: "250px" },
+                        width: { xs: "25vw", md: "200px", lg: "250px" },
                         backgroundSize:"contain",
                     }}
                 ></Box>
@@ -102,6 +106,7 @@ export default function Experience(){
                                                                                 background:"linear-gradient(120.89deg, #FFE2D8 31.34%, #F2D0CD 100.05%, #E6C2C2 100.05%)",
                                                                                 padding: {xs:"3vw 4vw",md:"2vw 3vw"},
                                                                                 position: 'relative',
+                                                                                height:{xs:"100%",md:"29vw",lg:"25vw",xl:"19vw"},
                                                                                 top:{xs:"-4.5rem",sm:"-6rem",md:"-6rem",xl:"-8.55rem"},
                                                                                 marginBottom:{xs:"-2.5rem",sm:"-4rem",md:"-4rem",xl:"-5.55rem"},
                                                                                 borderRadius:{xs:"10px",md:"20px"},
@@ -129,6 +134,7 @@ export default function Experience(){
                                                                                 // display: {xs:"block", md:"flex"}, 
                                                                                 background:"linear-gradient(120.89deg, #FFE2D8 31.34%, #F2D0CD 100.05%, #E6C2C2 100.05%)",
                                                                                 padding: {xs:"3vw 4vw",md:"2vw 3vw"},
+                                                                                height:{xs:"100%",md:"29vw",lg:"25vw",xl:"19vw"},
                                                                                 position: 'relative',
                                                                                 top:{xs:"-4.5rem",sm:"-6rem",md:"-6rem",xl:"-8.55rem"},
                                                                                 marginBottom:{xs:"-2.5rem",sm:"-4rem",md:"-4rem",xl:"-5.55rem"},

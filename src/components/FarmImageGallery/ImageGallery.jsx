@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography, Button, ListItemButton, ListItemText,useMediaQuery } from "@mui/material";
+import { Box, Stack, Typography, Button, ListItemButton, ListItemText,useMediaQuery,Divider } from "@mui/material";
 import { Link, Outlet,NavLink, useLocation } from "react-router-dom";
 
 // IMPORTING STYLES
@@ -35,7 +35,7 @@ const ImageGallery = () => {
           sx={{
             width: "100vw",
             display: "flex",
-            height:{xs:"210px", sm:"20 0px", md:"330px"},
+            // height:{xs:"210px", sm:"20 0px", md:"330px"},
             justifyContent: "space-between",
             background: `rgba(61, 37, 33, 0.5) url(${isSmallScreen ? AboutUsTopM : AboutUsTop})`,
             boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
@@ -44,14 +44,18 @@ const ImageGallery = () => {
             position:"relative",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
+            height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
+            '@media(max-width:300px)':{
+                height:"100vw"
+            }
           }}
         >
           <Box
             sx={{
               backgroundImage: `url(${AboutFlowerLeft})`,
                 backgroundRepeat: "no-repeat",
-                width: { xs: "30vw", md: "200px", lg: "250px" },
+                width: { xs: "25vw", md: "200px", lg: "250px" },
                 backgroundSize: "contain",
                 backgroundPosition: "bottom",
             }}
@@ -66,7 +70,7 @@ const ImageGallery = () => {
           >
             <Typography
               sx={{
-                padding: { xs: "60px 0 20px 0", md: "100px 0 10px 0" },
+                // padding: { xs: "60px 0 20px 0", md: "100px 0 10px 0" },
                 fontFamily: "Bona Nova",
                 fontSize: { xs: "2.5em", md: "2.5em" },
                 fontWeight: "400",
@@ -77,15 +81,15 @@ const ImageGallery = () => {
             >
               Gallery
             </Typography>
-            <Box
+            {/* <Box
               sx={{
                 margin: "0px auto",
                 height: "30px",
                 width: "0px",
                 border: "1px solid #FFBB70",
               }}
-            ></Box>
-
+            ></Box> */}
+            <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"warning.main", alignSelf:"center", m:'1.1rem'}}/>
             <Box
               sx={{
                 width: { xs: "90%", md: "60%" },
