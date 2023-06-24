@@ -756,7 +756,7 @@ const AboutUs = () => {
                     background: "#FFF",
                   },
                 }}
-                // variant="outlined"
+                variant="outlined"
               >
                 Contact Us <ArrowForwardIcon />
               </Button>
