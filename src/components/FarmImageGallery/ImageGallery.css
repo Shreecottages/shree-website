@@ -13,7 +13,7 @@
     content: "";
     display: block;
     height: 1.2px;
-    left: 0.6em;
+    left: 0.1em;
     position: absolute;
     background: #FFBB70;
     opacity: 0.9;
@@ -23,7 +23,7 @@
 
 .resortLink .list{
     font-family: 'Bona Nova';
-    font-size: 30px;
+    font-size: 2rem;
 }
 .resortLink .list:hover{
     color:#FFBB70
@@ -33,7 +33,7 @@
     content: "";
     display: block;
     height: 1.2px;
-    left: 0.8em;
+    left: 0.1em;
     position: absolute;
     background: #FFBB70;
     opacity: 0.6;
@@ -99,8 +99,10 @@
 
 @media (max-width: 600px) {
 
-    .resortLink .list{font-size: 24px;}
-    .resortLink-active .list{font-size: 24px;}
+    .resortLink .list{font-size: 1.25rem;}
+    .resortLink .list::after{left: 0em;}
+    .resortLink-active .list{font-size: 1.25rem;}
+    .resortLink-active .list::after{left: 0em;}
     .ResortPartsLink {
         font-size: 14px;
         line-height: 24px;

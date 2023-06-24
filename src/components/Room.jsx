@@ -93,14 +93,14 @@ export default function Room() {
                         // marginLeft: { xs: "-30px", lg: "200px" },
                         backgroundImage: `url(${AboutFlowerLeft})`,
                         backgroundRepeat: "no-repeat",
-                        width: { xs: "25vw", md: "200px", lg: "250px" },
+                        width: {xs: "25vw", md: "200px", lg: "250px"},
                         backgroundSize: "contain",
                         // marginTop: "160px",
                         backgroundPosition: "bottom",
                         // backgroundPositionX:"left",
                     }}
                 ></Box>
-                <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", p: "5vw 0vw" }}>
+                <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center",alignItems:"center", p: "5vw 0vw",width:{xs:"60%",sm:"80vw"} }}>
                     <Typography variant="h2" sx={{ color: "warning.main" }}>Rooms</Typography>
                     <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
                     <Box sx={{ display: "flex", m: { xs: " 0vw -10vw", sm: "0vw" } }}>
