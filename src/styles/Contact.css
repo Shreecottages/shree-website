@@ -1,3 +1,7 @@
+.mediaIcon1 {
+  margin-left: "-24px" !important;
+}
+
 @media screen and (max-width: 1200px) {
   .inp {
     width: 20rem !important;

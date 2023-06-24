@@ -55,42 +55,30 @@ export default function Header(props) {
           <Box className="logo"><img src={logo} alt="" /></Box>
           <Box sx={{ display: "flex", flexDirection: "row" }}>
             <Hidden mdDown>
-              {/* {navigationLinks.map((item) => (
-              <Link
-                className="list"
-                color="textPrimary"
-                 variant="button"
-                 underline="none"
-                 href={item.href}
-                 key={item.name}
-               >
-                 {item.name}
-               </Link>
-             ))} */}
-              <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/AboutUsMain" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">About</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/gallery/images/all" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/Event" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/Room" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{textDecoration:"none", color: '#3D2521'}}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
-              <Link style={{textDecoration:"none", color: '#3D2521',justifyContent:"center"}}><ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="more">More <KeyboardArrowDownIcon sx={{fontSize:{md:"1rem",lg:"1.2rem"}}}/></ListItemText></ListItemButton></Link>
-              <ListItemButton><Button variant="contained" onClick={()=> window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")} 
-              sx={{
-                fontSize: '1.4rem',
-                '@media (max-width: 900px)':{
-                  fontSize: '1.2rem'
-                },
-                '@media (max-width: 1100px)':{
-                  fontSize: '1rem'
-                },
-              }}>Book now</Button></ListItemButton>
-           </Hidden>
-           <Hidden mdUp>
-             <IconButton onClick={() => setOpen(true)}>
-               <MenuIcon />
-             </IconButton>
-           </Hidden>
-           </Box>
-         </Toolbar>
+              <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ padding: "0", justifyContent: "center", textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/AboutUsMain" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">About</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/gallery/images/all" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/Event" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/Room" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
+              <Link style={{ textDecoration: "none", color: '#3D2521', justifyContent: "center" }}><ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="more">More <KeyboardArrowDownIcon sx={{ fontSize: { md: "1rem", lg: "1.2rem" } }} /></ListItemText></ListItemButton></Link>
+              <ListItemButton><Button variant="contained" onClick={() => window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")}
+                sx={{
+                  fontSize: '1.4rem',
+                  '@media (max-width: 900px)': {
+                    fontSize: '1.2rem'
+                  },
+                  '@media (max-width: 1100px)': {
+                    fontSize: '1rem'
+                  },
+                }}>Book now</Button></ListItemButton>
+            </Hidden>
+            <Hidden mdUp>
+              <IconButton onClick={() => setOpen(true)}>
+                <MenuIcon />
+              </IconButton>
+            </Hidden>
+          </Box>
+        </Toolbar>
       </Container>
       <SwipeableDrawer
         anchor="right"
@@ -101,14 +89,14 @@ export default function Header(props) {
         <div
           onClick={() => setOpen(false)}
           //  onKeyPress={() => setOpen(false)}
-           role="button"
-           tabIndex={0}
-           style={{backgroundColor:"primary.main",display:"flex",justifyContent:"space-between",padding:"10px"}}
-         >
-         <Box className="logo"><Link to="/"><img src={logo} alt=""/></Link></Box>
-         <Box sx={{alignSelf:"center"}}>
-          <Button variant="contained" onClick={()=> window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")} 
-          sx={{
+          role="button"
+          tabIndex={0}
+          style={{ backgroundColor: "primary.main", display: "flex", justifyContent: "space-between", padding: "10px" }}
+        >
+          <Box className="logo"><Link to="/"><img src={logo} alt="" /></Link></Box>
+          <Box sx={{ alignSelf: "center" }}>
+            <Button variant="contained" onClick={() => window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")}
+              sx={{
                 fontSize: '1.4rem',
                 '@media (max-width: 900px)': {
                   fontSize: '1.2rem'
@@ -148,12 +136,12 @@ export default function Header(props) {
               </Link>
             </ListItem>
           ))} */}
-          <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
-                    <img src={fbContact} alt="Facebook" className="sns-h" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
-                    <img src={instaContact} href="/" alt="Instagram" className="sns-h" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.instagram.com/shreecottages","_blank")}/>
-                    <img src={ytContact} href="/" alt="Youtube" className="sns-h" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.youtube.com/@shreecottages","_blank")}/>
-        </Grid>
-        </List>
+            <Grid direction='row' sx={{ m: '0.5vw 0vw' }}>
+              <img src={fbContact} alt="Facebook" className="sns-h" style={{ cursor: "pointer" }} onClick={() => window.open("https://www.facebook.com/ShreeCottages", "_blank")} />
+              <img src={instaContact} href="/" alt="Instagram" className="sns-h" style={{ cursor: "pointer" }} onClick={() => window.open("https://www.instagram.com/shreecottages", "_blank")} />
+              <img src={ytContact} href="/" alt="Youtube" className="sns-h" style={{ cursor: "pointer" }} onClick={() => window.open("https://www.youtube.com/@shreecottages", "_blank")} />
+            </Grid>
+          </List>
         </div>
       </SwipeableDrawer>
       <Menu
