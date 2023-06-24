@@ -748,19 +748,7 @@ const AboutUs = () => {
                 sx={{
                   margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
                   width: { xs: "146px", sm: "200px" },
-                  height: { xs: "38px", sm: "54px" },
-                  gap: "10px",
-                  fontSize: { xs: "16px", sm: "20px" },
-                  fontWeight: "400",
-                  fontStyle: "normal",
-                  fontFamily: "Bona Nova",
-                  textTransform: "capitalize",
-                  color: "#000000",
-                  border: "1px solid rgb(0, 0, 0)",
-                  background: "#FFE2D8",
-                  "&hover": {
-                    background: "#FFF",
-                  },
+                  
                 }}
                 variant="outlined"
               >
