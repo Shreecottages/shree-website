@@ -286,10 +286,10 @@ const ImageGalleryView = () => {
                   alt="Slow Network"
                 />
 
-                <Box sx={{width:"250px", height:"50px", display:"flex", justifyContent:"space-evenly", alignItems:"center", marginTop:{xs:"20px", sm:"0px"}}}>
+                <Box sx={{width:"250px", height:"50px", display:{xs:"flex", sm:"none"}, justifyContent:"space-evenly", alignItems:"center", marginTop:{xs:"20px", sm:"0px"}}}>
                   <Button
                     sx={{
-                      display:{xs:"flex", sm:"none"},
+                      // display:{xs:"flex", sm:"none"},
                       width: {xs:"40px", md:"60px"},
                       height: {xs:"40px", md:"60px"},
                       backgroundColor: "rgba(0,0,0,0.7)",
@@ -306,7 +306,7 @@ const ImageGalleryView = () => {
                   
                   <Button
                     sx={{
-                      display:{xs:"flex", sm:"none"},
+                      // display:{xs:"flex", sm:"none"},
                       width: {xs:"40px", md:"60px"},
                       height: {xs:"40px", md:"60px"},
                       backgroundColor: "rgba(0,0,0,0.7)",
@@ -322,7 +322,7 @@ const ImageGalleryView = () => {
                   </Box>
               </Box>
 
-              <Box sx={{width:"100vw", padding:{xs:"", sm:"", lg:"200px"},height:"100vh", position:"relative", display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+              <Box sx={{width:"100vw", padding:{xs:"", sm:"", lg:"200px"},height:"100vh", display:"flex", justifyContent:"space-between", alignItems:"center"}}>
               <Button
                 sx={{
                   display:{xs:"none", sm:"flex"},

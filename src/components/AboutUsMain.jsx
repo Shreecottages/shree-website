@@ -156,95 +156,80 @@ const AboutUs = () => {
         </Box>
         {/* FIRST PART BEGINS */}
 
+    <Box
+      sx={{
+        minHeight: "600px",
+        width: "100vw",
+        background: "#FFE2D8",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Box
+        sx={{
+          width: { xs: "95%", sm: "80vw" },
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          margin: { xs: "-20px 0px 0px 0px", sm: "50px auto" },
+          // textAlign: "center",
+          justifyContent:"center",
+          alignItems:"center",
+          paddingTop: { xs: "50px", sm: "0" },
+          paddingBottom: { xs: "30px", sm: "0" },
+        }}
+      >
         <Box
           sx={{
-            minHeight: "600px",
-            width:"100%",
-            background: "#FFE2D8",
+            margin: {
+              xs: "0px 0px",
+              sm: "auto",
+              lg: "auto",
+            },
+            width: { xs: "100%", md: "400px", lg: "25rem" },
+            height: { xs: "327px", md: "400px", lg: "25rem" },
             display: "flex",
-            alignItems: "center",
             justifyContent: "center",
+            "@media (min-width:200px) and (max-width:300px)": {
+              width: "250px",
+              height: "250px",
+            },
           }}
         >
           <Box
             sx={{
-              width: { xs: "90%", sm: "80%" },
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              margin: { xs: "0px", sm: "50px auto" },
-              textAlign: "center",
-              paddingTop: { xs: "50px", sm: "0" },
-              paddingBottom: { xs: "30px", sm: "0" },
+              width: { xs: "100%", md: "400px", lg: "25rem" },
+              height: { xs: "360px", md: "400px", lg: "25rem" },
+              backgroundImage: `url(${WhoWeAre})`,
+              backgroundSize: "cover",
             }}
-          >
-
-            <Box sx={{ margin: {
-                  xs: "0px 0px",
-                  sm: "auto",
-                  lg: "auto 0px auto 0px",
-                },
-                width: { xs: "100%", md: "400px", lg: "400px" },
-                height: { xs: "327px", md: "400px", lg: "400px" },
-                display:"flex",
-                justifyContent:"center",
-                "@media (min-width:200px) and (max-width:300px)": {
-                  width: "250px",
-                  height: "250px",
-                },}}>
-
-            <Box
-              sx={{
-                // margin: {
-                //   xs: "0px auto",
-                //   sm: "auto",
-                //   lg: "auto 0px auto 0px",
-                // },
-                width: { xs: "327px", md: "400px", lg: "400px" },
-                height: { xs: "327px", md: "400px", lg: "400px" },
-
-                backgroundImage: `url(${WhoWeAre})`,
-                backgroundSize: "cover",
-                // backgroundPosition: "center",
-                // "@media (min-width:200px) and (max-width:300px)": {
-                //   width: "250px",
-                //   height: "250px",
-                // },
-              }}
-            ></Box>
-            </Box>
-
-            <Typography
-              sx={{
-                width: { xs: "100%", lg: "69%" },
-                margin: {
-                  xs: "20px auto",
-                  sm: "auto 0px",
-                  md: "auto 40px",
-                  lg: "auto ",
-                },
-                fontSize: { xs: "14px", lg: "20px" },
-                lineHeight: { xs: "21px", sm: "30px" },
-                textAlign: { xs: "center", md: "start" },
-                letterSpacing: "0.07em",
-                fontFamily: "Poppins",
-                fontWeight: "400",
-              }}
-            >
-              Welcome to Shree Cottages, a premier destination wedding resort nestled in
-              Gir National Park. Our resort is dedicated to providing exceptional experiences
-              and unforgettable memories. With lush gardens and breathtaking
-              surroundings, we offer a picturesque setting for your special occasions. At
-              Shree Cottages, we pride ourselves on our unwavering commitment to
-              customer satisfaction.
-
-              <br /> <br /> Since our inception, not a single customer has left unsatisfied. With luxurious
-              accommodations, state-of-the-art amenities, and impeccable service, we
-              ensure that your stay is truly memorable. Join us at Shree Cottages and
-              immerse yourself in the enchantment of Gir National Park, where tranquility
-              meets elegance, and create timeless memories that will last a lifetime
-            </Typography>
-          </Box>
+          ></Box>
         </Box>
+
+        <Typography
+          sx={{
+            width: { xs: "100%", lg: "56vw" },
+            margin: {
+              xs: "50px auto",
+              sm: "auto 0px",
+              md: "auto 40px",
+              lg: "auto auto auto 40px",
+            },
+            fontSize: { xs: "14px", lg: "1.04vw" },
+            lineHeight: { xs: "21px", sm: "30px" },
+            textAlign: { xs: "center", md: "start" },
+            letterSpacing: "0.07em",
+            fontFamily: "Poppins",
+            fontWeight: "400",
+          }}
+        >
+          Welcome to Shree Cottages, a premier destination wedding resort nestled in Gir National Park. Our resort is dedicated to providing exceptional experiences and unforgettable memories. With lush gardens and breathtaking surroundings, we offer a picturesque setting for your special occasions. At Shree Cottages, we pride ourselves on our unwavering commitment to customer satisfaction.
+          <br />
+          <br />
+          Since our inception, not a single customer has left unsatisfied. With luxurious accommodations, state-of-the-art amenities, and impeccable service, we ensure that your stay is truly memorable. Join us at Shree Cottages and immerse yourself in the enchantment of Gir National Park, where tranquility meets elegance, and create timeless memories that will last a lifetime.
+        </Typography>
+      </Box>
+    </Box>
 
         {/* SECOND PART BEGINS */}
         <Box
@@ -291,6 +276,7 @@ const AboutUs = () => {
           >
             <Box
               sx={{
+                marginRight:"20px",
                 width: { xs: "100%", md: "52%" },
                 marginTop: { xs: "30px", md: "10px" },
                 alignItems: "flex-start",
@@ -306,7 +292,7 @@ const AboutUs = () => {
                 <Typography
                   sx={{
                     fontWeight: "400",
-                    fontSize: { xs: "16px", lg: "16px", xl: "20px" },
+                    fontSize: { xs: "16px", lg: "16px", xl: "1.04vw" },
                     fontStyle: "normal",
                     fontFamily: "Bona Nova",
                     letterSpacing: "0.07em",
@@ -564,6 +550,7 @@ const AboutUs = () => {
               fontSize: { xs: "24px", md: "40px" },
               textAlign: "center",
               letterSpacing: "0.07em",
+              color:"#3D2521"
             }}
           >
             Our Vision
@@ -636,7 +623,7 @@ const AboutUs = () => {
                       // width: { xs: "100%", lg: "80.5%" },
                       fontFamily: "Poppins",
                       fontWeight: "400",
-                      fontSize: { xs: "14px", lg: "15px", xl: "20px" },
+                      fontSize: { xs: "14px", lg: "15px", xl: "1.04vw" },
                       textAlign: "center",
                       letterSpacing: "0.07em",
                       lineHeight: { xs: "21px", sm: "30px" },
@@ -750,21 +737,18 @@ const AboutUs = () => {
                 sx={{
                   margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
                   width: { xs: "146px", sm: "200px" },
-                  height: { xs: "38px", sm: "54px" },
-                  gap: "10px",
-                  fontSize: { xs: "16px", sm: "20px" },
-                  fontWeight: "400",
-                  fontStyle: "normal",
-                  fontFamily: "Bona Nova",
-                  textTransform: "capitalize",
-                  color: "#000000",
-                  border: "1px solid rgb(0, 0, 0)",
-                  background: "#FFE2D8",
-                  "&hover": {
-                    background: "#FFF",
-                  },
+                  // height: { xs: "38px", sm: "54px" },
+                  // gap: "10px",
+                  // fontSize: { xs: "16px", sm: "20px" },
+                  // fontWeight: "400",
+                  // fontStyle: "normal",
+                  // fontFamily: "Bona Nova",
+                  // textTransform: "capitalize",
+                  // color: "#000000",
+                  // border: "1px solid rgb(0, 0, 0)",
+                  // background: "#FFE2D8",
                 }}
-                // variant="outlined"
+                variant="outlined"
               >
                 Contact Us <ArrowForwardIcon />
               </Button>
