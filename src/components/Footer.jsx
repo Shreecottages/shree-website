@@ -18,8 +18,8 @@ export default function Footer(){
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
                 <img src={logo_white} alt="" className="logo-white"/>
-                <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{xs:"1rem",md:'0.8vw'}, mb:'1vw', mt:'1.5vw'}}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{xs:"1rem",md:'1vw',lg:'0.8vw'}, mb:'1vw', mt:'1.5vw'}}>
+                    Shree Cottages offers a serene and enchanting getaway nestled in the heart of Gir National Park. With comfortable accommodations, lush gardens, and exceptional service, it is the perfect destination for weddings, events, and peaceful retreats.
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
                     <img src={fb} alt="Facebook" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
