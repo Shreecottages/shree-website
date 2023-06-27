@@ -18,7 +18,7 @@ export default function Footer(){
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
                 <img src={logo_white} alt="" className="logo-white"/>
-                <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{xs:"1rem",md:'1vw',lg:'0.8vw'}, mb:'1vw', mt:'1.5vw'}}>
+                <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{md:'1.2vw',lg:'1vw'}, mb:'1vw', mt:'1.5vw'}}>
                     Shree Cottages offers a serene and enchanting getaway nestled in the heart of Gir National Park. With comfortable accommodations, lush gardens, and exceptional service, it is the perfect destination for weddings, events, and peaceful retreats.
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
