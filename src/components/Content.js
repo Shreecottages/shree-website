@@ -32,14 +32,14 @@ function MyComponent() {
                                 src={logo1}
                                 className="image1"
                                 alt="Logo"
-                                style={{ borderRadius: '20px 0px 0px 20px', width: '40vw', height: '23vw' }}
+                                style={{ borderRadius: '20px 0px 0px 20px', width: '38vw', height: '23vw' }}
                             />
                         </Typography>
                         <Typography className="desc1" sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px' }}>
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.7rem', ml: '4rem' }}>
                                 Wedding
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '0.5rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
                                 we offer a spacious 6000 sq. ft. banquet hall and a stunning 20,000
                                 sq. ft. garden lawn, perfect for any occasion. Located in a serene natural
                                 setting, it is an ideal getaway. With 29 comfortable rooms, we provide excellent
@@ -63,7 +63,7 @@ function MyComponent() {
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.7rem', ml: '4rem', borderRadius: '0px 20px 20px 0px' }}>
                                 Conferences
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '0.5rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
                                 Experience the finest conference facilities at Shree Cottages. Our
                                 resort offers the best hall in the region, perfect for conferences, meetings, and
                                 corporate events. Immerse yourself in the tranquility of the surrounding jungle
@@ -78,7 +78,7 @@ function MyComponent() {
                                 src={logo2}
                                 className="image1"
                                 alt="Logo"
-                                style={{ borderRadius: '0px 20px 20px 0px', width: '40vw', height: '26vw' }}
+                                style={{ borderRadius: '0px 20px 20px 0px', width: '38vw', height: '26vw' }}
                             />
                         </Typography>
                     </Box>
@@ -87,7 +87,7 @@ function MyComponent() {
                         className="box"
                         sx={{
                             display: 'flex',
-                            mt: '4.2rem',
+                            mt: '6.9rem',
                             height: '23vw',
                         }}
                     >
@@ -96,14 +96,14 @@ function MyComponent() {
                                 src={logo3}
                                 className="image1"
                                 alt="Logo"
-                                style={{ borderRadius: '20px 0px 0px 20px', width: '40vw', height: '26vw' }}
+                                style={{ borderRadius: '20px 0px 0px 20px', width: '38vw', height: '26vw' }}
                             />
                         </Typography>
                         <Typography className="desc1" sx={{ background: '#FFFFFF', borderRadius: '0px 20px 20px 0px', height: '26vw' }}>
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.8rem', ml: '4rem' }}>
                                 Event Planning
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '0.8rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '17px' }}>
                                 Let us handle every detail of your special event at Shree
                                 Cottages. Our dedicated team excels in event planning, ensuring a seamless
                                 and unforgettable experience. From weddings to birthdays, corporate
@@ -128,10 +128,10 @@ function MyComponent() {
                         margin: 'auto',
                         display: 'flex',
                         justifyContent: 'center',
-                        mt: '4.6rem',
+                        mt: '9.5rem',
                     }}
                 >
-                    Call us <svg style={{ marginLeft: "5px" }} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    Call us <svg style={{ marginLeft: "10px" }} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.333008 7.76666L0.333008 6.09999L10.333 6.09999L5.74967 1.51666L6.93301 0.333325L13.533 6.93333L6.93301 13.5333L5.74967 12.35L10.333 7.76666L0.333008 7.76666Z" fill="#3D2521" />
                     </svg>
 
@@ -151,10 +151,10 @@ function MyComponent() {
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
                         <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 0px 0px' }}>
-                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
+                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '18px', fontFamily: 'Bona Nova', letterSpacing: '1.26px', color: '#3D2521' }} >
                                 Wedding
                             </Typography>
-                            <Typography sx={{ fontFamily: 'Poppins' }}>
+                            <Typography sx={{ fontFamily: 'Poppins', color: '#484848', textAlign: 'center', fontSize: '14px', fontFamily: 'Poppins', lineHeight: '150%', letterSpacing: '0.98px' }}>
                                 we offer a spacious 6000 sq. ft. banquet hall and a stunning 20,000
                                 sq. ft. garden lawn, perfect for any occasion. Located in a serene natural
                                 setting, it is an ideal getaway. With 29 comfortable rooms, we provide excellent
@@ -177,10 +177,10 @@ function MyComponent() {
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
                         <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
+                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '18px', fontFamily: 'Bona Nova', letterSpacing: '1.26px', color: '#3D2521' }} >
                                 Conferences
                             </Typography>
-                            <Typography sx={{ fontFamily: 'Poppins' }}>
+                            <Typography sx={{ fontFamily: 'Poppins', color: '#484848', textAlign: 'center', fontSize: '14px', fontFamily: 'Poppins', lineHeight: '150%', letterSpacing: '0.98px' }}>
                                 Experience the finest conference facilities at Shree Cottages. Our
                                 resort offers the best hall in the region, perfect for conferences, meetings, and
 
@@ -204,10 +204,10 @@ function MyComponent() {
                             sx={{ borderRadius: '10px 10px 0px 0px' }}
                         />
                         <CardContent sx={{ background: '#FFFFFF', borderRadius: '0px 0px 10px 10px' }}>
-                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '29px', fontFamily: 'Bona Nova' }} >
+                            <Typography gutterBottom style={{ textAlign: 'center', fontSize: '18px', fontFamily: 'Bona Nova', letterSpacing: '1.26px', color: '#3D2521' }} >
                                 Event Planning
                             </Typography>
-                            <Typography sx={{ fontFamily: 'Poppins' }}>
+                            <Typography sx={{ fontFamily: 'Poppins', color: '#484848', textAlign: 'center', fontSize: '14px', fontFamily: 'Poppins', lineHeight: '150%', letterSpacing: '0.98px' }}>
                                 Let us handle every detail of your special event at Shree
                                 Cottages. Our dedicated team excels in event planning, ensuring a seamless
                                 and unforgettable experience. From weddings to birthdays, corporate
@@ -235,7 +235,7 @@ function MyComponent() {
                         mt: '4.6rem',
                     }}
                 >
-                    Call us <svg style={{ marginLeft: "5px" }} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    Call us <svg style={{ marginLeft: "10px" }} width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.333008 7.76666L0.333008 6.09999L10.333 6.09999L5.74967 1.51666L6.93301 0.333325L13.533 6.93333L6.93301 13.5333L5.74967 12.35L10.333 7.76666L0.333008 7.76666Z" fill="#3D2521" />
                     </svg>
 

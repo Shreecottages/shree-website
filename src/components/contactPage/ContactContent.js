@@ -149,13 +149,13 @@ const ContactContent = () => {
                             <Box component="span" style={{
                                 marginleft: "-15px"
                             }} className='mediaIcon1'>
-                                <Box component="span" sx={{ ml: '1rem' }}>
+                                <Box component="span" sx={{ ml: '0rem' }}>
                                     <a href="https://www.facebook.com/ShreeCottages"><img src={fbContact} alt="Facebook" style={{
                                         width: '45px',
                                         height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
                                     }} className="sns" /></a>
                                 </Box>
-                                <Box component="span" sx={{ ml: '1rem' }} >
+                                <Box component="span" sx={{ ml: '0.5rem' }} >
                                     <a href="https://www.instagram.com/shreecottages">
 
                                         <img src={instaContact} alt="Instagram" style={{
@@ -164,7 +164,7 @@ const ContactContent = () => {
                                         }} className="sns" />
                                     </a>
                                 </Box>
-                                <Box component="span" sx={{ ml: '1rem' }}>
+                                <Box component="span" sx={{ ml: '0.5rem' }}>
                                     <a href="https://www.youtube.com/@shreecottages">
 
 
