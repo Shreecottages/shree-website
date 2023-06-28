@@ -9,17 +9,17 @@ const steps = [
     {
       label: 'Room T1',
       description: 'Located on the ground floor of our charming cottages, Room T1 offers comfortable accommodation with all necessary amenities. Enjoy a convenient and delightful stay surrounded by the natural beauty of our resort.',
-      image: ['room1.png','room1.png','room1.png']
+      image: ['RoomT1/T1(1).jpg', 'RoomT1/T1(2).jpg', 'RoomT1/T1(3).jpg','RoomT1/T1(4).jpg'],
     },
     {
         label: 'Room T2',
         description: 'Situated on the first floor of our cottages, Room T2 provides a gallery with a picturesque garden view. Immerse yourself in tranquility while enjoying top-notch amenities, creating a perfect retreat for relaxation and rejuvenation.',
-        image: ['room1.png','room1.png']
+        image:  ['RoomT2/T2(1).jpg', 'RoomT2/T2(2).jpg', 'RoomT2/T2(3).jpg','RoomT2/T2(4).jpg'],
     },
     {
         label: 'Room T3',
         description: 'Nestled near our serene garden, Room T3 offers a peaceful and idyllic setting for your stay. Experience ultimate comfort and convenience with all amenities provided, ensuring a delightful and memorable stay at Shree Cottages.',
-        image: ['room1.png','room1.png','room1.png','room1.png']
+        image:  ['RoomT3/T3(1).jpg', 'RoomT3/T3(2).jpg', 'RoomT3/T3(3).jpg','RoomT3/T3(4).jpg'],
     },
   ];
 
@@ -117,10 +117,10 @@ const CSlider = () =>{
                             }}>
                             <Box className="room-img" display="flex">
                                 {activeStep===0?
-                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg1]}`)} />
+                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg1]}`)} />
                                 : activeStep===1?
-                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg2]}`)} />:
-                                <img  src={require(`../images/Rooms/${steps[activeStep].image[activeImg3]}`)} />
+                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg2]}`)} />:
+                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg3]}`)} />
                                 }
                             </Box>
                             <Box sx={{

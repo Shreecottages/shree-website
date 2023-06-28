@@ -14,7 +14,7 @@ const steps = [
     {
         label: 'Room T1',
         description: `Indulge in the comfort and convenience of Room T1 at Shree Cottages. Located on the ground floor of our cottages, this room offers a perfect blend of relaxation and necessary amenities. Immerse yourself in the serene ambiance and enjoy a restful stay. Whether it's the cozy interiors or the well-appointed facilities, Room T1 ensures a delightful experience. Unwind and make the most of your time in this inviting space, designed to provide utmost comfort during your stay at Shree Cottages.`,
-        image: ['room1.png', 'room1.png', 'room1.png'],
+        image: ['RoomT1/T1(1).jpg', 'RoomT1/T1(2).jpg', 'RoomT1/T1(3).jpg','RoomT1/T1(4).jpg'],
         amenities: ['24/7 Generator Power-Backup', 'Mineral Water', 'Makeup / Shaving Mirror',
             'Complimentary Wi-Fi', 'Housekeeping', 'Curtains/Shades',
             'Wardrobe', 'Complete Bedding',
@@ -25,7 +25,7 @@ const steps = [
     {
         label: 'Room T2',
         description: `Experience luxury and elegance in Room T2 at Shree Cottages. Situated on the first floor of our cottages, this room offers a gallery with a breathtaking garden view, providing a tranquil and picturesque atmosphere. Indulge in the spaciousness and enjoy the comfort of well-appointed amenities.  Whether it's admiring the scenic beauty or relaxing in the cozy interiors, Room T2 promises a memorable stay. Immerse yourself in the charm of this room and create lasting memories at Shree Cottages.`,
-        image: ['room1.png', 'room1.png'],
+        image: ['RoomT2/T2(1).jpg', 'RoomT2/T2(2).jpg', 'RoomT2/T2(3).jpg','RoomT2/T2(4).jpg'],
         amenities: ['24/7 Generator Power-Backup', 'Mineral Water', 'Makeup / Shaving Mirror',
             'Complimentary Wi-Fi', 'Housekeeping', 'Curtains/Shades',
             'Wardrobe', 'Complete Bedding',
@@ -36,7 +36,7 @@ const steps = [
     {
         label: 'Room T3',
         description: `Discover the serenity and convenience of Room T3 at Shree Cottages. Located near the garden, this room offers a peaceful retreat amidst lush surroundings. Unwind and relax in the comfortable ambiance while enjoying the amenities provided. Whether it's enjoying the scenic views, immersing in nature, or simply rejuvenating in the well-appointed space, Room T3 ensures a memorable stay. Experience tranquility and comfort in this delightful room, designed to enhance your stay at Shree Cottages.`,
-        image: ['room1.png', 'room1.png', 'room1.png', 'room1.png'],
+        image: ['RoomT3/T3(1).jpg', 'RoomT3/T3(2).jpg', 'RoomT3/T3(3).jpg','RoomT3/T3(4).jpg'],
         amenities: ['24/7 Generator Power-Backup', 'Mineral Water', 'Makeup / Shaving Mirror',
             'Complimentary Wi-Fi', 'Housekeeping', 'Curtains/Shades',
             'Wardrobe', 'Complete Bedding',
@@ -143,9 +143,13 @@ export default function Room() {
                             width: "100%",
                             // alignItems:"center"
                         }}>
+                        <Box display="flex" className="image" sx={{position:"relative", width: "100%", borderRadius: { xs: "10px 10px 0px 0px", md: "0px" }, overflow: "hidden" }}>
+                            <img style={{ width: "100%" }} src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg]}`)} />
+                        </Box>
                             <Box sx={{
                                 position: 'absolute',
-                                marginTop: { xs: '25%', md: '27%', xl: "27%" },
+                                // marginTop: { xs: '25%', md: '27%', xl: "37%" },
+                                bottom: { xs: '45%', md: '45%', xl: "50%" },
                                 display: "flex",
                                 flexDirection: "row",
                                 justifyContent: "space-between",
@@ -210,7 +214,8 @@ export default function Room() {
                                     activeStep={activeImg}
                                     sx={{
                                         position: "absolute",
-                                        marginTop: { xs: "45%", md: "50%", lg: "52%" },
+                                        // marginBottom: { xs: "45%", md: "50%", lg: "12%" },
+                                        bottom:{ xs: "2%", md: "4%", lg: "4%" },
                                         background: 'none',
                                         justifyContent: 'center',
                                         "& .MuiMobileStepper-dot": {
@@ -228,9 +233,7 @@ export default function Room() {
                                 />
                             </Box>
                         </Box>
-                        <Box display="flex" className="image" sx={{ width: "100%", borderRadius: { xs: "10px 10px 0px 0px", md: "0px" }, overflow: "hidden" }}>
-                            <img style={{ width: "100%" }} src={require(`../images/Rooms/${steps[activeStep].image[activeImg]}`)} />
-                        </Box>
+                        
                     </Box>
 
 
