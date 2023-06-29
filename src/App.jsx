@@ -152,7 +152,7 @@ const theme = createTheme({
             padding: "2.5px 10px",
           },
           textTransform: "none",
-          background: "linear-gradient(to left, white 50%, #FFBB70 50%) right",
+          background: "linear-gradient(to left, transparent 50%, #FFBB70 50%) right",
           backgroundSize: "200%",
           "&:hover": {
             cursor: "pointer",
