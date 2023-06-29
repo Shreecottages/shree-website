@@ -774,37 +774,10 @@ const AboutUs = () => {
                 sx={{
                   margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
                   width: { xs: "146px", sm: "200px" },
-                  background: "#FFE2D8",
-                  border: "1.5px solid #3D2521",
-                  boxShadow: "none",
-                  fontFamily: "Bona Nova",
-                  color: "#3D2521",
-                  fontSize: "1rem",
-                  // "@media (min-width:600px)": {
-                  //   fontSize: "1rem",
-                  // },
-                  // "@media (min-width:800px)": {
-                  //   fontSize: "1.2rem",
-                  // },
-                  // padding: "5px 20px",
-                  // "@media (max-width:700px)": {
-                  //   padding: "2.5px 10px",
-                  // },
-                  textTransform: "none",
-                  background:
-                    "linear-gradient(to left, white 50%, #FFBB70 50%) right",
-                  backgroundSize: "200%",
-
-                  background: "#FFE2D8",
-                  "&:hover": {
-                    cursor: "pointer",
-                    backgroundPosition: "left",
-                    color: "#3D2521",
-                    boxShadow: "none",
-                    transition: "0.4s",
-                    border: "none",
-                  },
+                 
+                
                 }}
+                variant="outlined"
               >
                 Contact Us <ArrowForwardIcon />
               </Button>
