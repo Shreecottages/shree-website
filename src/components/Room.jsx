@@ -149,7 +149,7 @@ export default function Room() {
                             <Box sx={{
                                 position: 'absolute',
                                 // marginTop: { xs: '25%', md: '27%', xl: "37%" },
-                                bottom: { xs: '45%', md: '45%', xl: "50%" },
+                                bottom: { xs: '43%', md: '43%', xl: "47%" },
                                 display: "flex",
                                 flexDirection: "row",
                                 justifyContent: "space-between",
