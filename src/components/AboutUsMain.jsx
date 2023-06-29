@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Box, Stack, Typography, Button, useMediaQuery, Divider } from "@mui/material";
+import {
+  Box,
+  Stack,
+  Typography,
+  Button,
+  useMediaQuery,
+  Divider,
+} from "@mui/material";
 // IMPORTING IMAGE
 // import AboutUsTop from "../assets/AboutTopImg.png";
 // import AboutFLowerRight from "../assets/AboutFlowersRight.png";
@@ -44,12 +51,12 @@ const AboutUs = () => {
   //   setReviews(fetchedReviews);
   //   console.log(reviews);
   // };
-  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
-  return (   
+  return (
     <div>
       <Box
-        sx={{ 
+        sx={{
           "&::-webkit-scrollbar": {
             display: "none",
           },
@@ -57,42 +64,51 @@ const AboutUs = () => {
       >
         <Box
           sx={{
-            width:"100vw",
+            width: "100vw",
             display: "flex",
             justifyContent: "space-between",
-            background:`rgba(61, 37, 33, 0.5) url(${isSmallScreen? AboutUsTopM :AboutUsTop})`,
-            boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
-            textAlign:"center",
-            padding:{xs:"0vw",md:"0vw 10vw"},
-            backgroundSize:"100%",
+            background: `rgba(61, 37, 33, 0.5) url(${
+              isSmallScreen ? AboutUsTopM : AboutUsTop
+            })`,
+            boxShadow:
+              "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            textAlign: "center",
+            padding: { xs: "0vw", md: "0vw 10vw" },
+            backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
-            backgroundSize:"cover",
-            backgroundPosition:"center",
-            height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
-            '@media(max-width:300px)':{
-              height:"100vw"
-            }
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: {
+              xs: "75vw",
+              sm: "40vw",
+              md: "30vw",
+              lg: "25vw",
+              xl: "20vw",
+            },
+            "@media(max-width:300px)": {
+              height: "100vw",
+            },
           }}
         >
           <Box
             sx={{
-                        // marginLeft: { xs: "-30px", lg: "200px" },
-                  backgroundImage: `url(${AboutFlowerLeft})`,
-                  backgroundRepeat: "no-repeat",
-                  width: { xs: "25vw", md: "200px", lg: "250px" },
-                  backgroundSize: "contain",
-                  // marginTop: "160px",
-                  backgroundPosition: "bottom",
-                  // backgroundPositionX:"left",
-              }}
-           ></Box>
+              // marginLeft: { xs: "-30px", lg: "200px" },
+              backgroundImage: `url(${AboutFlowerLeft})`,
+              backgroundRepeat: "no-repeat",
+              width: { xs: "25vw", md: "200px", lg: "250px" },
+              backgroundSize: "contain",
+              // marginTop: "160px",
+              backgroundPosition: "bottom",
+              // backgroundPositionX:"left",
+            }}
+          ></Box>
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               textAlign: "center",
-              width:{xs:"30vw",sm:"100%"}
+              width: { xs: "30vw", sm: "100%" },
             }}
           >
             <Typography
@@ -104,7 +120,7 @@ const AboutUs = () => {
                 lineHeight: "48px",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",
-                m: { xs: " 0vw -10vw", sm: "0vw" } 
+                m: { xs: " 0vw -10vw", sm: "0vw" },
               }}
             >
               About Us
@@ -117,7 +133,17 @@ const AboutUs = () => {
                 border: "1px solid #FFBB70",
               }}
             ></Box> */}
-            <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
+            <Divider
+              orientation="vertical"
+              variant="middle"
+              sx={{
+                height: "1.55rem",
+                width: "1px",
+                backgroundColor: "warning.main",
+                alignSelf: "center",
+                m: "1.1rem",
+              }}
+            />
 
             <Typography
               sx={{
@@ -127,7 +153,7 @@ const AboutUs = () => {
                 fontWeight: "400",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",
-                m: { xs: " 0vw -30vw", sm: "0vw" } 
+                m: { xs: " 0vw -30vw", sm: "0vw" },
               }}
             >
               We create those special memories✨ for your family💞 <br />
@@ -140,9 +166,9 @@ const AboutUs = () => {
               backgroundImage: `url(${AboutFLowerRight})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
-              width: { xs: "30vw",sm:"25vw", md: "200px", lg: "250px" },
+              width: { xs: "30vw", sm: "25vw", md: "200px", lg: "250px" },
             }}
-          ></Box> 
+          ></Box>
 
           {/* <Box sx={{ marginRight: { sx: "50px", lg: "200px" } }}>
           <img
@@ -150,84 +176,94 @@ const AboutUs = () => {
             style={{ width: "250px", height: "164px" }}
             alt=""
           />
-        </Box> */} 
+        </Box> */}
         </Box>
         {/* FIRST PART BEGINS */}
 
-    <Box
-      sx={{
-        minHeight: "600px",
-        width: "100vw",
-        background: "#FFE2D8",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Box
-        sx={{
-          width: { xs: "95%", sm: "80vw" },
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          margin: { xs: "-20px 0px 0px 0px", sm: "50px auto" },
-          // textAlign: "center",
-          justifyContent:"center",
-          alignItems:"center",
-          paddingTop: { xs: "50px", sm: "0" },
-          paddingBottom: { xs: "30px", sm: "0" },
-        }}
-      >
         <Box
           sx={{
-            margin: {
-              xs: "0px 0px",
-              sm: "auto",
-              lg: "auto",
-            },
-            width: { xs: "100%", md: "400px", lg: "25rem" },
-            height: { xs: "327px", md: "400px", lg: "25rem" },
+            minHeight: "600px",
+            width: "100vw",
+            background: "#FFE2D8",
             display: "flex",
+            alignItems: "center",
             justifyContent: "center",
-            "@media (min-width:200px) and (max-width:300px)": {
-              width: "250px",
-              height: "250px",
-            },
           }}
         >
           <Box
             sx={{
-              width: { xs: "100%", md: "400px", lg: "25rem" },
-              height: { xs: "360px", md: "400px", lg: "25rem" },
-              backgroundImage: `url(${WhoWeAre})`,
-              backgroundSize: "cover",
+              width: { xs: "95%", sm: "80vw" },
+              display: "flex",
+              flexDirection: { xs: "column", md: "row" },
+              margin: { xs: "-20px 0px 0px 0px", sm: "50px auto" },
+              // textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center",
+              paddingTop: { xs: "50px", sm: "0" },
+              paddingBottom: { xs: "30px", sm: "0" },
             }}
-          ></Box>
-        </Box>
+          >
+            <Box
+              sx={{
+                margin: {
+                  xs: "0px 0px",
+                  sm: "auto",
+                  lg: "auto",
+                },
+                width: { xs: "100%", md: "400px", lg: "25rem" },
+                height: { xs: "327px", md: "400px", lg: "25rem" },
+                display: "flex",
+                justifyContent: "center",
+                "@media (min-width:200px) and (max-width:300px)": {
+                  width: "250px",
+                  height: "250px",
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  width: { xs: "100%", md: "400px", lg: "25rem" },
+                  height: { xs: "360px", md: "400px", lg: "25rem" },
+                  backgroundImage: `url(${WhoWeAre})`,
+                  backgroundSize: "cover",
+                }}
+              ></Box>
+            </Box>
 
-        <Typography
-          sx={{
-            width: { xs: "100%", lg: "56vw" },
-            margin: {
-              xs: "50px auto",
-              sm: "auto 0px",
-              md: "auto 40px",
-              lg: "auto auto auto 40px",
-            },
-            fontSize: { xs: "14px", lg: "1.04vw" },
-            lineHeight: { xs: "21px", sm: "30px" },
-            textAlign: { xs: "center", md: "start" },
-            letterSpacing: "0.07em",
-            fontFamily: "Poppins",
-            fontWeight: "400",
-          }}
-        >
-          Welcome to Shree Cottages, a premier destination wedding resort nestled in Gir National Park. Our resort is dedicated to providing exceptional experiences and unforgettable memories. With lush gardens and breathtaking surroundings, we offer a picturesque setting for your special occasions. At Shree Cottages, we pride ourselves on our unwavering commitment to customer satisfaction.
-          <br />
-          <br />
-          Since our inception, not a single customer has left unsatisfied. With luxurious accommodations, state-of-the-art amenities, and impeccable service, we ensure that your stay is truly memorable. Join us at Shree Cottages and immerse yourself in the enchantment of Gir National Park, where tranquility meets elegance, and create timeless memories that will last a lifetime.
-        </Typography>
-      </Box>
-    </Box>
+            <Typography
+              sx={{
+                width: { xs: "100%", lg: "56vw" },
+                margin: {
+                  xs: "50px auto",
+                  sm: "auto 0px",
+                  md: "auto 40px",
+                  lg: "auto auto auto 40px",
+                },
+                fontSize: { xs: "14px", lg: "1.04vw" },
+                lineHeight: { xs: "21px", sm: "30px" },
+                textAlign: { xs: "center", md: "start" },
+                letterSpacing: "0.07em",
+                fontFamily: "Poppins",
+                fontWeight: "400",
+              }}
+            >
+              Welcome to Shree Cottages, a premier destination wedding resort
+              nestled in Gir National Park. Our resort is dedicated to providing
+              exceptional experiences and unforgettable memories. With lush
+              gardens and breathtaking surroundings, we offer a picturesque
+              setting for your special occasions. At Shree Cottages, we pride
+              ourselves on our unwavering commitment to customer satisfaction.
+              <br />
+              <br />
+              Since our inception, not a single customer has left unsatisfied.
+              With luxurious accommodations, state-of-the-art amenities, and
+              impeccable service, we ensure that your stay is truly memorable.
+              Join us at Shree Cottages and immerse yourself in the enchantment
+              of Gir National Park, where tranquility meets elegance, and create
+              timeless memories that will last a lifetime.
+            </Typography>
+          </Box>
+        </Box>
 
         {/* SECOND PART BEGINS */}
         <Box
@@ -242,7 +278,7 @@ const AboutUs = () => {
         >
           <Typography
             sx={{
-              marginTop: {xs:"50px", sm:"100px"},
+              marginTop: { xs: "50px", sm: "100px" },
               fontSize: { xs: "24px", md: "40px" },
               fontWeight: "400",
               fontStyle: "normal",
@@ -274,7 +310,7 @@ const AboutUs = () => {
           >
             <Box
               sx={{
-                marginRight:"20px",
+                marginRight: "20px",
                 width: { xs: "100%", md: "52%" },
                 marginTop: { xs: "30px", md: "10px" },
                 alignItems: "flex-start",
@@ -418,7 +454,7 @@ const AboutUs = () => {
                   sx={{
                     margin: "50px auto",
                     width: { xs: "121px", lg: "150px", xl: "170px" },
-                    height: {xs:"35px", sm:"50px"},
+                    height: { xs: "35px", sm: "50px" },
                     color: "#3D2521",
                     background:
                       "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)",
@@ -512,7 +548,7 @@ const AboutUs = () => {
                   sx={{
                     margin: "50px auto",
                     width: { xs: "121px", lg: "150px", xl: "170px" },
-                    height: {xs:"35px", sm:"50px"},
+                    height: { xs: "35px", sm: "50px" },
                     alignItems: "center",
                     color: "#3D2521",
                     background:
@@ -548,7 +584,7 @@ const AboutUs = () => {
               fontSize: { xs: "24px", md: "40px" },
               textAlign: "center",
               letterSpacing: "0.07em",
-              color:"#3D2521"
+              color: "#3D2521",
             }}
           >
             Our Vision
@@ -627,8 +663,9 @@ const AboutUs = () => {
                       lineHeight: { xs: "21px", sm: "30px" },
                     }}
                   >
-                    Always go above and beyond, providing people with more than they expect and
-                    creating an extraordinary experience for everyone.
+                    Always go above and beyond, providing people with more than
+                    they expect and creating an extraordinary experience for
+                    everyone.
                   </Typography>
                   {/* <Box
                   sx={{
@@ -735,18 +772,37 @@ const AboutUs = () => {
                 sx={{
                   margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
                   width: { xs: "146px", sm: "200px" },
-                  // height: { xs: "38px", sm: "54px" },
-                  // gap: "10px",
-                  // fontSize: { xs: "16px", sm: "20px" },
-                  // fontWeight: "400",
-                  // fontStyle: "normal",
-                  // fontFamily: "Bona Nova",
-                  // textTransform: "capitalize",
-                  // color: "#000000",
-                  // border: "1px solid rgb(0, 0, 0)",
-                  // background: "#FFE2D8",
+                  background: "#FFE2D8",
+                  border: "1.5px solid #3D2521",
+                  boxShadow: "none",
+                  fontFamily: "Bona Nova",
+                  color: "#3D2521",
+                  fontSize: "1rem",
+                  // "@media (min-width:600px)": {
+                  //   fontSize: "1rem",
+                  // },
+                  // "@media (min-width:800px)": {
+                  //   fontSize: "1.2rem",
+                  // },
+                  // padding: "5px 20px",
+                  // "@media (max-width:700px)": {
+                  //   padding: "2.5px 10px",
+                  // },
+                  textTransform: "none",
+                  background:
+                    "linear-gradient(to left, white 50%, #FFBB70 50%) right",
+                  backgroundSize: "200%",
+
+                  background: "#FFE2D8",
+                  "&:hover": {
+                    cursor: "pointer",
+                    backgroundPosition: "left",
+                    color: "#3D2521",
+                    boxShadow: "none",
+                    transition: "0.4s",
+                    border: "none",
+                  },
                 }}
-                variant="outlined"
               >
                 Contact Us <ArrowForwardIcon />
               </Button>
