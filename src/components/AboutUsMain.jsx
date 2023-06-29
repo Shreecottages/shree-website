@@ -112,10 +112,11 @@ const AboutUs = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 // padding: { xs: "4s0px 0 0px 0", md: "100px 0 10px 0" },
                 fontFamily: "Bona Nova",
-                fontSize: { xs: "1.5em", md: "2.5em" },
+                // fontSize: { xs: "1.5em", md: "2.5em" },
                 fontWeight: "400",
                 lineHeight: "48px",
                 letterSpacing: "0.07em",
@@ -146,10 +147,11 @@ const AboutUs = () => {
             />
 
             <Typography
+              variant="body1"
               sx={{
                 magrin: "14px auto",
                 fontFamily: "Bona Nova",
-                fontSize: { xs: "16px", md: "18px" },
+                // fontSize: { xs: "16px", md: "18px" },
                 fontWeight: "400",
                 letterSpacing: "0.07em",
                 color: "#FFBB70",

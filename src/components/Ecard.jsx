@@ -20,7 +20,7 @@ export default function Ecard({ itineraries, activities }){
                                 }, 
                                 { _id: "3",
                                     Eimg:require("../images/events/corp.png"),
-                                    event:"Corperate Event",
+                                    event:"Corporate Event",
                                     desc:"Host a successful and productive corporate event amidst the serene surroundings of Shree Cottages. Our state-of-the-art facilities and professional services guarantee a seamless and memorable experience." 
                                 },
                                 {

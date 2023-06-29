@@ -23,10 +23,11 @@ const ContactContent = () => {
                             </Typography>
                         </Box>
                     </Grid>
+
                     <Grid item sm={12} md={8} lg={7} sx={{ margin: 'auto', display: { sm: 'none', md: 'none', xs: 'block' } }}>
                         <Box display="flex" flexDirection="column" alignItems="center" mt={4} mb={4} height={0.5}>
-                            <Typography className="map-responsive" sx={{ borderRadius: '20px' }}>
-                                <iframe className='map' title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin" width="500" height="350" frameBorder="0" style={{ border: 0, borderRadius: '20px' }} allowFullScreen></iframe>
+                            <Typography className="map-responsive" sx={{ borderRadius: '20px', borderRadius: '10px', boxShadow: '0px 2px 5px 0px rgba(0, 0, 0, 0.10), 0px 5px 10px 0px rgba(0, 0, 0, 0.09)' }}>
+                                <iframe className='map' title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin" width="500" height="350" frameBorder="0" style={{ border: 0, borderRadius: '20px', borderRadius: '10px' }} allowFullScreen></iframe>
                             </Typography>
                         </Box>
                     </Grid>
@@ -98,13 +99,15 @@ const ContactContent = () => {
                             <Typography variant="h6" className='mediaIcon1' sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Follow us</Typography>
                             <Box component="span" className='mediaIcon1' mt={1}>
                                 <Box component="span">
-                                    <a href="/"><img src={fbContact} alt="Facebook" className="sns" sx={{ border: '2px solid #3D2521' }} /></a>
+                                    <a href="https://www.facebook.com/ShreeCottages"><img src={fbContact} alt="Facebook" className="sns" sx={{ border: '2px solid #3D2521' }} /></a>
                                 </Box>
                                 <Box component="span" sx={{ ml: '1rem' }}>
-                                    <img src={instaContact} alt="Instagram" className="sns" />
+                                    <a href="https://www.instagram.com/shreecottages"><img src={instaContact} alt="Instagram" className="sns" /></a>
+
                                 </Box>
                                 <Box component="span" sx={{ ml: '1rem' }}>
-                                    <img src={ytContact} alt="Youtube" className="sns" />
+                                    <a href="https://www.youtube.com/@shreecottages">  <img src={ytContact} alt="Youtube" className="sns" /></a>
+
                                 </Box>
                             </Box>
                         </Box>
@@ -118,12 +121,12 @@ const ContactContent = () => {
                         <Box >
                             <Typography variant="h6" sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em', marginLeft: '13px' }}>Contact us</Typography>
                             <Box display="flex" flexDirection="row" mt='3vw'>
-                                <CallOutlinedIcon sx={{}} />
-                                <Typography mt='1vw' variant="h6" sx={{ color: '#3D2521', letterSpacing: '0.07em', fontStyle: 'normal', fontFamily: 'Poppins', fontSize: '16px' }}>+91 9427424157</Typography>
+                                <CallOutlinedIcon mr={2} />
+                                <Typography mt='1vw' ml='2vw' variant="h6" sx={{ color: '#3D2521', letterSpacing: '0.07em', fontStyle: 'normal', fontFamily: 'Poppins', fontSize: '16px' }}>+91 9427424157</Typography>
                             </Box>
                             <Box display="flex" flexDirection="row" mt='3vw'>
                                 <MailOutlineOutlinedIcon />
-                                <Typography variant="h6" sx={{ color: '#3D2521', letterSpacing: '0.07em', fontStyle: 'normal', fontFamily: 'Poppins', fontSize: '16px' }}>shreecottages57@gmail.com</Typography>
+                                <Typography ml='2vw' variant="h6" sx={{ color: '#3D2521', letterSpacing: '0.07em', fontStyle: 'normal', fontFamily: 'Poppins', fontSize: '16px' }}>shreecottages57@gmail.com</Typography>
                             </Box>
                         </Box>
                     </Grid>
@@ -133,7 +136,7 @@ const ContactContent = () => {
                         <Typography variant="h6" sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Come over for coffee</Typography>
                         <Box display="flex" flexDirection="row" mt='3vw'>
                             <PlaceOutlinedIcon />
-                            <Typography variant="h6" sx={{ fontFamily: 'Poppins', fontSize: '16px', fontStyle: 'normal' }}>Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India 362150</Typography>
+                            <Typography variant="h6" ml='2vw' sx={{ fontFamily: 'Poppins', fontSize: '16px', fontStyle: 'normal' }}>Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India 362150</Typography>
                         </Box>
                     </Grid>
 
@@ -142,18 +145,34 @@ const ContactContent = () => {
                     {/* Third Box */}
                     <Grid item xs={12} md={3} sx={{ display: 'flex', marginTop: '2rem' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                            <Typography variant="h6" style={{ marginLeft: '13px' }} sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Follow</Typography>
+                            <Typography variant="h6" style={{ marginLeft: '13px' }} sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Follow us</Typography>
                             <Box component="span" style={{
                                 marginleft: "-15px"
                             }} className='mediaIcon1'>
-                                <Box component="span" sx={{ ml: '1rem' }}>
-                                    <a href="/"><img src={fbContact} alt="Facebook" className="sns" /></a>
+                                <Box component="span" sx={{ ml: '0rem' }}>
+                                    <a href="https://www.facebook.com/ShreeCottages"><img src={fbContact} alt="Facebook" style={{
+                                        width: '45px',
+                                        height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
+                                    }} className="sns" /></a>
                                 </Box>
-                                <Box component="span" sx={{ ml: '1rem' }} >
-                                    <img src={instaContact} alt="Instagram" className="sns" />
+                                <Box component="span" sx={{ ml: '0.5rem' }} >
+                                    <a href="https://www.instagram.com/shreecottages">
+
+                                        <img src={instaContact} alt="Instagram" style={{
+                                            width: '45px',
+                                            height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
+                                        }} className="sns" />
+                                    </a>
                                 </Box>
-                                <Box component="span" sx={{ ml: '1rem' }}>
-                                    <img src={ytContact} alt="Youtube" className="sns" />
+                                <Box component="span" sx={{ ml: '0.5rem' }}>
+                                    <a href="https://www.youtube.com/@shreecottages">
+
+
+                                        <img src={ytContact} alt="Youtube" style={{
+                                            width: '45px',
+                                            height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
+                                        }} className="sns" />
+                                    </a>
                                 </Box>
                             </Box>
                         </Box>

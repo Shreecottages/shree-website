@@ -66,13 +66,16 @@ const ImageGallery = () => {
               flexDirection: "column",
               justifyContent: "center",
               textAlign: "center",
+              width:{xs:"30vw",sm:"100%"},
+              m: { xs: " 0vw -20vw", sm: "0vw" } 
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 // padding: { xs: "60px 0 20px 0", md: "100px 0 10px 0" },
                 fontFamily: "Bona Nova",
-                fontSize: { xs: "2.5em", md: "2.5em" },
+                // fontSize: { xs: "2.5em", md: "2.5em" },
                 fontWeight: "400",
                 lineHeight: "48px",
                 letterSpacing: "0.07em",
@@ -92,16 +95,16 @@ const ImageGallery = () => {
             <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"warning.main", alignSelf:"center", m:'1.1rem'}}/>
             <Box
               sx={{
-                width: { xs: "90%", md: "60%" },
+                width: { xs: "120%", sm: "60%" },
                 display: "flex",
                 justifyContent: "space-between",
-                gap: { xs: "40px", md: "200px" },
+                alignSelf:"center",
+                m: { xs: " 0vw -20vw", sm: "0vw" }, 
+                // gap: { xs: "20vw", md: "0" },
               }}
             >
-              <NavLink to={currentUrl} className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" >Image</ListItemText></ListItemButton></NavLink>
-              
-
-              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
+              <NavLink to={currentUrl} className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70"}}><ListItemButton disableGutters><ListItemText disableTypography className="list" sx={{fontSize:{xs:"1.25rem",md:"2rem"},mr:{xs:"4vw",md:"0vw"}}}>Image</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/gallery/videos" className={({ isActive }) => (isActive ? "resortLink-active" : "resortLink")} style={{padding:"0",justifyContent:"center",textDecoration:"none", color: "#FFBB70", fontSize:"30px"}}><ListItemButton disableGutters><ListItemText disableTypography className="list" sx={{fontSize:"30px"}}>Videos</ListItemText></ListItemButton></NavLink>
             </Box>
           </Box>
 
