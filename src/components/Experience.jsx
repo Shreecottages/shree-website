@@ -143,7 +143,7 @@ export default function Experience(){
                                                                                 }}>
                                 <Typography variant="h4" sx={{mb:"1.5vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>Devaliya Safari Park</Typography>
                                 <Typography variant="body1" sx={{textAlign:{xs:"justify" ,md:"left"},fontSize:{xs:"0.8rem",md:"0.9rem",lg:"1rem",xl:"1.1rem"}}}>
-                                    Devalia Safari Park is a small protected area of Gir Jungle Trail where visitors can see a variety of wildlife in their natural habitat.
+                                    It is a small protected area of Gir Jungle Trail where visitors can see a variety of wildlife in their natural habitat.
                                 </Typography>
                                 <Typography variant="h4" sx={{m:"1vw 0vw",fontSize:{xs:"1.3rem",md:"1.5rem",xl:"1.7rem"}}}>27 km far</Typography>
                                 <Box sx={{display:"flex",flexDirection:"row", justifyContent:{xs:"space-between",sm:"left"}}}>
