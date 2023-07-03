@@ -302,7 +302,7 @@ function App() {
                   
                   <Route
                     exact
-                    path="images/all"
+                    path="/gallery/images/all"
                     element={<ImageGalleryView />}
                   />
 
