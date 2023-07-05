@@ -23,7 +23,7 @@ import Resort5 from "../../assets/Resort5.png";
 import Resort6 from "../../assets/Resort6.png";
 
 import Decoration1 from "../../assets/Decoration1.png";
-import Decoration2 from "../../assets/Decoration2.png";
+import Decoration2 from "../../assets/Decoration2.webp";
 
 import SwimmingPool from "../../assets/SwimmingPool1.png";
 
@@ -35,12 +35,12 @@ const ImageGalleryView = () => {
   const decoration = [Decoration1, Decoration2];
 
   const banquestHall = [
-    "https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
+    //"https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
+    //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
   ];
 
   const conferenceRoom = [
-    "https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
+    //"https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
   ];
   const swimmingPool = [SwimmingPool];
 
@@ -53,9 +53,9 @@ const ImageGalleryView = () => {
     Resort6,
     Decoration1,
     Decoration2,
-    "https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
-    "https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
+    //"https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
+    //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
+    //"https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
     SwimmingPool,
   ];
   const newImages = [

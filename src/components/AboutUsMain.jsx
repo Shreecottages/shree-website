@@ -57,39 +57,29 @@ const AboutUs = () => {
     <div>
       <Box
         sx={{
+          overflowX:"hidden",
           "&::-webkit-scrollbar": {
             display: "none",
           },
         }}
       >
-        <Box
-          sx={{
-            width: "100vw",
-            display: "flex",
-            justifyContent: "space-between",
-            background: `rgba(61, 37, 33, 0.5) url(${
-              isSmallScreen ? AboutUsTopM : AboutUsTop
-            })`,
-            boxShadow:
-              "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
-            textAlign: "center",
-            padding: { xs: "0vw", md: "0vw 10vw" },
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: {
-              xs: "75vw",
-              sm: "40vw",
-              md: "30vw",
-              lg: "25vw",
-              xl: "20vw",
-            },
-            "@media(max-width:300px)": {
-              height: "100vw",
-            },
-          }}
-        >
+         <Box sx={{
+                width:"100vw",
+                display: "flex",
+                justifyContent: "space-between",
+                background:`rgba(61, 37, 33, 0.5) url(${isSmallScreen? AboutUsTopM :AboutUsTop})`,
+                boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+                textAlign:"center",
+                padding:{xs:"0vw",md:"0vw 10vw"},
+                backgroundSize:"100%",
+                backgroundRepeat: "no-repeat",
+                backgroundSize:"cover",
+                backgroundPosition:"center",
+                height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
+                '@media(max-width:300px)':{
+                height:"100vw"
+                }
+            }}>
           <Box
             sx={{
               // marginLeft: { xs: "-30px", lg: "200px" },
@@ -224,9 +214,9 @@ const AboutUs = () => {
             >
               <Box
                 sx={{
-                  width: { xs: "100%", md: "400px", lg: "25rem" },
-                  height: { xs: "360px", md: "400px", lg: "25rem" },
-                  backgroundImage: `url(${WhoWeAre})`,
+                  width: { xs: "347px", md: "400px", lg: "25rem" },
+                  height: { xs: "347px", md: "400px", lg: "25rem" },
+                  backgroundImage: `url(${require('../assets/WhoWeAre.svg').default})`,
                   backgroundSize: "cover",
                 }}
               ></Box>
@@ -236,7 +226,7 @@ const AboutUs = () => {
               sx={{
                 width: { xs: "100%", lg: "56vw" },
                 margin: {
-                  xs: "50px auto",
+                  xs: "50px 0px",
                   sm: "auto 0px",
                   md: "auto 40px",
                   lg: "auto auto auto 40px",

@@ -99,14 +99,14 @@ const ContactContent = () => {
                             <Typography variant="h6" className='mediaIcon1' sx={{ fontFamily: 'Bona Nova', color: '#3D2521', fontSize: '26px', fontStyle: 'normal', letterSpacing: '0.07em' }}>Follow us</Typography>
                             <Box component="span" className='mediaIcon1' mt={1}>
                                 <Box component="span">
-                                    <a href="https://www.facebook.com/ShreeCottages"><img src={fbContact} alt="Facebook" className="sns" sx={{ border: '2px solid #3D2521' }} /></a>
+                                    <a href="https://www.facebook.com/ShreeCottages"><img src={require('../../assets/fb-Contact.svg').default} alt="Facebook" className="sns" sx={{ border: '2px solid #3D2521' }} /></a>
                                 </Box>
                                 <Box component="span" sx={{ ml: '1rem' }}>
-                                    <a href="https://www.instagram.com/shreecottages"><img src={instaContact} alt="Instagram" className="sns" /></a>
+                                    <a href="https://www.instagram.com/shreecottages"><img src={require('../../assets/insta-Contact.svg').default} alt="Instagram" className="sns" /></a>
 
                                 </Box>
                                 <Box component="span" sx={{ ml: '1rem' }}>
-                                    <a href="https://www.youtube.com/@shreecottages">  <img src={ytContact} alt="Youtube" className="sns" /></a>
+                                    <a href="https://www.youtube.com/@shreecottages">  <img src={require('../../assets/yt-Contact.svg').default} alt="Youtube" className="sns" /></a>
 
                                 </Box>
                             </Box>
@@ -150,17 +150,17 @@ const ContactContent = () => {
                                 marginleft: "-15px"
                             }} className='mediaIcon1'>
                                 <Box component="span" sx={{ ml: '0rem' }}>
-                                    <a href="https://www.facebook.com/ShreeCottages"><img src={fbContact} alt="Facebook" style={{
+                                    <a href="https://www.facebook.com/ShreeCottages" ><img src={require('../../assets/fb-Contact.svg').default} alt="Facebook" style={{
                                         width: '45px',
-                                        height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
+                                        height: '45px', borderRadius: '45px'
                                     }} className="sns" /></a>
                                 </Box>
                                 <Box component="span" sx={{ ml: '0.5rem' }} >
                                     <a href="https://www.instagram.com/shreecottages">
 
-                                        <img src={instaContact} alt="Instagram" style={{
+                                        <img src={require('../../assets/insta-Contact.svg').default} alt="Instagram" style={{
                                             width: '45px',
-                                            height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
+                                            height: '45px', borderRadius: '45px'
                                         }} className="sns" />
                                     </a>
                                 </Box>
@@ -168,9 +168,9 @@ const ContactContent = () => {
                                     <a href="https://www.youtube.com/@shreecottages">
 
 
-                                        <img src={ytContact} alt="Youtube" style={{
+                                        <img src={require('../../assets/yt-Contact.svg').default} alt="Youtube" style={{
                                             width: '45px',
-                                            height: '45px', borderRadius: '45px', border: '2px solid #3D2521'
+                                            height: '45px', borderRadius: '45px'
                                         }} className="sns" />
                                     </a>
                                 </Box>

@@ -302,43 +302,43 @@ function App() {
                   
                   <Route
                     exact
-                    path="images/all"
+                    path="/gallery/images/all"
                     element={<ImageGalleryView />}
                   />
 
                   <Route
                     exact
-                    path="videos"
+                    path="/gallery/videos"
                     element={<VideoGalleryView />}
                   />
 
                   <Route
                     exact
-                    path="images/resort"
+                    path="/gallery/images/resort"
                     element={<ImageGalleryView />}
                   />
 
                   <Route
                     exact
-                    path="images/decoration"
+                    path="/gallery/images/decoration"
                     element={<ImageGalleryView />}
                   />
 
                   <Route
                     exact
-                    path="images/banquest-hall"
+                    path="/gallery/images/banquest-hall"
                     element={<ImageGalleryView />}
                   />
 
                   <Route
                     exact
-                    path="images/conference-room"
+                    path="/gallery/images/conference-room"
                     element={<ImageGalleryView />}
                   />
 
                   <Route
                     exact
-                    path="images/swimming-pool"
+                    path="/gallery/images/swimming-pool"
                     element={<ImageGalleryView />}
                   />
                   </Route>
