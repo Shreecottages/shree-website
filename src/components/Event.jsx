@@ -10,7 +10,7 @@ const Event = () => {
 
     return (
         <Stack>
-            <Box>
+            <Box sx={{overflowX:"hidden"}}>
                 <Jumbotron />
                 <Content />
                 <Review />

@@ -19,12 +19,12 @@ export default function Aboutus(){
             <Box sx={{width:{xs:"100%",lg:"50%"},display:"flex",flexDirection:"row",justifyContent:"center", alignItems:"center",p:{xs:'0vh', sm: '5vw',lg:'0vw'}}}>
                 {/* <img src={isSmallScreen?AboutImgM:AboutImg} style={{width:"100%"}}/> */}
                 <Box sx={{display:"flex", flexDirection:"column",alignItems:"flex-end",mr:{xs:"0.5rem",sm:"0.75rem"}}}>
-                    <img src={a1} style={{width:"70%",margin:isSmallScreen?"1rem 0rem":"1.5rem 0rem"}}/>
+                    <img src={require('../images/Abt-us/a1.svg').default} style={{width:"70%",margin:isSmallScreen?"1rem 0rem":"1.5rem 0rem"}}/>
                     <img src={a2} style={{width:"100%"}}/>
                 </Box>
                 <Box sx={{display:"flex", flexDirection:"column", alignItems:"flex-start",ml:{xs:"0.5rem",sm:"0.75rem"}}}>
                     <img src={a3} style={{width:"100%"}}/>
-                    <img src={a4} style={{width:"70%",margin:isSmallScreen?"1rem 0rem":"1.5rem 0rem"}}/>
+                    <img src={require('../images/Abt-us/a4.svg').default} style={{width:"70%",margin:isSmallScreen?"1rem 0rem":"1.5rem 0rem"}}/>
                 </Box>
             </Box>
             <Box display="flex" flexDirection="column" sx={{width:{xs:"100%",lg:"50%"},mt:"-5vw",mr:{xs:"0px",lg:"5vw"}, backgroundImage:`url(${logoTransparent})`,backgroundRepeat:'no-repeat',backgroundSize:"contain", backgroundPositionX:"center"}}>
