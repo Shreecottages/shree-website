@@ -216,7 +216,7 @@ const AboutUs = () => {
                 sx={{
                   width: { xs: "347px", md: "400px", lg: "25rem" },
                   height: { xs: "347px", md: "400px", lg: "25rem" },
-                  backgroundImage: `url(${WhoWeAre})`,
+                  backgroundImage: `url(${require('../assets/WhoWeAre.svg').default})`,
                   backgroundSize: "cover",
                 }}
               ></Box>
