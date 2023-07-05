@@ -39,7 +39,7 @@ function MyComponent() {
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.7rem', ml: '4rem' }}>
                                 Wedding
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '19px' }}>
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '19px' , textAlign: 'justify' }}>
                                 we offer a spacious 6000 sq. ft. banquet hall and a stunning 20,000
                                 sq. ft. garden lawn, perfect for any occasion. Located in a serene natural
                                 setting, it is an ideal getaway. With 29 comfortable rooms, we provide excellent
@@ -63,7 +63,7 @@ function MyComponent() {
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.7rem', ml: '4rem' }}>
                                 Conferences
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '19px', letterSpacing: '1px' }}>
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '19px', letterSpacing: '1px' , textAlign: 'justify' }}>
                                 Experience the finest conference facilities at Shree Cottages. Our
                                 resort offers the best hall in the region, perfect for conferences, meetings, and
                                 corporate events. Immerse yourself in the tranquility of the surrounding jungle
@@ -103,7 +103,7 @@ function MyComponent() {
                             <Typography className="desc1-head" sx={{ fontSize: '1.5em', color: '#3D2521', fontFamily: 'Bona Nova', mt: '0.8rem', ml: '4rem' }}>
                                 Event Planning
                             </Typography>
-                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '19px', letterSpacing: '1px' }}>
+                            <Typography className="desc1-desc" sx={{ color: '#484848', fontFamily: 'Poppins', mt: '1rem', ml: '4rem', mr: '4rem', fontSize: '19px', letterSpacing: '1px' , textAlign: 'justify' }}>
                                 Let us handle every detail of your special event at Shree
                                 Cottages. Our dedicated team excels in event planning, ensuring a seamless
                                 and unforgettable experience. From weddings to birthdays, corporate
