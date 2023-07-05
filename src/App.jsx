@@ -18,6 +18,7 @@ import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
 import { BrowserRouter as Router, Routes, Route, redirect} from "react-router-dom";
 import ScrollToTop from "./SmoothScroll";
 import SmoothScroll from "./SmoothScroll";
+import { Helmet } from "react-helmet";
 
 
 const theme = createTheme({
@@ -275,6 +276,19 @@ function App() {
       <div className="App">
       <Paper sx={{backgroundColor: "#FFF6F3"}}>
         <Header />
+        <Helmet>
+          <title>
+            Shree Cottages
+          </title>
+          <meta 
+              name="description"
+              content="Shree Cottages"
+            />
+             <meta 
+              name="keywords"
+              content="Shree Cottage, resort, hotel"
+            />
+        </Helmet>
         <Box className="body" style={{backgroundColor:"#FFFFFF"}}>
         {/* <Router> */}
             <SmoothScroll>

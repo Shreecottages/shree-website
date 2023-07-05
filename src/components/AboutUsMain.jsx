@@ -28,6 +28,7 @@ import Review from "./Review";
 // IMPORTING ICONS
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Helmet } from "react-helmet";
 
 // import { GooglePlacesAutocomplete } from "react-google-places-autocomplete";/
 const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
@@ -63,6 +64,17 @@ const AboutUs = () => {
           },
         }}
       >
+      <Helmet>
+                <title>About - Shree Cottages</title>
+                <meta
+                    name="description"
+                    content="About the owner of Shree Cottages"
+                />
+                <meta 
+                    name="keywords"
+                    content="shree cottages"
+                />
+            </Helmet>
          <Box sx={{
                 width:"100vw",
                 display: "flex",

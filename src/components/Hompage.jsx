@@ -6,6 +6,7 @@ import Review from './Review';
 import Attractions from "./Attractions";
 import Aboutus from "./Aboutus";
 import '../styles/Homepage.css';
+import { Helmet } from "react-helmet";
 const asset3_1 = require('../images/Asset 3 1.png');
 
 const Homepage = () => {
@@ -17,6 +18,17 @@ const Homepage = () => {
 
   return (
     <Stack> {/* Removed overflowX: hidden  and added individually as was causing issues with header*/}
+      <Helmet>
+        <title>Home - Shree Cottages</title>
+        <meta
+          name="description"
+          content="Overview of Shree Cottages"
+        />
+        <meta 
+          name="keywords"
+          content="Shree Cottage, resort, hotel"
+        />
+      </Helmet>
       <Box className="hero" sx={{marginTop:{xs:"0px",md:"-100px"}}}>
         <svg width="100vw" viewBox="0 0 1920 447" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflowX:"hidden",position: "absolute", top: isSmallScreen ? "50vw" : "32vw" }}>
           <path d="M523.333 93.4543C322.275 112.504 268 15.6415 0 15.6415V447H1920V93.4543C1866 57.5005 1712.95 39.5266 1591.33 70.9831C1350 133.403 1267 68.5658 1070 16.5747C852.711 -40.7709 802.667 66.9883 523.333 93.4543Z" fill="#FFE2D8" />

@@ -10,6 +10,7 @@ import AboutUsTop from "../../assets/AboutTopImg.png";
 import AboutFLowerRight from "../../assets/AboutFlowersRight.png";
 import AboutFlowerLeft from "../../assets/AboutFlowerLeft.png";
 import  AboutUsTopM from "../../images/TopImage.png"
+import { Helmet } from "react-helmet";
 
 const ImageGallery = () => {
 
@@ -31,6 +32,17 @@ const ImageGallery = () => {
           },
         }}
       >
+        <Helmet>
+                <title>Gallery - Shree Cottages</title>
+                <meta
+                    name="description"
+                    content="Images and videos of Shree Cottages"
+                />
+                <meta 
+                    name="keywords"
+                    content="shree cottages, hotel, resort"
+                />
+            </Helmet>
         <Box
           sx={{
             width: "100vw",

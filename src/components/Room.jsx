@@ -4,6 +4,7 @@ import { Box, Typography, Divider, Paper, Button, MobileStepper, Stack, IconButt
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Helmet } from "react-helmet";
 const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
 const AboutUsTop = require("../assets/AboutTopImg.png");
 const AboutUsTopM = require("../images/TopImage.png");
@@ -71,6 +72,17 @@ export default function Room() {
     
     return (
         <Stack>
+            <Helmet>
+                <title>Rooms - Shree Cottages</title>
+                <meta
+                    name="description"
+                    content="Different rooms at Shree Cottages"
+                />
+                <meta 
+                    name="keywords"
+                    content="rooms,shree cottages,hotel rooms"
+                />
+            </Helmet>
             <Box sx={{
                 width: "100vw",
                 display: "flex",

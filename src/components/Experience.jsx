@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, Divider, Button, useMediaQuery } from "@mui/material";
 import React from "react";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Helmet } from "react-helmet";
 
 const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
 const AboutUsTop = require("../assets/AboutTopImg.png");
@@ -24,6 +25,17 @@ export default function Experience(){
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
     return(
         <Stack>
+            <Helmet>
+                <title>Experiences - Shree Cottages</title>
+                <meta
+                    name="description"
+                    content="Tourist spots near Shree Cottages"
+                />
+                <meta 
+                    name="keywords"
+                    content="shree cottages,hotel,resort,gir,somanth, junagadh,Kankai & Banej,Jamjir Waterfall,TulsiShyam,diu,Devaliya Safari Park"
+                />
+            </Helmet>
             <Box sx={{
                 width:"100vw",
                 display: "flex",
