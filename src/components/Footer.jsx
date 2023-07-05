@@ -11,6 +11,7 @@ const fb = require('../images/fb.png');
 const insta = require('../images/insta.png');
 const yt = require('../images/yt.png');
 
+
 export default function Footer(){
     
     return(
@@ -22,7 +23,7 @@ export default function Footer(){
                     Shree Cottages offers a serene and enchanting getaway nestled in the heart of Gir National Park. With comfortable accommodations, lush gardens, and exceptional service, it is the perfect destination for weddings, events, and peaceful retreats.
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
-                    <img src={fb} alt="Facebook" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
+                    <img src={require('../images/fb.svg').default} alt="Facebook" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
                     <img src={insta} alt="Instagram" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.instagram.com/shreecottages","_blank")}/>
                     <img src={yt} alt="Youtube" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.youtube.com/@shreecottages","_blank")}/>
                     {/* <Avatar variant="circular" src="../images/fb.png" href="/" alt="Facebook" sx={{mr:'1vw'}}/>
