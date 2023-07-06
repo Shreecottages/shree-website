@@ -66,16 +66,16 @@ function MyComponent() {
                 borderRadius: {xs:"0px 0px 10px 10px", md:"0px 20px 20px 0px"},
                 width: {xs:"90vw", md:"37vw"},
                 height: {xs:"auto", md:"51.20vh"},
-                padding: {xs:"20px 15px", sm:"30px 4rem", md:"50px 6rem"},
+                padding: {xs:"20px 15px", sm:"30px 4rem", md:"6vh 5vw"},
               }}
             >
               <Typography
                 // className="desc1-head"
                 sx={{
-                  fontSize: {xs:"1.2rem", md:"1.5em"},
+                  fontSize: {xs:"6vw", md:"1.5vw"},
                   color: "#3D2521",
                   fontFamily: "Bona Nova",
-                  textAlign:"center"
+                  textAlign:{xs:"center", md:"start"}
                 }}
               >
                 Wedding
@@ -85,9 +85,9 @@ function MyComponent() {
                 sx={{
                   color: "#484848",
                   fontFamily: "Poppins",
-                  fontSize: "19px",
+                  fontSize: {xs:"4vw", md:"1vw"},
                   textAlign: {xs:"center", md:"justify"},
-                  marginTop: {xs:"1rem", md:"2rem"},
+                  marginTop: {xs:"1rem", md:"3vh"},
                 }}
               >
                 we offer a spacious 6000 sq. ft. banquet hall and a stunning
@@ -108,7 +108,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"6.2rem"},
+              mt: {xs:"2rem", md:"8.2rem"},
               height: "23vw",
               marginBottom:{xs:"550px", sm:"610px", md:"0px"},
             }}
@@ -133,16 +133,16 @@ function MyComponent() {
                 borderRadius: {xs:"0px 0px 10px 10px", md:"20px 0px 0px 20px"},
                 width: {xs:"90vw", md:"37vw"},
                 height: {xs:"auto", md:"51.20vh"},
-                padding: {xs:"20px 15px",sm:"30px 4rem", md:"50px 6rem"},
+                padding: {xs:"20px 15px", sm:"30px 4rem", md:"6vh 5vw"},
               }}
             >
               <Typography
                 // className="desc1-head"
                 sx={{
-                  fontSize: {xs:"1.2rem", md:"1.5em"},
+                  fontSize: {xs:"6vw", md:"1.5vw"},
                   color: "#3D2521",
                   fontFamily: "Bona Nova",
-                  textAlign:"center"
+                  textAlign:{xs:"center", md:"start"}
                 }}
               >
                 Conference
@@ -152,9 +152,9 @@ function MyComponent() {
                 sx={{
                   color: "#484848",
                   fontFamily: "Poppins",
-                  fontSize: "19px",
+                  fontSize: {xs:"4vw", md:"1vw"},
                   textAlign: {xs:"center", md:"justify"},
-                  marginTop: {xs:"1rem", md:"2rem"},
+                  marginTop: {xs:"1rem", md:"3vh"},
                 }}
               >
                  Experience the finest conference facilities at Shree Cottages.
@@ -187,7 +187,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"6.2rem"},
+              mt: {xs:"2rem", md:"8.2rem"},
               height: "23vw",
               marginBottom:{xs:"500px", md:"0px"},
             }}
@@ -211,16 +211,16 @@ function MyComponent() {
                 borderRadius: {xs:"0px 0px 10px 10px", md:"0px 20px 20px 0px"},
                 width: {xs:"90vw", md:"37vw"},
                 height: {xs:"auto", md:"51.20vh"},
-                padding: {xs:"20px 15px", md:"50px 6rem"},
+                padding: {xs:"20px 15px", sm:"30px 4rem", md:"6vh 5vw"},
               }}
             >
               <Typography
                 // className="desc1-head"
                 sx={{
-                  fontSize: {xs:"1.2rem", md:"1.5em"},
+                  fontSize: {xs:"6vw", md:"1.5vw"},
                   color: "#3D2521",
                   fontFamily: "Bona Nova",
-                  textAlign:"center"
+                  textAlign:{xs:"center", md:"start"}
                 }}
               >
                 Event Planning
@@ -230,9 +230,9 @@ function MyComponent() {
                 sx={{
                   color: "#484848",
                   fontFamily: "Poppins",
-                  fontSize: "19px",
+                  fontSize: {xs:"4vw", md:"1vw"},
                   textAlign: {xs:"center", md:"justify"},
-                  marginTop: {xs:"1rem", md:"2rem"},
+                  marginTop: {xs:"1rem", md:"3vh"},
                 }}
               >
                 Let us handle every detail of your special event at Shree
