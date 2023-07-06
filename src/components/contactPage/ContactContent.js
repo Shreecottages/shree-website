@@ -53,7 +53,7 @@ const ContactContent = () => {
                             </Box>
 
                             <Box mt={3} ml={{ md: 2 }} alignSelf={{ md: 'flex-start' }}>
-                                <Typography className="g-recaptcha" data-sitekey="6LeAtTomAAAAACPSXbPVCcRf1ubHk-5KLjMLo5N7"></Typography>
+                                <Typography className="g-recaptcha" data-sitekey="6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5"></Typography>
                             </Box>
 
                             <Box mt={2} ml={{ md: 2 }} alignSelf={{ md: 'flex-start', sm: 'center', xs: 'flex-start' }}>
