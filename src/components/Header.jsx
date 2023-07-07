@@ -52,7 +52,7 @@ export default function Header(props) {
 
       <Container maxWidth="100vw" sx={{ p: { md: "0vw 1vw", lg: "0vw 10vw" }, m: "0", width: "100vw" }}>
         <Toolbar disableGutters>
-          <Box className="logo"><img src={require('../images/logo.svg').default} alt="" /></Box>
+          <Box className="logo"><Link to="/" style={{cursor:'pointer'}}><img src={require('../images/logo.svg').default} alt="" /></Link></Box>
           <Box sx={{ display: "flex", flexDirection: "row" }}>
             <Hidden mdDown>
               <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ padding: "0", justifyContent: "center", textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton></NavLink>
@@ -93,7 +93,7 @@ export default function Header(props) {
           tabIndex={0}
           style={{ backgroundColor: "primary.main", display: "flex", justifyContent: "space-between", padding: "10px" }}
         >
-          <Box className="logo"><Link to="/"><img src={logo} alt="" /></Link></Box>
+          <Box className="logo"><Link to="/" style={{cursor:'pointer'}}><img src={logo} alt="" /></Link></Box>
           <Box sx={{ alignSelf: "center" }}>
             <Button variant="contained" onClick={() => window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")}
               sx={{
