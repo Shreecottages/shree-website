@@ -7,7 +7,7 @@ import style from '../../styles/Contact.module.css'
 import fbContact from "../../assets/fb-Contact.png";
 import ytContact from "../../assets/yt-Contact.png";
 import instaContact from "../../assets/insta-Contact.png";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import '../../styles/Contact.css'
 // import
 
