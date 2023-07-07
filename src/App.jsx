@@ -19,6 +19,10 @@ import { BrowserRouter as Router, Routes, Route, redirect} from "react-router-do
 import ScrollToTop from "./SmoothScroll";
 import SmoothScroll from "./SmoothScroll";
 import { Helmet } from "react-helmet";
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-F89GGM6Z6K";
+ReactGA.initialize(TRACKING_ID);
 
 
 const theme = createTheme({
