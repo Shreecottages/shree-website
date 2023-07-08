@@ -1,4 +1,5 @@
 import React from "react";
+import { useContext, useEffect } from "react";
 import { Box, Divider, Stack, Typography, Card, Button, useMediaQuery } from "@mui/material";
 import CSlider from './CSlider';
 import Ecard from './Ecard';
@@ -7,10 +8,16 @@ import Attractions from "./Attractions";
 import Aboutus from "./Aboutus";
 import '../styles/Homepage.css';
 import { Helmet } from "react-helmet";
+import ReactGA from 'react-ga';
+
 const asset3_1 = require('../images/Asset 3 1.png');
 
 const Homepage = () => {
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   const buttonProps = {
     variant: isSmallScreen ? "contained2" : "outlined",

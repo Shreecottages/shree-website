@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography, Button } from '@mui/material';
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
@@ -8,10 +8,26 @@ import fbContact from "../../assets/fb-Contact.png";
 import ytContact from "../../assets/yt-Contact.png";
 import instaContact from "../../assets/insta-Contact.png";
 import ReCAPTCHA from "react-google-recaptcha";
+
 import '../../styles/Contact.css'
 // import
 
+const SITE_KEY = "6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5";
+
 const ContactContent = () => {
+    const [recaptchaValue, setrecaptchaValue] = useState('');
+    const captchaRef = useRef(); 
+    const onChange = value => {
+        setrecaptchaValue(value)
+    }
+    const callValidation = () => {
+        if (recaptchaValue == ''){
+            return true
+        }
+        else {
+            return false
+        }
+    }
     return (
         <Box sx={{ background: '#FFE2D8', height: 'auto' }} mt={3} style={{ paddingBottom: '4rem' }}>
             <Container>
@@ -54,11 +70,16 @@ const ContactContent = () => {
                             </Box>
 
                             <Box mt={3} ml={{ md: 2 }} alignSelf={{ md: 'flex-start' }}>
-                                <Typography className="g-recaptcha" data-sitekey="6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5"></Typography>
+                                {/* <Typography className="g-recaptcha" data-sitekey="6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5"></Typography> */}
+                                <ReCAPTCHA
+                                    sitekey={SITE_KEY}
+                                    onChange={onChange}
+                                    ref={captchaRef}
+                                />
                             </Box>
 
                             <Box mt={2} ml={{ md: 2 }} alignSelf={{ md: 'flex-start', sm: 'center', xs: 'flex-start' }}>
-                                <Button variant="contained" sx={{ background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)', borderRadius: '5px', color: '#3D2521', padding: '10px 30px', textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Button variant="contained" sx={{ background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)', borderRadius: '5px', color: '#3D2521', padding: '10px 30px', textAlign: 'center', display: 'flex', justifyContent: 'center' }} disabled = {callValidation()}>
                                     Send message
                                 </Button>
                             </Box>
