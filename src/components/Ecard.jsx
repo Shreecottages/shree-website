@@ -1,6 +1,10 @@
 import React from "react";
 import { Card, CardHeader, CardMedia, Collapse, Box, IconButton, Divider,CardContent, CardActions, Typography, Button, useMediaQuery } from "@mui/material";
 import { styled } from '@mui/system';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-F89GGM6Z6K";
+ReactGA.initialize(TRACKING_ID);
 
 
 
@@ -33,6 +37,15 @@ export default function Ecard({ itineraries, activities }){
 
     const handleExpandClick = i => {
         setExpandedId(expandedId === i ? 0 : i);
+      
+        
+        console.log("GA event:", "Card Interaction", "Expand Click", `Card ${i + 1}`);
+        ReactGA.event({
+          category: 'Card Interaction',
+          action: 'Expand Click',
+          label: `Card ${i + 1}`,
+        });
+        
     };
 
     const ExpandMore = styled((props) => {
@@ -66,7 +79,14 @@ export default function Ecard({ itineraries, activities }){
             >
             <Box onClick={() => handleExpandClick(i)}
               aria-expanded={expandedId === i} 
-            sx={{display:"flex",height:{xs:"100%",sm:"100%",md:"30vw",lg:"25vw"},width:{xs:"80vw",sm:"80vw",md:"100%"}, flexDirection:{xs:isSame(i) ? "column" : "row", sm:isSame(i) ? "column" : "row",md: isSame(i) ? "row" : "column-reverse"}}}>
+            sx={{
+              display:"flex",
+              height:{xs:"100%",sm:"100%",md:"30vw",lg:"25vw"},
+              width:{xs:"80vw",sm:"80vw",md:"100%"}, 
+              flexDirection:{
+                xs:isSame(i) ? "column" : "row", 
+                sm:isSame(i) ? "column" : "row",
+                md: isSame(i) ? "row" : "column-reverse"}}}>
               <Box sx={{width:{xs:isSame(i) ? "100%": "20%",sm:isSame(i) ? "100%": "20%",md:isSame(i) ? "60%" : "100%",lg:isSame(i) ? "55%" : "100%",xl:isSame(i) ? "60%" : "100%"}}}>
                 <CardMedia component="img" src={itinerary.Eimg} alt="img" sx={{alignSelf:"center",clipPath:isSame(i) ? "": "circle(50%)", width:{xs:isSame(i) ? "100%" : "80%",sm:isSame(i) ? "100%" : "80%",md:isSame(i) ? "100%" : "60%"}, height:"100%",m: {xs:isSame(i)?"":"0vw",md:isSame(i) ? "" : "0vw 2vw" }}}/>
               </Box>
