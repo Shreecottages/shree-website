@@ -41,7 +41,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"6.2rem"},
+              mt: {xs:"2rem", md:"13vh"},
               height: "23vw",
               marginBottom:{xs:"500px",sm:"550px", md:"0px"},
             }}
@@ -108,7 +108,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"8.2rem"},
+              mt: {xs:"2rem", md:"16vh"},
               height: "23vw",
               marginBottom:{xs:"550px", sm:"610px", md:"0px"},
             }}
@@ -187,7 +187,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"8.2rem"},
+              mt: {xs:"2rem", md:"16.4vh"},
               height: "23vw",
               marginBottom:{xs:"500px", md:"0px"},
             }}
