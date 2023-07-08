@@ -20,6 +20,14 @@ const ContactContent = () => {
     const onChange = value => {
         setrecaptchaValue(value)
     }
+    const callValidation = () => {
+        if (recaptchaValue == ''){
+            return true
+        }
+        else {
+            return false
+        }
+    }
     return (
         <Box sx={{ background: '#FFE2D8', height: 'auto' }} mt={3} style={{ paddingBottom: '4rem' }}>
             <Container>
@@ -71,7 +79,7 @@ const ContactContent = () => {
                             </Box>
 
                             <Box mt={2} ml={{ md: 2 }} alignSelf={{ md: 'flex-start', sm: 'center', xs: 'flex-start' }}>
-                                <Button variant="contained" sx={{ background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)', borderRadius: '5px', color: '#3D2521', padding: '10px 30px', textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Button variant="contained" sx={{ background: 'linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)', borderRadius: '5px', color: '#3D2521', padding: '10px 30px', textAlign: 'center', display: 'flex', justifyContent: 'center' }} disabled = {callValidation()}>
                                     Send message
                                 </Button>
                             </Box>
