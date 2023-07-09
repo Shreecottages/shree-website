@@ -74,7 +74,7 @@ export default function Footer(){
                             }
 
                         }} />
-                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}>+91 9427424157</Typography>
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}><a href = "tel:+919427424157" style={{textDecoration:"none",color:"#FFBB70"}}>+91 9427424157</a></Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" sx={{ mt: { xs: '2.5vw', sm: '2vw', md: '1.2vw' } }}>
                         <MailOutlineOutlinedIcon sx={{
@@ -88,7 +88,7 @@ export default function Footer(){
                                 marginTop: "-4vw"
                             }
                         }} />
-                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}>shreecottages57@gmail.com</Typography>
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}><a href = "mailto:shreecottages57@gmail.com" style={{textDecoration:"none",color:"#FFBB70"}}>shreecottages57@gmail.com</a></Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" sx={{ mt: { xs: '2.5vw', sm: '2vw', md: '1.2vw' } }}>
                         <PlaceOutlinedIcon sx={{
@@ -102,7 +102,7 @@ export default function Footer(){
                                 marginTop: "-2vw"
                             }
                         }} />
-                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}>Veraval Road ,Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India <br />Pincode : 362150</Typography>
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}><a href="https://maps.app.goo.gl/drs3jkTeyFMY93v5A" target="_blank" style={{textDecoration:"none",color:"#FFBB70"}}>Veraval Road ,Near Essar Petrol Pump Talala(Gir), Gir Somnath, Gujarat, India <br />Pincode : 362150</a></Typography>
                     </Box>
                 </Grid>
             </Stack>
@@ -116,7 +116,7 @@ export default function Footer(){
                     <Typography variant="subtitle2" sx={{ display: { xs: "none", md: "inline-block" } }}>Terms & Condition</Typography>
                     <Typography variant="subtitle2" sx={{ display: { md: "none", xs: "inline-block" } }}>T&C</Typography>
                     <Divider orientation="vertical" sx={{ height: { xs: "1.2rem", md: "1.2rem" }, backgroundColor: "warning.main", m: { xs: "0 0.5rem", md: "0 0.5vw 1vw 0.5vw" } }} />
-                    <Typography variant="subtitle2">Site map</Typography>
+                    <a href=" https://shreecottages.com/sitemap.xml" style={{textDecoration:"none",color:"#FFBB70"}} target="_blank"><Typography variant="subtitle2">Site map</Typography></a>
                 </Box>
             </Box>
         </Box>
