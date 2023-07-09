@@ -108,7 +108,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"16vh"},
+              mt: {xs:"3rem", md:"16vh"},
               height: "23vw",
               marginBottom:{xs:"550px", sm:"610px", md:"0px"},
             }}
@@ -187,7 +187,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"2rem", md:"16.4vh"},
+              mt: {xs:"1.4rem", md:"16.4vh"},
               height: "23vw",
               marginBottom:{xs:"500px", md:"0px"},
             }}
@@ -259,7 +259,8 @@ function MyComponent() {
             margin: "auto",
             display: "flex",
             justifyContent: "center",
-            mt: "9.5rem",
+            marginTop: {xs:"8vh",md:"8rem"},
+            mb:{xs:"-1rem",md:"2rem"}
           }}
         >
           Call us{" "}
