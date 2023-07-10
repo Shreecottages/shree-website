@@ -286,19 +286,7 @@ function App() {
       <div className="App">
       <Paper sx={{backgroundColor: "#FFF6F3"}}>
         <Header />
-        <Helmet>
-          <title>
-            Shree Cottages
-          </title>
-          <meta 
-              name="description"
-              content="Shree Cottages"
-            />
-             <meta 
-              name="keywords"
-              content="Shree Cottage, resort, hotel"
-            />
-        </Helmet>
+
         <Box className="body" style={{backgroundColor:"#FFFFFF"}}>
         {/* <Router> */}
             <SmoothScroll>
