@@ -9,7 +9,7 @@ import ytContact from "../../assets/yt-Contact.png";
 import instaContact from "../../assets/insta-Contact.png";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import "../../styles/Contact.css";
+// import "../../styles/Contact.css";
 // import
 
 const SITE_KEY = "6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5";
@@ -30,53 +30,55 @@ const ContactContent = () => {
   return (
     <Box
       sx={{ background: "#FFE2D8", height: "auto" }}
-      mt={3}
+      // mt={3}
       style={{ paddingBottom: "4rem" }}
     >
-      <Box sx={{ padding: { xs: "0vw ", md: "0vw 14vw" } }}>
+      <Box sx={{ padding: { xs: "0vw 6vw", md: "0vw 14vw" }}}>
         <Box sx={{width:"100%", display:"", justifyContent:"space-between"}}>
-          <Grid container spacing={3} justifyContent="space-between">
-            <Grid
-              item
-              sm={12}
-              md={8}
-              lg={7}
+          <Grid container  justifyContent="space-between" alignItems="center">
+            <Box
               sx={{
-                margin: "auto",
+                // margin: "auto",
                 display: { sm: "block", md: "block" },
+                
               }}
             >
               <Box
+              width="100%"
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
-                mt={4}
-                mb={4}
-                height={0.5}
+                justifyContent="center"
+                sx={{marginTop:"40px"}}
               >
-                <Typography
-                  className="map-responsive"
-                  sx={{ borderRadius: "20px" }}
+                <Box
+                  // className="map-responsive"
+                  sx={{ borderRadius: "20px", width: { xs:"88vw", md:"45vw"}, height:{xs:"230px", md:"62vh"} }}
                 >
                   <iframe
-                    className="map"
+               
                     title="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin"
                     //   width="700"
                     //   height="500"
-                    frameBorder="0"
                     style={{
-                      width: "45vw",
-                      height: "62vh",
+                      width: "100%",
+                      height: "100%",
                       border: 0,
                       borderRadius: "20px",
-                      "(max-width:600px)": { width: "300px", height: "200px" },
                     }}
+                    // style={{
+                    //   width: { sm:"90vw", md:"45vw"},
+                    //   height: "62vh",
+                    //   border: 0,
+                    //   borderRadius: "20px",
+                    //   "(max-width:600px)": { width: "324px", height: "200px" },
+                    // }}
                     allowFullScreen
                   ></iframe>
-                </Typography>
+                </Box>
               </Box>
-            </Grid>
+            </Box>
 
             {/* <Grid
             item
@@ -122,92 +124,81 @@ const ContactContent = () => {
             </Box>
           </Grid> */}
 
-            <Box item sm={12} md={4} lg={5} sx={{ margin: "auto", width:{xs:"100%", md:"30vw"} }}>
+            <Box  sx={{  width:{xs:"100%", md:"25vw"}, display:"flex", flexDirection:"column", justifyContent:"center"}}>
               <Box
                 ml={{ xs: 0, lg: "2rem", md: "-2rem" }}
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  alignItems: "center",
-                  margin: "4vw",
+                  alignItems: {xs:"start"},
+                  margin: {xs:"0", md:"4vw"},
                 }}
               >
                 <Typography
                   variant="h4"
                   sx={{
                     // width:"100%",
-                    fontSize: {xs:"4vw", md:"2vw"},
+                    marginTop:{xs:"4vh", md:"0"},
+                    fontSize: {xs:"6vw", md:"2vw"},
                     color: "#3D2521",
                     fontFamily: "Bona Nova",
                     fontWeight: "400",
-                    mt: "0rem",
-                    // alignSelf: "flex-start",
-                    marginLeft: { xs: "0px", md: "20px" },
                   }}
                 >
                   Get In Touch
                 </Typography>
 
-                <Box mt={4}>
+                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
                   <input
                     type="text"
                     style={{
                       background: "#FFE2D8",
-                      width: "506px",
-                      height: "2rem",
+                      width:"100%",
+                      height:"100%",
                       fontFamily: "Poppins",
                       border: "1px solid #3D2521",
                       borderRadius: "10px",
                       padding: "14px 0px 14px 20px",
-                      // gap: "8px",
-                      height: "52px",
-                      width: "25rem",
-                      fontSize: "18px",
-                      "::placeholder": {
-                        // Use double colons for pseudo-elements
-                        color: "#9E837D",
+                      fontSize: "20px",
+                      "&::placeholder": {
+                        color: "#FFF",
                       },
                     }}
-                    className="inp"
+                    // className="inp"
                     placeholder="Enter text"
                   />
                 </Box>
 
-                <Box mt={3}>
+                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
                   <input
                     type="text"
                     style={{
                       background: "#FFE2D8",
-                      width: "100%",
-                      height: "2rem",
+                      width:"100%",
+                      height:"100%",
                       fontFamily: "Poppins",
                       border: "1px solid #3D2521",
                       borderRadius: "10px",
                       padding: "16px 0px 16px 20px",
-                      gap: "8px",
-                      height: "52px",
-                      width: "25rem",
                       fontSize: "20px",
                     }}
-                    className="inp"
+                    // className="inp"
                     placeholder="Email ID"
                   />
                 </Box>
 
-                <Box mt={3}>
+                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
                   <input
-                    type="number"
+                    type="text"
                     style={{
                       background: "#FFE2D8",
-                      width: "100%",
-                      height: "2rem",
+                      width:"100%",
+                      height:"100%",
                       fontFamily: "Poppins",
                       border: "1px solid #3D2521",
                       borderRadius: "10px",
                       padding: "16px 0px 16px 20px",
                       gap: "8px",
-                      height: "52px",
-                      width: "25rem",
                       fontSize: "20px",
                     }}
                     className="inp"
@@ -215,28 +206,26 @@ const ContactContent = () => {
                   />
                 </Box>
 
-                <Box mt={3}>
+                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
                   <input
                     type="text"
                     style={{
                       background: "#FFE2D8",
-                      width: "100%",
-                      height: "2rem",
+                      width:"100%",
+                      height:"100%",
                       fontFamily: "Poppins",
                       border: "1px solid #3D2521",
                       borderRadius: "10px",
                       padding: "16px 0px 16px 20px",
                       gap: "8px",
-                      height: "52px",
-                      width: "25rem",
                       fontSize: "20px",
                     }}
-                    className="inp"
+                    // className="inp"
                     placeholder="Message"
                   />
                 </Box>
 
-                <Box mt={3} ml={{ md: 2 }} alignSelf={{ md: "flex-start" }}>
+                <Box mt={3} alignSelf={{ md: "flex-start" }}>
                   {/* <Typography className="g-recaptcha" data-sitekey="6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5"></Typography> */}
                   <ReCAPTCHA
                     sitekey={SITE_KEY}
@@ -247,11 +236,10 @@ const ContactContent = () => {
 
                 <Box
                   mt={2}
-                  ml={{ md: 2 }}
                   alignSelf={{
                     md: "flex-start",
                     sm: "center",
-                    xs: "flex-start",
+                    // xs: "flex-start",
                   }}
                 >
                   <Button
@@ -262,9 +250,9 @@ const ContactContent = () => {
                       borderRadius: "5px",
                       color: "#3D2521",
                       padding: "10px 30px",
-                      textAlign: "center",
-                      display: "flex",
-                      justifyContent: "center",
+                      // textAlign: "center",
+                      // display: "flex",
+                    
                     }}
                     disabled={callValidation()}
                   >
@@ -276,7 +264,7 @@ const ContactContent = () => {
           </Grid>
         </Box>
 
-        <Box sx={{ border: "1px solid #3D2521", marginTop: "1rem" }}></Box>
+        <Box sx={{ border: "1px solid #3D2521", marginTop: {xs:"4rem", md:"1rem"} }}></Box>
 
         <Grid
           container
@@ -304,7 +292,7 @@ const ContactContent = () => {
               sx={{
                 fontFamily: "Bona Nova",
                 color: "#3D2521",
-                fontSize: "26px",
+                fontSize: "1.6vw",
                 fontStyle: "normal",
                 letterSpacing: "0.07em",
               }}
@@ -317,14 +305,14 @@ const ContactContent = () => {
               mt={{ xs: "0.5vw", md: "1.2vw" }}
             >
               <PlaceOutlinedIcon
-                sx={{ marginRight: "10px", color: "#3D2521" }}
+                sx={{ marginRight: "10px", color: "#3D2521", fontSize:"1.6vw" }}
               />
               <Typography
                 variant="h6"
                 sx={{
                   lineHeight: "1.5vw",
                   fontFamily: "Poppins",
-                  fontSize: "20px",
+                  fontSize: "1.2vw",
                   fontStyle: "normal",
                   color: "#3D2521",
                 }}
@@ -353,7 +341,7 @@ const ContactContent = () => {
                 sx={{
                   fontFamily: "Bona Nova",
                   color: "#3D2521",
-                  fontSize: "26px",
+                  fontSize: "1.6vw",
                   fontStyle: "normal",
                   letterSpacing: "0.07em",
                 }}
@@ -366,7 +354,7 @@ const ContactContent = () => {
                 mt={{ xs: "0.5vw", md: "1.2vw" }}
               >
                 <CallOutlinedIcon
-                  sx={{ marginRight: "10px", color: "#3D2521" }}
+                  sx={{ marginRight: "10px", color: "#3D2521", fontSize:"1.6vw" }}
                 />
                 <Typography
                   variant="h6"
@@ -375,7 +363,7 @@ const ContactContent = () => {
                     letterSpacing: "0.07em",
                     fontStyle: "normal",
                     fontFamily: "Poppins",
-                    fontSize: "20px",
+                    fontSize: "1.2vw",
                     color: "#3D2521",
                   }}
                 >
@@ -388,7 +376,7 @@ const ContactContent = () => {
                 mt={{ xs: "0.5vw", md: "1.2vw" }}
               >
                 <MailOutlineOutlinedIcon
-                  sx={{ marginRight: "10px", color: "#3D2521" }}
+                  sx={{ marginRight: "10px", color: "#3D2521", fontSize:"1.6vw" }}
                 />
                 <Typography
                   variant="h6"
@@ -397,7 +385,7 @@ const ContactContent = () => {
                     letterSpacing: "0.07em",
                     fontStyle: "normal",
                     fontFamily: "Poppins",
-                    fontSize: "20px",
+                    fontSize: "1.2vw",
                     color: "#3D2521",
                   }}
                 >
@@ -426,15 +414,15 @@ const ContactContent = () => {
                 sx={{
                   fontFamily: "Bona Nova",
                   color: "#3D2521",
-                  fontSize: "26px",
+                  fontSize: "1.6vw",
                   fontStyle: "normal",
                   letterSpacing: "0.07em",
                 }}
               >
                 Follow us
               </Typography>
-              <Box component="span" className="mediaIcon1" mt={1}>
-                <Box component="span">
+              <Box className="mediaIcon1" mt={1} sx={{display:"flex", }}>
+                <Box  >
                   <a href="https://www.facebook.com/ShreeCottages">
                     <img
                       src={require("../../assets/fb-Contact.svg").default}
@@ -444,7 +432,7 @@ const ContactContent = () => {
                     />
                   </a>
                 </Box>
-                <Box component="span" sx={{ ml: "1rem" }}>
+                <Box  >
                   <a href="https://www.instagram.com/shreecottages">
                     <img
                       src={require("../../assets/insta-Contact.svg").default}
@@ -453,7 +441,7 @@ const ContactContent = () => {
                     />
                   </a>
                 </Box>
-                <Box component="span" sx={{ ml: "1rem" }}>
+                <Box  >
                   <a href="https://www.youtube.com/@shreecottages">
                     {" "}
                     <img
