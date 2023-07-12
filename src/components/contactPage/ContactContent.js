@@ -431,7 +431,7 @@ const ContactContent = () => {
                     color: "#3D2521",
                   }}
                 >
-                  shreecottages57@gmail.com
+                  info@shreecottages.com
                 </Typography>
               </Box>
             </Box>
@@ -547,7 +547,7 @@ const ContactContent = () => {
                     fontSize: "16px",
                   }}
                 >
-                  shreecottages57@gmail.com
+                  info@shreecottages.com
                 </Typography>
               </Box>
             </Box>

@@ -46,7 +46,7 @@ export default function Header(props) {
         </Stack>
         <Stack direction={'row'} sx={{ marginLeft: '25px', alignItems: 'center' }}>
           <MailIcon sx={{ color: "common.white", width: '2vw', padding: '0.1vw 0.1vw 0px', marginRight: '5px', justifyContent: 'center' }} />
-          <Typography variant='subtitle1'>shreecottages57@gmail.com</Typography>
+          <Typography variant='subtitle1'>info@shreecottages.com</Typography>
         </Stack>
       </Stack>
 
