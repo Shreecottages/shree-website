@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, CardHeader, CardMedia, Collapse, Box, IconButton, Divider,CardContent, CardActions, Typography, Button, useMediaQuery } from "@mui/material";
 import { styled } from '@mui/system';
-import ReactGA from 'react-ga';
+//import ReactGA from 'react-ga';
 
-const TRACKING_ID = "G-F89GGM6Z6K";
-ReactGA.initialize(TRACKING_ID);
+//const TRACKING_ID = "G-F89GGM6Z6K";
+//ReactGA.initialize(TRACKING_ID);
 
 
 
@@ -37,15 +37,7 @@ export default function Ecard({ itineraries, activities }){
 
     const handleExpandClick = i => {
         setExpandedId(expandedId === i ? 0 : i);
-      
-        
-        console.log("GA event:", "Card Interaction", "Expand Click", `Card ${i + 1}`);
-        ReactGA.event({
-          category: 'Card Interaction',
-          action: 'Expand Click',
-          label: `Card ${i + 1}`,
-        });
-        
+
     };
 
     const ExpandMore = styled((props) => {

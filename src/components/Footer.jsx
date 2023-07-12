@@ -88,7 +88,7 @@ export default function Footer(){
                                 marginTop: "-4vw"
                             }
                         }} />
-                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}><a href = "mailto:shreecottages57@gmail.com" style={{textDecoration:"none",color:"#FFBB70"}}>shreecottages57@gmail.com</a></Typography>
+                        <Typography variant="h6" sx={{ lineHeight: { xs: '1.2rem', md: '1.5vw' }, fontSize: { xs: "1rem", md: "1.3vw" } }}><a href = "mailto:info@shreecottages.com" style={{textDecoration:"none",color:"#FFBB70"}}>info@shreecottages.com</a></Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" sx={{ mt: { xs: '2.5vw', sm: '2vw', md: '1.2vw' } }}>
                         <PlaceOutlinedIcon sx={{

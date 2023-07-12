@@ -19,11 +19,11 @@ import { BrowserRouter as Router, Routes, Route, redirect} from "react-router-do
 import ScrollToTop from "./SmoothScroll";
 import SmoothScroll from "./SmoothScroll";
 import { Helmet } from "react-helmet";
-import ReactGA from 'react-ga';
+//import ReactGA from 'react-ga';
 import TagManager from "react-gtm-module";
 
-const TRACKING_ID = "G-F89GGM6Z6K";
-ReactGA.initialize(TRACKING_ID);
+//const TRACKING_ID = "G-F89GGM6Z6K";
+//ReactGA.initialize(TRACKING_ID);
 
 const tagManagerArgs = {
   gtmId: 'GTM-P4R7S95'
@@ -286,19 +286,7 @@ function App() {
       <div className="App">
       <Paper sx={{backgroundColor: "#FFF6F3"}}>
         <Header />
-        <Helmet>
-          <title>
-            Shree Cottages
-          </title>
-          <meta 
-              name="description"
-              content="Shree Cottages"
-            />
-             <meta 
-              name="keywords"
-              content="Shree Cottage, resort, hotel"
-            />
-        </Helmet>
+
         <Box className="body" style={{backgroundColor:"#FFFFFF"}}>
         {/* <Router> */}
             <SmoothScroll>

@@ -187,7 +187,7 @@ function MyComponent() {
               // justifyContent:"center",
               alignItems:"center",
               flexDirection: { xs: "column", md: "row" },
-              mt: {xs:"50px", md:"16.4vh"},
+              mt: {xs:"25px", md:"16.4vh"},
               height: "23vw",
               marginBottom:{xs:"500px", md:"0px"},
             }}
