@@ -182,7 +182,7 @@ const ContactContent = () => {
                     //   },
                     // }}
                     // className="inp"
-                    placeholder="Enter text"
+                    placeholder="Your Name"
                   />
                 </Box>
 
@@ -203,7 +203,7 @@ const ContactContent = () => {
                     //   fontSize: "20px",
                     // }}
                     // className="inp"
-                    placeholder="Email ID"
+                    placeholder="Your Email"
                   />
                 </Box>
 
@@ -225,7 +225,7 @@ const ContactContent = () => {
                     //   fontSize: "20px",
                     // }}
                     // className="inp"
-                    placeholder="Mobile Number"
+                    placeholder="Your Mobile No."
                   />
                 </Box>
 
@@ -300,16 +300,17 @@ const ContactContent = () => {
           container
           sx={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
             display: { sm: "none", md: "flex", xs: "none" },
           }}
         >
           {/* First Box */}
-          <Grid
+          <Box
             item
             xs={12}
-            md={4}
+            // md={4}
             sx={{
+              width:"28vw",
               display: "flex",
               marginTop: "2rem",
               justifyContent: "start",
@@ -355,19 +356,20 @@ const ContactContent = () => {
                 Gujarat, India 362150
               </Typography>
             </Box>
-          </Grid>
+          </Box>
           
 
-          {/* Second Box */}
-          <Grid
+          <Box
             item
             xs={12}
-            md={4}
+            // md={4}
             sx={{
+              width:"22vw",
               // display: "flex",
               marginTop: "2rem",
-              justifyContent: {xs:"start", md:"end"},
-              alignContent: "flex-end",
+              // justifyContent: "start",
+              // alignSelf: "start",
+              // flexDirection: "column",  
             }}
           >
             <Box>
@@ -435,18 +437,18 @@ const ContactContent = () => {
                 </Typography>
               </Box>
             </Box>
-          </Grid>
+          </Box>
 
           {/* Third Box */}
           <Grid
             item
             xs={12}
-            md={3}
+            md={1.6}
             sx={{
-              display: "flex",
+              // display: "flex",
               marginTop: "2rem",
-              justifyContent: "end",
-              alignSelf: "start",
+              // justifyContent: "end",
+              // alignSelf: "start",
             }}
           >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
