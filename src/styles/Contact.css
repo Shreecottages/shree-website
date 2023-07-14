@@ -1,21 +1,23 @@
-/* .mediaIcon1 {
-  margin-left: "-24px" !important;
+input[type=text] {
+  background: #FFE2D8;
+  width: 100%;
+  height: 100%;
+  font-family: Poppins;
+  border: 1px solid #9E837D;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 20px;
+  color: #3D2521;
+  outline: none;
+  box-sizing: border-box;
+  /* -webkit-transition: 0.5s; */
+  /* transition: 0.5s; */
 }
 
-@media screen and (max-width: 1200px) {
-  .inp {
-    width: 20rem !important;
-  }
-  .map {
-    width: 50vw !important;
-  }
+input[type=text]:focus {
+  border: 1px solid #3D2521;
 }
 
-@media screen and (max-width: 900px) {
-  .inp {
-    width: 20rem !important;
-  }
-  .map {
-    width: 80vw !important;
-  }
-} */
+input[type=text]::placeholder{
+  color: #9E837D;
+}

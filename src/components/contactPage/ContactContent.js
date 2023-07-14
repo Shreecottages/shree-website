@@ -9,7 +9,7 @@ import ytContact from "../../assets/yt-Contact.png";
 import instaContact from "../../assets/insta-Contact.png";
 import ReCAPTCHA from "react-google-recaptcha";
 
-// import "../../styles/Contact.css";
+import "../../styles/Contact.css";
 // import
 
 const SITE_KEY = "6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5";
@@ -33,30 +33,34 @@ const ContactContent = () => {
       // mt={3}
       style={{ paddingBottom: "4rem" }}
     >
-      <Box sx={{ padding: { xs: "0vw 6vw", md: "0vw 14vw" }}}>
-        <Box sx={{width:"100%", display:"", justifyContent:"space-between"}}>
-          <Grid container  justifyContent="space-between" alignItems="center">
+      <Box sx={{ padding: { xs: "0vw 6vw", md: "0vw 14vw" } }}>
+        <Box
+          sx={{ width: "100%", display: "", justifyContent: "space-between" }}
+        >
+          <Grid container justifyContent="space-between" alignItems="center">
             <Box
               sx={{
                 // margin: "auto",
                 display: { sm: "block", md: "block" },
-                
               }}
             >
               <Box
-              width="100%"
+                width="100%"
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="center"
-                sx={{marginTop:"40px"}}
+                sx={{ marginTop: "40px" }}
               >
                 <Box
                   // className="map-responsive"
-                  sx={{ borderRadius: "20px", width: { xs:"88vw", md:"45vw"}, height:{xs:"230px", md:"62vh"} }}
+                  sx={{
+                    borderRadius: "20px",
+                    width: { xs: "88vw", md: "45vw" },
+                    height: { xs: "230px", md: "62vh" },
+                  }}
                 >
                   <iframe
-               
                     title="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin"
                     //   width="700"
@@ -124,22 +128,29 @@ const ContactContent = () => {
             </Box>
           </Grid> */}
 
-            <Box  sx={{  width:{xs:"100%", md:"25vw"}, display:"flex", flexDirection:"column", justifyContent:"center"}}>
+            <Box
+              sx={{
+                width: { xs: "100%", md: "25vw" },
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
               <Box
                 ml={{ xs: 0, lg: "2rem", md: "-2rem" }}
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  alignItems: {xs:"start"},
-                  margin: {xs:"0", md:"4vw"},
+                  alignItems: { xs: "start" },
+                  margin: { xs: "0", md: "4vw" },
                 }}
               >
                 <Typography
                   variant="h4"
                   sx={{
                     // width:"100%",
-                    marginTop:{xs:"4vh", md:"0"},
-                    fontSize: {xs:"6vw", md:"2vw"},
+                    marginTop: { xs: "4vh", md: "0" },
+                    fontSize: { xs: "6vw", md: "2vw" },
                     color: "#3D2521",
                     fontFamily: "Bona Nova",
                     fontWeight: "400",
@@ -148,78 +159,93 @@ const ContactContent = () => {
                   Get In Touch
                 </Typography>
 
-                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
+                <Box
+                  mt={3}
+                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                >
                   <input
+                  className="text-box"
                     type="text"
-                    style={{
-                      background: "#FFE2D8",
-                      width:"100%",
-                      height:"100%",
-                      fontFamily: "Poppins",
-                      border: "1px solid #3D2521",
-                      borderRadius: "10px",
-                      padding: "14px 0px 14px 20px",
-                      fontSize: "20px",
-                      "&::placeholder": {
-                        color: "#FFF",
-                      },
-                    }}
+                    // style={{
+                    //   background: "#FFE2D8",
+                    //   width: "100%",
+                    //   height: "100%",
+                    //   fontFamily: "Poppins",
+                    //   border: "1px solid #9E837D",
+                    //   borderRadius: "10px",
+                    //   padding: "14px 20px",
+                    //   fontSize: "20px",
+                    //   placeholderColor: "#9E837D",
+                    //   outline: "none",
+                    //   "&:focus": {
+                    //     border: "2px solid #3D2521",
+                    //   },
+                    // }}
                     // className="inp"
-                    placeholder="Enter text"
+                    placeholder="Your Name"
                   />
                 </Box>
 
-                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
+                <Box
+                  mt={3}
+                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                >
                   <input
                     type="text"
-                    style={{
-                      background: "#FFE2D8",
-                      width:"100%",
-                      height:"100%",
-                      fontFamily: "Poppins",
-                      border: "1px solid #3D2521",
-                      borderRadius: "10px",
-                      padding: "16px 0px 16px 20px",
-                      fontSize: "20px",
-                    }}
+                    // style={{
+                    //   background: "#FFE2D8",
+                    //   width: "100%",
+                    //   height: "100%",
+                    //   fontFamily: "Poppins",
+                    //   border: "1px solid #9E837D",
+                    //   borderRadius: "10px",
+                    //   padding: "16px 0px 16px 20px",
+                    //   fontSize: "20px",
+                    // }}
                     // className="inp"
-                    placeholder="Email ID"
+                    placeholder="Your Email"
                   />
                 </Box>
 
-                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
+                <Box
+                  mt={3}
+                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                >
                   <input
                     type="text"
-                    style={{
-                      background: "#FFE2D8",
-                      width:"100%",
-                      height:"100%",
-                      fontFamily: "Poppins",
-                      border: "1px solid #3D2521",
-                      borderRadius: "10px",
-                      padding: "16px 0px 16px 20px",
-                      gap: "8px",
-                      fontSize: "20px",
-                    }}
-                    className="inp"
-                    placeholder="Mobile Number"
+                    // style={{
+                    //   background: "#FFE2D8",
+                    //   width: "100%",
+                    //   height: "100%",
+                    //   fontFamily: "Poppins",
+                    //   border: "1px solid #9E837D",
+                    //   borderRadius: "10px",
+                    //   padding: "16px 0px 16px 20px",
+                    //   gap: "8px",
+                    //   fontSize: "20px",
+                    // }}
+                    // className="inp"
+                    placeholder="Your Mobile No."
                   />
                 </Box>
 
-                <Box mt={3} sx={{width: {xs:"100%",md:"25vw"}, height: "6vh",}}>
+                <Box
+                  mt={3}
+                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                >
                   <input
                     type="text"
-                    style={{
-                      background: "#FFE2D8",
-                      width:"100%",
-                      height:"100%",
-                      fontFamily: "Poppins",
-                      border: "1px solid #3D2521",
-                      borderRadius: "10px",
-                      padding: "16px 0px 16px 20px",
-                      gap: "8px",
-                      fontSize: "20px",
-                    }}
+                    // style={{
+                    //   background: "#FFE2D8",
+                    //   width: "100%",
+                    //   height: "100%",
+                    //   fontFamily: "Poppins",
+                    //   border: "1px solid #9E837D",
+                    //   borderRadius: "10px",
+                    //   padding: "16px 0px 16px 20px",
+                    //   gap: "8px",
+                    //   fontSize: "20px",
+                    // }}
                     // className="inp"
                     placeholder="Message"
                   />
@@ -252,7 +278,6 @@ const ContactContent = () => {
                       padding: "10px 30px",
                       // textAlign: "center",
                       // display: "flex",
-                    
                     }}
                     disabled={callValidation()}
                   >
@@ -264,22 +289,28 @@ const ContactContent = () => {
           </Grid>
         </Box>
 
-        <Box sx={{ border: "1px solid #3D2521", marginTop: {xs:"4rem", md:"1rem"} }}></Box>
+        <Box
+          sx={{
+            border: "1px solid #3D2521",
+            marginTop: { xs: "4rem", md: "1rem" },
+          }}
+        ></Box>
 
         <Grid
           container
           sx={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
             display: { sm: "none", md: "flex", xs: "none" },
           }}
         >
           {/* First Box */}
-          <Grid
+          <Box
             item
             xs={12}
-            md={4}
+            // md={4}
             sx={{
+              width:"28vw",
               display: "flex",
               marginTop: "2rem",
               justifyContent: "start",
@@ -305,7 +336,11 @@ const ContactContent = () => {
               mt={{ xs: "0.5vw", md: "1.2vw" }}
             >
               <PlaceOutlinedIcon
-                sx={{ marginRight: "10px", color: "#3D2521", fontSize:"1.6vw" }}
+                sx={{
+                  marginRight: "10px",
+                  color: "#3D2521",
+                  fontSize: "1.6vw",
+                }}
               />
               <Typography
                 variant="h6"
@@ -321,18 +356,20 @@ const ContactContent = () => {
                 Gujarat, India 362150
               </Typography>
             </Box>
-          </Grid>
+          </Box>
+          
 
-          {/* Second Box */}
-          <Grid
+          <Box
             item
             xs={12}
-            md={5}
+            // md={4}
             sx={{
-              display: "flex",
+              width:"22vw",
+              // display: "flex",
               marginTop: "2rem",
-              justifyContent: "end",
-              alignContent: "flex-end",
+              // justifyContent: "start",
+              // alignSelf: "start",
+              // flexDirection: "column",  
             }}
           >
             <Box>
@@ -342,7 +379,6 @@ const ContactContent = () => {
                   fontFamily: "Bona Nova",
                   color: "#3D2521",
                   fontSize: "1.6vw",
-                  fontStyle: "normal",
                   letterSpacing: "0.07em",
                 }}
               >
@@ -354,7 +390,11 @@ const ContactContent = () => {
                 mt={{ xs: "0.5vw", md: "1.2vw" }}
               >
                 <CallOutlinedIcon
-                  sx={{ marginRight: "10px", color: "#3D2521", fontSize:"1.6vw" }}
+                  sx={{
+                    marginRight: "10px",
+                    color: "#3D2521",
+                    fontSize: "1.6vw",
+                  }}
                 />
                 <Typography
                   variant="h6"
@@ -376,7 +416,11 @@ const ContactContent = () => {
                 mt={{ xs: "0.5vw", md: "1.2vw" }}
               >
                 <MailOutlineOutlinedIcon
-                  sx={{ marginRight: "10px", color: "#3D2521", fontSize:"1.6vw" }}
+                  sx={{
+                    marginRight: "10px",
+                    color: "#3D2521",
+                    fontSize: "1.6vw",
+                  }}
                 />
                 <Typography
                   variant="h6"
@@ -393,18 +437,18 @@ const ContactContent = () => {
                 </Typography>
               </Box>
             </Box>
-          </Grid>
+          </Box>
 
           {/* Third Box */}
           <Grid
             item
             xs={12}
-            md={3}
+            md={1.6}
             sx={{
-              display: "flex",
+              // display: "flex",
               marginTop: "2rem",
-              justifyContent: "end",
-              alignSelf: "start",
+              // justifyContent: "end",
+              // alignSelf: "start",
             }}
           >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -421,8 +465,8 @@ const ContactContent = () => {
               >
                 Follow us
               </Typography>
-              <Box className="mediaIcon1" mt={1} sx={{display:"flex", }}>
-                <Box  >
+              <Box className="mediaIcon1" mt={1} sx={{ display: "flex" }}>
+                <Box>
                   <a href="https://www.facebook.com/ShreeCottages">
                     <img
                       src={require("../../assets/fb-Contact.svg").default}
@@ -432,7 +476,7 @@ const ContactContent = () => {
                     />
                   </a>
                 </Box>
-                <Box  >
+                <Box>
                   <a href="https://www.instagram.com/shreecottages">
                     <img
                       src={require("../../assets/insta-Contact.svg").default}
@@ -441,7 +485,7 @@ const ContactContent = () => {
                     />
                   </a>
                 </Box>
-                <Box  >
+                <Box>
                   <a href="https://www.youtube.com/@shreecottages">
                     {" "}
                     <img
@@ -471,7 +515,6 @@ const ContactContent = () => {
                   fontSize: "26px",
                   fontStyle: "normal",
                   letterSpacing: "0.07em",
-                  marginLeft: "13px",
                 }}
               >
                 Contact us
@@ -555,11 +598,10 @@ const ContactContent = () => {
           </Grid>
 
           {/* Third Box */}
-          <Grid item xs={12} md={3} sx={{ display: "flex", marginTop: "2rem" }}>
+          <Grid item xs={12} md={5} sx={{ display: "flex", marginTop: "2rem" }}>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Typography
-                variant="h6"
-                style={{ marginLeft: "13px" }}
+                variant="h6"                
                 sx={{
                   fontFamily: "Bona Nova",
                   color: "#3D2521",

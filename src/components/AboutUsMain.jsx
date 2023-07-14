@@ -775,13 +775,12 @@ const AboutUs = () => {
               <Button
                 sx={{
                   margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
-                  width: { xs: "146px", sm: "200px" },
-                 
-                
+                  width: { xs: "146px", sm: "200px" },  
                 }}
                 variant="outlined"
               >
-                Contact Us <ArrowForwardIcon />
+                <a href="tel:9427424157" style={{textDecoration:"none", color:"black", display:"flex", alignItems:"center"}}>Contact Us <ArrowForwardIcon /></a>
+                
               </Button>
             </Box>
             <Box
