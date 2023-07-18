@@ -56,10 +56,10 @@ export default function Header(props) {
           <Box sx={{ display: "flex", flexDirection: "row" }}>
             <Hidden mdDown>
               <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ padding: "0", justifyContent: "center", textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Home</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/AboutUsMain" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">About</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/about" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">About</ListItemText></ListItemButton></NavLink>
               <NavLink to="/gallery/images/all" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Gallery</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/Event" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Events & Meetings</ListItemText></ListItemButton></NavLink>
-              <NavLink to="/Room" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/wedding-event-planning" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Wedding & Event</ListItemText></ListItemButton></NavLink>
+              <NavLink to="/rooms" className={({ isActive }) => (isActive ? "link-active" : "link")} style={{ textDecoration: "none", color: '#3D2521' }}><ListItemButton><ListItemText disableTypography className="list">Rooms</ListItemText></ListItemButton></NavLink>
               <Link style={{ textDecoration: "none", color: '#3D2521', justifyContent: "center" }}><ListItemButton onClick={handleOpenUserMenu}><ListItemText disableTypography className="more">More <KeyboardArrowDownIcon sx={{ fontSize: { md: "1rem", lg: "1.2rem" } }} /></ListItemText></ListItemButton></Link>
               <ListItemButton><Button variant="contained" onClick={() => window.open("https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA", "_blank")}
                 sx={{
@@ -113,12 +113,12 @@ export default function Header(props) {
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", alignItems: "center" }}>
           <List sx={{ justifyContent: "center", textAlign: "center", alignSelf: "center" }} className="main-list">
             <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/" style={{ textDecoration: "none", color: '#3D2521' }}>Home</Link></ListItemText></ListItemButton>
-            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/AboutUsMain" style={{ textDecoration: "none", color: '#3D2521' }}>About</Link></ListItemText></ListItemButton>
+            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/about" style={{ textDecoration: "none", color: '#3D2521' }}>About</Link></ListItemText></ListItemButton>
             <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/gallery/images/all" style={{ textDecoration: "none", color: '#3D2521' }}>Gallery</Link></ListItemText></ListItemButton>
-            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/Event" style={{ textDecoration: "none", color: '#3D2521' }}>Events & Meetings</Link></ListItemText></ListItemButton>
-            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/Room" style={{ textDecoration: "none", color: '#3D2521' }}>Rooms</Link></ListItemText></ListItemButton>
-            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/Experience" style={{ textDecoration: "none", color: '#3D2521' }}>Experience</Link></ListItemText></ListItemButton>
-            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/contactPage" style={{ textDecoration: "none", color: '#3D2521' }}>Contact us</Link></ListItemText></ListItemButton>
+            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/wedding-event-planning" style={{ textDecoration: "none", color: '#3D2521' }}>Wedding & Event</Link></ListItemText></ListItemButton>
+            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/rooms" style={{ textDecoration: "none", color: '#3D2521' }}>Rooms</Link></ListItemText></ListItemButton>
+            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/best-places-to-visit-in-sasan-gir" style={{ textDecoration: "none", color: '#3D2521' }}>Experience</Link></ListItemText></ListItemButton>
+            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/contact" style={{ textDecoration: "none", color: '#3D2521' }}>Contact us</Link></ListItemText></ListItemButton>
             {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}
 
 
@@ -160,8 +160,8 @@ export default function Header(props) {
         open={Boolean(anchorElUser)}
         onClose={handleCloseUserMenu}
       >
-        <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/Experience" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Experience</Link></MenuItem>
-        <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/contactPage" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Contact us</Link></MenuItem>
+        <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/best-places-to-visit-in-sasan-gir" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Experience</Link></MenuItem>
+        <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/contact" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Contact us</Link></MenuItem>
       </Menu>
     </AppBar>
 

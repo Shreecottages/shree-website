@@ -299,7 +299,7 @@ function App() {
 
               <Route
                 exact
-                path="/AboutUsMain"
+                path="/about"
                 element={<AboutUsMain />}
               />
 
@@ -357,25 +357,25 @@ function App() {
 
               <Route
                 exact
-                path="/Event"
+                path="/wedding-event-planning"
                 element={<Event />}
               />
 
               <Route
                 exact
-                path="/Room"
+                path="/rooms"
                 element={<Room />}
               />
 
               <Route
                 exact
-                path="/Experience"
+                path="/best-places-to-visit-in-sasan-gir"
                 element={<Experience />}
               />
 
               <Route
                 exact
-                path="/contactPage"
+                path="/contact"
                 element={<Contact />}
               />
 

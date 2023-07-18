@@ -90,7 +90,7 @@ const Jumbotron = () => {
                 }}
             ></Box>
             <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", p: "5vw 0vw",width:{xs:"30vw",sm:"100%"},m: { xs: " 0vw -10vw", sm: "0vw" } }}>
-                <Typography variant="h2" sx={{ color: "warning.main",m: { xs: " 0vw -10vw", sm: "0vw" }  }}> Events & Meetings </Typography>
+                <Typography variant="h2" sx={{ color: "warning.main",m: { xs: " 0vw -10vw", sm: "0vw" }  }}> Wedding & Event </Typography>
                 <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
                 <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "center",m: { xs: " 0vw -30vw", sm: "0vw" } }}> We give proper emphasis to every minor detail of your event to create something unique.</Typography>
             </Box>
