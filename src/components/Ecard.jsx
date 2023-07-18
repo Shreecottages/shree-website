@@ -20,12 +20,12 @@ export default function Ecard({ itineraries, activities }){
                                 { _id: "2",
                                     Eimg:require("../images/events/bday.png"),
                                     event:"Birthday Party",
-                                    desc:"Celebrate your special day in style at Shree Cottages. From themed decorations to delectable treats, we'll create an unforgettable birthday experience tailored to your desires."
+                                    desc:"Celebrate your birthday party in style at Shree Cottages. From themed decorations to delectable treats, we'll create an unforgettable birthday experience tailored to your desires."
                                 }, 
                                 { _id: "3",
                                     Eimg:require("../images/events/corp.png"),
                                     event:"Corporate Event",
-                                    desc:"Host a successful and productive corporate event amidst the serene surroundings of Shree Cottages. Our state-of-the-art facilities and professional services guarantee a seamless and memorable experience." 
+                                    desc:"Host a successful and productive corporate event at Shree Cottages. Our state-of-the-art facilities and professional services guarantee a seamless and memorable experience." 
                                 },
                                 {
                                     _id:"4",

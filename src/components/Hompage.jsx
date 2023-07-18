@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet";
 //import ReactGA from 'react-ga';
 
 const asset3_1 = require('../images/Asset 3 1.png');
+const imageUrl = require('../images/Hero.webp');
 
 const Homepage = () => {
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
@@ -23,15 +24,17 @@ const Homepage = () => {
   return (
     <Stack> {/* Removed overflowX: hidden  and added individually as was causing issues with header*/}
       <Helmet>
-        <title>Home - Shree Cottages</title>
-        <meta
-          name="description"
-          content="Overview of Shree Cottages"
-        />
-        <meta 
-          name="keywords"
-          content="Shree Cottage, resort, hotel"
-        />
+        <title>Best destination wedding resort in sasan gir ,gujarat - Shree Cottages</title>
+        <meta name="description" content="Host Your Dream Destination Wedding In Sasan Gir With Our Exquisite Venue, Surrounded By The Serene Beauty Of Gir Forest"/>
+        <meta name="keywords"content="shree Cottage, shree Party Plot, resort, hotel , destination wedding resort ,sasan gir ,talala gir ,gir ,gujarat"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="canonical" content="https://shreecottages.com/"/>
+        <meta name="image" content={imageUrl} />
+
+        <meta name="og:title" content="Best destination wedding resort in sasan gir ,gujarat - Shree Cottages"/>
+        <meta property="og:site_name" content="Shree Cottgaes" />
+        <meta name="og:description" content="Host Your Dream Destination Wedding In Sasan Gir With Our Exquisite Venue, Surrounded By The Serene Beauty Of Gir Forest"/>
+        <meta name="og:image" content={imageUrl} />
       </Helmet>
       <Box className="hero" sx={{marginTop:{xs:"0px",md:"-100px"}}}>
         <svg width="100vw" viewBox="0 0 1920 447" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflowX:"hidden",position: "absolute", top: isSmallScreen ? "50vw" : "32vw" }}>
@@ -42,7 +45,7 @@ const Homepage = () => {
           <Box display="flex" flexDirection="column" sx={{ padding: { xs: "0 5vw 4vw 5vw", md: "0 10vw 4vw 10vw" }, backgroundColor: '#FFE2D8' }}>
             <Typography variant="h2" sx={{ fontSize: { xs: "1.4rem", md: "2.25rem" } }}>Shree Cottages</Typography>
             <Divider orientation="vertical" variant="middle" sx={{ height: { xs: "1rem", md: "1.55rem" }, width: "1px", backgroundColor: "#3D2521", alignSelf: "center", m: { xs: "0.5rem", md: "1.1rem" } }} />
-            <Typography variant="h5" sx={{ fontSize: { xs: "0.9rem", md: "1.35rem" } }}>Shree Cottages is a destination wedding resort that offers a unique and memorable experience for your special day. Nestled in the heart of the Gir Jungle, the resort provides a stunning backdrop for your wedding photos and ceremony. With its luxurious accommodations and world-class amenities, Shree Cottages is the perfect place to celebrate your love.</Typography>
+            <Typography variant="h5" sx={{ fontSize: { xs: "0.9rem", md: "1.35rem" } }}>Experience the best destination wedding in Sasan Gir, Gujarat, India, at Shree Cottages & Party Plot. Our resort, nestled in the heart of the Gir National Park, offers best event plannig for your special day. With luxurious accommodations and world-class amenities, Shree Cottages & Party Plot is the perfect venue to celebrate your love and create unforgettable memories.</Typography>
           </Box>
         </Box>
       </Box>
