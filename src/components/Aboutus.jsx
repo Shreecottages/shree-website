@@ -34,14 +34,7 @@ export default function Aboutus(){
                     m:"5vw 0vw"
                 }}>
                 <Typography variant="body1" sx={{m:"5vw 0vw"}}>
-                    Shree Cottages is a remarkable destination wedding resort situated in the heart of Gir
-                    National Park. Surrounded by lush greenery and vibrant gardens, it provides a magical
-                    backdrop for any occasion. As guests enter, they are embraced by a tranquil ambiance that
-                    evokes a sense of peace, comfort, and happiness. With a track record of hosting over 70
-                    events annually and attracting more than 20,000 visitors, Shree Cottages has become the
-                    preferred choice for unforgettable celebrations. Whether it's a wedding, corporate event, or
-                    special gathering, our dedicated team ensures an extraordinary experience, leaving
-                    cherished memories to last a lifetime.
+                Shree Cottages & Party Plot is a remarkable destination wedding resort in the heart of Gir National Park. With its lush greenery and vibrant gardens, it provides a magical backdrop for any occasion. As guests enter, they are embraced by a tranquil ambiance that evokes a sense of peace, comfort, and happiness. Offering the best affordable price wedding resort in Gir, along with the expertise of the best event planners in Junagadh, Gujarat. Shree Cottages ensures an extraordinary experience for your special day. It's the perfect choice for those seeking top-notch wedding resorts in Gujarat.
                 </Typography>    
                 <Link to="/AboutUsMain" style={{textDecoration:"none", color: '#3D2521'}}><Button variant="contained">Read more <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}} /></Button></Link>
                 </Box>
