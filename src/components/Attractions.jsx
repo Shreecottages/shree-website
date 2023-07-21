@@ -72,7 +72,7 @@ export default function Attractions(){
                     </Box>
                 </Box>
                 <Box sx={{mt:{xs:"8vw",md:"4vw"}}}>
-                <Link to="/Experience" style={{textDecoration:"none", color: '#3D2521'}}><Button variant="outlined" sx={{alignSelf:"center"}}>Read more  <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button></Link>
+                <Link to="/best-places-to-visit-in-sasan-gir" style={{textDecoration:"none", color: '#3D2521'}}><Button variant="outlined" sx={{alignSelf:"center"}}>Read more  <ArrowForwardIcon sx={{width:"1rem", ml:'0.5vw'}}/></Button></Link>
                 </Box>
         </Box>
     );
