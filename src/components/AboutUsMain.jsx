@@ -779,7 +779,7 @@ const AboutUs = () => {
                 }}
                 variant="outlined"
               >
-                <a href="tel:9427424157" style={{textDecoration:"none", color:"black", display:"flex", alignItems:"center"}}>Contact Us <ArrowForwardIcon /></a>
+                <a href="tel:+919427424157" style={{textDecoration:"none", color:"black", display:"flex", alignItems:"center"}}>Contact Us <ArrowForwardIcon /></a>
                 
               </Button>
             </Box>
