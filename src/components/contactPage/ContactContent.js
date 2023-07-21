@@ -526,26 +526,35 @@ const ContactContent = () => {
               >
                 Contact us
               </Typography>
-              <Box display="flex" flexDirection="row" mt="3vw">
-                <CallOutlinedIcon mr={2} />
-                <Typography
-                  mt="1vw"
-                  ml="2vw"
-                  variant="h6"
-                  sx={{
-                    color: "#3D2521",
-                    letterSpacing: "0.07em",
-                    fontStyle: "normal",
-                    fontFamily: "Poppins",
-                    fontSize: "16px",
-                  }}
-                >
-                  +91 9427424157
-                </Typography>
-              </Box>
+              
+              <a href="tel:+919427424157" style={{ textDecoration: 'none', color: 'inherit' }}>
+                {/* Use 'tel' protocol to indicate a phone number link */}
+                <Box display="flex" flexDirection="row" mt="3vw">
+                  <CallOutlinedIcon style={{ color: 'black' }} mr={2} />
+                  {/* Set the color of the icon explicitly to black */}
+                  <Typography
+                    mt="1vw"
+                    ml="2vw"
+                    variant="h6"
+                    sx={{
+                      color: "#3D2521",
+                      letterSpacing: "0.07em",
+                      fontStyle: "normal",
+                      fontFamily: "Poppins",
+                      fontSize: "16px",
+                    }}
+                  >
+                    +91 9427424157
+                  </Typography>
+                </Box>
+              </a>
+
+
+            <a href="mailto:info@shreecottages.com" style={{ textDecoration: 'none', color: 'inherit' }} target="_blacnk">  
               <Box display="flex" flexDirection="row" mt="3vw">
                 <MailOutlineOutlinedIcon />
                 <Typography
+                  
                   ml="2vw"
                   variant="h6"
                   sx={{
@@ -559,6 +568,7 @@ const ContactContent = () => {
                   info@shreecottages.com
                 </Typography>
               </Box>
+            </a>
             </Box>
           </Grid>
 
@@ -587,6 +597,7 @@ const ContactContent = () => {
             >
               Come over for coffee
             </Typography>
+            <a href="https://goo.gl/maps/JNyosQLb9TYTp1kg9" style={{ textDecoration: 'none', color: 'inherit' }} target="_blank">
             <Box display="flex" flexDirection="row" mt="3vw">
               <PlaceOutlinedIcon />
               <Typography
@@ -602,6 +613,7 @@ const ContactContent = () => {
                 Gujarat, India 362150
               </Typography>
             </Box>
+            </a>
           </Grid>
 
           {/* Third Box */}

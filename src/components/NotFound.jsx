@@ -14,7 +14,7 @@ export default function Error() {
         alignItems: 'center',
         flexDirection: 'column',
         minHeight: '100vh',
-        backgroundColor: primary,
+        backgroundColor:'#FFFFFF',
       }}
     >
       <Typography variant="h1" style={{ color: '#3D2521' }}>
