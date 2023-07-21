@@ -330,6 +330,7 @@ const ContactContent = () => {
             >
               Come over for coffee
             </Typography>
+            <a href="https://goo.gl/maps/JNyosQLb9TYTp1kg9" target="_blank">
             <Box
               display="flex"
               flexDirection="row"
@@ -356,6 +357,7 @@ const ContactContent = () => {
                 Gujarat, India 362150
               </Typography>
             </Box>
+            </a>
           </Box>
           
 
@@ -384,6 +386,7 @@ const ContactContent = () => {
               >
                 Contact us
               </Typography>
+              <a href="tel:+919427424157">
               <Box
                 display="flex"
                 flexDirection="row"
@@ -410,6 +413,9 @@ const ContactContent = () => {
                   +91 9427424157
                 </Typography>
               </Box>
+              </a>
+
+              <a href="mailto:info@shreecottages.com" target="_blacnk">
               <Box
                 display="flex"
                 flexDirection="row"
@@ -436,6 +442,7 @@ const ContactContent = () => {
                   info@shreecottages.com
                 </Typography>
               </Box>
+              </a>
             </Box>
           </Box>
 
