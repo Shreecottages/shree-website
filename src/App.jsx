@@ -320,7 +320,7 @@ function App() {
 
                   <Route
                     exact
-                    path="/gallery/videos"
+                    path="/gallery/videos/"
                     element={<VideoGalleryView />}
                   />
 
