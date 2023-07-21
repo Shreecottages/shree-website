@@ -12,6 +12,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/contactPage/Contact";
 import AboutUsMain from "./components/AboutUsMain";
 import Room from "./components/Room";
+import NotFound from "./components/NotFound";
 import ImageGallery from "./components/FarmImageGallery/ImageGallery";
 import ImageGalleryView from "./components/FarmImageGallery/ImageGalleryView";
 import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
@@ -379,8 +380,9 @@ function App() {
                 element={<Contact />}
               />
 
-              
+            <Route exact path="*" element={<NotFound />} />
             </Routes>
+            
             </SmoothScroll>
         {/* </Router> */}
           {/* <Homepage /> */}
