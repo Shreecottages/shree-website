@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, Divider, Button, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Helmet } from "react-helmet";
 
@@ -21,8 +21,44 @@ const diu = require('../images/exp/diu.png');
 const junagadh = require('../images/exp/junagadh.png');
 const map_spot = require('../images/map-spot.png');
 
+// Function to preload images
+const useImagePreload = (urls) => {
+    React.useEffect(() => {
+        urls.forEach(url => {
+            const img = new Image();
+            img.src = url;
+        });
+    }, [urls]);
+};
+
+
 export default function Experience(){
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
+
+    const imageUrls = [
+        AboutFLowerRight,
+        AboutUsTop,
+        AboutUsTopM,
+        AboutFlowerLeft,
+        header1,
+        header1M,
+        gir_jungle,
+        devaliya,
+        header2,
+        header2M,
+        jamjir,
+        k_b,
+        somnath,
+        tulsiShyam,
+        diu,
+        junagadh,
+        map_spot,
+    ];
+
+    
+    // Call the preloadImages function with the array of image URLs
+    useImagePreload(imageUrls);
+
     return(
         <Stack>
             <Helmet>
