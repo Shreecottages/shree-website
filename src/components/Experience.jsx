@@ -21,6 +21,7 @@ const diu = require('../images/exp/diu.png');
 const junagadh = require('../images/exp/junagadh.png');
 const map_spot = require('../images/map-spot.png');
 
+/*
 // Function to preload images
 const useImagePreload = (urls) => {
     React.useEffect(() => {
@@ -30,12 +31,12 @@ const useImagePreload = (urls) => {
         });
     }, [urls]);
 };
-
+*/
 
 export default function Experience(){
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
 
-    const imageUrls = [
+    /*const imageUrls = [
         AboutFLowerRight,
         AboutUsTop,
         AboutUsTopM,
@@ -57,7 +58,7 @@ export default function Experience(){
 
     
     // Call the preloadImages function with the array of image URLs
-    useImagePreload(imageUrls);
+    useImagePreload(imageUrls);*/
 
     return(
         <Stack>
