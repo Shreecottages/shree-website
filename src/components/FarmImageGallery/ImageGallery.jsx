@@ -11,6 +11,7 @@ import AboutFLowerRight from "../../assets/AboutFlowersRight.png";
 import AboutFlowerLeft from "../../assets/AboutFlowerLeft.png";
 import  AboutUsTopM from "../../images/TopImage.png"
 import { Helmet } from "react-helmet";
+import Decoration2 from "../../assets/Decoration2.webp";
 
 const ImageGallery = () => {
 
@@ -34,15 +35,17 @@ const ImageGallery = () => {
       >
         <Helmet>
                 <title>Gallery - Shree Cottages</title>
-                <meta
-                    name="description"
-                    content="Images and videos of Shree Cottages"
-                />
-                <meta 
-                    name="keywords"
-                    content="shree cottages, hotel, resort"
-                />
-            </Helmet>
+                <meta name="description" content="Best Tourist Places Attractions to Visit In Sasan Gir with Family. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh"/>
+                <meta name="keywords"content="shree cottages,hotel,resort,tourist places,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh"/>
+                <meta name="robots" content="index, follow"/>
+                <meta name="canonical" content="https://shreecottages.com/gallery/images/all"/>
+                <meta name="image" content={Decoration2} />
+
+                <meta name="og:title" content="Best Tourist Places Attractions to Visit In Sasan Gir with Family"/>
+                <meta property="og:site_name" content="Shree Cottgaes" />
+                <meta name="og:description" content="Best Tourist Places Attractions to Visit In Sasan Gir with Family. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh"/>
+                <meta name="og:image" content={Decoration2} />
+        </Helmet>
         <Box
           sx={{
             width: "100vw",

@@ -21,6 +21,8 @@ const Homepage = () => {
     variant: isSmallScreen ? "contained2" : "outlined",
   };
 
+  
+
   return (
     <Stack> {/* Removed overflowX: hidden  and added individually as was causing issues with header*/}
       <Helmet>
@@ -35,6 +37,9 @@ const Homepage = () => {
         <meta property="og:site_name" content="Shree Cottgaes" />
         <meta name="og:description" content="Host Your Dream Destination Wedding In Sasan Gir With Our Exquisite Venue, Surrounded By The Serene Beauty Of Gir Forest"/>
         <meta name="og:image" content={imageUrl} />
+
+        
+
       </Helmet>
       <Box className="hero" sx={{marginTop:{xs:"0px",md:"-100px"}}}>
         <svg width="100vw" viewBox="0 0 1920 447" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflowX:"hidden",position: "absolute", top: isSmallScreen ? "50vw" : "32vw" }}>
