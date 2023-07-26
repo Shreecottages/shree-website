@@ -26,7 +26,7 @@ const Homepage = () => {
       <Helmet>
         <title>Best destination wedding resort in sasan gir ,gujarat - Shree Cottages</title>
         <meta name="description" content="Host Your Dream Destination Wedding In Sasan Gir With Our Exquisite Venue, Surrounded By The Serene Beauty Of Gir Forest"/>
-        <meta name="keywords"content="shree Cottage, shree Party Plot, resort, hotel , destination wedding resort ,sasan gir ,talala gir ,gir ,gujarat"/>
+        <meta name="keywords"content="shree Cottage, shree Party Plot, resort, hotel ,destination wedding resort ,wedding place ,banquet halls ,sasan gir ,talala gir ,gir ,gujarat"/>
         <meta name="robots" content="index, follow"/>
         <meta name="canonical" content="https://shreecottages.com/"/>
         <meta name="image" content={imageUrl} />
