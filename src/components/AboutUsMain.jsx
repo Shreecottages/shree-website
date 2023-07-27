@@ -19,6 +19,7 @@ import WhoWeAre from "../assets/WhoWeAre.png";
 import DoubleCommaOpeningVector from "../assets/DoubleCommaOpeningVector.png";
 import DoubleCommaClosingVector from "../assets/DoubleCommaClosingVector.png";
 import ShreeOpacityLogo from "../assets/ShreeOpacityLogo.png";
+import ShreeAbout from "../images/shree-about.png"
 // import  AboutUsTopM from "../images/TopImage.png"
 // import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
@@ -64,16 +65,18 @@ const AboutUs = () => {
           },
         }}
       >
-      <Helmet>
-                <title>About - Shree Cottages</title>
-                <meta
-                    name="description"
-                    content="About the owner of Shree Cottages"
-                />
-                <meta 
-                    name="keywords"
-                    content="shree cottages"
-                />
+            <Helmet>
+                <title>Best Resort In Sasan Gir, Gujarat - Shree Cottages</title>
+                <meta name="description" content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir"/>
+                <meta name="keywords"content="shree Cottage, shree Party Plot,best resort, hotel ,destination wedding resort ,wedding place ,banquet halls, family friendly resort, swimming pool, sasan gir ,talala gir ,gir ,gujarat"/>
+                <meta name="robots" content="index, follow"/>
+                <meta name="canonical" content="https://shreecottages.com/about"/>
+                <meta name="image" content={ShreeAbout} />
+
+                <meta name="og:title" content="Best destination wedding resort in sasan gir ,gujarat - Shree Cottages"/>
+                <meta property="og:site_name" content="Shree Cottgaes" />
+                <meta name="og:description" content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir, gujarat"/>
+                <meta name="og:image" content={ShreeAbout} />
             </Helmet>
          <Box sx={{
                 width:"100vw",
@@ -251,20 +254,10 @@ const AboutUs = () => {
                 fontWeight: "400",
               }}
             >
-              Welcome to Shree Cottages, a premier destination wedding resort
-              nestled in Gir National Park. Our resort is dedicated to providing
-              exceptional experiences and unforgettable memories. With lush
-              gardens and breathtaking surroundings, we offer a picturesque
-              setting for your special occasions. At Shree Cottages, we pride
-              ourselves on our unwavering commitment to customer satisfaction.
+              Welcome to Shree Cottages, a premier destination wedding resort in Gir National Park. Our resort is dedicated to providing exceptional experiences and unforgettable memories. With lush gardens, luxurious rooms and bigest banquet halls, we offer best destination wedding and event planning with affordable price. At Shree Cottages, We are dedicated to ensuring our customers satisfaction and take great pride in our unwavering commitment to achieving that goal. Our focus is on making your experience easy and enjoyable.
               <br />
               <br />
-              Since our inception, not a single customer has left unsatisfied.
-              With luxurious accommodations, state-of-the-art amenities, and
-              impeccable service, we ensure that your stay is truly memorable.
-              Join us at Shree Cottages and immerse yourself in the enchantment
-              of Gir National Park, where tranquility meets elegance, and create
-              timeless memories that will last a lifetime.
+              Since our inception, not a single customer has left unsatisfied. With luxurious accommodations, state-of-the-art amenities, and impeccable service, we ensure that your stay is truly memorable. Join us at Shree Cottages and immerse yourself in the enchantment of Sasan Gir National Park, where tranquillity meets elegance, and create timeless memories that will last a lifetime.
             </Typography>
           </Box>
         </Box>
@@ -362,7 +355,7 @@ const AboutUs = () => {
                     letterSpacing: "0.07em",
                   }}
                 >
-                  99% Customer Satisfication
+                  99.99% Customer Satisfication
                 </Typography>
               </Box>
             </Box>
@@ -468,7 +461,8 @@ const AboutUs = () => {
                     border: "none",
                   }}
                 >
-                  Book Event
+                  <a href="tel:+919427424157" style={{ textDecoration: 'none', color: 'inherit' }}>Book Event</a>
+                  
                 </Button>
               </Box>
               <Box
@@ -562,7 +556,9 @@ const AboutUs = () => {
                     textTransform: "capitalize",
                   }}
                 >
-                  Book Room
+                  <a href="https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA" style={{ textDecoration: 'none', color: 'inherit' }}>Book Room</a>
+                
+                  
                 </Button>
               </Box>
             </Box>
