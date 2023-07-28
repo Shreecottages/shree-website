@@ -73,7 +73,7 @@ const AboutUs = () => {
                 <meta name="canonical" content="https://shreecottages.com/about"/>
                 <meta name="image" content={ShreeAbout} />
 
-                <meta name="og:title" content="Best destination wedding resort in sasan gir ,gujarat - Shree Cottages"/>
+                <meta name="og:title" content="Best Resort In Sasan Gir, Gujarat - Shree Cottages"/>
                 <meta property="og:site_name" content="Shree Cottgaes" />
                 <meta name="og:description" content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir, gujarat"/>
                 <meta name="og:image" content={ShreeAbout} />
