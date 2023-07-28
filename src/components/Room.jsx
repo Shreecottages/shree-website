@@ -5,6 +5,7 @@ import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Helmet } from "react-helmet";
+import ShreeRooms from "../images/Rooms_Images/RoomT3/T3(2).jpg";
 const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
 const AboutUsTop = require("../assets/AboutTopImg.png");
 const AboutUsTopM = require("../images/TopImage.png");
@@ -73,15 +74,17 @@ export default function Room() {
     return (
         <Stack>
             <Helmet>
-                <title>Rooms - Shree Cottages</title>
-                <meta
-                    name="description"
-                    content="Different rooms at Shree Cottages"
-                />
-                <meta 
-                    name="keywords"
-                    content="rooms,shree cottages,hotel rooms"
-                />
+                <title>Sasan Gir Resort Booking At Best Price - Shree Cottages</title>
+                <meta name="description" content="Resorts price range starts from Rs.1500 to 3000 per night in Sasan Gir. ✓Free WiFi ✓AC Rooms With Garden View ✓Swimming Pool ✓Free Cancellation."/>
+                <meta name="keywords"content="shree Cottage, shree Party Plot, resort, hotel ,rooms , hotel rooms,sasan gir ,talala gir ,gir ,gujarat"/>
+                <meta name="robots" content="index, follow"/>
+                <meta name="canonical" content="https://shreecottages.com/rooms"/>
+                <meta name="image" content={ShreeRooms} />
+
+                <meta name="og:title" content="Sasan Gir Resort Booking At Best Price - Shree Cottages"/>
+                <meta property="og:site_name" content="Shree Cottgaes" />
+                <meta name="og:description" content="Resorts price range starts from Rs.1500 to 3000 per night in Sasan Gir. ✓Free WiFi ✓AC Rooms With Garden View ✓Swimming Pool ✓Free Cancellation."/>
+                <meta name="og:image" content={ShreeRooms} />
             </Helmet>
             <Box sx={{
                 width: "100vw",
