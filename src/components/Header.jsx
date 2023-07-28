@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 // import { makeStyles } from "@material-ui/core";
-import { AppBar, Box, Grid, Toolbar, Stack, Container, Hidden, Typography, Menu, MenuItem, IconButton, SwipeableDrawer, Divider, List, ListItem, Avatar, ListItemButton, ListItemText, Button } from "@mui/material";
+import { AppBar, Box, Grid, Toolbar, Stack, Container, Hidden, Typography, Menu, MenuItem, IconButton, SwipeableDrawer, List, ListItemButton, ListItemText, Button } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import CallIcon from '@mui/icons-material/Call';
@@ -12,7 +12,7 @@ import '../styles/Header.css';
 const fbContact = require("../assets/fb-Contact.png");
 const ytContact = require("../assets/yt-Contact.png");
 const instaContact = require("../assets/insta-Contact.png");
-const logo = require('../images/logo.png');
+//const logo = require('../images/logo.png');
 
 export default function Header(props) {
   const [open, setOpen] = useState(false);

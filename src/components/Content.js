@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
+//import Container from "@mui/material/Container";
+//import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import {useMediaQuery} from "@mui/material"
 import logo1 from "../eventImg/content-1.png";
@@ -14,10 +14,10 @@ import logo3Mobile from "../assets/logo3Mobile.png"
 import Button from "@mui/material/Button";
 // import "../styles/Content.css";
 
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea, CardActions } from "@mui/material";
+//import Card from "@mui/material/Card";
+//import CardContent from "@mui/material/CardContent";
+//import CardMedia from "@mui/material/CardMedia";
+//import { CardActionArea, CardActions } from "@mui/material";
 
 function MyComponent() {
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));

@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Typography, Divider, Button, MobileStepper, Rating, Avatar } from "@mui/material";
+import { Box, Typography, Divider, Button, Rating, Avatar } from "@mui/material";
 import { Card, CardHeader,CardContent} from "@mui/material";
-import { styled } from '@mui/system';
+//import { styled } from '@mui/system';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import '../styles/Homepage.css';
 import Slider from "react-slick";

@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, Divider, Button, useMediaQuery } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Helmet } from "react-helmet";
 

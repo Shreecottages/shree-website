@@ -1,8 +1,8 @@
 import React from "react";
 import '../styles/Room.css';
 import { Box, Typography, Divider, Paper, Button, MobileStepper, Stack, IconButton, Grid, List, ListItem, useMediaQuery } from "@mui/material";
-import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
-import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
+//import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
+//import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Helmet } from "react-helmet";
 import ShreeRooms from "../images/Rooms_Images/RoomT3/T3(2).jpg";

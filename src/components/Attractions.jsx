@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Divider, Stack, Typography, Card, Button, useMediaQuery } from "@mui/material";
+import { Box, Divider, Typography, Button, useMediaQuery } from "@mui/material";
 import '../styles/Homepage.css';
 import { Link } from "react-router-dom";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';

@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
-const primary = red[50]; // #f44336
+//const primary = red[50]; // #f44336
 
 export default function Error() {
   return (

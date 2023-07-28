@@ -1,12 +1,12 @@
-import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography, Button } from "@mui/material";
 import React, { useRef, useState } from "react";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
-import style from "../../styles/Contact.module.css";
-import fbContact from "../../assets/fb-Contact.png";
-import ytContact from "../../assets/yt-Contact.png";
-import instaContact from "../../assets/insta-Contact.png";
+//import style from "../../styles/Contact.module.css";
+//import fbContact from "../../assets/fb-Contact.png";
+//import ytContact from "../../assets/yt-Contact.png";
+//import instaContact from "../../assets/insta-Contact.png";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import "../../styles/Contact.css";
@@ -21,7 +21,7 @@ const ContactContent = () => {
     setrecaptchaValue(value);
   };
   const callValidation = () => {
-    if (recaptchaValue == "") {
+    if (recaptchaValue === "") {
       return true;
     } else {
       return false;

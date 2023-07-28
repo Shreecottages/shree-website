@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Box,
-  Stack,
   Typography,
   Button,
   useMediaQuery,
@@ -15,7 +14,7 @@ import Card1 from "../assets/Card.png";
 import Card2 from "../assets/Farms.png";
 import SatisficationLogo from "../assets/Satisfaction.png";
 import ResortOwnerProfilePhoto from "../assets/ResortOwnerProfilePhoto.png";
-import WhoWeAre from "../assets/WhoWeAre.png";
+//import WhoWeAre from "../assets/WhoWeAre.png";
 import DoubleCommaOpeningVector from "../assets/DoubleCommaOpeningVector.png";
 import DoubleCommaClosingVector from "../assets/DoubleCommaClosingVector.png";
 import ShreeOpacityLogo from "../assets/ShreeOpacityLogo.png";
@@ -23,11 +22,11 @@ import ShreeAbout from "../images/shree-about.png"
 // import  AboutUsTopM from "../images/TopImage.png"
 // import AboutUsTop from "../assets/AboutTopImg.png"
 //IMPORTING COMPONENTS
-import ReviewCards from "./ReviewCard";
+//import ReviewCards from "./ReviewCard";
 import Review from "./Review";
 
 // IMPORTING ICONS
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+//import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Helmet } from "react-helmet";
 

@@ -3,10 +3,10 @@ import { Box, Divider, Typography, Button, useMediaQuery} from "@mui/material";
 import { Link } from "react-router-dom";
 import '../styles/Homepage.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-const a1 = require('../images/Abt-us/a1.png');
+//const a1 = require('../images/Abt-us/a1.png');
 const a2 = require('../images/Abt-us/a2.png');
 const a3 = require('../images/Abt-us/a3.png');
-const a4 = require('../images/Abt-us/a4.png');
+//const a4 = require('../images/Abt-us/a4.png');
 const logoTransparent = require('../images/logo-transparent.png');
 
 export default function Aboutus(){

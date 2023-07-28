@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Stack, Typography, Button, ListItemButton, ListItemText,useMediaQuery,Divider } from "@mui/material";
-import { Link, Outlet,NavLink, useLocation } from "react-router-dom";
+import { Box, Typography, ListItemButton, ListItemText,useMediaQuery,Divider } from "@mui/material";
+import { Outlet,NavLink, useLocation } from "react-router-dom";
 
 // IMPORTING STYLES
 import "./ImageGallery.css";
@@ -11,14 +11,14 @@ import AboutFLowerRight from "../../assets/AboutFlowersRight.png";
 import AboutFlowerLeft from "../../assets/AboutFlowerLeft.png";
 import  AboutUsTopM from "../../images/TopImage.png"
 import { Helmet } from "react-helmet";
-import Decoration2 from "../../assets/Decoration2.webp";
+//import Decoration2 from "../../assets/Decoration2.webp";
 import  ShreeGallery from "../../images/shree-gallery.jpg"
 
 const ImageGallery = () => {
 
   var currentUrl = useLocation().pathname;
 
-  if(currentUrl == "/gallery/videos")
+  if(currentUrl === "/gallery/videos")
   {
     currentUrl = "/gallery/images/all"
   }

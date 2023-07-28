@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Grid,
@@ -7,12 +7,12 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 // IMPORTING ICONS
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { CurrencyBitcoin } from "@mui/icons-material";
+//import { CurrencyBitcoin } from "@mui/icons-material";
 
 //IMPORTING IMAGES
 import Resort1 from "../../assets/Resort1.png";
@@ -76,7 +76,7 @@ const ImageGalleryView = () => {
   var part;
 
   for (var i = num; i > num - 17; i--) {
-    if (currentUrl[i] != "/") {
+    if (currentUrl[i] !== "/") {
       part = currentUrl.slice(i + 1);
     } else {
       part = currentUrl.slice(i + 1);

@@ -1,6 +1,6 @@
 import React from "react";
-import { useContext, useEffect } from "react";
-import { Box, Divider, Stack, Typography, Card, Button, useMediaQuery } from "@mui/material";
+//import { useContext, useEffect } from "react";
+import { Box, Divider, Stack, Typography, useMediaQuery } from "@mui/material";
 import CSlider from './CSlider';
 import Ecard from './Ecard';
 import Review from './Review';
@@ -10,7 +10,7 @@ import '../styles/Homepage.css';
 import { Helmet } from "react-helmet";
 //import ReactGA from 'react-ga';
 
-const asset3_1 = require('../images/Asset 3 1.png');
+//const asset3_1 = require('../images/Asset 3 1.png');
 const imageUrl = require('../images/Hero.webp');
 
 const Homepage = () => {
@@ -46,7 +46,7 @@ const Homepage = () => {
           <path d="M523.333 93.4543C322.275 112.504 268 15.6415 0 15.6415V447H1920V93.4543C1866 57.5005 1712.95 39.5266 1591.33 70.9831C1350 133.403 1267 68.5658 1070 16.5747C852.711 -40.7709 802.667 66.9883 523.333 93.4543Z" fill="#FFE2D8" />
         </svg>
         <Box className="hero-info" sx={{ overflowX: "hidden",mt:{xs:"-10vw",sm:"0px"}}}>
-          <img src={require('../images/Asset 3 1.svg').default} alt="Hero Image" />
+          <img src={require('../images/Asset 3 1.svg').default} alt="Hero" />
           <Box display="flex" flexDirection="column" sx={{ padding: { xs: "0 5vw 4vw 5vw", md: "0 10vw 4vw 10vw" }, backgroundColor: '#FFE2D8' }}>
             <Typography variant="h2" sx={{ fontSize: { xs: "1.4rem", md: "2.25rem" } }}>Shree Cottages</Typography>
             <Divider orientation="vertical" variant="middle" sx={{ height: { xs: "1rem", md: "1.55rem" }, width: "1px", backgroundColor: "#3D2521", alignSelf: "center", m: { xs: "0.5rem", md: "1.1rem" } }} />

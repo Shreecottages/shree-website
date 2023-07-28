@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Avatar, Container, Grid, Typography, Box, Stack, Divider } from "@mui/material";
+import { Grid, Typography, Box, Stack, Divider } from "@mui/material";
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import '../styles/Footer.css'
 // importing images
-const logo_white = require('../images/logo-white.png');
-const fb = require('../images/fb.png');
-const insta = require('../images/insta.png');
-const yt = require('../images/yt.png');
+//const logo_white = require('../images/logo-white.png');
+//const fb = require('../images/fb.png');
+//const insta = require('../images/insta.png');
+//const yt = require('../images/yt.png');
 
 
 export default function Footer(){

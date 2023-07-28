@@ -1,7 +1,7 @@
 import React from 'react';
-import style from '../styles/Jumbotron.module.css';
+//import style from '../styles/Jumbotron.module.css';
 import Box from '@mui/material/Box';
-import logo from '../eventImg/jumbotron.png';
+//import logo from '../eventImg/jumbotron.png';
 import Typography from '@mui/material/Typography';
 import { Divider, useMediaQuery } from "@mui/material";
 
