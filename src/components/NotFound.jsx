@@ -2,11 +2,17 @@ import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Helmet } from "react-helmet";
+
+
 
 //const primary = red[50]; // #f44336
 
 export default function Error() {
   return (
+
+    
+
     <Box
       sx={{
         display: 'flex',
@@ -17,6 +23,11 @@ export default function Error() {
         backgroundColor:'#FFFFFF',
       }}
     >
+
+      <Helmet>
+        <title>404 Page Not Found - Shree Cottages</title>
+      </Helmet>
+
       <Typography variant="h1" style={{ color: '#3D2521' }}>
         404
       </Typography>
