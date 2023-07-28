@@ -21,7 +21,7 @@ export default function Attractions(){
                 <Divider orientation="vertical" variant="middle" sx={{height:"1.55rem",width: "1px", backgroundColor:"#3D2521", alignSelf:"center", m:'1.1rem'}}/>
                 <Box display='flex' flexDirection="column">
                     <Box display="flex" justifyContent={"space-between"} sx={{ flexDirection: { xs: "column", md: "row"}, mb:'4vw' }}>
-                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src={gir} style={{width:"100%", height:"100%"}}/></Box>
+                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src={gir} alt="Scenic View of Gir Forest With Lion" style={{width:"100%", height:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                             m:'2vw 3vw', 
                                                                             display: {xs:"block", md:"flex"}, 
@@ -46,7 +46,7 @@ export default function Attractions(){
                         </Box>
                     </Box>
                     <Box display="flex" justifyContent={"space-between"} sx={{ flexDirection: { xs: "column", md: "row-reverse"} }}>
-                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src={diu} style={{width:"100%", height:"100%"}}/></Box>
+                        <Box sx={{width: {xs: "100%", md: "220vw"}}}><img src={diu} alt="Diu Beach Children Playing" style={{width:"100%", height:"100%"}}/></Box>
                         <Box display="flex" flexDirection="column" textAlign="left" sx={{
                                                                                             m:'2vw 3vw', 
                                                                                             display: {xs:"block", md:"flex"},

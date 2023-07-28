@@ -129,7 +129,7 @@ export default function Experience(){
                     width:"100%",
                     justifyContent:"center",
                 }}>
-                    <Box><img src={isSmallScreen?header1M:header1} style={{width:"100%",borderRadius:"10px"}}/></Box>
+                    <Box><img src={isSmallScreen?header1M:header1} alt="Sasan Gir Lion and Lioness" style={{width:"100%",borderRadius:"10px"}}/></Box>
                     <Box sx={{padding:{xs:"0vw 4vw",md:"0vw 10vw"}, position:"relative", top:{xs:"-3rem",md:"-3.55rem"},marginBottom:{xs:"-1rem",md:"0rem"}}}>
                         <Typography variant="h2" sx={{
                                                     alignSelf:"center", 
@@ -151,7 +151,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src={gir_jungle} style={{width:"100%"}}/></Box>
+                        <Box><img src={gir_jungle} alt="Lion In Gir Jungle" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -180,7 +180,7 @@ export default function Experience(){
                         width:"100%",
                         justifyContent:"center",
                     }}>
-                        <Box><img src={devaliya} style={{width:"100%"}}/></Box>
+                        <Box><img src={devaliya} alt="Devaliya Safari Park" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -211,7 +211,7 @@ export default function Experience(){
                     width:"100%",
                     justifyContent:"center",
                 }}>
-                    <Box><img src={isSmallScreen?header2M:header2} style={{width:"100%",borderRadius:"10px"}}/></Box>
+                    <Box><img src={isSmallScreen?header2M:header2} alt="gir jungle scene" style={{width:"100%",borderRadius:"10px"}}/></Box>
                     <Box sx={{padding:{xs:"0vw 4vw",md:"0vw 10vw"}, position:"relative", top:{xs:"-2rem",sm:"-6vw",md:"-3.55rem"}}}>
                         <Typography variant="h2" sx={{
                                                     alignSelf:"center", 
@@ -232,7 +232,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src={jamjir} style={{width:"100%"}}/></Box>
+                        <Box><img src={jamjir} alt="Jamjir Waterfall" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -260,7 +260,7 @@ export default function Experience(){
                         justifyContent:"center",
                         // margin:{xs:"0vw",md:"0vw 2vw"}
                     }}>
-                        <Box><img src={k_b} style={{width:"100%"}}/></Box>
+                        <Box><img src={k_b} alt="kankai and banej" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -290,7 +290,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src={somnath} style={{width:"100%"}}/></Box>
+                        <Box><img src={somnath} alt="Somnath Temple Drone Image" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -318,7 +318,7 @@ export default function Experience(){
                         justifyContent:"center",
                         // margin:{xs:"0vw",md:"0vw 2vw"}
                     }}>
-                        <Box><img src={tulsiShyam} style={{width:"100%"}}/></Box>
+                        <Box><img src={tulsiShyam} alt="tulsishyam" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -348,7 +348,7 @@ export default function Experience(){
                         justifyContent:"center",
                         margin:{xs:"0vw",md:"0vw 2vw 0vw 0vw"}
                     }}>
-                        <Box><img src={diu} style={{width:"100%"}}/></Box>
+                        <Box><img src={diu} alt="Diu Beach" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 
@@ -376,7 +376,7 @@ export default function Experience(){
                         justifyContent:"center",
                         // margin:{xs:"0vw",md:"0vw 2vw"}
                     }}>
-                        <Box><img src={junagadh} style={{width:"100%"}}/></Box>
+                        <Box><img src={junagadh} alt="mahabat maqbara junagadh" style={{width:"100%"}}/></Box>
                         <Box flexDirection="column" textAlign="left" sx={{
                                                                                 m:{xs:"0vw 4vw",md:"0vw 2vw"}, 
                                                                                 // display: {xs:"block", md:"flex"}, 

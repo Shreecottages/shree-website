@@ -18,14 +18,14 @@ export default function Footer(){
         <Box flexDirection="column" className="footer" sx={{bottom:'0',right:'0',left:'0', p:{xs:"10vw 5vw",md:"5vw 10vw 0vw 10vw"}, display:"flex" }}>
         <Stack justifyContent="space-between" sx={{flexDirection:{xs:"column",md:"row"}}}>
             <Grid container direction={"column"}>
-                <img src={require('../images/logo-white.svg').default} alt="" className="logo-white"/>
+                <img src={require('../images/logo-white.svg').default} alt="Shree Cottages Logo White" className="logo-white"/>
                 <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{md:'1.2vw',lg:'1vw'}, mb:'1vw', mt:'1.5vw'}}>
                     Shree Cottages offers a serene and enchanting getaway nestled in the heart of Gir National Park. With comfortable accommodations, lush gardens, and exceptional service, it is the perfect destination for weddings, events, and peaceful retreats.
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
-                    <img src={require('../images/fb.svg').default} alt="Facebook" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
-                    <img src={require('../images/insta.svg').default} alt="Instagram" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.instagram.com/shreecottages","_blank")}/>
-                    <img src={require('../images/yt.svg').default} alt="Youtube" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.youtube.com/@shreecottages","_blank")}/>
+                    <img src={require('../images/fb.svg').default} alt="Facebook Icon" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
+                    <img src={require('../images/insta.svg').default} alt="Instagram Icon" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.instagram.com/shreecottages","_blank")}/>
+                    <img src={require('../images/yt.svg').default} alt="Youtube Icon" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.youtube.com/@shreecottages","_blank")}/>
                     {/* <Avatar variant="circular" src="../images/fb.png" href="/" alt="Facebook" sx={{mr:'1vw'}}/>
                     <Avatar src="../images/insta.png" href="/" alt="Instagram" sx={{mr:'1vw'}}/>
                     <Avatar src="../images/yt.png" href="/" alt="Youtube" sx={{mr:'1vw'}}/> */}

@@ -117,10 +117,17 @@ const CSlider = () =>{
                             }}>
                             <Box className="room-img" display="flex">
                                 {activeStep===0?
-                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg1]}`)} />
+                                <img
+                                src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg1]}`)}
+                                alt="Type 1 Rooms Images"
+                                />
                                 : activeStep===1?
-                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg2]}`)} />:
-                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg3]}`)} />
+                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg2]}`)} 
+                                alt="Type 2 Rooms Images"
+                                />:
+                                <img  src={require(`../images/Rooms_Images/${steps[activeStep].image[activeImg3]}`)} 
+                                alt="Type 3 Rooms Images"
+                                />
                                 }
                             </Box>
                             <Box sx={{

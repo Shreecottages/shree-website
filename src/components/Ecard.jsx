@@ -15,23 +15,27 @@ export default function Ecard({ itineraries, activities }){
     const itinerariesPerCard = [{ _id: "1",
                                     Eimg:require("../images/events/wed.png"),
                                     event:"Wedding",
-                                    desc:"Create cherished memories with a picture-perfect wedding at Shree Cottages. Our experienced team will ensure every detail is flawlessly executed, making your special day truly magical." 
+                                    desc:"Create cherished memories with a picture-perfect wedding at Shree Cottages. Our experienced team will ensure every detail is flawlessly executed, making your special day truly magical." ,
+                                    alt: "Gujarati Destination Wedding"
                                 }, 
                                 { _id: "2",
                                     Eimg:require("../images/events/bday.png"),
                                     event:"Birthday Party",
-                                    desc:"Celebrate your birthday party in style at Shree Cottages. From themed decorations to delectable treats, we'll create an unforgettable birthday experience tailored to your desires."
+                                    desc:"Celebrate your birthday party in style at Shree Cottages. From themed decorations to delectable treats, we'll create an unforgettable birthday experience tailored to your desires." ,
+                                    alt: "birthday party decorations"
                                 }, 
                                 { _id: "3",
                                     Eimg:require("../images/events/corp.png"),
                                     event:"Corporate Event",
-                                    desc:"Host a successful and productive corporate event at Shree Cottages. Our state-of-the-art facilities and professional services guarantee a seamless and memorable experience." 
+                                    desc:"Host a successful and productive corporate event at Shree Cottages. Our state-of-the-art facilities and professional services guarantee a seamless and memorable experience." ,
+                                    alt: "corporate event decoration"
                                 },
                                 {
                                     _id:"4",
                                     Eimg:require("../images/events/manag.png"),
                                     event:"Event Planning",
-                                    desc:"Trust our expert event planners to bring your vision to life. Whether it's a grand gala or an intimate gathering, we will handle every aspect with precision and creativity, ensuring a remarkable event."
+                                    desc:"Trust our expert event planners to bring your vision to life. Whether it's a grand gala or an intimate gathering, we will handle every aspect with precision and creativity, ensuring a remarkable event." ,
+                                    alt: "event decoration"
                                 }
                             ];
 

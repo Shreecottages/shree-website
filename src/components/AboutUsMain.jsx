@@ -395,7 +395,7 @@ const AboutUs = () => {
                 >
                   <img
                     src={Card1}
-                    alt=""
+                    alt="Sangeet Sandhya Night Decoration"
                     width="100%"
                     height="100%"
                     style={{ borderRadius: "20px 20px 0px 0px" }}
@@ -490,7 +490,7 @@ const AboutUs = () => {
                 >
                   <img
                     src={Card2}
-                    alt=""
+                    alt="Cottages With Garden At Evening"
                     width="100%"
                     height="100%"
                     style={{ borderRadius: "20px 20px 0px 0px" }}
@@ -525,7 +525,7 @@ const AboutUs = () => {
                       color: "#FFBB70",
                     }}
                   >
-                    23k+
+                    20k+
                   </Typography>
                   <Typography
                     sx={{
@@ -715,7 +715,7 @@ const AboutUs = () => {
                         width: "100%",
                         height: "100%",
                       }}
-                      alt=""
+                      alt="Owner Image"
                     />
                   </Box>
 
@@ -785,7 +785,7 @@ const AboutUs = () => {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              <img src={SatisficationLogo} alt="" />
+              <img src={SatisficationLogo} alt="100% customer satisfaction logo" />
             </Box>
           </Box>
         </Box>
