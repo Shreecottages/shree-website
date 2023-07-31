@@ -65,7 +65,7 @@ export default function Experience(){
             <Helmet>
                 <title>Best Tourist Places Attractions to Visit In Sasan Gir with Family</title>
                 <meta name="description" content="Most Visited Tourist Places In Sasan Gir. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh"/>
-                <meta name="keywords"content="shree cottages,hotel,resort,tourist places,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh"/>
+                <meta name="keywords"content="shree cottages,hotel,resort,tourist places,places to visit,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh"/>
                 <meta name="robots" content="index, follow"/>
                 <meta name="canonical" content="https://shreecottages.com/best-places-to-visit-in-sasan-gir"/>
                 <meta name="image" content={gir_jungle} />
