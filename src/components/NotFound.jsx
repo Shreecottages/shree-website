@@ -30,9 +30,9 @@ const Hard404Page = () => {
             component="h2"
             style={{
               color: '#3D2521',
-              fontSize: '1.5rem',
+              fontSize: '1.3rem',
               textAlign: 'center',
-              padding: '0 16px',
+              padding: '0 32px',
               marginBottom: '32px', // Increase margin between the message and button
             }}
           >
