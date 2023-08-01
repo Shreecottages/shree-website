@@ -1,43 +1,53 @@
 import React from 'react';
-import { Box, Button, Typography } from '@mui/material';
-import { red } from '@mui/material/colors';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import { Helmet } from "react-helmet";
+import { Box, Button, Grid, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-
-
-//const primary = red[50]; // #f44336
-
-export default function Error() {
+const Hard404Page = () => {
   return (
-
-    
-
     <Box
       sx={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'column',
         minHeight: '100vh',
-        backgroundColor:'#FFFFFF',
+        backgroundColor: '#FFE2D8',
       }}
     >
-
       <Helmet>
         <title>404 Page Not Found - Shree Cottages</title>
       </Helmet>
 
-      <Typography variant="h1" style={{ color: '#3D2521' }}>
-        404
-      </Typography>
-      <Typography variant="h6" style={{ color: '#3D2521' }}>
-        The page you’re looking for doesn’t exist.
-      </Typography>
-      {/* Add the Link component to the home page */}
-      <Link to="/">
-        <Button variant="contained">Back Home</Button>
-      </Link>
+      <Grid container spacing={2} direction="column" alignItems="center">
+        <Grid item xs={12}>
+          <Typography variant="h1" component="h1" style={{ color: '#3D2521', marginBottom: '20px' }}>
+            404
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography
+            variant="h3"
+            component="h2"
+            style={{
+              color: '#3D2521',
+              fontSize: '1.5rem',
+              textAlign: 'center',
+              padding: '0 16px',
+              marginBottom: '32px', // Increase margin between the message and button
+            }}
+          >
+            The page you’re looking for doesn’t exist.
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          {/* Add a link to the home page */}
+          <Link to="/">
+            <Button variant="contained">Back Home</Button>
+          </Link>
+        </Grid>
+      </Grid>
     </Box>
   );
-}
+};
+
+export default Hard404Page;
