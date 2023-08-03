@@ -27,7 +27,7 @@ const Homepage = () => {
     <Stack> {/* Removed overflowX: hidden  and added individually as was causing issues with header*/}
       <Helmet>
         <title>Best destination wedding resort in sasan gir ,gujarat - Shree Cottages</title>
-        <meta name="description" content="Host Your Dream Destination Wedding In Sasan Gir With Our Exquisite Venue, Surrounded By The Serene Beauty Of Gir Forest"/>
+        <meta name="description" content="Host Your Dream Destination Wedding In Sasan Gir At Shree Cottages, Surrounded By The Serene Beauty Of Gir Forest"/>
         <meta name="keywords"content="shree Cottage, shree Party Plot, resort, hotel ,destination wedding resort ,wedding place ,banquet halls ,sasan gir ,talala gir ,gir ,gujarat"/>
         <meta name="robots" content="index, follow"/>
         <meta name="canonical" content="https://shreecottages.com/"/>
@@ -35,7 +35,7 @@ const Homepage = () => {
 
         <meta name="og:title" content="Best destination wedding resort in sasan gir ,gujarat - Shree Cottages"/>
         <meta property="og:site_name" content="Shree Cottgaes" />
-        <meta name="og:description" content="Host Your Dream Destination Wedding In Sasan Gir With Our Exquisite Venue, Surrounded By The Serene Beauty Of Gir Forest"/>
+        <meta name="og:description" content="Host Your Dream Destination Wedding In Sasan Gir At Shree Cottages, Surrounded By The Serene Beauty Of Gir Forest"/>
         <meta name="og:image" content={imageUrl} />
 
         
