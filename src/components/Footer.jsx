@@ -48,8 +48,9 @@ export default function Footer(){
                         <Box display="flex" flexDirection={"column"}>
                             <Link to="/gallery/images/all"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Gallery</Typography></Link>
                             <Link to="/best-places-to-visit-in-sasan-gir"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Experience</Typography></Link>
+                            <Link to="/blogs"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Blogs</Typography></Link>
                             <Link to="/contact"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Contact Us</Typography></Link>
-                            <Link to="/"><Typography variant="h6" sx={{ color: 'warning.main', mt: '1.2vw', fontSize: { xs: "1rem", md: "1.3vw" } }}>Resrvation Policy</Typography></Link>
+                            
                         </Box>
                     </Box>
                 </Grid>

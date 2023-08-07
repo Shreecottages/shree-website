@@ -30,6 +30,9 @@ const Room = lazy(() => import("./components/Room"));
 const Event = lazy(() => import("./components/Event"));
 const Experience = lazy(() => import("./components/Experience"));
 const Contact = lazy(() => import("./components/contactPage/Contact"));
+const Blogs = lazy(() => import("./components/Blogs"));
+const Blog1 = lazy(() => import("./components/Blog1"));
+const Blog2 = lazy(() => import("./components/Blog2"));
 const ImageGallery = lazy(() => import("./components/FarmImageGallery/ImageGallery"));
 
 //const TRACKING_ID = "G-F89GGM6Z6K";
@@ -400,6 +403,25 @@ function App() {
                 path="/contact"
                 element={<React.Suspense fallback='Loading...'>
                 <Contact />
+                </React.Suspense>}
+              />
+
+              <Route exact path="/blogs" element={<React.Suspense fallback='Loading...'> <Blogs /> </React.Suspense>} />
+              
+
+              <Route
+                exact
+                path="/blog1"
+                element={<React.Suspense fallback='Loading...'>
+                <Blog1 />
+                </React.Suspense>}
+              />
+
+              <Route
+                exact
+                path="/blog2"
+                element={<React.Suspense fallback='Loading...'>
+                <Blog2 />
                 </React.Suspense>}
               />
 

@@ -118,6 +118,7 @@ export default function Header(props) {
             <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/wedding-event-planning" style={{ textDecoration: "none", color: '#3D2521' }}>Wedding & Event</Link></ListItemText></ListItemButton>
             <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/rooms" style={{ textDecoration: "none", color: '#3D2521' }}>Rooms</Link></ListItemText></ListItemButton>
             <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/best-places-to-visit-in-sasan-gir" style={{ textDecoration: "none", color: '#3D2521' }}>Experience</Link></ListItemText></ListItemButton>
+            <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/blogs" style={{ textDecoration: "none", color: '#3D2521' }}>Blogs</Link></ListItemText></ListItemButton>
             <ListItemButton><ListItemText disableTypography className="ham-list" onClick={() => setOpen(false)}><Link to="/contact" style={{ textDecoration: "none", color: '#3D2521' }}>Contact us</Link></ListItemText></ListItemButton>
             {/* <ListItemButton onClick={handleOpenUserMenu} ><ListItemText disableTypography className="list">More  <KeyboardArrowDownIcon sx={{fontSize:"1.2rem"}} /></ListItemText></ListItemButton> */}
 
@@ -161,6 +162,7 @@ export default function Header(props) {
         onClose={handleCloseUserMenu}
       >
         <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/best-places-to-visit-in-sasan-gir" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Experience</Link></MenuItem>
+        <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/blogs" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Blogs</Link></MenuItem>
         <MenuItem sx={{ fontFamily: "Bona Nova", fontSize: "1.4rem", '@media (max-width: 1100px)': { fontSize: "1rem" } }}><Link to="/contact" style={{ textDecoration: "none", color: '#3D2521' }} onClick={handleCloseUserMenu}>Contact us</Link></MenuItem>
       </Menu>
     </AppBar>
