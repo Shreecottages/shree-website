@@ -414,7 +414,6 @@ const ContactContent = () => {
                 </Typography>
               </Box>
               </a>
-
               <a href="mailto:info@shreecottages.com" target="_blacnk">
               <Box
                 display="flex"
