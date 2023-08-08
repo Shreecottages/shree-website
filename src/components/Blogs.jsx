@@ -183,7 +183,7 @@ export default function Blogs() {
         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", p: "5vw 0vw", width: { xs: "30vw", sm: "100%" } }}>
           <Typography variant="h2" sx={{ color: "warning.main", alignSelf: "center", m: { xs: " 0vw -10vw", sm: "0vw" } }}>Blogs</Typography>
           <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
-          <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "left", alignSelf: "center", lineHeight: "19px", letterSpacing: "0.01rem", m: { xs: " 0vw -30vw", sm: "0vw" } }}>Stay Informed and Inspired with Our Blog Posts📜</Typography>
+          <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "center", alignSelf: "center", lineHeight: "19px", letterSpacing: "0.01rem", m: { xs: " 0vw -30vw", sm: "0vw" } }}>Stay Informed and Inspired with Our Blog Posts📜</Typography>
         </Box>
         <Box
           sx={{
