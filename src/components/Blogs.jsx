@@ -77,7 +77,7 @@ export default function Blogs() {
       author: "John Doe",
       image: k_b, // Replace with actual image URL
       date: "August 3, 2023", // Replace with actual date
-      url: "/blog1",
+      url: "/blog2",
     },
     {
       id: 2,
@@ -86,7 +86,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: somnath, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog1",
+      url: "/blog2",
     },
     {
       id: 3,
@@ -95,7 +95,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: tulsiShyam, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog1",
+      url: "/blog2",
     },
     {
       id: 4,
@@ -104,7 +104,7 @@ export default function Blogs() {
       author: "John Doe",
       image: k_b, // Replace with actual image URL
       date: "August 3, 2023", // Replace with actual date
-      url: "/blog1",
+      url: "/blog2",
 
     },
     {
@@ -114,7 +114,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: somnath, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog1",
+      url: "/blog2",
     },
     {
       id: 6,
@@ -123,7 +123,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: tulsiShyam, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog1",
+      url: "/blog2",
     },
     // Add more blog posts
   ];
