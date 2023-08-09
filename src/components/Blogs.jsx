@@ -86,7 +86,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: somnath, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog2",
+      url: "/blog1",
     },
     {
       id: 3,
