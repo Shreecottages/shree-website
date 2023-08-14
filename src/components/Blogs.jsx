@@ -86,7 +86,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: somnath, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog2",
+      url: "",
     },
     {
       id: 3,
@@ -95,7 +95,7 @@ export default function Blogs() {
       author: "Jane Smith",
       image: tulsiShyam, // Replace with actual image URL
       date: "August 5, 2023", // Replace with actual date
-      url: "/blog2",
+      url: "",
     },
     
     // Add more blog posts
@@ -111,16 +111,16 @@ export default function Blogs() {
     }}>
     <Stack>
       <Helmet>
-        <title>Our Blogs</title>
-        <meta name="description" content="Most Visited Tourist Places In Sasan Gir. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh" />
+        <title>Our Blogs - Shree Cottages</title>
+        <meta name="description" content="Learn more about our resort, clients experiences, tourist places in Sasan Gir, and many other informative topics" />
         <meta name="keywords" content="shree cottages,hotel,resort,tourist places,places to visit,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh" />
         <meta name="robots" content="index, follow" />
-        <meta name="canonical" content="https://shreecottages.com/best-places-to-visit-in-sasan-gir" />
+        <meta name="canonical" content="https://shreecottages.com/blogs" />
         <meta name="image" content={gir_jungle} />
 
-        <meta name="og:title" content="Best Tourist Places Attractions to Visit In Sasan Gir with Family" />
+        <meta name="og:title" content="Our Blogs - Shree Cottages" />
         <meta property="og:site_name" content="Shree Cottgaes" />
-        <meta name="og:description" content="Most Visited Tourist Places In Sasan Gir. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh" />
+        <meta name="og:description" content="Learn more about our resort, clients experiences, tourist places in Sasan Gir, and many other informative topics" />
         <meta name="og:image" content={gir_jungle} />
 
       </Helmet>

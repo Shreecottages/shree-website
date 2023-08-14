@@ -99,7 +99,7 @@ export default function Blog1() {
         <meta name="description" content="Discover the top places to visit in Sasan Gir, Gujarat, including the thrilling Gir Jungle Safari, tranquil Devaliya Safari Park, mesmerizing Jamjir Waterfall, cultural marvels like Somnath Temple, and more" />
         <meta name="keywords" content="shree cottages,tourist places,places to visit,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh" />
         <meta name="robots" content="index, follow" />
-        <meta name="canonical" content="https://shreecottages.com/best-places-to-visit-in-sasan-gir" />
+        <meta name="canonical" content="https://shreecottages.com/places-to-visit-in-sasan-gir-wildlife-nature-heritage" />
         <meta name="image" content={gir3} />
 
         <meta name="og:title" content="Discover the Best Places to Visit in Sasan Gir: Wildlife, Nature, and Heritage" />
