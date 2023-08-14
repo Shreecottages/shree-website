@@ -13,7 +13,7 @@ const AboutFlowerLeft = require("../assets/AboutFlowerLeft.png");
 const header1 = require('../images/exp/header1.webp');
 const header1M = require('../images/exp/header1-mobile.png');
 const gir_jungle = require('../images/exp/gir_jungle.png');
-const jamjir = require('../images/exp/jamjir.png');
+const gir3 = require('../images/blogs/b1-gir3.jpg');
 const k_b = require('../images/exp/k&b.png');
 const somnath = require('../images/exp/somnath.png');
 const tulsiShyam = require('../images/exp/tulsiShyam.png');
@@ -72,12 +72,12 @@ export default function Blogs() {
   const blogPosts = [
     {
       id: 1,
-      title: "Blog Post 1",
-      excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen...",
-      author: "John Doe",
-      image: k_b, // Replace with actual image URL
-      date: "August 3, 2023", // Replace with actual date
-      url: "/blog2",
+      title: "Places to Visit in Sasan Gir",
+      excerpt: "Welcome to the wild heart of Gujarat! Sasan Gir, also known as the Gir Forest National Park, is a mesmerizing destination that showcases the untamed beauty of nature. This vast expanse of wilderness is home to the majestic Asiatic lions...",
+      author: "Mrs. Eleanor",
+      image: gir3, // Replace with actual image URL
+      date: "August 7, 2023", // Replace with actual date
+      url: "/places-to-visit-in-sasan-gir-wildlife-nature-heritage",
     },
     {
       id: 2,
@@ -97,34 +97,7 @@ export default function Blogs() {
       date: "August 5, 2023", // Replace with actual date
       url: "/blog2",
     },
-    {
-      id: 4,
-      title: "Blog Post 4",
-      excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen...",
-      author: "John Doe",
-      image: k_b, // Replace with actual image URL
-      date: "August 3, 2023", // Replace with actual date
-      url: "/blog2",
-
-    },
-    {
-      id: 5,
-      title: "Blog Post 5",
-      excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen...",
-      author: "Jane Smith",
-      image: somnath, // Replace with actual image URL
-      date: "August 5, 2023", // Replace with actual date
-      url: "/blog2",
-    },
-    {
-      id: 6,
-      title: "Blog Post 6",
-      excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen...",
-      author: "Jane Smith",
-      image: tulsiShyam, // Replace with actual image URL
-      date: "August 5, 2023", // Replace with actual date
-      url: "/blog2",
-    },
+    
     // Add more blog posts
   ];
 

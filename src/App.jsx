@@ -419,7 +419,7 @@ function App() {
 
               <Route
                 exact
-                path="/blog2"
+                path="/places-to-visit-in-sasan-gir-wildlife-nature-heritage"
                 element={<React.Suspense fallback='Loading...'>
                 <Blog2 />
                 </React.Suspense>}

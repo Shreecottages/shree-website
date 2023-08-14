@@ -1,12 +1,10 @@
 import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Grid, Paper, Box, Stack, Typography, Divider, Button, useMediaQuery } from "@mui/material";
 import React from "react";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { makeStyles } from "@mui/styles";
 import { Helmet } from "react-helmet";
 import PersonIcon from '@mui/icons-material/Person';
 import EventIcon from '@mui/icons-material/Event';
 import { styled } from '@mui/material/styles';
-import { Link } from "react-router-dom";
 
 
 const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
@@ -97,16 +95,16 @@ export default function Blog1() {
   return (
     <Stack>
       <Helmet>
-        <title>Our Blogs</title>
-        <meta name="description" content="Most Visited Tourist Places In Sasan Gir. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh" />
-        <meta name="keywords" content="shree cottages,hotel,resort,tourist places,places to visit,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh" />
+        <title>Discover the Best Places to Visit in Sasan Gir: Wildlife, Nature, and Heritage</title>
+        <meta name="description" content="Discover the top places to visit in Sasan Gir, Gujarat, including the thrilling Gir Jungle Safari, tranquil Devaliya Safari Park, mesmerizing Jamjir Waterfall, cultural marvels like Somnath Temple, and more" />
+        <meta name="keywords" content="shree cottages,tourist places,places to visit,attractions,gir national park,gir wildlife sanctuary,gir jungle safari, devaliya safari park, jamjir waterfall , kankai & banej, somnath temple, tulsishyam, diu, junagadh" />
         <meta name="robots" content="index, follow" />
         <meta name="canonical" content="https://shreecottages.com/best-places-to-visit-in-sasan-gir" />
         <meta name="image" content={gir3} />
 
-        <meta name="og:title" content="Best Tourist Places Attractions to Visit In Sasan Gir with Family" />
+        <meta name="og:title" content="Discover the Best Places to Visit in Sasan Gir: Wildlife, Nature, and Heritage" />
         <meta property="og:site_name" content="Shree Cottgaes" />
-        <meta name="og:description" content="Most Visited Tourist Places In Sasan Gir. 1. Gir Jungle Safari 2. Devaliya Safari Park 3. Jamjir Waterfall 4. Kankai & Banej 5. Somnath Temple 6. TulsiShyam 7. Diu 8. Junagadh" />
+        <meta name="og:description" content="Discover the top places to visit in Sasan Gir, Gujarat, including the thrilling Gir Jungle Safari, tranquil Devaliya Safari Park, mesmerizing Jamjir Waterfall, cultural marvels like Somnath Temple, and more" />
         <meta name="og:image" content={gir3} />
 
       </Helmet>
@@ -142,7 +140,7 @@ export default function Blog1() {
         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", p: "5vw 0vw", width: { xs: "30vw", sm: "100%" } }}>
           <Typography variant="h2" sx={{ color: "warning.main", alignSelf: "center", m: { xs: " 0vw -10vw", sm: "0vw" } }}>Blog Details</Typography>
           <Divider orientation="vertical" variant="middle" sx={{ height: "1.55rem", width: "1px", backgroundColor: "warning.main", alignSelf: "center", m: '1.1rem' }} />
-          <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "left", alignSelf: "center", lineHeight: "19px", letterSpacing: "0.01rem", m: { xs: " 0vw -30vw", sm: "0vw" } }}>Stay Informed and Inspired with Our Blog Posts</Typography>
+          <Typography variant="body1" sx={{ fontFamily: "Bona Nova", color: "warning.main", textAlign: "center", alignSelf: "center", lineHeight: "19px", letterSpacing: "0.01rem", m: { xs: " 0vw -30vw", sm: "0vw" } }}>Stay Informed and Inspired with Our Blog Posts</Typography>
         </Box>
         <Box
           sx={{
@@ -187,14 +185,14 @@ export default function Blog1() {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" sx={{ fontFamily: "Poppins", color: "#818181", marginLeft: "8px" }}>
-                    07-08-2022
+                    07-08-2023
                   </Typography>
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
 
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 4vw 0vw", sm: "2vw 0vw" }, lineHeight: "2",fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             Welcome to the wild heart of Gujarat! Sasan Gir, also known as the Gir Forest National Park,
             is a mesmerizing destination that showcases the untamed beauty of nature. This vast expanse
@@ -203,6 +201,9 @@ export default function Blog1() {
             through Sasan Gir, you'll encounter not only the iconic lions but also a plethora of other
             wildlife species, lush landscapes, and vibrant flora. Let's dive into the enchanting world
             of Sasan Gir and explore its captivating attractions.
+          </Typography>
+          <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 4vw 0vw", sm: "2vw 0vw" }, lineHeight: "2",fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
+            To read brief overview of the all places with booking and google maps directions links, please visit our <a href="/best-places-to-visit-in-sasan-gir" style={{ textDecoration: 'underline' }}>Experience</a> page.
           </Typography>
         </Box>
 
@@ -326,7 +327,7 @@ export default function Blog1() {
         {/* Sub Heading 2 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Devaliya Safari Park: A Glimpse into Wildlife Diversity</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             For a more controlled yet equally enthralling wildlife experience, head to Devaliya Safari Park,
             also known as the Gir Interpretation Zone. Here, you can observe various animal species,
@@ -353,7 +354,7 @@ export default function Blog1() {
         {/* Sub Heading 3 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Jamjir Waterfall: Nature's Breathtaking Masterpiece</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             Amidst the wilderness of Sasan Gir lies a hidden gem – the Jamjir Waterfall. This natural
             wonder captivates with its cascading waters and lush surroundings. As you hike through the
@@ -380,7 +381,7 @@ export default function Blog1() {
         {/* Sub Heading 4 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Kankai & Banej: A Tranquil Escape</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             Escape the hustle and bustle of city life and find solace at Kankai and Banej, two picturesque
             villages near Sasan Gir. Surrounded by verdant landscapes and tranquil vibes, these villages offer
@@ -406,7 +407,7 @@ export default function Blog1() {
         {/* Sub Heading 5 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Somnath Temple: A Spiritual Sojourn</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             No visit to Sasan Gir is complete without a trip to the iconic Somnath Temple, one of
             the twelve Jyotirlinga shrines dedicated to Lord Shiva. This ancient temple stands as
@@ -433,7 +434,7 @@ export default function Blog1() {
         {/* Sub Heading 6 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Tulsi Shyam Springs: Rejuvenation Amidst Nature</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             Seeking rejuvenation and relaxation? Look no further than the Tulsi Shyam Springs, known
             for their therapeutic properties. Dip your feet into the cool, refreshing waters or take a
@@ -459,7 +460,7 @@ export default function Blog1() {
         {/* Sub Heading 7 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Diu: A Coastal Delight</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             Extend your Sasan Gir adventure by visiting the nearby island of Diu, known for its stunning
             beaches and historical charm. Explore ancient forts, pristine shores, and vibrant markets
@@ -484,7 +485,7 @@ export default function Blog1() {
         {/* Sub Heading 8 */}
         <Box sx={{ mt: 4 }}>
           <Typography variant="h4" sx={{ color: "#3D2521", alignSelf: "left", textAlign: "left", m: { xs: " 1.5vw 0vw", sm: "1vw 0vw" } }}>Heritage of Junagadh: Exploring History</Typography>
-          <Divider sx={{ backgroundColor: "#FFBB70" }} />
+          <Divider sx={{ backgroundColor: "#FFBB70", height: 2 }} />
           <Typography variant="body1" className={classes.blogContent} sx={{ alignSelf: "left", textAlign: "left", m: { xs: " 1vw 0vw", sm: "1vw 0vw" }, lineHeight: "2" ,fontSize: { xs: "14px", sm: "16px", md: "18px" } }}>
             Immerse yourself in history and heritage by visiting Junagadh, a city brimming with
             architectural marvels and cultural landmarks. Explore the majestic Uparkot Fort, marvel
