@@ -313,13 +313,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={gir1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={gir1} alt="Gir Jungle Safari" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={gir2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={gir2} alt="Gir Jungle Safari" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={gir3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={gir3} alt="Sasan gir lion" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -340,13 +340,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={devaliya1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={devaliya1} alt="Devaliya Safari Park" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={devaliya2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={devaliya2} alt="Devaliya Safari Park" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={devaliya3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={devaliya3} alt="Devaliya Safari Park" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -367,13 +367,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={Jamjir1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Jamjir1} alt="Jamjir Waterfall" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={Jamjir2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Jamjir2} alt="Jamjir Waterfall" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={Jamjir3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Jamjir3} alt="Jamjir Waterfall" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -393,13 +393,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={Kankai1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Kankai1} alt="Kankai & Banej" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={Kankai2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Kankai2} alt="Kankai & Banej" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={Kankai3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Kankai3} alt="Kankai & Banej" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -420,13 +420,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={somanath1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={somanath1} alt="Somnath Temple" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={somanath2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={somanath2} alt="Somnath Temple" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={somanath3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={somanath3} alt="Somnath Temple" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -446,13 +446,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={tulsishyam1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={tulsishyam1} alt="Tulsi Shyam Temple" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={tulsishyam2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={tulsishyam2} alt="Tulsi Shyam Springs" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={tulsishyam3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={tulsishyam3} alt="Tulsi Shyam Springs" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -471,13 +471,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={diu1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={diu1} alt="baga beach diu" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={diu2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={diu2} alt="beach diu" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={diu3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={diu3} alt="diu" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
@@ -498,13 +498,13 @@ export default function Blog1() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 1, md: 1.5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item md={6} xs={4} sm={4} sx={{ height: { md: '45vh' } }}>
-              <img src={Junagadh1} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Junagadh1} alt="mahabat maqbara junagadh" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={Junagadh2} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Junagadh2} alt="junagadh" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
             <Grid item md={3} xs={2} sm={2} sx={{ height: { md: '45vh' } }}>
-              <img src={Junagadh3} alt="Your Image" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
+              <img src={Junagadh3} alt="girnar junagadh" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
             </Grid>
           </Grid>
         </Box>
