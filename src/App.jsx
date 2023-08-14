@@ -408,14 +408,14 @@ function App() {
 
               <Route exact path="/blogs" element={<React.Suspense fallback='Loading...'> <Blogs /> </React.Suspense>} />
               
-
-              <Route
+              
+              {/*<Route
                 exact
                 path="/blog1"
                 element={<React.Suspense fallback='Loading...'>
                 <Blog1 />
                 </React.Suspense>}
-              />
+              />*/}
 
               <Route
                 exact
