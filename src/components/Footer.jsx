@@ -20,7 +20,7 @@ export default function Footer(){
             <Grid container direction={"column"}>
                 <img src={require('../images/logo-white.svg').default} alt="Shree Cottages Logo White" className="logo-white"/>
                 <Typography variant="body2" sx={{display:{xs:"none",md:"block"},fontSize:{md:'1.2vw',lg:'1vw'}, mb:'1vw', mt:'1.5vw'}}>
-                    Shree Cottages offers a serene and enchanting getaway nestled in the heart of Gir National Park. With comfortable accommodations, lush gardens, and exceptional service, it is the perfect destination for weddings, events, and peaceful retreats.
+                    Shree Cottages & Party Plot offers a serene and enchanting getaway nestled in the heart of Gir National Park. With comfortable accommodations, lush gardens, and exceptional service, it is the perfect destination for weddings, events, and peaceful retreats.
                 </Typography>
                 <Grid direction='row' sx={{m:'0.5vw 0vw'}}>
                     <img src={require('../images/fb.svg').default} alt="Facebook Icon" className="sns" style={{cursor:"pointer"}} onClick={()=> window.open("https://www.facebook.com/ShreeCottages","_blank")}/>
