@@ -15,48 +15,86 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 //import { CurrencyBitcoin } from "@mui/icons-material";
 
 //IMPORTING IMAGES
-import Resort1 from "../../assets/Resort1.png";
-import Resort2 from "../../assets/Resort2.png";
-import Resort3 from "../../assets/Resort3.png";
-import Resort4 from "../../assets/Resort4.png";
-import Resort5 from "../../assets/Resort5.png";
-import Resort6 from "../../assets/Resort6.png";
+import r1 from "../../assets/gallery/Resort/r1.jpg";
+import r2 from "../../assets/gallery/Resort/r2.jpg";
+import r3 from "../../assets/gallery/Resort/r3.jpg";
+import r4 from "../../assets/gallery/Resort/r4.jpg";
+import r5 from "../../assets/gallery/Resort/r5.jpg";
+import r6 from "../../assets/gallery/Resort/r6.jpg";
+import r7 from "../../assets/gallery/Resort/r7.jpg";
+import r8 from "../../assets/gallery/Resort/r8.jpg";
+import r9 from "../../assets/gallery/Resort/r9.jpg";
+import r10 from "../../assets/gallery/Resort/r10.jpg";
+import r11 from "../../assets/gallery/Resort/r11.jpg";
+import r12 from "../../assets/gallery/Resort/r12.jpg";
+import r13 from "../../assets/gallery/Resort/r13.jpg";
+import r14 from "../../assets/gallery/Resort/r14.jpg";
+import r15 from "../../assets/gallery/Resort/r15.jpg";
+import r16 from "../../assets/gallery/Resort/r16.jpg";
 
-import Decoration1 from "../../assets/Decoration1.png";
-import Decoration2 from "../../assets/Decoration2.webp";
+import d1 from "../../assets/gallery/Decoration/d1.jpg";
+import d2 from "../../assets/gallery/Decoration/d2.jpg";
+import d3 from "../../assets/gallery/Decoration/d3.jpg";
+import d4 from "../../assets/gallery/Decoration/d4.jpg";
+import d5 from "../../assets/gallery/Decoration/d5.jpg";
+import d6 from "../../assets/gallery/Decoration/d6.jpg";
+import d7 from "../../assets/gallery/Decoration/d7.jpg";
+import d8 from "../../assets/gallery/Decoration/d8.jpg";
+import d9 from "../../assets/gallery/Decoration/d9.jpg";
+import d10 from "../../assets/gallery/Decoration/d10.jpg";
+import d11 from "../../assets/gallery/Decoration/d11.jpg";
+import d12 from "../../assets/gallery/Decoration/d12.jpg";
+import d13 from "../../assets/gallery/Decoration/d13.jpg";
+import d14 from "../../assets/gallery/Decoration/d14.jpg";
+import d15 from "../../assets/gallery/Decoration/d15.jpg";
+import d16 from "../../assets/gallery/Decoration/d16.jpg";
+import d17 from "../../assets/gallery/Decoration/d17.jpg";
+import d18 from "../../assets/gallery/Decoration/d18.jpg";
+import d19 from "../../assets/gallery/Decoration/d19.jpg";
+import d20 from "../../assets/gallery/Decoration/d20.jpg";
 
-import SwimmingPool from "../../assets/SwimmingPool1.png";
+import b1 from "../../assets/gallery/Banquest Hall/b1.jpg";
+import b2 from "../../assets/gallery/Banquest Hall/b2.jpg";
+
+import s1 from "../../assets/gallery/Swimming Pool/s1.jpg";
+import s2 from "../../assets/gallery/Swimming Pool/s2.jpg";
+import s3 from "../../assets/gallery/Swimming Pool/s3.jpg";
+
+import c1 from "../../assets/gallery/Conference Room/c1.jpg";
+import c2 from "../../assets/gallery/Conference Room/c2.jpg";
+import c3 from "../../assets/gallery/Conference Room/c3.jpg";
+import c4 from "../../assets/gallery/Conference Room/c4.jpg";
 
 const ImageGalleryView = () => {
   //IMAGE ARRAY TO TEST
 
-  const resort = [Resort1, Resort2, Resort3, Resort4, Resort5, Resort6];
+  const resort = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16];
 
-  const decoration = [Decoration1, Decoration2];
+  const decoration = [d1,d2,d3,d4,d5,d6,d7,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d8];
 
-  const banquestHall = [
+  const banquestHall = [b1,b2
     //"https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
     //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
   ];
 
-  const conferenceRoom = [
+  const conferenceRoom = [c1,c2,c3,c4
     //"https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
   ];
-  const swimmingPool = [SwimmingPool];
+  const swimmingPool = [s1,s2,s3];
 
   const all = [
-    Resort1,
-    Resort2,
-    Resort3,
-    Resort4,
-    Resort5,
-    Resort6,
-    Decoration1,
-    Decoration2,
+    d1,d2,d3,d4,d5,d6,
+    s1,s2,s3,
+    r4,r5,r7,r8,r9,r10,r11,
+    d7,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d8,
+    r1,r2,r3,r6,r12,r13,r14,r15,r16,
+    b1,b2,
+    c1,c2,c3,c4
+
     //"https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
     //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
     //"https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
-    SwimmingPool,
+    
   ];
   const newImages = [
     all,
