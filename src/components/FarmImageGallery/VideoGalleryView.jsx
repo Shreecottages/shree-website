@@ -5,7 +5,14 @@ import VideoGalleryCard from "./VideoGalleryCard";
 
 const VideoGalleryView = () => {
 
-  const videos = [ "https://www.youtube.com/embed/elDjJ8Qapz8", "https://www.youtube.com/embed/xhv9gT1LCO0", "https://www.youtube.com/embed/0hz4ZJ1mkYw", "https://www.youtube.com/embed/ExAjt31hEwg"]
+  const videos = [  "https://www.youtube.com/embed/ExAjt31hEwg",
+                    "https://www.youtube.com/embed/elDjJ8Qapz8",
+                    "https://www.youtube.com/embed/gKGoeHBr048",
+                    "https://www.youtube.com/embed/H_kSChnqVSk", 
+                    "https://www.youtube.com/embed/xhv9gT1LCO0",
+                    "https://www.youtube.com/embed/efHOO_ZJz_o",
+                    "https://www.youtube.com/embed/0hz4ZJ1mkYw",
+                    "https://www.youtube.com/embed/E62sSojxSPc"]
   return (
     <div>
       <Box
