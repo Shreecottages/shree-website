@@ -3,18 +3,20 @@ import React, { useRef, useState } from "react";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
-//import style from "../../styles/Contact.module.css";
-//import fbContact from "../../assets/fb-Contact.png";
-//import ytContact from "../../assets/yt-Contact.png";
-//import instaContact from "../../assets/insta-Contact.png";
 import ReCAPTCHA from "react-google-recaptcha";
-
+import { useForm, ValidationError } from '@formspree/react';
 import "../../styles/Contact.css";
-// import
 
 const SITE_KEY = "6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5";
 
 const ContactContent = () => {
+
+  // Define your Formspree endpoint
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeqbdjog';
+
+  // Use the useForm hook to handle the form submission
+  const [state, handleSubmit] = useForm(FORMSPREE_ENDPOINT);
+
   const [recaptchaValue, setrecaptchaValue] = useState("");
   const captchaRef = useRef();
   const onChange = (value) => {
@@ -27,10 +29,11 @@ const ContactContent = () => {
       return false;
     }
   };
+
+
   return (
     <Box
       sx={{ background: "#FFE2D8", height: "auto" }}
-      // mt={3}
       style={{ paddingBottom: "4rem" }}
     >
       <Box sx={{ padding: { xs: "0vw 6vw", md: "0vw 14vw" } }}>
@@ -40,7 +43,6 @@ const ContactContent = () => {
           <Grid container justifyContent="space-between" alignItems="center">
             <Box
               sx={{
-                // margin: "auto",
                 display: { sm: "block", md: "block" },
               }}
             >
@@ -53,7 +55,6 @@ const ContactContent = () => {
                 sx={{ marginTop: "40px" }}
               >
                 <Box
-                  // className="map-responsive"
                   sx={{
                     borderRadius: "20px",
                     width: { xs: "88vw", md: "45vw" },
@@ -63,70 +64,19 @@ const ContactContent = () => {
                   <iframe
                     title="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin"
-                    //   width="700"
-                    //   height="500"
+
                     style={{
                       width: "100%",
                       height: "100%",
                       border: 0,
                       borderRadius: "20px",
                     }}
-                    // style={{
-                    //   width: { sm:"90vw", md:"45vw"},
-                    //   height: "62vh",
-                    //   border: 0,
-                    //   borderRadius: "20px",
-                    //   "(max-width:600px)": { width: "324px", height: "200px" },
-                    // }}
+
                     allowFullScreen
                   ></iframe>
                 </Box>
               </Box>
             </Box>
-
-            {/* <Grid
-            item
-            sm={12}
-            md={8}
-            lg={7}
-            sx={{
-              margin: "auto",
-              display: { sm: "none", md: "none", xs: "block" },
-            }}
-          >
-            <Box
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              mt={4}
-              mb={4}
-              height={0.5}
-            >
-              <Typography
-                className="map-responsive"
-                sx={{
-                  borderRadius: "20px",
-                  borderRadius: "10px",
-                  boxShadow:
-                    "0px 2px 5px 0px rgba(0, 0, 0, 0.10), 0px 5px 10px 0px rgba(0, 0, 0, 0.09)",
-                }}
-              >
-                <iframe
-                //   className="map"
-                  title="map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin"
-                  style={{
-                    width:"914px",
-                    height: "620px",
-                    border: 0,
-                    borderRadius: "20px",
-                    borderRadius: "10px",
-                  }}
-                  allowFullScreen
-                ></iframe>
-              </Typography>
-            </Box>
-          </Grid> */}
 
             <Box
               sx={{
@@ -148,7 +98,7 @@ const ContactContent = () => {
                 <Typography
                   variant="h4"
                   sx={{
-                    // width:"100%",
+
                     marginTop: { xs: "4vh", md: "0" },
                     fontSize: { xs: "6vw", md: "2vw" },
                     color: "#3D2521",
@@ -158,30 +108,17 @@ const ContactContent = () => {
                 >
                   Get In Touch
                 </Typography>
-
+              
+                <form onSubmit={handleSubmit}>
                 <Box
                   mt={3}
                   sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
                 >
                   <input
-                  className="text-box"
+                    className="text-box"
+                    id="name"
                     type="text"
-                    // style={{
-                    //   background: "#FFE2D8",
-                    //   width: "100%",
-                    //   height: "100%",
-                    //   fontFamily: "Poppins",
-                    //   border: "1px solid #9E837D",
-                    //   borderRadius: "10px",
-                    //   padding: "14px 20px",
-                    //   fontSize: "20px",
-                    //   placeholderColor: "#9E837D",
-                    //   outline: "none",
-                    //   "&:focus": {
-                    //     border: "2px solid #3D2521",
-                    //   },
-                    // }}
-                    // className="inp"
+                    name="name"
                     placeholder="Your Name"
                   />
                 </Box>
@@ -191,18 +128,9 @@ const ContactContent = () => {
                   sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
                 >
                   <input
+                    id="email"
                     type="text"
-                    // style={{
-                    //   background: "#FFE2D8",
-                    //   width: "100%",
-                    //   height: "100%",
-                    //   fontFamily: "Poppins",
-                    //   border: "1px solid #9E837D",
-                    //   borderRadius: "10px",
-                    //   padding: "16px 0px 16px 20px",
-                    //   fontSize: "20px",
-                    // }}
-                    // className="inp"
+                    name="email"
                     placeholder="Your Email"
                   />
                 </Box>
@@ -212,19 +140,9 @@ const ContactContent = () => {
                   sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
                 >
                   <input
+                    id="mobile"
                     type="text"
-                    // style={{
-                    //   background: "#FFE2D8",
-                    //   width: "100%",
-                    //   height: "100%",
-                    //   fontFamily: "Poppins",
-                    //   border: "1px solid #9E837D",
-                    //   borderRadius: "10px",
-                    //   padding: "16px 0px 16px 20px",
-                    //   gap: "8px",
-                    //   fontSize: "20px",
-                    // }}
-                    // className="inp"
+                    name="mobile"
                     placeholder="Your Mobile No."
                   />
                 </Box>
@@ -234,25 +152,14 @@ const ContactContent = () => {
                   sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
                 >
                   <input
+                    id="message"
                     type="text"
-                    // style={{
-                    //   background: "#FFE2D8",
-                    //   width: "100%",
-                    //   height: "100%",
-                    //   fontFamily: "Poppins",
-                    //   border: "1px solid #9E837D",
-                    //   borderRadius: "10px",
-                    //   padding: "16px 0px 16px 20px",
-                    //   gap: "8px",
-                    //   fontSize: "20px",
-                    // }}
-                    // className="inp"
+                    name="message"
                     placeholder="Message"
                   />
                 </Box>
 
                 <Box mt={3} alignSelf={{ md: "flex-start" }}>
-                  {/* <Typography className="g-recaptcha" data-sitekey="6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5"></Typography> */}
                   <ReCAPTCHA
                     sitekey={SITE_KEY}
                     onChange={onChange}
@@ -265,7 +172,6 @@ const ContactContent = () => {
                   alignSelf={{
                     md: "flex-start",
                     sm: "center",
-                    // xs: "flex-start",
                   }}
                 >
                   <Button
@@ -276,14 +182,13 @@ const ContactContent = () => {
                       borderRadius: "5px",
                       color: "#3D2521",
                       padding: "10px 30px",
-                      // textAlign: "center",
-                      // display: "flex",
                     }}
                     disabled={callValidation()}
                   >
                     Send message
                   </Button>
                 </Box>
+                </form>
               </Box>
             </Box>
           </Grid>
