@@ -112,12 +112,8 @@ export default function Footer(){
                     <Typography variant="subtitle2">© Copyrights️ 2023 , All rights reserved Shree Cottages</Typography>
                 </Box>
                 <Box display="flex" sx={{ flexDirection: { xs: "row-reverse", md: "row" }, alignItems: { xs: "center", md: "normal" } }}>
-                    <Typography variant="subtitle2">Privacy Policy</Typography>
-                    <Divider orientation="vertical" sx={{ height: { xs: "1.2rem", md: "1.2rem" }, backgroundColor: "warning.main", m: { xs: "0 0.5rem", md: "0 0.5vw 1vw 0.5vw" } }} />
-                    <Typography variant="subtitle2" sx={{ display: { xs: "none", md: "inline-block" } }}>Terms & Condition</Typography>
-                    <Typography variant="subtitle2" sx={{ display: { md: "none", xs: "inline-block" } }}>T&C</Typography>
-                    <Divider orientation="vertical" sx={{ height: { xs: "1.2rem", md: "1.2rem" }, backgroundColor: "warning.main", m: { xs: "0 0.5rem", md: "0 0.5vw 1vw 0.5vw" } }} />
-                    <a href=" https://shreecottages.com/sitemap.xml" style={{textDecoration:"none",color:"#FFBB70"}} target="_blank"><Typography variant="subtitle2">Site map</Typography></a>
+                <a href=" https://howflyit.com" style={{ textDecoration: "none", color: "#FFBB70" }} target="_blank"><Typography variant="subtitle2" sx={{
+                        m: { xs: "0 0.5rem", md: "0 0 1vw 0.5vw", }, }}>Website crafted with 💛 by HowFly IT</Typography></a>
                 </Box>
             </Box>
         </Box>
