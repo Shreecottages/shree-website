@@ -19,17 +19,47 @@ const ContactContent = () => {
 
   const [recaptchaValue, setrecaptchaValue] = useState("");
   const captchaRef = useRef();
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    message: ''
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+
   const onChange = (value) => {
     setrecaptchaValue(value);
   };
-  const callValidation = () => {
-    if (recaptchaValue === "") {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  // const callValidation = () => {
+  //   if (recaptchaValue === "") {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // };
 
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    // You can access form data here in formData object
+    console.log(formData, "formdata----------------------");
+
+    // Submitting form data using the handleSubmit function
+    await handleSubmit({
+      ...formData,
+      'g-recaptcha-response': recaptchaValue // Add the Recaptcha response to the form data
+    });
+  };
 
   return (
     <Box
@@ -78,6 +108,7 @@ const ContactContent = () => {
               </Box>
             </Box>
 
+            {/*----------------------------------------------------- contact form ---------------------------------------------------- */}
             <Box
               sx={{
                 width: { xs: "100%", md: "25vw" },
@@ -98,7 +129,6 @@ const ContactContent = () => {
                 <Typography
                   variant="h4"
                   sx={{
-
                     marginTop: { xs: "4vh", md: "0" },
                     fontSize: { xs: "6vw", md: "2vw" },
                     color: "#3D2521",
@@ -108,89 +138,137 @@ const ContactContent = () => {
                 >
                   Get In Touch
                 </Typography>
-              
-                <form onSubmit={handleSubmit}>
-                <Box
-                  mt={3}
-                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
-                >
-                  <input
-                    className="text-box"
-                    id="name"
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                  />
-                </Box>
 
-                <Box
-                  mt={3}
-                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
-                >
-                  <input
-                    id="email"
-                    type="text"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                </Box>
-
-                <Box
-                  mt={3}
-                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
-                >
-                  <input
-                    id="mobile"
-                    type="text"
-                    name="mobile"
-                    placeholder="Your Mobile No."
-                  />
-                </Box>
-
-                <Box
-                  mt={3}
-                  sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
-                >
-                  <input
-                    id="message"
-                    type="text"
-                    name="message"
-                    placeholder="Message"
-                  />
-                </Box>
-
-                <Box mt={3} alignSelf={{ md: "flex-start" }}>
-                  <ReCAPTCHA
-                    sitekey={SITE_KEY}
-                    onChange={onChange}
-                    ref={captchaRef}
-                  />
-                </Box>
-
-                <Box
-                  mt={2}
-                  alignSelf={{
-                    md: "flex-start",
-                    sm: "center",
-                  }}
-                >
-                  <Button
-                    variant="contained"
-                    sx={{
-                      background:
-                        "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)",
-                      borderRadius: "5px",
-                      color: "#3D2521",
-                      padding: "10px 30px",
-                    }}
-                    disabled={callValidation()}
+                <form onSubmit={handleFormSubmit}>
+                  <Box
+                    mt={3}
+                    sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
                   >
-                    Send message
-                  </Button>
-                </Box>
+                    <input
+                      className="text-box"
+                      id="name"
+                      type="text"
+                      name="name" // Corresponding to the user's name
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                    />
+                    {/* <input
+                      className="text-box"
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                    /> */}
+                  </Box>
+
+                  <Box
+                    mt={3}
+                    sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                  >
+                    <input
+                      id="email"
+                      type="text"
+                      name="email" // Corresponding to the user's email
+                      placeholder="Your Email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                    />
+                    {/* <input
+                      id="email"
+                      type="text"
+                      name="email"
+                      placeholder="Your Email"
+                    /> */}
+                  </Box>
+
+                  <Box
+                    mt={3}
+                    sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                  >
+                    <input
+                      id="mobile"
+                      type="text"
+                      name="mobile" // Corresponding to the user's mobile number
+                      placeholder="Your Mobile No."
+                      value={formData.mobile}
+                      onChange={handleInputChange}
+                    />
+                    {/* <input
+                      id="mobile"
+                      type="text"
+                      name="mobile"
+                      placeholder="Your Mobile No."
+                    /> */}
+                  </Box>
+
+                  <Box
+                    mt={3}
+                    sx={{ width: { xs: "100%", md: "25vw" }, height: "6vh" }}
+                  >
+                    <input
+                      id="message"
+                      type="text"
+                      name="message" // Corresponding to the message
+                      placeholder="Message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                    />
+                    {/* <input
+                      id="message"
+                      type="text"
+                      name="message"
+                      placeholder="Message"
+                    /> */}
+                  </Box>
+
+                  <Box mt={3} alignSelf={{ md: "flex-start" }}>
+                    <ReCAPTCHA
+                      sitekey={SITE_KEY}
+                      onChange={onChange}
+                      ref={captchaRef}
+                    />
+                  </Box>
+
+                  <Box
+                    mt={2}
+                    alignSelf={{
+                      md: "flex-start",
+                      sm: "center",
+                    }}
+                  >
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      sx={{
+                        background:
+                          "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)",
+                        borderRadius: "5px",
+                        color: "#3D2521",
+                        padding: "10px 30px",
+                      }}
+                      disabled={!recaptchaValue} // Disable button if recaptchaValue is empty
+                    >
+                      Send message
+                    </Button>
+                    {/* <Button
+                      variant="contained"
+                      sx={{
+                        background:
+                          "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%)",
+                        borderRadius: "5px",
+                        color: "#3D2521",
+                        padding: "10px 30px",
+                      }}
+                      disabled={callValidation()}
+                    >
+                      Send message
+                    </Button> */}
+                  </Box>
                 </form>
               </Box>
             </Box>
+            {/*-------------------------------------------------------- contact form ---------------------------------------------------- */}
           </Grid>
         </Box>
 
@@ -215,7 +293,7 @@ const ContactContent = () => {
             xs={12}
             // md={4}
             sx={{
-              width:"28vw",
+              width: "28vw",
               display: "flex",
               marginTop: "2rem",
               justifyContent: "start",
@@ -236,42 +314,42 @@ const ContactContent = () => {
               Come over for coffee
             </Typography>
             <a href="https://goo.gl/maps/JNyosQLb9TYTp1kg9" target="_blank">
-            <Box
-              display="flex"
-              flexDirection="row"
-              mt={{ xs: "0.5vw", md: "1.2vw" }}
-            >
-              <PlaceOutlinedIcon
-                sx={{
-                  marginRight: "10px",
-                  color: "#3D2521",
-                  fontSize: "1.6vw",
-                }}
-              />
-              <Typography
-                variant="h6"
-                sx={{
-                  lineHeight: "1.5vw",
-                  fontFamily: "Poppins",
-                  fontSize: "1.2vw",
-                  fontStyle: "normal",
-                  color: "#3D2521",
-                }}
+              <Box
+                display="flex"
+                flexDirection="row"
+                mt={{ xs: "0.5vw", md: "1.2vw" }}
               >
-                Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath,
-                Gujarat, India 362150
-              </Typography>
-            </Box>
+                <PlaceOutlinedIcon
+                  sx={{
+                    marginRight: "10px",
+                    color: "#3D2521",
+                    fontSize: "1.6vw",
+                  }}
+                />
+                <Typography
+                  variant="h6"
+                  sx={{
+                    lineHeight: "1.5vw",
+                    fontFamily: "Poppins",
+                    fontSize: "1.2vw",
+                    fontStyle: "normal",
+                    color: "#3D2521",
+                  }}
+                >
+                  Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath,
+                  Gujarat, India 362150
+                </Typography>
+              </Box>
             </a>
           </Box>
-          
+
 
           <Box
             item
             xs={12}
             // md={4}
             sx={{
-              width:"22vw",
+              width: "22vw",
               // display: "flex",
               marginTop: "2rem",
               // justifyContent: "start",
@@ -292,60 +370,60 @@ const ContactContent = () => {
                 Contact us
               </Typography>
               <a href="tel:+919427424157">
-              <Box
-                display="flex"
-                flexDirection="row"
-                mt={{ xs: "0.5vw", md: "1.2vw" }}
-              >
-                <CallOutlinedIcon
-                  sx={{
-                    marginRight: "10px",
-                    color: "#3D2521",
-                    fontSize: "1.6vw",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#3D2521",
-                    letterSpacing: "0.07em",
-                    fontStyle: "normal",
-                    fontFamily: "Poppins",
-                    fontSize: "1.2vw",
-                    color: "#3D2521",
-                  }}
+                <Box
+                  display="flex"
+                  flexDirection="row"
+                  mt={{ xs: "0.5vw", md: "1.2vw" }}
                 >
-                  +91 9427424157
-                </Typography>
-              </Box>
+                  <CallOutlinedIcon
+                    sx={{
+                      marginRight: "10px",
+                      color: "#3D2521",
+                      fontSize: "1.6vw",
+                    }}
+                  />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      color: "#3D2521",
+                      letterSpacing: "0.07em",
+                      fontStyle: "normal",
+                      fontFamily: "Poppins",
+                      fontSize: "1.2vw",
+                      color: "#3D2521",
+                    }}
+                  >
+                    +91 9427424157
+                  </Typography>
+                </Box>
               </a>
               <a href="mailto:info@shreecottages.com" target="_blacnk">
-              <Box
-                display="flex"
-                flexDirection="row"
-                mt={{ xs: "0.5vw", md: "1.2vw" }}
-              >
-                <MailOutlineOutlinedIcon
-                  sx={{
-                    marginRight: "10px",
-                    color: "#3D2521",
-                    fontSize: "1.6vw",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#3D2521",
-                    letterSpacing: "0.07em",
-                    fontStyle: "normal",
-                    fontFamily: "Poppins",
-                    fontSize: "1.2vw",
-                    color: "#3D2521",
-                  }}
+                <Box
+                  display="flex"
+                  flexDirection="row"
+                  mt={{ xs: "0.5vw", md: "1.2vw" }}
                 >
-                  info@shreecottages.com
-                </Typography>
-              </Box>
+                  <MailOutlineOutlinedIcon
+                    sx={{
+                      marginRight: "10px",
+                      color: "#3D2521",
+                      fontSize: "1.6vw",
+                    }}
+                  />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      color: "#3D2521",
+                      letterSpacing: "0.07em",
+                      fontStyle: "normal",
+                      fontFamily: "Poppins",
+                      fontSize: "1.2vw",
+                      color: "#3D2521",
+                    }}
+                  >
+                    info@shreecottages.com
+                  </Typography>
+                </Box>
               </a>
             </Box>
           </Box>
@@ -430,7 +508,7 @@ const ContactContent = () => {
               >
                 Contact us
               </Typography>
-              
+
               <a href="tel:+919427424157" style={{ textDecoration: 'none', color: 'inherit' }}>
                 {/* Use 'tel' protocol to indicate a phone number link */}
                 <Box display="flex" flexDirection="row" mt="3vw">
@@ -454,25 +532,25 @@ const ContactContent = () => {
               </a>
 
 
-            <a href="mailto:info@shreecottages.com" style={{ textDecoration: 'none', color: 'inherit' }} target="_blacnk">  
-              <Box display="flex" flexDirection="row" mt="3vw">
-                <MailOutlineOutlinedIcon />
-                <Typography
-                  
-                  ml="2vw"
-                  variant="h6"
-                  sx={{
-                    color: "#3D2521",
-                    letterSpacing: "0.07em",
-                    fontStyle: "normal",
-                    fontFamily: "Poppins",
-                    fontSize: "16px",
-                  }}
-                >
-                  info@shreecottages.com
-                </Typography>
-              </Box>
-            </a>
+              <a href="mailto:info@shreecottages.com" style={{ textDecoration: 'none', color: 'inherit' }} target="_blacnk">
+                <Box display="flex" flexDirection="row" mt="3vw">
+                  <MailOutlineOutlinedIcon />
+                  <Typography
+
+                    ml="2vw"
+                    variant="h6"
+                    sx={{
+                      color: "#3D2521",
+                      letterSpacing: "0.07em",
+                      fontStyle: "normal",
+                      fontFamily: "Poppins",
+                      fontSize: "16px",
+                    }}
+                  >
+                    info@shreecottages.com
+                  </Typography>
+                </Box>
+              </a>
             </Box>
           </Grid>
 
@@ -502,21 +580,21 @@ const ContactContent = () => {
               Come over for coffee
             </Typography>
             <a href="https://goo.gl/maps/JNyosQLb9TYTp1kg9" style={{ textDecoration: 'none', color: 'inherit' }} target="_blank">
-            <Box display="flex" flexDirection="row" mt="3vw">
-              <PlaceOutlinedIcon />
-              <Typography
-                variant="h6"
-                ml="2vw"
-                sx={{
-                  fontFamily: "Poppins",
-                  fontSize: "16px",
-                  fontStyle: "normal",
-                }}
-              >
-                Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath,
-                Gujarat, India 362150
-              </Typography>
-            </Box>
+              <Box display="flex" flexDirection="row" mt="3vw">
+                <PlaceOutlinedIcon />
+                <Typography
+                  variant="h6"
+                  ml="2vw"
+                  sx={{
+                    fontFamily: "Poppins",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                  }}
+                >
+                  Veraval Road, Near Essar Petrol Pump Talala(Gir), Gir Somnath,
+                  Gujarat, India 362150
+                </Typography>
+              </Box>
             </a>
           </Grid>
 
@@ -524,7 +602,7 @@ const ContactContent = () => {
           <Grid item xs={12} md={5} sx={{ display: "flex", marginTop: "2rem" }}>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Typography
-                variant="h6"                
+                variant="h6"
                 sx={{
                   fontFamily: "Bona Nova",
                   color: "#3D2521",
