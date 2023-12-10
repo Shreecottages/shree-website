@@ -1,29 +1,29 @@
 import React, { lazy } from "react";
 import "./App.css";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Box, CssBaseline, Paper } from "@mui/material";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+import TagManager from "react-gtm-module";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./components/Hompage";
-//import CSlider from "./components/CSlider";
-//import Review from "./components/Review";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Box, CssBaseline, Paper } from "@mui/material";
-//import Ecard from "./components/Ecard";
-//import Event from "./components/Event";
-//import Experience from "./components/Experience";
-//import Contact from "./components/contactPage/Contact";
-//import AboutUsMain from "./components/AboutUsMain";
+// import CSlider from "./components/CSlider";
+// import Review from "./components/Review";
+// import Ecard from "./components/Ecard";
+// import Event from "./components/Event";
+// import Experience from "./components/Experience";
+// import Contact from "./components/contactPage/Contact";
+// import AboutUsMain from "./components/AboutUsMain";
 
-//import Room from "./components/Room";
+// import Room from "./components/Room";
 import NotFound from "./components/NotFound";
-//import ImageGallery from "./components/FarmImageGallery/ImageGallery";
+// import ImageGallery from "./components/FarmImageGallery/ImageGallery";
 import ImageGalleryView from "./components/FarmImageGallery/ImageGalleryView";
 import VideoGalleryView from "./components/FarmImageGallery/VideoGalleryView";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-//import ScrollToTop from "./SmoothScroll";
+// import ScrollToTop from "./SmoothScroll";
 import SmoothScroll from "./SmoothScroll";
-//import { Helmet } from "react-helmet";
-//import ReactGA from 'react-ga';
-import TagManager from "react-gtm-module";
+// import { Helmet } from "react-helmet";
+// import ReactGA from 'react-ga';
 
 const AboutUsMain = lazy(() => import("./components/AboutUsMain"));
 const Room = lazy(() => import("./components/Room"));
@@ -31,18 +31,20 @@ const Event = lazy(() => import("./components/Event"));
 const Experience = lazy(() => import("./components/Experience"));
 const Contact = lazy(() => import("./components/contactPage/Contact"));
 const Blogs = lazy(() => import("./components/Blogs"));
-const Blog1 = lazy(() => import("./components/Blog1"));
+// const Blog1 = lazy(() => import("./components/Blog1"));
 const Blog2 = lazy(() => import("./components/Blog2"));
-const ImageGallery = lazy(() => import("./components/FarmImageGallery/ImageGallery"));
+const ImageGallery = lazy(
+  // eslint-disable-next-line prettier/prettier
+  () => import("./components/FarmImageGallery/ImageGallery")
+);
 
-//const TRACKING_ID = "G-F89GGM6Z6K";
-//ReactGA.initialize(TRACKING_ID);
+// const TRACKING_ID = "G-F89GGM6Z6K";
+// ReactGA.initialize(TRACKING_ID);
 
 const tagManagerArgs = {
-  gtmId: 'GTM-P4R7S95'
-}
-TagManager.initialize(tagManagerArgs)
-
+  gtmId: "GTM-P4R7S95",
+};
+TagManager.initialize(tagManagerArgs);
 
 const theme = createTheme({
   palette: {
@@ -120,7 +122,7 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
-        textTransform:"none",
+        textTransform: "none",
         contained: {
           background: "linear-gradient(180deg, #FFAA7D 0%, #FFBB70 100%);",
           color: "#3D2521",
@@ -159,7 +161,7 @@ const theme = createTheme({
           },
         },
         outlined: {
-          background: "none",
+          // background: "none",
           border: "1.5px solid #3D2521",
           boxShadow: "none",
           fontFamily: "Bona Nova",
@@ -176,7 +178,8 @@ const theme = createTheme({
             padding: "2.5px 10px",
           },
           textTransform: "none",
-          background: "linear-gradient(to left, transparent 50%, #FFBB70 50%) right",
+          background:
+            "linear-gradient(to left, transparent 50%, #FFBB70 50%) right",
           backgroundSize: "200%",
           "&:hover": {
             cursor: "pointer",
@@ -292,45 +295,39 @@ const theme = createTheme({
   },
 });
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-      <Paper sx={{backgroundColor: "#FFF6F3"}}>
-        <Header />
+        <Paper sx={{ backgroundColor: "#FFF6F3" }}>
+          <Header />
 
-        <Box className="body" style={{backgroundColor:"#FFFFFF"}}>
-        {/* <Router> */}
+          <Box className="body" style={{ backgroundColor: "#FFFFFF" }}>
+            {/* <Router> */}
             <SmoothScroll>
-            <Routes>
-              <Route
-                exact
-                path="/"
-                element={<Homepage />}
-              />
-
-              <Route
-                exact
-                path="/about"
-                element={
-                <React.Suspense fallback='Loading...'>
-                  <AboutUsMain />
-                  </React.Suspense>
+              <Routes>
+                <Route exact path="/" element={<Homepage />} />
+                <Route
+                  exact
+                  path="/about"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <AboutUsMain />
+                    </React.Suspense>
                   }
-              />
-
-              <Route
-                exact
-                path="/gallery"
-                element={<React.Suspense fallback='Loading...'>
-                <ImageGallery />
-                </React.Suspense>}
-              >
-
-                
+                />
+                <Route
+                  exact
+                  path="/gallery"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <ImageGallery />
+                    </React.Suspense>
+                  }
+                >
                   <Route index element={<ImageGalleryView />} />
-                  
+
                   <Route
                     exact
                     path="/gallery/images/all"
@@ -372,72 +369,82 @@ function App() {
                     path="/gallery/images/swimming-pool"
                     element={<ImageGalleryView />}
                   />
-                  </Route>
+                </Route>
+                <Route
+                  exact
+                  path="/wedding-event-planning"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <Event />
+                    </React.Suspense>
+                  }
+                />
+                <Route
+                  exact
+                  path="/rooms"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <Room />
+                    </React.Suspense>
+                  }
+                />
+                <Route
+                  exact
+                  path="/best-places-to-visit-in-sasan-gir"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <Experience />
+                    </React.Suspense>
+                  }
+                />
+                <Route
+                  exact
+                  path="/contact"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <Contact />
+                    </React.Suspense>
+                  }
+                />
+                <Route
+                  exact
+                  path="/blogs"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      {" "}
+                      <Blogs />{" "}
+                    </React.Suspense>
+                  }
+                />
 
-              <Route
-                exact
-                path="/wedding-event-planning"
-                element={<React.Suspense fallback='Loading...'>
-                <Event />
-                </React.Suspense>}
-              />
-
-              <Route
-                exact
-                path="/rooms"
-                element={<React.Suspense fallback='Loading...'>
-                <Room />
-                </React.Suspense>}
-              />
-
-              <Route
-                exact
-                path="/best-places-to-visit-in-sasan-gir"
-                element={<React.Suspense fallback='Loading...'>
-                <Experience />
-                </React.Suspense>}
-              />
-
-              <Route
-                exact
-                path="/contact"
-                element={<React.Suspense fallback='Loading...'>
-                <Contact />
-                </React.Suspense>}
-              />
-
-              <Route exact path="/blogs" element={<React.Suspense fallback='Loading...'> <Blogs /> </React.Suspense>} />
-              
-              
-              {/*<Route
+                {/* <Route
                 exact
                 path="/blog1"
                 element={<React.Suspense fallback='Loading...'>
                 <Blog1 />
                 </React.Suspense>}
-              />*/}
-
-              <Route
-                exact
-                path="/places-to-visit-in-sasan-gir-wildlife-nature-heritage"
-                element={<React.Suspense fallback='Loading...'>
-                <Blog2 />
-                </React.Suspense>}
-              />
-
-            <Route exact path="*" element={<NotFound />} />
-            </Routes>
-            
+              /> */}
+                <Route
+                  exact
+                  path="/places-to-visit-in-sasan-gir-wildlife-nature-heritage"
+                  element={
+                    <React.Suspense fallback="Loading...">
+                      <Blog2 />
+                    </React.Suspense>
+                  }
+                />
+                <Route exact path="*" element={<NotFound />} />
+              </Routes>
             </SmoothScroll>
-        {/* </Router> */}
-          {/* <Homepage /> */}
-          {/* <AboutUs/> */}
-          {/* <Event /> */}
-          {/* <Contact /> */}
-          {/* <AboutUsMain /> */}
-          {/* <Experience /> */}
+            {/* </Router> */}
+            {/* <Homepage /> */}
+            {/* <AboutUs/> */}
+            {/* <Event /> */}
+            {/* <Contact /> */}
+            {/* <AboutUsMain /> */}
+            {/* <Experience /> */}
 
-          {/* <Router>
+            {/* <Router>
             <ImageGallery />
 
             <Routes>
@@ -454,13 +461,13 @@ function App() {
               />
             </Routes>
           </Router> */}
-          {/* <Gallery /> */}
-        </Box>
-        <Footer />
+            {/* <Gallery /> */}
+          </Box>
+          <Footer />
         </Paper>
       </div>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

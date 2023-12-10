@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
-function SmoothScroll({ children }) {
+import PropTypes from "prop-types"; // Import PropTypes
+
+const SmoothScroll = ({ children }) => {
   const location = useLocation();
   const navType = useNavigationType();
   useEffect(() => {
@@ -11,6 +13,11 @@ function SmoothScroll({ children }) {
       });
     }
   }, [location]);
-  return <>{children}</>;
-}
+  // return <>{children}</>;
+  return children; // Return children directly
+};
+
+SmoothScroll.propTypes = {
+  children: PropTypes.node.isRequired, // Define prop types for children
+};
 export default SmoothScroll;

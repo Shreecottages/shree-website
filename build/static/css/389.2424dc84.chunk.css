@@ -1,0 +1,2 @@
+.room:after{background:var(--highlight);bottom:2px;content:"";display:block;height:1.2px;left:.1em;opacity:.6;position:absolute;transition:width .5s ease 0s,opacity .5s ease 0s;transition:.5s;width:0}.room.active:after,.room:hover:after{opacity:.9;width:1.5rem}.room.active:after{background:var(--highlight);bottom:2px;content:"";display:block;height:1.2px;left:.1em;position:absolute}
+/*# sourceMappingURL=389.2424dc84.chunk.css.map*/
