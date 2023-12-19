@@ -10,12 +10,14 @@
     "@mui/material": "^5.12.3",
     "@mui/styled-engine-sc": "^5.12.0",
     "@mui/styles": "^5.14.15",
+    "@mui/system": "^5.14.20",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "lightbox.js-react": "^0.6.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-gtm-module": "^2.0.11",
     "react-helmet": "^6.1.0",
@@ -26,6 +28,7 @@
     "serve": "^14.2.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.10",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -52,5 +55,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.1.0"
   }
 }

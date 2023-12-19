@@ -1,129 +1,144 @@
-.resortLink-active .list{
-    color: #FFBB70;
-    font-family: 'Bona Nova';
+.resortLink-active .list {
+    color: #ffbb70;
+    font-family: "Bona Nova";
     font-size: 30px;
     text-align: center;
     /* margin: auto; */
     text-decoration: none;
     justify-self: center;
     justify-content: center;
-}
-.resortLink-active .list::after{
+  }
+  .resortLink-active .list::after {
     bottom: 15px;
     content: "";
     display: block;
     height: 1.2px;
     left: 0.1em;
     position: absolute;
-    background: #FFBB70;
+    background: #ffbb70;
     opacity: 0.9;
-    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    transition:
+      width 0.5s ease 0s,
+      opacity 0.5s ease 0s;
     width: 1.5rem;
-}
-
-.resortLink .list{
-    font-family: 'Bona Nova';
+  }
+  
+  .resortLink .list {
+    font-family: "Bona Nova";
     font-size: 2rem;
-}
-.resortLink .list:hover{
-    color:#FFBB70
-}
-.resortLink .list::after{
+  }
+  .resortLink .list:hover {
+    color: #ffbb70;
+  }
+  .resortLink .list::after {
     bottom: 15px;
     content: "";
     display: block;
     height: 1.2px;
     left: 0.1em;
     position: absolute;
-    background: #FFBB70;
+    background: #ffbb70;
     opacity: 0.6;
-    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    transition:
+      width 0.5s ease 0s,
+      opacity 0.5s ease 0s;
     width: 0rem;
-}
-.resortLink .list:hover::after{
+  }
+  .resortLink .list:hover::after {
     opacity: 0.9;
     width: 1.5rem;
-    color: #FFBB70;
-}
-
-/* --------------------------------- Resort part link ---------------------------  */
-
-.resortLink-active .resortPartList{
-    color: #FFBB70;
-    font-family: 'Bona Nova';
+    color: #ffbb70;
+  }
+  
+  /* --------------------------------- Resort part link ---------------------------  */
+  
+  .resortLink-active .resortPartList {
+    color: #ffbb70;
+    font-family: "Bona Nova";
     font-size: 30px;
     text-align: center;
     /* margin: auto; */
     text-decoration: none;
     /* justify-self: center;
-    justify-content: center; */
-}
-
-.resortLink-active .resortPartList::after{
+      justify-content: center; */
+  }
+  
+  .resortLink-active .resortPartList::after {
     bottom: 15px;
     content: "";
     display: block;
     height: 1.2px;
     left: 1rem;
     position: absolute;
-    background: #FFBB70;
+    background: #ffbb70;
     opacity: 0.9;
-    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    transition:
+      width 0.5s ease 0s,
+      opacity 0.5s ease 0s;
     width: 1.5rem;
-}
-
-.resortLink .resortPartList{
-    font-family: 'Bona Nova';
+  }
+  
+  .resortLink .resortPartList {
+    font-family: "Bona Nova";
     font-size: 30px;
-}
-.resortLink .resortPartList:hover{
-    color:#FFBB70
-}
-.resortLink .resortPartList::after{
+  }
+  .resortLink .resortPartList:hover {
+    color: #ffbb70;
+  }
+  .resortLink .resortPartList::after {
     bottom: 15px;
     content: "";
     display: block;
     height: 1.2px;
     left: 0.8em;
     position: absolute;
-    background: #FFBB70;
+    background: #ffbb70;
     opacity: 0.6;
-    transition: width 0.5s ease 0s, opacity 0.5s ease 0s;
+    transition:
+      width 0.5s ease 0s,
+      opacity 0.5s ease 0s;
     width: 0rem;
-}
-.resortLink .resortPartList:hover::after{
+  }
+  .resortLink .resortPartList:hover::after {
     opacity: 0.9;
     width: 1.5rem;
-    color: #FFBB70;
-}
-
-@media (max-width: 600px) {
-
-    .resortLink .list{font-size: 1.25rem;}
-    .resortLink .list::after{left: 0em;}
-    .resortLink-active .list{font-size: 1.25rem;}
-    .resortLink-active .list::after{left: 0em;}
+    color: #ffbb70;
+  }
+  
+  @media (max-width: 600px) {
+    .resortLink .list {
+      font-size: 1.25rem;
+    }
+    .resortLink .list::after {
+      left: 0em;
+    }
+    .resortLink-active .list {
+      font-size: 1.25rem;
+    }
+    .resortLink-active .list::after {
+      left: 0em;
+    }
     .ResortPartsLink {
-        font-size: 14px;
-        line-height: 24px;
+      font-size: 14px;
+      line-height: 24px;
     }
-
-    .resortLink .resortPartList{
-        font-size: 16px;
+  
+    .resortLink .resortPartList {
+      font-size: 16px;
     }
-
-    .resortLink-active .resortPartList{
-        font-size: 16px;
+  
+    .resortLink-active .resortPartList {
+      font-size: 16px;
     }
-    .resortLink .resortPartList::after{
-        left: 0.6rem;
-    } 
-    
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
+    .resortLink .resortPartList::after {
+      left: 0.6rem;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
     .ResortPartsLink {
-        font-size: 18px;
-        line-height: 28px;
+      font-size: 18px;
+      line-height: 28px;
     }
-}
+  }
+  

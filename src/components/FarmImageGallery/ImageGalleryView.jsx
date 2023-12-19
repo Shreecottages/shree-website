@@ -12,9 +12,9 @@ import { NavLink, useLocation } from "react-router-dom";
 // IMPORTING ICONS
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-//import { CurrencyBitcoin } from "@mui/icons-material";
+// import { CurrencyBitcoin } from "@mui/icons-material";
 
-//IMPORTING IMAGES
+// IMPORTING IMAGES
 import r1 from "../../assets/gallery/Resort/r1.jpg";
 import r2 from "../../assets/gallery/Resort/r2.jpg";
 import r3 from "../../assets/gallery/Resort/r3.jpg";
@@ -66,35 +66,116 @@ import c3 from "../../assets/gallery/Conference Room/c3.jpg";
 import c4 from "../../assets/gallery/Conference Room/c4.jpg";
 
 const ImageGalleryView = () => {
-  //IMAGE ARRAY TO TEST
+  // IMAGE ARRAY TO TEST
 
-  const resort = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16];
-
-  const decoration = [d1,d2,d3,d4,d5,d6,d7,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d8];
-
-  const banquestHall = [b1,b2
-    //"https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
-    //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
+  const resort = [
+    r1,
+    r2,
+    r3,
+    r4,
+    r5,
+    r6,
+    r7,
+    r8,
+    r9,
+    r10,
+    r11,
+    r12,
+    r13,
+    r14,
+    r15,
+    r16,
   ];
 
-  const conferenceRoom = [c1,c2,c3,c4
-    //"https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
+  const decoration = [
+    d1,
+    d2,
+    d3,
+    d4,
+    d5,
+    d6,
+    d7,
+    d9,
+    d10,
+    d11,
+    d12,
+    d13,
+    d14,
+    d15,
+    d16,
+    d17,
+    d18,
+    d19,
+    d20,
+    d8,
   ];
-  const swimmingPool = [s1,s2,s3];
+
+  const banquestHall = [
+    b1,
+    b2,
+    // "https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
+  ];
+
+  const conferenceRoom = [
+    c1,
+    c2,
+    c3,
+    c4,
+    // "https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
+  ];
+  const swimmingPool = [s1, s2, s3];
 
   const all = [
-    d1,d2,d3,d4,d5,d6,
-    s1,s2,s3,
-    r4,r5,r7,r8,r9,r10,r11,
-    d7,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d8,
-    r1,r2,r3,r6,r12,r13,r14,r15,r16,
-    b1,b2,
-    c1,c2,c3,c4
+    d1,
+    d2,
+    d3,
+    d4,
+    d5,
+    d6,
+    s1,
+    s2,
+    s3,
+    r4,
+    r5,
+    r7,
+    r8,
+    r9,
+    r10,
+    r11,
+    d7,
+    d9,
+    d10,
+    d11,
+    d12,
+    d13,
+    d14,
+    d15,
+    d16,
+    d17,
+    d18,
+    d19,
+    d20,
+    d8,
+    r1,
+    r2,
+    r3,
+    r6,
+    r12,
+    r13,
+    r14,
+    r15,
+    r16,
+    b1,
+    b2,
+    c1,
+    c2,
+    c3,
+    c4,
 
-    //"https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
-    //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
-    //"https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
-    
+    // "https://cdn0.weddingwire.in/vendor/6819/3_2/960/jpg/nik-6742_15_146819.jpeg",
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUa799jyCfoeBHbfiwLViaztPcduA6a--Ld8tDdh-a5Vdpb2PM4gZnrYjLv2Dx8Q9ViM&usqp=CAU",
+    // "https://www.coalesse.com/wp-content/uploads/2019/05/16-0041815.gif",
   ];
   const newImages = [
     all,
@@ -105,15 +186,15 @@ const ImageGalleryView = () => {
     swimmingPool,
   ];
 
-  var images = all;
+  let images = all;
 
   const currentUrl = useLocation().pathname;
   // console.log(currentUrl)
   const num = currentUrl.length;
   // useEffect(() => {
-  var part;
+  let part;
 
-  for (var i = num; i > num - 17; i--) {
+  for (let i = num; i > num - 17; i -= 1) {
     if (currentUrl[i] !== "/") {
       part = currentUrl.slice(i + 1);
     } else {
@@ -122,19 +203,30 @@ const ImageGalleryView = () => {
     }
   }
 
-  if (part === "all") {
-    images = newImages[0];
-  } else if (part === "resort") {
-    images = newImages[1];
-  } else if (part === "decoration") {
-    images = newImages[2];
-  } else if (part === "banquest-hall") {
-    images = newImages[3];
-  } else if (part === "conference-room") {
-    images = newImages[4];
-  } else if (part === "swimming-pool") {
-    images = newImages[5];
-  }
+  // if (part === "all") {
+  //   images = newImages[0];
+  // } else if (part === "resort") {
+  //   images = newImages[1];
+  // } else if (part === "decoration") {
+  //   images = newImages[2];
+  // } else if (part === "banquest-hall") {
+  //   images = newImages[3];
+  // } else if (part === "conference-room") {
+  //   images = newImages[4];
+  // } else if (part === "swimming-pool") {
+  //   images = newImages[5];
+  // }
+
+  const imageMap = {
+    all: newImages[0],
+    resort: newImages[1],
+    decoration: newImages[2],
+    "banquest-hall": newImages[3],
+    "conference-room": newImages[4],
+    "swimming-pool": newImages[5],
+  };
+
+  images = imageMap[part];
 
   // })
 
@@ -146,12 +238,12 @@ const ImageGalleryView = () => {
     setLightBoxDisplay(true);
   };
 
-  //hide lightbox
+  // hide lightbox
   const hideLightBox = () => {
     setLightBoxDisplay(false);
   };
 
-  //show next image in lightbox
+  // show next image in lightbox
   const totalImage = images.length;
   let currentIndex;
   const showNext = (e) => {
@@ -162,28 +254,27 @@ const ImageGalleryView = () => {
     if (currentIndex >= images.length - 1) {
       setLightBoxDisplay(false);
     } else {
-      let nextImage = images[currentIndex + 1];
+      const nextImage = images[currentIndex + 1];
       setImageToShow(nextImage);
     }
   };
 
-  //show previous image in lightbox
+  // show previous image in lightbox
 
   const showPrev = (e) => {
     e.stopPropagation();
     currentIndex = images.indexOf(imageToShow);
-    //const currentIndexNo = isNaN(currentIndex) ? 0 : parseInt(currentIndex, 10) + 2;
+    // const currentIndexNo = isNaN(currentIndex) ? 0 : parseInt(currentIndex, 10) + 2;
     console.log(currentIndex);
     if (currentIndex <= 0) {
       setLightBoxDisplay(false);
     } else {
-      let nextImage = images[currentIndex - 1];
+      const nextImage = images[currentIndex - 1];
       setImageToShow(nextImage);
     }
   };
 
   // To keep the all link active as default
-
 
   return (
     <div>
@@ -222,7 +313,6 @@ const ImageGalleryView = () => {
                 color: "#3D2521",
                 width: "auto",
               }}
-              
             >
               <ListItemButton>
                 <ListItemText disableTypography className="resortPartList">
@@ -323,7 +413,7 @@ const ImageGalleryView = () => {
 
           // columnSpacing={{ xs: 1, sm: 4, md: 6 }}
         >
-          {images.map((image, index) => (
+          {/* {images.map((image, index) => (
             <Grid item xs={16} sm={4} md={4}>
               <Box
                 sx={{
@@ -343,7 +433,46 @@ const ImageGalleryView = () => {
                 />
               </Box>
             </Grid>
+          ))} */}
+
+          {images.map((image, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <Grid item xs={16} sm={4} md={4} key={index}>
+              <Box
+                sx={{
+                  height: { xs: "180px", sm: "200px", md: "270px" },
+                }}
+              >
+                <div
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => showImage(image)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      showImage(image);
+                    }
+                  }}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "20px",
+                    cursor: "pointer",
+                  }}
+                >
+                  <img
+                    src={image}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      borderRadius: "20px",
+                    }}
+                    alt="Slow Network"
+                  />
+                </div>
+              </Box>
+            </Grid>
           ))}
+
           {lightboxDisplay ? (
             <Box
               sx={{

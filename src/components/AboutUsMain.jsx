@@ -1,34 +1,28 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  useMediaQuery,
-  Divider,
-} from "@mui/material";
+import { Box, Typography, Button, useMediaQuery, Divider } from "@mui/material";
 // IMPORTING IMAGE
 // import AboutUsTop from "../assets/AboutTopImg.png";
 // import AboutFLowerRight from "../assets/AboutFlowersRight.png";
 // import AboutFlowerLeft from "../assets/AboutFlowerLeft.png";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Helmet } from "react-helmet";
 import Card1 from "../assets/Card.png";
 import Card2 from "../assets/Farms.png";
 import SatisficationLogo from "../assets/Satisfaction.png";
 import ResortOwnerProfilePhoto from "../assets/ResortOwnerProfilePhoto.png";
-//import WhoWeAre from "../assets/WhoWeAre.png";
+import WhoWeAreImage from "../assets/WhoWeAre.svg";
 import DoubleCommaOpeningVector from "../assets/DoubleCommaOpeningVector.png";
 import DoubleCommaClosingVector from "../assets/DoubleCommaClosingVector.png";
 import ShreeOpacityLogo from "../assets/ShreeOpacityLogo.png";
-import ShreeAbout from "../images/shree-about.png"
+import ShreeAbout from "../images/shree-about.png";
 // import  AboutUsTopM from "../images/TopImage.png"
 // import AboutUsTop from "../assets/AboutTopImg.png"
-//IMPORTING COMPONENTS
-//import ReviewCards from "./ReviewCard";
+// IMPORTING COMPONENTS
+// import ReviewCards from "./ReviewCard";
 import Review from "./Review";
 
 // IMPORTING ICONS
-//import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Helmet } from "react-helmet";
+// import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 // import { GooglePlacesAutocomplete } from "react-google-places-autocomplete";/
 const AboutFLowerRight = require("../assets/AboutFlowersRight.png");
@@ -58,42 +52,64 @@ const AboutUs = () => {
     <div>
       <Box
         sx={{
-          overflowX:"hidden",
+          overflowX: "hidden",
           "&::-webkit-scrollbar": {
             display: "none",
           },
         }}
       >
-            <Helmet>
-                <title>Best Resort In Sasan Gir, Gujarat - Shree Cottages</title>
-                <meta name="description" content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir"/>
-                <meta name="keywords"content="shree Cottage, shree Party Plot,best resort, hotel ,destination wedding resort ,wedding place ,banquet halls, family friendly resort, swimming pool, sasan gir ,talala gir ,gir ,gujarat"/>
-                <meta name="robots" content="index, follow"/>
-                <meta name="canonical" content="https://shreecottages.com/about"/>
-                <meta name="image" content={ShreeAbout} />
+        <Helmet>
+          <title>Best Resort In Sasan Gir, Gujarat - Shree Cottages</title>
+          <meta
+            name="description"
+            content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir"
+          />
+          <meta
+            name="keywords"
+            content="shree Cottage, shree Party Plot,best resort, hotel ,destination wedding resort ,wedding place ,banquet halls, family friendly resort, swimming pool, sasan gir ,talala gir ,gir ,gujarat"
+          />
+          <meta name="robots" content="index, follow" />
+          <meta name="canonical" content="https://shreecottages.com/about" />
+          <meta name="image" content={ShreeAbout} />
 
-                <meta name="og:title" content="Best Resort In Sasan Gir, Gujarat - Shree Cottages"/>
-                <meta property="og:site_name" content="Shree Cottgaes" />
-                <meta name="og:description" content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir, gujarat"/>
-                <meta name="og:image" content={ShreeAbout} />
-            </Helmet>
-         <Box sx={{
-                width:"100vw",
-                display: "flex",
-                justifyContent: "space-between",
-                background:`rgba(61, 37, 33, 0.5) url(${isSmallScreen? AboutUsTopM :AboutUsTop})`,
-                boxShadow: "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
-                textAlign:"center",
-                padding:{xs:"0vw",md:"0vw 10vw"},
-                backgroundSize:"100%",
-                backgroundRepeat: "no-repeat",
-                backgroundSize:"cover",
-                backgroundPosition:"center",
-                height:{xs:"75vw",sm:"40vw",md:"30vw",lg:"25vw",xl:"20vw"},
-                '@media(max-width:300px)':{
-                height:"100vw"
-                }
-            }}>
+          <meta
+            name="og:title"
+            content="Best Resort In Sasan Gir, Gujarat - Shree Cottages"
+          />
+          <meta property="og:site_name" content="Shree Cottgaes" />
+          <meta
+            name="og:description"
+            content="Shree Cottages is the best family friendly resort in sasan gir with luxurious rooms with garden view. we also provide best destination wedding in sasan gir, gujarat"
+          />
+          <meta name="og:image" content={ShreeAbout} />
+        </Helmet>
+        <Box
+          sx={{
+            width: "100vw",
+            display: "flex",
+            justifyContent: "space-between",
+            background: `rgba(61, 37, 33, 0.5) url(${
+              isSmallScreen ? AboutUsTopM : AboutUsTop
+            })`,
+            boxShadow:
+              "inset 130px -130px 250px rgba(61, 37, 33, 0.9), inset -130px 130px 250px rgba(61, 37, 33, 0.9)",
+            textAlign: "center",
+            padding: { xs: "0vw", md: "0vw 10vw" },
+            backgroundSize: "100% cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            height: {
+              xs: "75vw",
+              sm: "40vw",
+              md: "30vw",
+              lg: "25vw",
+              xl: "20vw",
+            },
+            "@media(max-width:300px)": {
+              height: "100vw",
+            },
+          }}
+        >
           <Box
             sx={{
               // marginLeft: { xs: "-30px", lg: "200px" },
@@ -105,7 +121,7 @@ const AboutUs = () => {
               backgroundPosition: "bottom",
               // backgroundPositionX:"left",
             }}
-          ></Box>
+          />
           <Box
             sx={{
               display: "flex",
@@ -174,7 +190,7 @@ const AboutUs = () => {
               backgroundSize: "contain",
               width: { xs: "30vw", sm: "25vw", md: "200px", lg: "250px" },
             }}
-          ></Box>
+          />
 
           {/* <Box sx={{ marginRight: { sx: "50px", lg: "200px" } }}>
           <img
@@ -230,10 +246,10 @@ const AboutUs = () => {
                 sx={{
                   width: { xs: "347px", md: "400px", lg: "25rem" },
                   height: { xs: "347px", md: "400px", lg: "25rem" },
-                  backgroundImage: `url(${require('../assets/WhoWeAre.svg').default})`,
+                  backgroundImage: `url(${WhoWeAreImage})`,
                   backgroundSize: "cover",
                 }}
-              ></Box>
+              />
             </Box>
 
             <Typography
@@ -253,10 +269,23 @@ const AboutUs = () => {
                 fontWeight: "400",
               }}
             >
-              Welcome to Shree Cottages, a premier destination wedding resort in Gir National Park. Our resort is dedicated to providing exceptional experiences and unforgettable memories. With lush gardens, luxurious rooms and bigest banquet halls, we offer best destination wedding and event planning with affordable price. At Shree Cottages, We are dedicated to ensuring our customers satisfaction and take great pride in our unwavering commitment to achieving that goal. Our focus is on making your experience easy and enjoyable.
+              Welcome to Shree Cottages, a premier destination wedding resort in
+              Gir National Park. Our resort is dedicated to providing
+              exceptional experiences and unforgettable memories. With lush
+              gardens, luxurious rooms and bigest banquet halls, we offer best
+              destination wedding and event planning with affordable price. At
+              Shree Cottages, We are dedicated to ensuring our customers
+              satisfaction and take great pride in our unwavering commitment to
+              achieving that goal. Our focus is on making your experience easy
+              and enjoyable.
               <br />
               <br />
-              Since our inception, not a single customer has left unsatisfied. With luxurious accommodations, state-of-the-art amenities, and impeccable service, we ensure that your stay is truly memorable. Join us at Shree Cottages and immerse yourself in the enchantment of Sasan Gir National Park, where tranquillity meets elegance, and create timeless memories that will last a lifetime.
+              Since our inception, not a single customer has left unsatisfied.
+              With luxurious accommodations, state-of-the-art amenities, and
+              impeccable service, we ensure that your stay is truly memorable.
+              Join us at Shree Cottages and immerse yourself in the enchantment
+              of Sasan Gir National Park, where tranquillity meets elegance, and
+              create timeless memories that will last a lifetime.
             </Typography>
           </Box>
         </Box>
@@ -295,7 +324,7 @@ const AboutUs = () => {
               width: "0px",
               border: "1px solid #3D2521",
             }}
-          ></Box>
+          />
 
           <Box
             sx={{
@@ -330,14 +359,14 @@ const AboutUs = () => {
                 >
                   <br />
                   <span style={{ fontSize: "25px", fontFamily: "Bona Nova" }}>
-                    "
+                    &quot;
                   </span>
                   Sometimes numbers are the easiest way to get to the truth.{" "}
                   <br />
                   Checkout these business highlights to learn more and get to
                   know us better
                   <span style={{ fontSize: "25px", fontFamily: "Bona Nova" }}>
-                    "
+                    &quot;
                   </span>
                 </Typography>
 
@@ -460,8 +489,12 @@ const AboutUs = () => {
                     border: "none",
                   }}
                 >
-                  <a href="tel:+919427424157" style={{ textDecoration: 'none', color: 'inherit' }}>Book Event</a>
-                  
+                  <a
+                    href="tel:+919427424157"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Book Event
+                  </a>
                 </Button>
               </Box>
               <Box
@@ -555,9 +588,12 @@ const AboutUs = () => {
                     textTransform: "capitalize",
                   }}
                 >
-                  <a href="https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA" style={{ textDecoration: 'none', color: 'inherit' }}>Book Room</a>
-                
-                  
+                  <a
+                    href="https://www.google.com/travel/hotels/shree%20cottages%20sasan%20gir/entity/CgsIxu-aud-E-ITmARAB/prices?q=shree%20cottages%20sasan%20gir&g2lb=2502548%2C2503771%2C2503781%2C2504094%2C4258168%2C4284970%2C4306835%2C4718358%2C4723331%2C4731329%2C4757164%2C4814&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwj4jd_CgLb_AhUAAAAAHQAAAAAQBA&ts=CAESABogCgIaABIaEhQKBwjnDxAGGAoSBwjnDxAGGAsYATICEAAqBAoAGgA"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Book Room
+                  </a>
                 </Button>
               </Box>
             </Box>
@@ -597,7 +633,7 @@ const AboutUs = () => {
               border: "1px solid #3D2521",
               height: "30px",
             }}
-          ></Box>
+          />
 
           <Box
             sx={{
@@ -715,7 +751,7 @@ const AboutUs = () => {
                         width: "100%",
                         height: "100%",
                       }}
-                      alt="Owner Image"
+                      alt="Owner Img"
                     />
                   </Box>
 
@@ -750,7 +786,7 @@ const AboutUs = () => {
                           border: "1px solid #FFBB70",
                           borderRadius: "2px",
                         }}
-                      ></Box>
+                      />
                     </Typography>
                     <Typography
                       sx={{
@@ -770,12 +806,21 @@ const AboutUs = () => {
               <Button
                 sx={{
                   margin: { xs: "0px auto", md: "20px 0px 0px 0px" },
-                  width: { xs: "146px", sm: "200px" },  
+                  width: { xs: "146px", sm: "200px" },
                 }}
                 variant="outlined"
               >
-                <a href="tel:+919427424157" style={{textDecoration:"none", color:"black", display:"flex", alignItems:"center"}}>Contact Us <ArrowForwardIcon /></a>
-                
+                <a
+                  href="tel:+919427424157"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Contact Us <ArrowForwardIcon />
+                </a>
               </Button>
             </Box>
             <Box
@@ -785,11 +830,14 @@ const AboutUs = () => {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              <img src={SatisficationLogo} alt="100% customer satisfaction logo" />
+              <img
+                src={SatisficationLogo}
+                alt="100% customer satisfaction logo"
+              />
             </Box>
           </Box>
         </Box>
-        {/*-----------------------------------  FOURTH PART -------------------------------------- */}
+        {/* -----------------------------------  FOURTH PART -------------------------------------- */}
         <Review />
         {/* <Box
           sx={{

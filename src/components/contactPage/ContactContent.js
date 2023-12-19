@@ -4,37 +4,39 @@ import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import ReCAPTCHA from "react-google-recaptcha";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from "@formspree/react";
+import fbContactImage from "../../assets/fb-Contact.svg";
+import instaContactImage from "../../assets/insta-Contact.svg";
+import ytContactImage from "../../assets/yt-Contact.svg";
 import "../../styles/Contact.css";
 
 const SITE_KEY = "6LdCSv4mAAAAAHlUEWD2co9LRkj44PuV0fdS7Cf5";
 
 const ContactContent = () => {
-
   // Define your Formspree endpoint
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeqbdjog';
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeqbdjog";
 
-  // Use the useForm hook to handle the form submission
-  const [state, handleSubmit] = useForm(FORMSPREE_ENDPOINT);
+  // Using useForm and accessing handleSubmit directly
+  const formInfo = useForm(FORMSPREE_ENDPOINT);
+  const handleSubmit = formInfo[1];
 
   const [recaptchaValue, setrecaptchaValue] = useState("");
   const captchaRef = useRef();
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    mobile: '',
-    message: ''
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
   });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
-
 
   const onChange = (value) => {
     setrecaptchaValue(value);
@@ -47,7 +49,6 @@ const ContactContent = () => {
   //   }
   // };
 
-
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -57,7 +58,7 @@ const ContactContent = () => {
     // Submitting form data using the handleSubmit function
     await handleSubmit({
       ...formData,
-      'g-recaptcha-response': recaptchaValue // Add the Recaptcha response to the form data
+      "g-recaptcha-response": recaptchaValue, // Add the Recaptcha response to the form data
     });
   };
 
@@ -94,21 +95,19 @@ const ContactContent = () => {
                   <iframe
                     title="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin"
-
                     style={{
                       width: "100%",
                       height: "100%",
                       border: 0,
                       borderRadius: "20px",
                     }}
-
                     allowFullScreen
-                  ></iframe>
+                  />
                 </Box>
               </Box>
             </Box>
 
-            {/*----------------------------------------------------- contact form ---------------------------------------------------- */}
+            {/* ----------------------------------------------------- contact form ---------------------------------------------------- */}
             <Box
               sx={{
                 width: { xs: "100%", md: "25vw" },
@@ -268,7 +267,7 @@ const ContactContent = () => {
                 </form>
               </Box>
             </Box>
-            {/*-------------------------------------------------------- contact form ---------------------------------------------------- */}
+            {/* -------------------------------------------------------- contact form ---------------------------------------------------- */}
           </Grid>
         </Box>
 
@@ -277,12 +276,11 @@ const ContactContent = () => {
             border: "1px solid #3D2521",
             marginTop: { xs: "4rem", md: "1rem" },
           }}
-        ></Box>
+        />
 
         <Grid
           container
           sx={{
-            display: "flex",
             justifyContent: "space-between",
             display: { sm: "none", md: "flex", xs: "none" },
           }}
@@ -313,7 +311,11 @@ const ContactContent = () => {
             >
               Come over for coffee
             </Typography>
-            <a href="https://goo.gl/maps/JNyosQLb9TYTp1kg9" target="_blank">
+            <a
+              href="https://goo.gl/maps/JNyosQLb9TYTp1kg9"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Box
                 display="flex"
                 flexDirection="row"
@@ -343,7 +345,6 @@ const ContactContent = () => {
             </a>
           </Box>
 
-
           <Box
             item
             xs={12}
@@ -354,7 +355,7 @@ const ContactContent = () => {
               marginTop: "2rem",
               // justifyContent: "start",
               // alignSelf: "start",
-              // flexDirection: "column",  
+              // flexDirection: "column",
             }}
           >
             <Box>
@@ -390,7 +391,6 @@ const ContactContent = () => {
                       fontStyle: "normal",
                       fontFamily: "Poppins",
                       fontSize: "1.2vw",
-                      color: "#3D2521",
                     }}
                   >
                     +91 9427424157
@@ -418,7 +418,6 @@ const ContactContent = () => {
                       fontStyle: "normal",
                       fontFamily: "Poppins",
                       fontSize: "1.2vw",
-                      color: "#3D2521",
                     }}
                   >
                     info@shreecottages.com
@@ -458,17 +457,23 @@ const ContactContent = () => {
                 <Box>
                   <a href="https://www.facebook.com/ShreeCottages">
                     <img
+                      src={fbContactImage}
+                      alt="Facebook"
+                      className="sns"
+                    />
+                    {/* <img
                       src={require("../../assets/fb-Contact.svg").default}
                       alt="Facebook"
                       className="sns"
                       sx={{ border: "2px solid #3D2521" }}
-                    />
+                    /> */}
                   </a>
                 </Box>
                 <Box>
                   <a href="https://www.instagram.com/shreecottages">
                     <img
-                      src={require("../../assets/insta-Contact.svg").default}
+                      src={instaContactImage}
+                      // src={require("../../assets/insta-Contact.svg").default}
                       alt="Instagram"
                       className="sns"
                     />
@@ -478,7 +483,8 @@ const ContactContent = () => {
                   <a href="https://www.youtube.com/@shreecottages">
                     {" "}
                     <img
-                      src={require("../../assets/yt-Contact.svg").default}
+                      src={ytContactImage}
+                      // src={require("../../assets/yt-Contact.svg").default}
                       alt="Youtube"
                       className="sns"
                     />
@@ -509,10 +515,13 @@ const ContactContent = () => {
                 Contact us
               </Typography>
 
-              <a href="tel:+919427424157" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <a
+                href="tel:+919427424157"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 {/* Use 'tel' protocol to indicate a phone number link */}
                 <Box display="flex" flexDirection="row" mt="3vw">
-                  <CallOutlinedIcon style={{ color: 'black' }} mr={2} />
+                  <CallOutlinedIcon style={{ color: "black" }} mr={2} />
                   {/* Set the color of the icon explicitly to black */}
                   <Typography
                     mt="1vw"
@@ -531,12 +540,14 @@ const ContactContent = () => {
                 </Box>
               </a>
 
-
-              <a href="mailto:info@shreecottages.com" style={{ textDecoration: 'none', color: 'inherit' }} target="_blacnk">
+              <a
+                href="mailto:info@shreecottages.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+                target="_blacnk"
+              >
                 <Box display="flex" flexDirection="row" mt="3vw">
                   <MailOutlineOutlinedIcon />
                   <Typography
-
                     ml="2vw"
                     variant="h6"
                     sx={{
@@ -579,7 +590,12 @@ const ContactContent = () => {
             >
               Come over for coffee
             </Typography>
-            <a href="https://goo.gl/maps/JNyosQLb9TYTp1kg9" style={{ textDecoration: 'none', color: 'inherit' }} target="_blank">
+            <a
+              href="https://goo.gl/maps/JNyosQLb9TYTp1kg9"
+              style={{ textDecoration: "none", color: "inherit" }}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Box display="flex" flexDirection="row" mt="3vw">
                 <PlaceOutlinedIcon />
                 <Typography
@@ -623,7 +639,7 @@ const ContactContent = () => {
                 <Box component="span" sx={{ ml: "0rem" }}>
                   <a href="https://www.facebook.com/ShreeCottages">
                     <img
-                      src={require("../../assets/fb-Contact.svg").default}
+                      src={fbContactImage}
                       alt="Facebook"
                       style={{
                         width: "45px",
@@ -637,7 +653,7 @@ const ContactContent = () => {
                 <Box component="span" sx={{ ml: "0.5rem" }}>
                   <a href="https://www.instagram.com/shreecottages">
                     <img
-                      src={require("../../assets/insta-Contact.svg").default}
+                      src={instaContactImage}
                       alt="Instagram"
                       style={{
                         width: "45px",
@@ -651,7 +667,7 @@ const ContactContent = () => {
                 <Box component="span" sx={{ ml: "0.5rem" }}>
                   <a href="https://www.youtube.com/@shreecottages">
                     <img
-                      src={require("../../assets/yt-Contact.svg").default}
+                      src={ytContactImage}
                       alt="Youtube"
                       style={{
                         width: "45px",

@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Card } from "@mui/material";
 
-const VideoGalleryCard = ({videoURL}) => {
-  console.log(videoURL)
+const VideoGalleryCard = ({ videoURL }) => {
+  console.log(videoURL);
   return (
     <div>
       <Card
@@ -22,13 +23,17 @@ const VideoGalleryCard = ({videoURL}) => {
           height="100%"
           src={videoURL}
           title="YouTube video player"
-          frameborder="0"
+          style={{border: "none"}}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        />
       </Card>
     </div>
   );
+};
+
+VideoGalleryCard.propTypes = {
+  videoURL: PropTypes.string.isRequired,
 };
 
 export default VideoGalleryCard;

@@ -1,17 +1,17 @@
-import React from 'react';
-import { Box, Button, Grid, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Box, Button, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Hard404Page = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh',
-        backgroundColor: '#FFE2D8',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        backgroundColor: "#FFE2D8",
       }}
     >
       <Helmet>
@@ -20,7 +20,11 @@ const Hard404Page = () => {
 
       <Grid container spacing={2} direction="column" alignItems="center">
         <Grid item xs={12}>
-          <Typography variant="h1" component="h1" style={{ color: '#3D2521', marginBottom: '20px' }}>
+          <Typography
+            variant="h1"
+            component="h1"
+            style={{ color: "#3D2521", marginBottom: "20px" }}
+          >
             404
           </Typography>
         </Grid>
@@ -29,11 +33,11 @@ const Hard404Page = () => {
             variant="h3"
             component="h2"
             style={{
-              color: '#3D2521',
-              fontSize: '1.3rem',
-              textAlign: 'center',
-              padding: '0 32px',
-              marginBottom: '32px', // Increase margin between the message and button
+              color: "#3D2521",
+              fontSize: "1.3rem",
+              textAlign: "center",
+              padding: "0 32px",
+              marginBottom: "32px", // Increase margin between the message and button
             }}
           >
             The page you’re looking for doesn’t exist.
